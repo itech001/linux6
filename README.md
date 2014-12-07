@@ -1,4 +1,1 @@
-linux6
-======
-
-linux cookbook
+#This is the pages for www.linux6.com
