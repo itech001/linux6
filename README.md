@@ -5,7 +5,10 @@ This site [www.linux6.com](http://www.linux6.com) is for linux beginners and adv
 
 Welcome everyone to contribute any other articles and suggestions by pull requests.  
 
+![](linux6.png)  
+
 ##contribute steps:
+1. make sure you have python installed
 1. install mkdocs dependences: pip install mkdocs && pip uninstall mkdocs
 1. get code: git clone https://github.com/itech001/linux6.git(or your forked repo)
 1. sync to latest: git pull
