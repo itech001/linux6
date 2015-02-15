@@ -1,0 +1,67 @@
+site_name: Linux6
+site_url: www.linux6.com
+site_description: linux6
+site_author: itech001
+site_favicon: favicon.ico
+pages:
+- ['index.md', 'Home']
+- ['env/virtualbox.md', 'Env','Virtualbox']
+- ['env/vim_setting.md', 'Env','VIM_setting']
+- ['env/vi.md', 'Env','VIM_intro']
+- ['env/vim_cheatsheet.md', 'Env','VIM_cheatsheet']
+- ['env/dotfiles.md','Env','Dotfiles']
+- ['env/alias.md','Env','Alias']
+- ['env/shortcut.md','Env','Shortcut']
+- ['env/tmux.md','Env', 'Tmux']
+- ['cmds/cmds_common.html', 'Cmds','cmds_common']
+- ['cmds/cmds_example.md', 'Cmds','cmds_example']
+- ['cmds/cmds_overview.md', 'Cmds','cmds_man']
+- ['cmds/find.md','Cmds','find']
+- ['cmds/xargs.md','Cmds','xargs']
+- ['cmds/grep.md', 'Cmds','grep']
+- ['cmds/sed.md', 'Cmds', 'sed']
+- ['cmds/awk.md', 'Cmds','awk']
+- ['cmds/for.md', 'Cmds','for']
+- ['shell/bash.md', 'Script','Bash']
+- ['shell/bash_example.md','Script','Bash_example']
+- ['shell/bash_summary.html','Script','Bash_summary']
+- ['shell/csh.md','Script','Csh']
+- ['shell/zsh.md','Script','Zsh']
+- ['shell/shell_compare.html','Script','Shell_compare']
+- ['shell/perl.md','Script','Perl']
+- ['shell/python.md','Script','Python']
+- ['dev/git.md','Dev','git-tutorial']
+- ['dev/git_cheat_sheet.md','Dev','git-cheat-sheet']
+- ['dev/gdb.md', 'Dev', 'gdb']
+- ['adv/article.md','Adv']
+- ['adv/os.md','Adv','OS']
+- ['faq/common.md','FAQ']
+- ['ref/awesome-linux-resources/README.md', 'Ref','awesome_linux']
+- ['ref/awesome-shell/README.md','Ref','awesome_shell']
+- ['ref/awesome-dotfiles/README.md','Ref','awesome_dotfiles']
+- ['ref/awesome-devenv/README.md','Ref','awesome_devenv']
+- ['ref/awesome-sysadmin/README.md','Ref','awesome_sysadmin']
+- ['ref/awesome-python/README.md','Ref','awesome_python']
+- ['ref/free-programming-books/README.md','Ref','free_programming_book']
+- ['ref/Git-Cheat-Sheet/README.md','Ref','git_cheat_sheet']
+- ['ref/github-cheat-sheet/README.md','Ref','github_cheat_sheet']
+- ['ref/awesome/readme.md', 'Ref','awesome']
+- ['rss/linux_rss2.html','Rss','Linux RSS']
+- ['rss/github_rss2.html','Rss','Github RSS']
+- ['about/about.md', 'About']
+- ['about/contact_form.html','About','Contact']
+#theme: 'cosmo' #ok
+theme: 'flatly' #current
+#theme: 'yeti' #better
+#theme: 'cyborg' #cool and better
+docs_dir: 'docs'
+site_dir: 'site'
+use_directory_urls: false
+dev_addr: '127.0.0.1:8000'
+extra_css: ''
+extra_javascript: ['']
+include_nav: True
+include_next_prev: False
+include_search: true
+copyright: 'Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.'
+google_analytics: ''

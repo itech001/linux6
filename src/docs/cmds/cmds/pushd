@@ -1,0 +1,2 @@
+# Pushes a directory into a stack of directories for easy switching
+pushd ~/example/dir

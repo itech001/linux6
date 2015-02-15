@@ -1,0 +1,6 @@
+# Prints messages by the kernel
+# dmesg
+dmesg | less
+
+# write the kernel messages in Linux and other Unix-like operating systems to standard output that are related to usb 
+dmesg | grep -i usb

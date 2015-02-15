@@ -1,0 +1,21 @@
+# Downloads a file from a remote location
+scp user@remote_host:path/to/source path/to/destination
+
+# Transfer local copy to remote destination:
+scp localfile remotehost:/path/to/destination
+
+# Transfer folder and its content to remote computeR
+scp -r folder/ user@host:/path/to/destination
+Tool used to transfer files over the network.
+Send a file to another machine:
+scp file_to_transfer.txt machine_name_or_ip:/path/to/destination
+
+Transfer a file to current machine:
+scp machine_name_or_ip:/path/to/source /path/to/destination
+
+# your_comment_here
+# copy multiple files from remote to current local directory:
+scp user@example.com:"file1 file2 file3" .
+
+# Uploads a local file to a remote host 
+scp user@remote_host:/path/to/destination local_file

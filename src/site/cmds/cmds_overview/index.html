@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_overview/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>cmds_man - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../cmds_example/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../find/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-12" role="main">
+
+<table>
+<thead>
+<tr>
+<th align="left">command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../cmds_manpage/a2p/index.html">a2p</a></td>
+<td align="left">Create a Perl script from an AWK script.</td>
+</tr>
+<tr>
+<td align="left">ac</td>
+<td align="left">Print statistics about user connection time.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/access/index.html">access</a></td>
+<td align="left">The system function which checks a user's permissions to access a file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/addgroup/index.html">addgroup</a></td>
+<td align="left">Add a group to the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/adduser/index.html">adduser</a></td>
+<td align="left">Add a user to the system.</td>
+</tr>
+<tr>
+<td align="left">agrep</td>
+<td align="left">Version of the grep utility which also matches approximate patterns.</td>
+</tr>
+<tr>
+<td align="left">alias</td>
+<td align="left">Create an alternate name for a command.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/apropos/index.html">apropos</a></td>
+<td align="left">Search the manual pages for a keyword or regular expression.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/apt-cache/index.html">apt-cache</a></td>
+<td align="left">Search for information about software packages available through APT.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/apt-get/index.html">apt-get</a></td>
+<td align="left">Command line tool for managing APT software packages.</td>
+</tr>
+<tr>
+<td align="left">aptitude</td>
+<td align="left">Text-based front end for the APT package management system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ar/index.html">ar</a></td>
+<td align="left">Create, modify, and extract files from archives.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/arch/index.html">arch</a></td>
+<td align="left">Display the architecture of the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/arp/index.html">arp</a></td>
+<td align="left">Manipulate the system ARP cache.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/as/index.html">as</a></td>
+<td align="left">An assembler.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/aspell/index.html">aspell</a></td>
+<td align="left">An interactive spell checker.</td>
+</tr>
+<tr>
+<td align="left">at</td>
+<td align="left">Schedule a command to be run at a certain time.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/awk/index.html">awk</a></td>
+<td align="left">Interpreter for the AWK text processing programming language.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/basename/index.html">basename</a></td>
+<td align="left">Strip directory information and suffixes from filenames.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/bash/index.html">bash</a></td>
+<td align="left">The Bourne Again shell command interpreter.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/bc/index.html">bc</a></td>
+<td align="left">A calculator.</td>
+</tr>
+<tr>
+<td align="left">bdiff</td>
+<td align="left">Identify the differences between two very big files.</td>
+</tr>
+<tr>
+<td align="left">bfs</td>
+<td align="left">An editor which can load very large files.</td>
+</tr>
+<tr>
+<td align="left">bg</td>
+<td align="left">Resume a suspended program without bringing it to the foreground.</td>
+</tr>
+<tr>
+<td align="left">biff</td>
+<td align="left">Receive detailed mail notifications at the command line.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/break/index.html">break</a></td>
+<td align="left">Break out of a while, for, foreach, or until loop.</td>
+</tr>
+<tr>
+<td align="left">bs</td>
+<td align="left">A Linux version of the popular game "Battleship."</td>
+</tr>
+<tr>
+<td align="left">bye</td>
+<td align="left">On some systems, an alias for the exit command.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cal/index.html">cal</a></td>
+<td align="left">Display a conveniently-formatted calendar from the command line.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/calendar/index.html">calendar</a></td>
+<td align="left">Display appointments and reminders.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cancel/index.html">cancel</a></td>
+<td align="left">Cancel a print job under the System V operating system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cat/index.html">cat</a></td>
+<td align="left">Output the contents of a file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cc/index.html">cc</a></td>
+<td align="left">Compiler of the C programming language.</td>
+</tr>
+<tr>
+<td align="left">cd</td>
+<td align="left">Change the working directory.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cfdisk/index.html">cfdisk</a></td>
+<td align="left">A more user-friendly version of the fdisk disk partitioning utility.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/chdir/index.html">chdir</a></td>
+<td align="left">The system function for changing the working directory.</td>
+</tr>
+<tr>
+<td align="left">checkeq</td>
+<td align="left">Language processor which assists in describing equations.</td>
+</tr>
+<tr>
+<td align="left">checknr</td>
+<td align="left">Check nroff and troff files for errors.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/chfn/index.html">chfn</a></td>
+<td align="left">Change a user's finger information.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/chgrp/index.html">chgrp</a></td>
+<td align="left">Change the group ownership of files and directories.</td>
+</tr>
+<tr>
+<td align="left">chkey</td>
+<td align="left">Change the secure RPC key pair on SunOS.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/chmod/index.html">chmod</a></td>
+<td align="left">Change the permissions of files and directories.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/chown/index.html">chown</a></td>
+<td align="left">Change the ownership of files and directories.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/chroot/index.html">chroot</a></td>
+<td align="left">Run a command or shell from another directory, and treat that directory as root.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/chsh/index.html">chsh</a></td>
+<td align="left">Change login shell.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cksum/index.html">cksum</a></td>
+<td align="left">Calculate and display a CRC for files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/clear/index.html">clear</a></td>
+<td align="left">Clears the screen.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cmp/index.html">cmp</a></td>
+<td align="left">Compare two files byte by byte.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/col/index.html">col</a></td>
+<td align="left">Filter reverse linefeeds.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/comm/index.html">comm</a></td>
+<td align="left">Compare two sorted files line by line.</td>
+</tr>
+<tr>
+<td align="left">compress</td>
+<td align="left">Compress a file or files.</td>
+</tr>
+<tr>
+<td align="left">continue</td>
+<td align="left">Break out of a while, for, foreach, or until loop.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cp/index.html">cp</a></td>
+<td align="left">Copy files and directories.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cpio/index.html">cpio</a></td>
+<td align="left">Copy files to or from archives.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/crontab/index.html">crontab</a></td>
+<td align="left">View and edit a list of jobs for the system to run at regular intervals.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/crypt/index.html">crypt</a></td>
+<td align="left">System function used to encrypt passwords.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/csh/index.html">csh</a></td>
+<td align="left">The C shell command interpreter.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/csplit/index.html">csplit</a></td>
+<td align="left">Split files based on a defined context.</td>
+</tr>
+<tr>
+<td align="left">ctags</td>
+<td align="left">Create tag files for source code.</td>
+</tr>
+<tr>
+<td align="left">cu</td>
+<td align="left">Calls up another system, acting as a dial-in terminal.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/curl/index.html">curl</a></td>
+<td align="left">Transfer data to or from a server.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/cut/index.html">cut</a></td>
+<td align="left">Remove or "cut out" sections of each line of a file or files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/date/index.html">date</a></td>
+<td align="left">Output the current date and time.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/dc/index.html">dc</a></td>
+<td align="left">An arbitrary-precision arithmetic package.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/dd/index.html">dd</a></td>
+<td align="left">Copy and convert the encoding of files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/delgroup/index.html">delgroup</a></td>
+<td align="left">Remove a group from the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/deluser/index.html">deluser</a></td>
+<td align="left">Remove a user from the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/depmod/index.html">depmod</a></td>
+<td align="left">Generate a list of kernel module dependences and associated map files.</td>
+</tr>
+<tr>
+<td align="left">deroff</td>
+<td align="left">Remove nroff/troff, tbl, and eqn constructs from files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/df/index.html">df</a></td>
+<td align="left">Report the amount of available disk space on file systems.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/dhclient/index.html">dhclient</a></td>
+<td align="left">Communicate with a DHCP server to obtain a dynamic IP address.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/diff/index.html">diff</a></td>
+<td align="left">Identify the differences between two files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/dig/index.html">dig</a></td>
+<td align="left">DNS lookup utility.</td>
+</tr>
+<tr>
+<td align="left">dircmp</td>
+<td align="left">Compare the contents of two directories, listing unique files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/dirname/index.html">dirname</a></td>
+<td align="left">Strip the filename from a pathname, leaving only the directory component.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/dmesg/index.html">dmesg</a></td>
+<td align="left">Print or control the kernel ring buffer.</td>
+</tr>
+<tr>
+<td align="left">dos2unix</td>
+<td align="left">Convert text files between DOS and Unix formats.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/dpkg/index.html">dpkg</a></td>
+<td align="left">Query, install, remove, and maintain Debian software packages and their dependencies.</td>
+</tr>
+<tr>
+<td align="left">dpost</td>
+<td align="left">Translate files created by troff into PostScript under Solaris.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/du/index.html">du</a></td>
+<td align="left">Report the amount of disk space used by a file or files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/echo/index.html">echo</a></td>
+<td align="left">Output text.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ed/index.html">ed</a></td>
+<td align="left">A simple text editor.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/edit/index.html">edit</a></td>
+<td align="left">A text editor.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/egrep/index.html">egrep</a></td>
+<td align="left">Filter text which matches an extended regular expression.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/eject/index.html">eject</a></td>
+<td align="left">Eject removable media.</td>
+</tr>
+<tr>
+<td align="left">elm</td>
+<td align="left">A mail client.</td>
+</tr>
+<tr>
+<td align="left">emacs</td>
+<td align="left">A highly extensible text editor.</td>
+</tr>
+<tr>
+<td align="left">enable</td>
+<td align="left">Enable and disable LP printers.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/env/index.html">env</a></td>
+<td align="left">Report the value of environment variables.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/eqn/index.html">eqn</a></td>
+<td align="left">Language processor for describing equations.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ex/index.html">ex</a></td>
+<td align="left">Line-editor mode of the vi text editor.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/exit/index.html">exit</a></td>
+<td align="left">Exit the command shell.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/expand/index.html">expand</a></td>
+<td align="left">Expand tab characters to a series of spaces.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/expr/index.html">expr</a></td>
+<td align="left">Evaluate arguments as an expression.</td>
+</tr>
+<tr>
+<td align="left">fc</td>
+<td align="left">List, edit, or re-execute commands from the command history.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/fdisk/index.html">fdisk</a></td>
+<td align="left">A disk partioning utility.</td>
+</tr>
+<tr>
+<td align="left">fg</td>
+<td align="left">Resumes a suspended job and brings it to the foreground.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/fgrep/index.html">fgrep</a></td>
+<td align="left">Filter text which matches a fixed-character string.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/file/index.html">file</a></td>
+<td align="left">Determine a file's type.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/find/index.html">find</a></td>
+<td align="left">Find files within a directory hierarchy.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/findsmb/index.html">findsmb</a></td>
+<td align="left">List information about machines networked with the Samba protocol.</td>
+</tr>
+<tr>
+<td align="left">finger</td>
+<td align="left">List information about a user.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/fmt/index.html">fmt</a></td>
+<td align="left">A formatter for simplifying and optimizing text files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/fold/index.html">fold</a></td>
+<td align="left">Wrap lines of text to a specified line width.</td>
+</tr>
+<tr>
+<td align="left">for</td>
+<td align="left">Execute a set of commands in a repeating loop.</td>
+</tr>
+<tr>
+<td align="left">foreach</td>
+<td align="left">Execute a set of commands once for each of a given set of input items.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/free/index.html">free</a></td>
+<td align="left">Display the amount of free and used memory.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/fsck/index.html">fsck</a></td>
+<td align="left">Check and repair a Linux file system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ftp/index.html">ftp</a></td>
+<td align="left">Conduct an interactive FTP session over a secure network connection.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/fuser/index.html">fuser</a></td>
+<td align="left">Identify processes using files or sockets.</td>
+</tr>
+<tr>
+<td align="left">gawk</td>
+<td align="left">GNU's version of the AWK programming language.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/getfacl/index.html">getfacl</a></td>
+<td align="left">Display file access control lists.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/gethostname/index.html">gethostname</a></td>
+<td align="left">System call to get the hostname of the current processor.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/gpasswd/index.html">gpasswd</a></td>
+<td align="left">Administer /etc/group and /etc/gshadow.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/gprof/index.html">gprof</a></td>
+<td align="left">Display call graph profile data.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/grep/index.html">grep</a></td>
+<td align="left">Filter text which matches a regular expression.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/groupadd/index.html">groupadd</a></td>
+<td align="left">Add a group to the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/groupdel/index.html">groupdel</a></td>
+<td align="left">Remove a group from the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/groupmod/index.html">groupmod</a></td>
+<td align="left">Modify a group definition.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/gunzip/index.html">gunzip</a></td>
+<td align="left">Expand compressed files.</td>
+</tr>
+<tr>
+<td align="left">gview</td>
+<td align="left">An alias for vim.</td>
+</tr>
+<tr>
+<td align="left">gvim</td>
+<td align="left">An alias for vim.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/gzip/index.html">gzip</a></td>
+<td align="left">Create, modify, list the contents of, and extract files from GNU zip archives.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/halt/index.html">halt</a></td>
+<td align="left">Stop the computer.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/hash/index.html">hash</a></td>
+<td align="left">Access internal hash tables under Solaris.</td>
+</tr>
+<tr>
+<td align="left">hashstat</td>
+<td align="left">Evaluate the effectiveness of internal hash tables under Solaris.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/head/index.html">head</a></td>
+<td align="left">Display the first lines of a file.</td>
+</tr>
+<tr>
+<td align="left">help</td>
+<td align="left">Display help for built-in shell commands.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/history/index.html">history</a></td>
+<td align="left">Display the command history.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/host/index.html">host</a></td>
+<td align="left">Convert a host name to an IP address and vice versa.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/hostid/index.html">hostid</a></td>
+<td align="left">Print the numeric identifier for the current host.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/hostname/index.html">hostname</a></td>
+<td align="left">Set or print the hostname of system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/id/index.html">id</a></td>
+<td align="left">Display real and effective user and group IDs.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ifconfig/index.html">ifconfig</a></td>
+<td align="left">View or modify the configuration of network interfaces.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ifdown/index.html">ifdown</a></td>
+<td align="left">Disable a network interface.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ifquery/index.html">ifquery</a></td>
+<td align="left">Parse information about a network interface.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ifup/index.html">ifup</a></td>
+<td align="left">Enable a network interface.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/info/index.html">info</a></td>
+<td align="left">Read Info documents.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/init/index.html">init</a></td>
+<td align="left">The parent of all processes on the system.</td>
+</tr>
+<tr>
+<td align="left">iostat</td>
+<td align="left">Report CPU and I/O statistics for devices and partitions.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ip/index.html">ip</a></td>
+<td align="left">Display and manipulate information about routing, devices, policy routing and tunnels.</td>
+</tr>
+<tr>
+<td align="left">isalist</td>
+<td align="left">Display the native instruction sets available on a Solaris system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/iwconfig/index.html">iwconfig</a></td>
+<td align="left">Configure a wireless network interface.</td>
+</tr>
+<tr>
+<td align="left">jobs</td>
+<td align="left">List the status of all running jobs.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/join/index.html">join</a></td>
+<td align="left">Join the lines of two files which share a common field of data.</td>
+</tr>
+<tr>
+<td align="left">keylogin</td>
+<td align="left">Decrypt a user's secret key on SunOS.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/kill/index.html">kill</a></td>
+<td align="left">Send a signal to a process, affecting its behavior or killing it.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/killall/index.html">killall</a></td>
+<td align="left">Kill processes by name.</td>
+</tr>
+<tr>
+<td align="left">ksh</td>
+<td align="left">The Korn shell command interpreter.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/last/index.html">last</a></td>
+<td align="left">Display a listing of the most recently logged-in users.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ld/index.html">ld</a></td>
+<td align="left">Link editor for object files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ldd/index.html">ldd</a></td>
+<td align="left">List dynamic dependencies of executable files or shared objects.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/less/index.html">less</a></td>
+<td align="left">Scrolling text viewer.</td>
+</tr>
+<tr>
+<td align="left">lex</td>
+<td align="left">Generate programs for performing lexical tasks.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/link/index.html">link</a></td>
+<td align="left">Create a hard link to a regular file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ln/index.html">ln</a></td>
+<td align="left">Create a link, or a symbolic link, to a file or directory.</td>
+</tr>
+<tr>
+<td align="left">lo</td>
+<td align="left">Exit the command shell.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/locate/index.html">locate</a></td>
+<td align="left">Search a local database to find files by name.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/login/index.html">login</a></td>
+<td align="left">Begin a session on a system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/logname/index.html">logname</a></td>
+<td align="left">Return a user's login name.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/logout/index.html">logout</a></td>
+<td align="left">Exit the command shell.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/losetup/index.html">losetup</a></td>
+<td align="left">Set up and control loop devices.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lp/index.html">lp</a></td>
+<td align="left">Print a file on the System V operating system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lpadmin/index.html">lpadmin</a></td>
+<td align="left">Configure LP print services.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lpc/index.html">lpc</a></td>
+<td align="left">Control line printers.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lpq/index.html">lpq</a></td>
+<td align="left">List the status of available printers.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lpr/index.html">lpr</a></td>
+<td align="left">Submit print requests.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lprm/index.html">lprm</a></td>
+<td align="left">Remove requests from the print queue.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lpstat/index.html">lpstat</a></td>
+<td align="left">List the status of the LP print services.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ls/index.html">ls</a></td>
+<td align="left">List the contents of a directory or directories.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lsof/index.html">lsof</a></td>
+<td align="left">List open files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lzcat/index.html">lzcat</a></td>
+<td align="left">View compressed .lzma files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/lzma/index.html">lzma</a></td>
+<td align="left">Compress files to .lzma file.</td>
+</tr>
+<tr>
+<td align="left">mach</td>
+<td align="left">Display the processor of the current system.</td>
+</tr>
+<tr>
+<td align="left">mail</td>
+<td align="left">Read, compose, and manage mail.</td>
+</tr>
+<tr>
+<td align="left">mailcompat</td>
+<td align="left">Provide SunOS 4.x compatibility for the Solaris mailbox format.</td>
+</tr>
+<tr>
+<td align="left">mailx</td>
+<td align="left">Process mail messages.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/make/index.html">make</a></td>
+<td align="left">Automatically build executable programs and libraries from source code.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/man/index.html">man</a></td>
+<td align="left">Display the manual page of a given command.</td>
+</tr>
+<tr>
+<td align="left">merge</td>
+<td align="left">Performs a merge of the contents of three files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mesg/index.html">mesg</a></td>
+<td align="left">Control if (non-root) users can send messages to your terminal.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mii-tool/index.html">mii-tool</a></td>
+<td align="left">View and manipulate the status of a media-independent interface.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mkdir/index.html">mkdir</a></td>
+<td align="left">Create a directory.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mkfs/index.html">mkfs</a></td>
+<td align="left">Build a Linux file system, usually a hard disk partition.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mkswap/index.html">mkswap</a></td>
+<td align="left">Set up a Linux swap area.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/modprobe/index.html">modprobe</a></td>
+<td align="left">Add and remove modules from the Linux kernel.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/more/index.html">more</a></td>
+<td align="left">Display text one screen at a time.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mount/index.html">mount</a></td>
+<td align="left">Mount a file system so that its data may be accessed.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mt/index.html">mt</a></td>
+<td align="left">Control magnetic tapes.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/mv/index.html">mv</a></td>
+<td align="left">Move files and directories from one location to another, and optionally rename them.</td>
+</tr>
+<tr>
+<td align="left">myisamchk</td>
+<td align="left">Check, repair, optimize, or fetch information about a MySQL database.</td>
+</tr>
+<tr>
+<td align="left">mysql</td>
+<td align="left">An open-source relational database management system.</td>
+</tr>
+<tr>
+<td align="left">mysqldump</td>
+<td align="left">A tool for backing up or transferring MySQL databases.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/nc/index.html">nc</a></td>
+<td align="left">TCP/IP swiss army knife.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/neqn/index.html">neqn</a></td>
+<td align="left">Language processor for describing equations.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/netstat/index.html">netstat</a></td>
+<td align="left">Print information about network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.</td>
+</tr>
+<tr>
+<td align="left">newalias</td>
+<td align="left">Install new elm aliases.</td>
+</tr>
+<tr>
+<td align="left">newform</td>
+<td align="left">Change the format of a text file under Solaris.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/newgrp/index.html">newgrp</a></td>
+<td align="left">Log into a new group.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/nice/index.html">nice</a></td>
+<td align="left">Invoke a command with an altered scheduling priority.</td>
+</tr>
+<tr>
+<td align="left">niscat</td>
+<td align="left">Display NIS+ tables and objects.</td>
+</tr>
+<tr>
+<td align="left">nischmod</td>
+<td align="left">Change access rights on a NIS+ object.</td>
+</tr>
+<tr>
+<td align="left">nischown</td>
+<td align="left">Change the owner of a NIS+ object on a system running Solaris.</td>
+</tr>
+<tr>
+<td align="left">nischttl</td>
+<td align="left">Change the time to live value of a NIS+ object.</td>
+</tr>
+<tr>
+<td align="left">nisdefaults</td>
+<td align="left">Display NIS+ default values.</td>
+</tr>
+<tr>
+<td align="left">nisgrep</td>
+<td align="left">Utilities for searching NIS+ tables.</td>
+</tr>
+<tr>
+<td align="left">nismatch</td>
+<td align="left">Utilities for searching NIS+ tables.</td>
+</tr>
+<tr>
+<td align="left">nispasswd</td>
+<td align="left">Change NIS+ password information.</td>
+</tr>
+<tr>
+<td align="left">nistbladm</td>
+<td align="left">Administer NIS+ tables.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/nl/index.html">nl</a></td>
+<td align="left">Number the lines in a file.</td>
+</tr>
+<tr>
+<td align="left">nmap</td>
+<td align="left">Network exploration tool and security port scanner.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/nohup/index.html">nohup</a></td>
+<td align="left">Instruct a command to continue running even if the session is disconnected or the user logs out.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/nroff/index.html">nroff</a></td>
+<td align="left">Format documents for terminal display or line-printer.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/nslookup/index.html">nslookup</a></td>
+<td align="left">Query a name server for information about a remote host.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/od/index.html">od</a></td>
+<td align="left">Dump files in octal and other formats.</td>
+</tr>
+<tr>
+<td align="left">on</td>
+<td align="left">Execute a command on a remote system, but with the local environment.</td>
+</tr>
+<tr>
+<td align="left">onintr</td>
+<td align="left">Built-in shell function which responds to hardware interrupts.</td>
+</tr>
+<tr>
+<td align="left">optisa</td>
+<td align="left">Determine which instruction set is optimal to use on a Solaris system.</td>
+</tr>
+<tr>
+<td align="left">pack</td>
+<td align="left">Compress files using a Huffman algorithm.</td>
+</tr>
+<tr>
+<td align="left">pagesize</td>
+<td align="left">Display the size of a page of memory in bytes.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/parted/index.html">parted</a></td>
+<td align="left">A disk partition manipulation program.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/partprobe/index.html">partprobe</a></td>
+<td align="left">Inform the operating system about changes to the partition table.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/passwd/index.html">passwd</a></td>
+<td align="left">Change a user's password.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/paste/index.html">paste</a></td>
+<td align="left">Merge corresponding lines of files.</td>
+</tr>
+<tr>
+<td align="left">pax</td>
+<td align="left">Read and write file archives, and copy directory hierarchies.</td>
+</tr>
+<tr>
+<td align="left">pcat</td>
+<td align="left">Print the uncompressed contents of a compressed file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/perl/index.html">perl</a></td>
+<td align="left">Interpreter for the Perl programming language.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/pg/index.html">pg</a></td>
+<td align="left">Browse page by page through text files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/pgrep/index.html">pgrep</a></td>
+<td align="left">Look up processes based on the name or other attributes.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/pico/index.html">pico</a></td>
+<td align="left">A simple text editor.</td>
+</tr>
+<tr>
+<td align="left">pine</td>
+<td align="left">A client for using mail and newsgroups.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ping/index.html">ping</a></td>
+<td align="left">Send ICMP ECHO_REQUEST packets to network hosts.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/pkill/index.html">pkill</a></td>
+<td align="left">Send a signal to any process whose attributes match a regular expression.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/poweroff/index.html">poweroff</a></td>
+<td align="left">Stop the computer.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/pr/index.html">pr</a></td>
+<td align="left">Format a text file for printing.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/printenv/index.html">printenv</a></td>
+<td align="left">Print all or part of the environment.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/printf/index.html">printf</a></td>
+<td align="left">Write formatted output.</td>
+</tr>
+<tr>
+<td align="left">priocntl</td>
+<td align="left">Display or set scheduling parameters of a processes under Solaris.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ps/index.html">ps</a></td>
+<td align="left">Report the status of a process or processes.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/pstree/index.html">pstree</a></td>
+<td align="left">Display processes in a tree format.</td>
+</tr>
+<tr>
+<td align="left">pvs</td>
+<td align="left">Display the internal version information of dynamic objects within an ELF file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/pwd/index.html">pwd</a></td>
+<td align="left">Print the name of the working directory.</td>
+</tr>
+<tr>
+<td align="left">quit</td>
+<td align="left">Exit the command shell.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rcp/index.html">rcp</a></td>
+<td align="left">Copy files to or from a remote system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/readlink/index.html">readlink</a></td>
+<td align="left">Print the value of a symbolic link or canonical file name.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/reboot/index.html">reboot</a></td>
+<td align="left">Stop the computer.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/red/index.html">red</a></td>
+<td align="left">Run ed in "restricted" (less powerful, more secure) mode.</td>
+</tr>
+<tr>
+<td align="left">rehash</td>
+<td align="left">Recompute internal hash tables under Solaris.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rename/index.html">rename</a></td>
+<td align="left">Rename multiple files according to a regular expression.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/renice/index.html">renice</a></td>
+<td align="left">Alter the priority of running processes.</td>
+</tr>
+<tr>
+<td align="left">repeat</td>
+<td align="left">Execute a set of commands in a repeating loop.</td>
+</tr>
+<tr>
+<td align="left">replace</td>
+<td align="left">A string-replacement utility.</td>
+</tr>
+<tr>
+<td align="left">rgview</td>
+<td align="left">An alias for vim.</td>
+</tr>
+<tr>
+<td align="left">rgvim</td>
+<td align="left">An alias for vim.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rlogin/index.html">rlogin</a></td>
+<td align="left">Begin a session on a remote system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rm/index.html">rm</a></td>
+<td align="left">Delete files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rmdir/index.html">rmdir</a></td>
+<td align="left">Remove a directory.</td>
+</tr>
+<tr>
+<td align="left">rn</td>
+<td align="left">A newsgroup reader.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/route/index.html">route</a></td>
+<td align="left">Display and manipulate the IP routing table.</td>
+</tr>
+<tr>
+<td align="left">rpcinfo</td>
+<td align="left">Report information about Remote Procedure Calls.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rsh/index.html">rsh</a></td>
+<td align="left">Execute a command on a remote shell.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rsync/index.html">rsync</a></td>
+<td align="left">A fast and versatile file copying tool capable of synchronizing files across remote systems.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rview/index.html">rview</a></td>
+<td align="left">An alias for vim.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/rvim/index.html">rvim</a></td>
+<td align="left">An alias for vim.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/s2p/index.html">s2p</a></td>
+<td align="left">Convert a sed script into a Perl script.</td>
+</tr>
+<tr>
+<td align="left">sag</td>
+<td align="left">Under Solaris, Graphically displays system activity data generated by sar.</td>
+</tr>
+<tr>
+<td align="left">sar</td>
+<td align="left">Display CPU activity under Solaris.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/scp/index.html">scp</a></td>
+<td align="left">Copy files securely over a network connection.</td>
+</tr>
+<tr>
+<td align="left">screen</td>
+<td align="left">Screen manager with VT100/ANSI terminal emulation.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/script/index.html">script</a></td>
+<td align="left">Record everything printed on your screen.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sdiff/index.html">sdiff</a></td>
+<td align="left">Compare two files, side-by-side.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sed/index.html">sed</a></td>
+<td align="left">A utility for filtering and transforming text.</td>
+</tr>
+<tr>
+<td align="left">sendmail</td>
+<td align="left">Send mail.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/service/index.html">service</a></td>
+<td align="left">Run a System V init script.</td>
+</tr>
+<tr>
+<td align="left">set</td>
+<td align="left">Set the value of an environment variable.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/setenv/index.html">setenv</a></td>
+<td align="left">Set the value of an environment variable.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/setfacl/index.html">setfacl</a></td>
+<td align="left">Modify the access control list of a file or files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sethostname/index.html">sethostname</a></td>
+<td align="left">System calls or set the hostname of the current processor.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sfdisk/index.html">sfdisk</a></td>
+<td align="left">A low-level disk partitioning program.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sftp/index.html">sftp</a></td>
+<td align="left">Conduct an interactive FTP session over a secure network connection.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sh/index.html">sh</a></td>
+<td align="left">The Bourne shell command interpreter.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/shred/index.html">shred</a></td>
+<td align="left">Overwrite a file's contents, irrevocably destroying them.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/shutdown/index.html">shutdown</a></td>
+<td align="left">Schedule a time for the system to be powered down.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sleep/index.html">sleep</a></td>
+<td align="left">Wait a given number of seconds.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/slogin/index.html">slogin</a></td>
+<td align="left">Login to a remote system securely.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/smbclient/index.html">smbclient</a></td>
+<td align="left">An ftp-like client for accessing SMB/CIFS resources on servers.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sort/index.html">sort</a></td>
+<td align="left">Sort the lines in a text file.</td>
+</tr>
+<tr>
+<td align="left">spell</td>
+<td align="left">A spell checker.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/split/index.html">split</a></td>
+<td align="left">Split a file into pieces.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/startx/index.html">startx</a></td>
+<td align="left">Start an X Window System session.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/stat/index.html">stat</a></td>
+<td align="left">Display the status of a file or filesystem.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/stop/index.html">stop</a></td>
+<td align="left">Stop a running job.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/strftime/index.html">strftime</a></td>
+<td align="left">Format strings that represent the system date and time.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/strip/index.html">strip</a></td>
+<td align="left">Discard symbols from object files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/stty/index.html">stty</a></td>
+<td align="left">Set options for your terminal display.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/su/index.html">su</a></td>
+<td align="left">Become the superuser or another user.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sudo/index.html">sudo</a></td>
+<td align="left">Execute a command as the superuser.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/swapoff/index.html">swapoff</a></td>
+<td align="left">Disable a Linux swap area.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/swapon/index.html">swapon</a></td>
+<td align="left">Enable a Linux swap area.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/sysinfo/index.html">sysinfo</a></td>
+<td align="left">Get and set system information strings.</td>
+</tr>
+<tr>
+<td align="left">sysklogd</td>
+<td align="left">Linux system logging utilities.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tabs/index.html">tabs</a></td>
+<td align="left">Set tab stops on a terminal.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tac/index.html">tac</a></td>
+<td align="left">Output the contents of files in reverse order.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tail/index.html">tail</a></td>
+<td align="left">Print the last lines of a text file.</td>
+</tr>
+<tr>
+<td align="left">talk</td>
+<td align="left">Talk with other logged in users.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tar/index.html">tar</a></td>
+<td align="left">Create, modify, list the contents of, and extract files from tar archives.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tbl/index.html">tbl</a></td>
+<td align="left">Preprocessor which formats tables for nroff or troff.</td>
+</tr>
+<tr>
+<td align="left">tcopy</td>
+<td align="left">Copy a magnetic tape.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tcpdump/index.html">tcpdump</a></td>
+<td align="left">Capture raw network traffic.</td>
+</tr>
+<tr>
+<td align="left">tcsh</td>
+<td align="left">A command-line shell similar to csh, with some additional features.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tee/index.html">tee</a></td>
+<td align="left">Route a file's contents to multiple outputs.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/telinit/index.html">telinit</a></td>
+<td align="left">Process control initialization.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/telnet/index.html">telnet</a></td>
+<td align="left">Connect to a remote system using the telnet protocol.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/test/index.html">test</a></td>
+<td align="left">Check file types and compare values.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/time/index.html">time</a></td>
+<td align="left">Report how long it takes for a command to execute.</td>
+</tr>
+<tr>
+<td align="left">timex</td>
+<td align="left">Report process data and system activity for a specified command.</td>
+</tr>
+<tr>
+<td align="left">todos</td>
+<td align="left">Convert text files between DOS and Unix formats.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/top/index.html">top</a></td>
+<td align="left">Display a sortable, continually-updated list of processes.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/touch/index.html">touch</a></td>
+<td align="left">Update the timestamp of a file or directory.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tput/index.html">tput</a></td>
+<td align="left">Initialize a terminal or query the terminfo database.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tr/index.html">tr</a></td>
+<td align="left">Translate one set of characters to another.</td>
+</tr>
+<tr>
+<td align="left">traceroute</td>
+<td align="left">Trace the route that packets take to a remote host.</td>
+</tr>
+<tr>
+<td align="left">trap</td>
+<td align="left">A function which "traps" signals and interrupts, and reacts to them.</td>
+</tr>
+<tr>
+<td align="left">tree</td>
+<td align="left">List the contents of a file hierarchy visually in a tree format.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/troff/index.html">troff</a></td>
+<td align="left">Typeset or format documents for terminal display or line-printer.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/tty/index.html">tty</a></td>
+<td align="left">Print the file name of the terminal connected to standard input.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/ul/index.html">ul</a></td>
+<td align="left">Translate underscores to underlining.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/umask/index.html">umask</a></td>
+<td align="left">Get or set the file mode creation mask.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/umount/index.html">umount</a></td>
+<td align="left">Unmount a file system, making its data inaccessible.</td>
+</tr>
+<tr>
+<td align="left">unalias</td>
+<td align="left">Remove an alias.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/uname/index.html">uname</a></td>
+<td align="left">Print information about the current system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/uncompress/index.html">uncompress</a></td>
+<td align="left">Extract files from compressed archives.</td>
+</tr>
+<tr>
+<td align="left">unhash</td>
+<td align="left">Remove internal hash table under Solaris.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/uniq/index.html">uniq</a></td>
+<td align="left">Identify, and optionally filter out, repeated lines in a file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/unlink/index.html">unlink</a></td>
+<td align="left">Remove a file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/unlzma/index.html">unlzma</a></td>
+<td align="left">Decompress .lzma files.</td>
+</tr>
+<tr>
+<td align="left">unpack</td>
+<td align="left">Expand a compressed file.</td>
+</tr>
+<tr>
+<td align="left">until</td>
+<td align="left">Execute a set of commands until a certain condition is true.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/unxz/index.html">unxz</a></td>
+<td align="left">Decompress .xz files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/unzip/index.html">unzip</a></td>
+<td align="left">List, test and extract compressed files in a zip archive.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/uptime/index.html">uptime</a></td>
+<td align="left">Display information about how long the system has been running.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/useradd/index.html">useradd</a></td>
+<td align="left">Add a user to the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/userdel/index.html">userdel</a></td>
+<td align="left">Remove a user from the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/usermod/index.html">usermod</a></td>
+<td align="left">Modify a user's account.</td>
+</tr>
+<tr>
+<td align="left">vacation</td>
+<td align="left">Reply to mail automatically.</td>
+</tr>
+<tr>
+<td align="left">vgrind</td>
+<td align="left">"Grind" nice program listings.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/vi/index.html">vi</a></td>
+<td align="left">Text editor based on the visual mode of ex.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/view/index.html">view</a></td>
+<td align="left">Run vim in read-only mode.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/vim/index.html">vim</a></td>
+<td align="left">An advanced version of vi.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/vipw/index.html">vipw</a></td>
+<td align="left">Safely edit the password file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/visudo/index.html">visudo</a></td>
+<td align="left">Safely edit the sudoers file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/vmstat/index.html">vmstat</a></td>
+<td align="left">Report statistics about virtual memory usage.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/w/index.html">w</a></td>
+<td align="left">Show who is logged on and what they are doing.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/wait/index.html">wait</a></td>
+<td align="left">Await process completion.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/wall/index.html">wall</a></td>
+<td align="left">Send a message to all logged-in users.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/wc/index.html">wc</a></td>
+<td align="left">Display a count of lines, words, and characters in a file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/wget/index.html">wget</a></td>
+<td align="left">Download files via HTTP or FTP.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/whatis/index.html">whatis</a></td>
+<td align="left">Display short manual page descriptions.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/whereis/index.html">whereis</a></td>
+<td align="left">Locate the binary, source, and manual page files for a command.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/which/index.html">which</a></td>
+<td align="left">Locate the binary executable of a command.</td>
+</tr>
+<tr>
+<td align="left">while</td>
+<td align="left">Execute a set of actions while a certain condition is true.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/who/index.html">who</a></td>
+<td align="left">Report which users are logged in to the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/whoami/index.html">whoami</a></td>
+<td align="left">Print your effective userid.</td>
+</tr>
+<tr>
+<td align="left">whois</td>
+<td align="left">An internet user name directory service.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/write/index.html">write</a></td>
+<td align="left">Send a message to another user.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/X/index.html">X</a></td>
+<td align="left">Executable of the X Window System.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/Xorg/index.html">Xorg</a></td>
+<td align="left">The executable of the X Window System server.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xargs/index.html">xargs</a></td>
+<td align="left">Build and execute complex commands, and execute them on multiple files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xfd/index.html">xfd</a></td>
+<td align="left">Display all the characters in an X font.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xhost/index.html">xhost</a></td>
+<td align="left">Server access control program for X.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xinit/index.html">xinit</a></td>
+<td align="left">The initializer of the X Window System.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xlsfonts/index.html">xlsfonts</a></td>
+<td align="left">Display X font lists.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xrdb/index.html">xrdb</a></td>
+<td align="left">An X server resource database utility.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xset/index.html">xset</a></td>
+<td align="left">A user preference utility for X.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xterm/index.html">xterm</a></td>
+<td align="left">A terminal emulator for X.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xz/index.html">xz</a></td>
+<td align="left">Compress files to .xz files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/xzcat/index.html">xzcat</a></td>
+<td align="left">View compressed .xz files.</td>
+</tr>
+<tr>
+<td align="left">yacc</td>
+<td align="left">"Yet another compiler-compiler."</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/yes/index.html">yes</a></td>
+<td align="left">Repeatedly output a given string, or the letter "y".</td>
+</tr>
+<tr>
+<td align="left">yppasswd</td>
+<td align="left">Change a network password in an NIS database.</td>
+</tr>
+<tr>
+<td align="left">yum</td>
+<td align="left">An interactive rpm-based package manager.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/zcat/index.html">zcat</a></td>
+<td align="left">Print the uncompressed contents of compressed files.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/zip/index.html">zip</a></td>
+<td align="left">A compression and archiving utility.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/zipcloak/index.html">zipcloak</a></td>
+<td align="left">Encrypt files within an existing zip archive.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/zipinfo/index.html">zipinfo</a></td>
+<td align="left">Display technical information about a zip file.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/zipnote/index.html">zipnote</a></td>
+<td align="left">View, add, or modify a zip file's comments.</td>
+</tr>
+<tr>
+<td align="left"><a href="../cmds_manpage/zipsplit/index.html">zipsplit</a></td>
+<td align="left">Split a single zip archive into a set of smaller zip files.</td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,4 @@
+# Updates the timestamp of the file 'temp' or creates it if it doesn't exist
+touch temp
+# Change the unix timestamp of a file to an arbitary date
+touch -d '12 Jun 2005 10:05' /path/to/target_file

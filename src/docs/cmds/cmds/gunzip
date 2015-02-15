@@ -1,0 +1,5 @@
+# Decompress a Gzip file (removing/replacing the original compressed file)
+gunzip file.gz
+
+# Decompress a Gzip file (keep the original compressed file)
+gunzip -c file.gz > file.out

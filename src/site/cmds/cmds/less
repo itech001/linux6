@@ -1,0 +1,26 @@
+# Opens up a file in a read-only editor. AFter launch, use F (Shift+f) to tail a running file.
+less somefile.txt
+
+# Open a file for reading:
+less file.txt
+
+# Open a file with ANSI color codes for reading.  Note you can also type '-r' or
+# '-R' in the less window to do the same:
+less -R file.txt
+
+# Use 'less' as a better tail -F, to follow outup to files for eg. monitoring
+# logs
+less +f /var/log/apache
+
+# This display the contents of a file and the name of the file
+more foo bar | less
+
+# This will look like:
+# :::::::::::
+# foo
+# :::::::::::
+# This is a test
+# :::::::::::
+# bar
+# ::::::::::
+# This is also a test

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/fsck/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>fsck - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#fsck">fsck</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#availability">availability</a></li>
+        
+            <li><a href="#files">files</a></li>
+        
+            <li><a href="#environment-variables">environment variables</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="fsck">fsck</h1>
+<h3 id="name">name</h3>
+<pre><code>       fsck - check and repair a Linux filesystem
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       fsck [-lsAVRTMNP] [-C [fd]] [-t fstype] [filesys...]  [--] [fs-specific-options]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       fsck is used to check and optionally repair one or more Linux filesystems.  filesys can be a device name (e.g.  /dev/hdc1, /dev/sdb2), a mount point (e.g.  /, /usr, /home), or an ext2 label or UUID specifier (e.g.  UUID=8868abf6-88c5-4a83-98b8-bfc24057f7bd or LABEL=root).  Normally, the fsck program will try to handle filesystems on different physical disk drives in parallel to reduce the total amount of time needed to check all of them.
+
+       If no filesystems are specified on the command line, and the -A option is not specified, fsck will default to checking filesystems in /etc/fstab serially.  This is equivalent to the -As options.
+
+       The exit code returned by fsck is the sum of the following conditions:
+            0    - No errors
+            1    - Filesystem errors corrected
+            2    - System should be rebooted
+            4    - Filesystem errors left uncorrected
+            8    - Operational error
+            16   - Usage or syntax error
+            32   - Fsck canceled by user request
+            128  - Shared-library error
+       The exit code returned when multiple filesystems are checked is the bit-wise OR of the exit codes for each filesystem that is checked.
+
+       In actuality, fsck is simply a front-end for the various filesystem checkers (fsck.fstype) available under Linux.  The filesystem-specific checker is searched for in /sbin first, then in /etc/fs and /etc, and finally in the directories listed in the PATH environment variable.  Please see the filesystem-specific checker manual pages for further details.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       -l     Lock the whole-disk device by an exclusive flock(2).  This option can be used with one device only (this means that -A and -l are mutually exclusive).  This option is recommended when more fsck (8) instances are executed in the same time.  The option is ignored when used for multiple devices or for non-rotating disks.  fsck does not lock underlying devices when executed to check stacked devices (e.g. MD or DM) -- this feature is not implemented yet.
+
+       -s     Serialize fsck operations.  This is a good idea if you are checking multiple filesystems and the checkers are in an interactive mode.  (Note: e2fsck(8) runs in an interactive mode by default.  To make e2fsck(8) run in a non-interactive mode, you must either specify the -p or -a option, if you wish for errors to be corrected automatically, or the -n option if you do not.)
+
+       -t fslist
+              Specifies the type(s) of filesystem to be checked.  When the -A flag is specified, only filesystems that match fslist are checked.  The fslist parameter is a comma-separated list of filesystems and options specifiers.  All of the filesystems in this comma-separated list may be prefixed by a negation operator 'no' or '!', which requests that only those filesystems not listed in fslist will be checked.  If none of the filesystems in fslist is prefixed by a negation operator, then only those listed filesystems will be checked.
+
+              Options specifiers may be included in the comma-separated fslist.  They must have the format opts=fs-option.  If an options specifier is present, then only filesystems which contain fs-option in their mount options field of /etc/fstab will be checked.  If the options specifier is prefixed by a negation operator, then only those filesystems that do not have fs-option in their mount options field of /etc/fstab will be checked.
+
+              For example, if opts=ro appears in fslist, then only filesystems listed in /etc/fstab with the ro option will be checked.
+
+              For compatibility with Mandrake distributions whose boot scripts depend upon an unauthorized UI change to the fsck program, if a filesystem type of loop is found in fslist, it is treated as if opts=loop were specified as an argument to the -t option.
+
+              Normally, the filesystem type is deduced by searching for filesys in the /etc/fstab file and using the corresponding entry.  If the type can not be deduced, and there is only a single filesystem given as an argument to the -t option, fsck will use the specified filesystem type.  If this type is not available, then the default filesystem type (currently ext2) is used.
+
+       -A     Walk through the /etc/fstab file and try to check all filesystems in one run.  This option is typically used from the /etc/rc system initialization file, instead of multiple commands for checking a single filesystem.
+
+              The root filesystem will be checked first unless the -P option is specified (see below).  After that, filesystems will be checked in the order specified by the fs_passno (the sixth) field in the /etc/fstab file.  Filesystems with a fs_passno value of 0 are skipped and are not checked at all.  Filesystems with a fs_passno value of greater than zero will be checked in order, with filesystems with the lowest fs_passno number being checked first.  If there are multiple filesystems with the same pass number, fsck will attempt to check them in parallel, although it will avoid running multiple filesystem checks on the same physical disk.
+
+              fsck does not check stacked devices (RAIDs, dm-crypt, ...) in parallel with any other device.  See below for FSCK_FORCE_ALL_PARALLEL setting.  The /sys filesystem is used to detemine dependencies between devices.
+
+              Hence, a very common configuration in /etc/fstab files is to set the root filesystem to have a fs_passno value of 1 and to set all other filesystems to have a fs_passno value of 2.  This will allow fsck to automatically run filesystem checkers in parallel if it is advantageous to do so.  System administrators might choose not to use this configuration if they need to avoid multiple filesystem checks running in parallel for some reason --- for example, if the machine in question is short on memory so that excessive paging is a concern.
+
+              fsck normally does not check whether the device actually exists before calling a filesystem specific checker.  Therefore non-existing devices may cause the system to enter filesystem repair mode during boot if the filesystem specific checker returns a fatal error.  The /etc/fstab mount option nofail may be used to have fsck skip non-existing devices.  fsck also skips non-existing devices that have the special filesystem type auto
+
+       -C [  fd  ]
+              Display completion/progress bars for those filesystem checkers (currently only for ext2 and ext3) which support them.   Fsck will manage the filesystem checkers so that only one of them will display a progress bar at a time.  GUI front-ends may specify a file descriptor fd, in which case the progress bar information will be sent to that file descriptor.
+
+       -M     Do not check mounted filesystems and return an exit code of 0 for mounted filesystems.
+
+       -N     Don't execute, just show what would be done.
+
+       -P     When the -A flag is set, check the root filesystem in parallel with the other filesystems.  This is not the safest thing in the world to do, since if the root filesystem is in doubt things like the e2fsck(8) executable might be corrupted!  This option is mainly provided for those sysadmins who don't want to repartition the root filesystem to be small and compact (which is really the right solution).
+
+       -R     When checking all filesystems with the -A flag, skip the root filesystem.  (This is useful in case the root filesystem has already been mounted read-write.)
+
+       -T     Don't show the title on startup.
+
+       -V     Produce verbose output, including all filesystem-specific commands that are executed.
+
+       fs-specific-options
+              Options which are not understood by fsck are passed to the filesystem-specific checker.  These arguments must not take arguments, as there is no way for fsck to be able to properly guess which options take arguments and which don't.
+
+              Options and arguments which follow the -- are treated as filesystem-specific options to be passed to the filesystem-specific checker.
+
+              Please note that fsck is not designed to pass arbitrarily complicated options to filesystem-specific checkers.  If you're doing something complicated, please just execute the filesystem-specific checker directly.  If you pass fsck some horribly complicated options and arguments, and it doesn't do what you expect, don't bother reporting it as a bug.  You're almost certainly doing something that you shouldn't be doing with fsck.
+
+       Options to different filesystem-specific fsck's are not standardized.  If in doubt, please consult the man pages of the filesystem-specific checker.  Although not guaranteed, the following options are supported by most filesystem checkers:
+
+       -a     Automatically repair the filesystem without any questions (use this option with caution).  Note that e2fsck(8) supports -a for backward compatibility only.  This option is mapped to e2fsck's -p option which is safe to use, unlike the -a option that some filesystem checkers support.
+
+       -n     For some filesystem-specific checkers, the -n option will cause the fs-specific fsck to avoid attempting to repair any problems, but simply report such problems to stdout.  This is however not true for all filesystem-specific checkers.  In particular, fsck.reiserfs(8) will not report any corruption if given this option.  fsck.minix(8) does not support the -n option at all.
+
+       -r     Interactively repair the filesystem (ask for confirmations).  Note: It is generally a bad idea to use this option if multiple fsck's are being run in parallel.  Also note that this is e2fsck's default behavior; it supports this option for backward compatibility reasons only.
+
+       -y     For some filesystem-specific checkers, the -y option will cause the fs-specific fsck to always attempt to fix any detected filesystem corruption automatically.  Sometimes an expert may be able to do better driving the fsck manually.  Note that not all filesystem-specific checkers implement this option.  In particular fsck.minix(8) and fsck.cramfs(8) do not support the -y option as of this writing.
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       Theodore Ts'o (tytso@mit.edu)
+
+</code></pre>
+
+<h3 id="availability">availability</h3>
+<pre><code>       The fsck command is part of the util-linux package and is available from ftp://ftp.kernel.org/pub/linux/utils/util-linux/.
+
+</code></pre>
+
+<h3 id="files">files</h3>
+<pre><code>       /etc/fstab.
+
+</code></pre>
+
+<h3 id="environment-variables">environment variables</h3>
+<pre><code>       The fsck program's behavior is affected by the following environment variables:
+
+       FSCK_FORCE_ALL_PARALLEL
+              If this environment variable is set, fsck will attempt to check all of the specified filesystems in parallel, regardless of whether the filesystems appear to be on the same device.  (This is useful for RAID systems or high-end storage systems such as those sold by companies such as IBM or EMC.)  Note that the fs_passno value is still used.
+
+       FSCK_MAX_INST
+              This environment variable will limit the maximum number of filesystem checkers that can be running at one time.  This allows configurations which have a large number of disks to avoid fsck starting too many filesystem checkers at once, which might overload CPU and memory resources available on the system.  If this value is zero, then an unlimited number of processes can be spawned.  This is currently the default, but future versions of fsck may attempt to automatically determine how many filesystem checks can be run based on gathering accounting data from the operating system.
+
+       PATH   The PATH environment variable is used to find filesystem checkers.  A set of system directories are searched first: /sbin, /sbin/fs.d, /sbin/fs, /etc/fs, and /etc.  Then the set of directories found in the PATH environment are searched.
+
+       FSTAB_FILE
+              This environment variable allows the system administrator to override the standard location of the /etc/fstab file.  It is also useful for developers who are testing fsck.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       fstab(5), mkfs(8), fsck.ext2(8) or fsck.ext3(8) or e2fsck(8), cramfsck(8), fsck.minix(8), fsck.msdos(8), fsck.jfs(8), fsck.nfs(8), fsck.vfat(8), fsck.xfs(8), fsck.xiafs(8), reiserfsck(8).
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

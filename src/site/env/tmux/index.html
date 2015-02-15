@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/env/tmux/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>Tmux - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../shortcut/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../cmds/cmds_common/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#tmux">Tmux</a></li>
+        
+            <li><a href="#what-is-tmux">What is Tmux</a></li>
+        
+            <li><a href="#features">Features</a></li>
+        
+            <li><a href="#installing-tmux">Installing Tmux</a></li>
+        
+            <li><a href="#run-tmux">Run tmux</a></li>
+        
+            <li><a href="#splitting-tmux-vertically">Splitting tmux vertically</a></li>
+        
+            <li><a href="#splitting-tmux-horizontally">Splitting tmux horizontally</a></li>
+        
+            <li><a href="#moving-between-panes">Moving between panes</a></li>
+        
+            <li><a href="#resizing-panes">Resizing panes</a></li>
+        
+            <li><a href="#zoom-panes">Zoom panes</a></li>
+        
+            <li><a href="#make-a-pane-into-window">Make a pane into window</a></li>
+        
+            <li><a href="#closing-panes">Closing panes</a></li>
+        
+            <li><a href="#detach-and-re-attach-tmux">Detach and Re-attach Tmux</a></li>
+        
+            <li><a href="#create-more-window">Create more window</a></li>
+        
+            <li><a href="#rename-a-window-name">Rename a window name</a></li>
+        
+            <li><a href="#moving-between-window">Moving between Window</a></li>
+        
+            <li><a href="#closing-window">Closing Window</a></li>
+        
+            <li><a href="#configuring-tmux">Configuring Tmux</a></li>
+        
+            <li><a href="#change-the-prefix-key">Change the Prefix Key</a></li>
+        
+            <li><a href="#change-the-splitting-panes">Change the splitting panes</a></li>
+        
+            <li><a href="#change-the-status-bar-looks">Change the status bar looks</a></li>
+        
+            <li><a href="#change-the-numbering-system-of-panes-and-windows">Change the numbering system of panes and windows</a></li>
+        
+            <li><a href="#conclusion">Conclusion</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="tmux">Tmux</h1>
+<p>Modified from <a href="http://linoxide.com/how-tos/install-tmux-manage-multiple-linux-terminals/">tmux tutorial</a>  </p>
+<p>A Linux system administrator usually work from remote to manage his servers.
+While managing those servers, he may use SSH connection to the servers. Have
+you ever face the situation where you need more console at the same time? If
+you are remote via SSH to the machines, you can open more window to create
+more SSH connections. But it may not effective since you can’t see all the
+windows at the same time. And where the connections is lost, you will lose
+what you have done before. Now to solve the situation, there is an open-source
+application called <strong><a href="http://tmux.sourceforge.net/">tmux</a></strong>.</p>
+<h3 id="what-is-tmux">What is Tmux</h3>
+<p><strong>Tmux is a Terminal Multiplexer</strong>. It enables a number of terminals to be created, accessed and controlled from a single screen.</p>
+<h3 id="features">Features</h3>
+<p>Here’s a list of tmux features :</p>
+<blockquote>
+<p>Create a number of multiple virtual console (of course :) )<br />
+Split console in vertical or horizontal mode into panes<br />
+Resize the size of each panes<br />
+Attach, detach and re-attached window<br />
+Highly configurable with tmux.conf file<br />
+Client - server model<br />
+Zoomed panes<br />
+.... <a href="http://sourceforge.net/p/tmux/tmux-code/ci/master/tree/CHANGES">and more</a>  </p>
+</blockquote>
+<h3 id="installing-tmux">Installing Tmux</h3>
+<p>Method 1: Binary package</p>
+<p>On Debian / Ubuntu based</p>
+<blockquote>
+<p>$ sudo apt-get install tmux</p>
+</blockquote>
+<p>On RedHat / CentOS based</p>
+<blockquote>
+<p>$ yum install tmux</p>
+</blockquote>
+<p>Method 2 : Compiling the source</p>
+<p>If your Linux repositories does not provide the latest one, you can install
+the latest one manually. At this article is written, the latest version of
+tmux is 1.8. To get the latest one, you can download it from tmux website,
+compile it and install it. Here are the steps on Linux CentOS 6.4.</p>
+<p><strong>1. Download the source file and requirement package</strong></p>
+<blockquote>
+<p>$ wget http://downloads.sourceforge.net/tmux/tmux-1.8.tar.gz<br />
+$ wget
+https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz</p>
+</blockquote>
+<p><strong>2. Extract the files</strong></p>
+<blockquote>
+<p>tar zxvf tmux-18.tar.gz<br />
+tar zxfv libevent-2.0.21-stable.tar.gz</p>
+</blockquote>
+<p><strong>3. Install pre-requisites application</strong></p>
+<blockquote>
+<p>yum install gcc kernel-devel make ncurses-devel</p>
+</blockquote>
+<p>Those application is needed to compile the tmux source file.</p>
+<p><strong>4. Install libevent2 source</strong></p>
+<blockquote>
+<p>cd libevent-2.0.21-stable<br />
+ ./configure --prefix=/usr/local<br />
+ make &amp;&amp; make install  </p>
+</blockquote>
+<p><strong>5. Install tmux source</strong></p>
+<blockquote>
+<p>cd tmux-1.8<br />
+ LDFLAGS = “-L/usr/local/lib -Wl,-rpath=/usr/local/lib” ./configure --prefix=/usr/local<br />
+ make &amp;&amp; make install  </p>
+</blockquote>
+<p><strong>6. Add tmux into path environment</strong></p>
+<blockquote>
+<p>cd ~<br />
+export PATH=$PATH:/usr/local/bin</p>
+</blockquote>
+<h3 id="run-tmux">Run tmux</h3>
+<p>After the installation is finish, then type tmux on your console to run tmux.</p>
+<p>A new session is now started. At the bottom line, you will find a bar contains
+some information. Here’s how to read it :</p>
+<blockquote>
+<p>[0] 0:bash* : is the window number and the window name<br />
+   pungki@dev-machine : is the username and the hostname<br />
+   01:30 : tell us the current time<br />
+   12-Jan-14 : tell us the current date  </p>
+</blockquote>
+<h3 id="splitting-tmux-vertically">Splitting tmux vertically</h3>
+<p>To split tmux vertically, just press <strong>(Ctrl-b) + %</strong> . Then the screen will
+be separated vertically.</p>
+<h3 id="splitting-tmux-horizontally">Splitting tmux horizontally</h3>
+<p>To split tmux horizontally, press <strong>(Ctrl-b) + “</strong> . Then the screen will be
+separated horizontally.</p>
+<p>But of course we can mix them. Here’s another example.</p>
+<h3 id="moving-between-panes">Moving between panes</h3>
+<p>Of course you will need move between panes. Otherwise, there is no use to
+create panes. By default, Linux console does not support mouse. So we need to
+know how to move between panes manually. There are some ways move between
+panes. Here’s a list how to to that.</p>
+<blockquote>
+<p>Move Left : (Ctrl-b) + Left arrow OR (Ctrl-b) + {<br />
+   Move Right : (Ctrl-b) + Right arrow OR (Ctrl-b) + }<br />
+   Move Up : (Ctrl-b) + + Up arrow<br />
+   Move Down : (Ctrl-b) + Down arrow<br />
+   Move to the next pane : (Ctrl-b) + o<br />
+   Show number for each panes and press the number : (Ctrl-b) + b q + pane number. For example : (Ctrl-b) + b q + 1 will move you to pane number 1  </p>
+</blockquote>
+<h3 id="resizing-panes">Resizing panes</h3>
+<p>You may want to resize panes to fit your need. Here’s a list how to do that :</p>
+<blockquote>
+<p>(Ctrl-b) + : then type resize-pane -D (Resizes the current pane down)<br />
+   (Ctrl-b) + : then type resize-pane -U (Resizes the current pane upward)<br />
+   (Ctrl-b) + : then type resize-pane -L (Resizes the current pane left)<br />
+   (Ctrl-b) + : then type resize-pane -R (Resizes the current pane right)<br />
+   (Ctrl-b) + : then type resize-pane -D 5 (Resizes the current pane down by 5 cells)<br />
+   (Ctrl-b) + : then type resize-pane -U 5 (Resizes the current pane upward by 5 cells)<br />
+   (Ctrl-b) + : then type resize-pane -L 5 (Resizes the current pane left by 5 cells)<br />
+   (Ctrl-b) + : then type resize-pane -R 5 (Resizes the current pane right by 5 cells)<br />
+   (Ctrl-b) + : then type resize-pane -t 2 5 (Resizes the pane with the id of 2 down by 5 cells)<br />
+   (Ctrl-b) + : then type resize-pane -t -L 5 (Resizes the pane with the id of 2 left by 5 cells)  </p>
+</blockquote>
+<p><strong>Please note that you need to press the colon sign (:) after pressing Ctrl-b</strong></p>
+<p>From the screenshot above, we try to resize pane number 1. If the active pane
+is pane number 1 then we can press (Ctrl-b) + : resize pane -D 13 to make it
+down for 13 cells.</p>
+<h3 id="zoom-panes">Zoom panes</h3>
+<p>This feature is new at 1.8 version. You can now zoomed a pane without need to
+detach or break it into independent window. At the active pane, press
+<strong>(Ctrl-b) + z</strong> to zoom the pane. Pressing it again will bring the zoomed
+pane back.</p>
+<h3 id="make-a-pane-into-window">Make a pane into window</h3>
+<p>If you wish to exclude your pane into window, then you can do this by pressing
+<strong>(Ctrl-b) + :</strong> then type <strong>break pane</strong>. Then your pane will become an
+independent window. Next, you are recommended to give it a name in order to
+make it easy to remember.</p>
+<h3 id="closing-panes">Closing panes</h3>
+<p>To close a pane, simply type <strong>exit</strong> from the pane. Then it will close.</p>
+<blockquote>
+<p>$ exit</p>
+</blockquote>
+<h3 id="detach-and-re-attach-tmux">Detach and Re-attach Tmux</h3>
+<p>One of Tmux advantage is you can detach tmux without losing anything you
+are working on it. Then you can re-attach Tmux with the condition exactly
+before you detach it. This is very useful if you have to move between
+computers and don’t want to lose anything.</p>
+<p>To detach it, use keystroke <strong>(Ctrl-b) + d</strong></p>
+<p>While re-attach the same window can be executed by typing <strong>tmux attach</strong> on
+your console.</p>
+<blockquote>
+<p>$ tmux attach</p>
+</blockquote>
+<p>If you - let say - remote your Linux machine from Windows client using putty,
+you still can use tmux. Here’s a sample of Putty client run Tmux.</p>
+<p>Tmux is different with <a href="http://linoxide.com/tools/terminator-
+multiple-gnome-terminal-one-window/">Terminator</a>. Terminator is a local application which
+run on Linux terminal as a terminal multiplexerl. We can’t run Terminator on a
+remote machine because it’s a local application.</p>
+<h3 id="create-more-window">Create more window</h3>
+<p>We are sure that you won't mess your window with a lot of panes. 3 - 5 panes
+are may the maximum panes on a single window. More than 5 panes, can make you
+uncomfortable. To solve this situation, we can make more tmux window. To
+create new window, you can press <strong>(Ctrl-b) + c</strong> . Then you will see at the
+status bar, an info like this <strong>[0] 0:bash - 1:bash</strong>*</p>
+<h3 id="rename-a-window-name">Rename a window name</h3>
+<p>To rename a window name, press <strong>Ctrl-b + ,</strong> . (<em>press Ctrl-b and press comma
+sign</em>). Then provide the name and press Enter to confirm it.</p>
+<p>An asterisk sign <strong>(*)</strong> means the current window.</p>
+<h3 id="moving-between-window">Moving between Window</h3>
+<p>To move between window, we can use :</p>
+<blockquote>
+<p><strong>(Ctrl-b) + n</strong> : Move to next window<br />
+<strong>(Ctrl-b) + p</strong> : Move to previous window<br />
+<strong>(Ctrl-b) + w</strong> : Interactively choose the window (useful if you have more than 2 window)  </p>
+</blockquote>
+<p>Interactively choost the window  </p>
+<h3 id="closing-window">Closing Window</h3>
+<p>If you want to close a window, simply press <strong>(Ctrl-b) + &amp;</strong></p>
+<h3 id="configuring-tmux">Configuring Tmux</h3>
+<p>Tmux is highly configurable. You can edit <strong>tmux.conf</strong> file to do this. If you don’t have the file, you can create it. For system wide, you can put the tmux.conf in /etc folder. Or put it on ~/.tmux.conf for user spesific settings. Here some example of tmux.conf content. Here are some example of tmux.conf configuration content.</p>
+<h3 id="change-the-prefix-key">Change the Prefix Key</h3>
+<p>By default, tmux prefix is <strong>Ctrl-b</strong>. Every command in tmux, must begin with
+Ctrl-b keystroke. If you don’t like it, you can change it. Let say you want to
+change it into <strong>Ctrl-a</strong>. Just put this line into your tmux.conf :</p>
+<blockquote>
+<p>unbind C-b<br />
+set -g prefix C-a</p>
+</blockquote>
+<p>Save the file and re-run tmux.
+Please note, that in order to make
+tmux.conf changes works, you need to exit all tmux sessions before. If you
+detach a tmux session, and re-attach it, the changes will not work.</p>
+<h3 id="change-the-splitting-panes">Change the splitting panes</h3>
+<p>As mentioned above, tmux use <strong>% sign</strong> and <strong>“ sign</strong> to split panes. You may
+don’t like the combination. To change it, just put this line into tmux.conf</p>
+<blockquote>
+<p>unbind %<br />
+bind h split-window -v<br />
+unbind ‘ ” ’<br />
+bind v split-window -h  </p>
+</blockquote>
+<p>The above configuration will change :</p>
+<blockquote>
+<p>% sign into h letter for vertically split<br />
+   “ sign into v letter for horizontally split</p>
+</blockquote>
+<h3 id="change-the-status-bar-looks">Change the status bar looks</h3>
+<blockquote>
+<p>Status bar theme
+set -g status-bg black<br />
+set -g status-fg white  </p>
+<p>Highlight and Notify<br />
+set-window-option -g window-status-current-bg red<br />
+setw -g monitor-activity on<br />
+set -g visual-activity on  </p>
+</blockquote>
+<p>The above configuration will highlight the active window with red color.</p>
+<h3 id="change-the-numbering-system-of-panes-and-windows">Change the numbering system of panes and windows</h3>
+<p>By default, the numbering system of panes and windows are start from 0. If you
+want to start it from 1, you can put this line on your .tmux.conf file.</p>
+<blockquote>
+<p>start with window 1 (instead of 0)<br />
+set -g base-index 1</p>
+<p>start with pane 1<br />
+set -g pane-base-index 1</p>
+</blockquote>
+<p>There are still a lot of configuration that can be made for tmux. More
+parameters can be found inside <strong>tmux manual section Options</strong>.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Tmux may help you boost your productivity whenever you’re working on console
+based. As usual, you can always type <strong>man tmux</strong> on your console to explore
+more detail. If you want tmux manual in PDF form, you may <a href="http://cheasy.de/tmux.pdf">visit this
+link</a>.</p>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

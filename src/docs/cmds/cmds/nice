@@ -1,0 +1,2 @@
+# Runs the 'gcc' command at a lower priority
+nice -n 15 make gcc -o test test.c

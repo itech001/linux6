@@ -1,0 +1,9 @@
+# Creates the 'bar' directory, as well as 'foo' and 'baz' if they don't already exist
+mkdir -p '~/foo/baz/bar'
+
+# create a directory in the current directory called penguin
+mkdir penguin
+rsync -a ./from ./to --include \*/ --exclude \*
+
+# your_comment_here
+Copy directory structure without files

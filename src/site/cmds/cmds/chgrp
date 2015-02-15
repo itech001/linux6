@@ -1,0 +1,2 @@
+# Make a README belong to the group 'staff'
+chgrp README staff

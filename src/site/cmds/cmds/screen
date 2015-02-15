@@ -1,0 +1,17 @@
+# Detach from screen
+<ctrl>+<a>, <ctrl>+<d>
+
+# Connect to named screen (creates session if it doesn't exist)
+screen -R SomeScreen
+
+# Reconnect to existing screen session
+screen -r SomeScreen
+
+# list all screen sessions for current user
+screen -ls
+
+# list all screen sessions on current host
+ls -laR /var/run/screen/
+
+# Start a new screen session
+screen

@@ -1,0 +1,71 @@
+# Create a tar archive
+tar -cf archive.tar file1 file2 ... fileN
+
+# Create a tar gzipp'd archive
+tar -zcf archive.tar.gz file1 file2 ... fileN
+
+# Create multi-part tar archives from a directory
+tar cf - /path/to/directory|split -b<max_size_of_part>M - archive.tar
+
+# Extract all files from a tar archive
+tar -xf archive.tar
+
+# Extract all files from a tar gzipped archive
+tar -zxf archive.tar.gz
+
+# Extract one file from a tar archive
+tar -xf archive.tar the_one_file
+
+# Lists all files in a tar archive
+tar -tf archive.tar
+# Create a tar file:
+tar cf archive.tar file1 [...]
+
+# Create a compressed tar file:
+tar cjf archive.tar.bz2 file1 [...]
+
+# Create a older compressed tar file:
+tar czf archive.tar.gz file [...]
+
+# Extract a .tar, .tar.gz, .tgz, .tar.bz, or .tbz2 file:
+tar xf archive.tbz2
+
+# list the files inside the archive:
+tar tf archive.tar
+
+# Unzip to target directory
+tar -xvf file.zip -C target_directory_path
+
+# extract a tarball
+bro -xjf package.tar.bz2
+
+# package up a folder and ignore a subfolder:
+tar --exclude="project/.git" -czvf ~/Downloads/project.tgz project/
+
+# exclude a file/directory from your tar archive
+tar cvf archive.tar --exclude=.svn *
+
+# unpacking stuff with tar is obnoxious
+# heres a useful shell script for unpacking with tar
+# throw it in your .bashrc as a function or whatever.
+if [ -f "$1" ] ; then
+	case "$1" in
+		*.tar.bz2)   tar xvjf "$1"    ;;
+		*.tar.gz)    tar xvzf "$1"    ;;
+		*.tar)       tar xvf "$1"     ;;
+		*.tbz2)      tar xvjf "$1"    ;;
+		*.tgz)       tar xvzf "$1"    ;;
+		*.tar.xz)    tar xJf "$1"     ;;
+		*) echo "don't know how to extract "$1"..." ;;
+	esac
+else
+	echo ""$1" is not a valid file!"
+fi
+
+# copy directory
+tar -c source_dir | tar -xC destination_dir
+
+# unpacking stuff with tar is obnoxious
+# check out unp (unpack (almost) everything)
+brew install unp
+apt-get install unp

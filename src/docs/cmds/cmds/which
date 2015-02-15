@@ -1,0 +1,5 @@
+# locates executable
+which bro
+
+# Shows all install locations of an executable (in this case ruby)
+which -a ruby

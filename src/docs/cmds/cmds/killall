@@ -1,0 +1,5 @@
+# No, really.. kill the process
+killall -KILL java
+
+# Kills (stops) all running 'java' processes. It only kills processes you have permission to kill.
+killall java

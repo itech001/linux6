@@ -1,0 +1,15 @@
+#the echo command outputs the result of what it receive as input
+echo "hello bro!"
+
+#this output can be a command be the result of a command, for example 'pwd' to output the Present Working Directory
+echo $(pwd) > /path/to/the/present/working/directory 
+
+#it can also have colors!! using the -e option and colors codes
+echo -e "\e[0;32mHello This Text is Green!![0mBut This Text Isn't"
+
+# Execute command at give time
+echo "ls -l" | at midnight
+
+# print the shell environment variable 'home' to standard output
+echo $HOME
+

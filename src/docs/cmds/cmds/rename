@@ -1,0 +1,5 @@
+# strip extension from all files matching *.bak
+rename -x *.bak
+
+# strip the .bak extension from all files (by regex)
+rename 's/\.bak\z//' *

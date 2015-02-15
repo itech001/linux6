@@ -1,0 +1,29 @@
+# Sort a file alphabetically:
+sort filename
+
+# Sort your command history alphabetically, skipping the command number:
+history | sort -k 2
+# Lines look like this:
+#     23 anothercommand
+#     22 somecommand
+#     24 stillanothercommand
+
+# Sort files by number of matches in grep results:
+grep -c searchterm * | sort -t: -n -k 2
+
+# Lines look like this:
+#     filename:2
+#     anotherfile:3
+# Sort files by human readable size in a directory:
+du -h --max-depth=1 | sort -h
+
+# Lines look like this:
+#     4.0K    ./SomeDirectory
+#     12K     ./AnotherDirectory
+#     2.4M    ./SomeFile
+#     1.5G    ./LargeFile
+# Sort the contents of all .csv files in a directory
+sort /path/to/directory/*.csv
+
+# Sort in parallel, specifying the number of concurrent operations.
+sort --parallel=<num_ops>

@@ -1,0 +1,5 @@
+# display all files and folders in a 'tree' layout
+tree ~
+
+# Display only the directories in tree format 
+tree -d

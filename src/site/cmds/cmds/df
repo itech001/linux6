@@ -1,0 +1,5 @@
+# Display free and used disk space in human readable format
+df -h
+
+# display used disk space for each mount point with sizes nicely formatted
+df -alh

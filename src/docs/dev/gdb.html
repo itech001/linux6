@@ -1,0 +1,270 @@
+<body data-feedly-mini="yes" youdao="bind">
+
+<h1>How to Debug Using GDB</h1>
+
+We are going to be using two programs to illustrate how GDB can be used to debug code.
+
+<h2>Debugging a program with a logical error</h2>
+
+The first sample program has some logical errors.  The program is supposed to output the summation of (X^0)/0! + (X^1)/1! + (X^2)/2! + (X^3)/3! + (X^4)/4! + ... + (X^n)/n!, given x and n as inputs.  However the program outputs a value of infinity, regardless of the inputs.  We will take you step by step through the debugging process and trace the errors:
+<ol>
+
+    <li>Download the sample program <a href="broken.cpp">broken.cpp</a></li>
+
+    <li>Compile the program and execute the program.</li>
+    <pre>% g++ -g broken.cpp -o broken
+    % ./broken
+    </pre>
+    Whatever the input, the output will be inf.  The -g option is important because it enables meaningful GDB
+    debugging.  
+
+    <li>Start the debugger</li>
+    <pre>% gdb broken
+    </pre>
+
+    This only starts the debugger; it does not start running the program in the debugger.
+
+    <li>Look at the source code and set a breakpoint at line 43</li>
+
+    <pre>(gdb) b 43
+    </pre>
+
+    which is
+
+    <pre>double seriesValue = ComputeSeriesValue(x, n);
+    </pre>
+
+    <li>Now, we start to run the program in the debugger.</li>
+
+    <pre>(gdb) run
+    </pre>
+
+    Note: If you need to supply the command-line arguments for the execution of the program, simply include them after the run command, just as normally done on the command line.
+
+    <li>The program starts running and asks us for the input.</li>
+
+    Let's enter the values as x=2 and n=3.  The expected output value is 5. The following is a snapshot of the program running in the debugger:
+
+    <pre>This program is used to compute the value of the following series : 
+    (x^0)/0! + (x^1)/1! + (x^2)/2! + (x^3)/3! + (x^4)/4! + ........ + (x^n)/n! 
+    Please enter the value of x : 2
+
+    Please enter an integer value for n : 3
+
+
+    Breakpoint 1, main () at broken.cpp:43
+    43  double seriesValue = ComputeSeriesValue(x, n);
+    </pre>
+
+    Note that the program execution stopped at our first (and only) breakpoint.
+
+    <li>Step into the <tt>ComputeSeriesValue()</tt> function</li>
+
+    To step into a function call, we use the following command:
+
+    <pre>(gdb) step
+    ComputeSeriesValue (x=2, n=3) at broken.cpp:17
+    17  double seriesValue=0.0;
+    </pre>
+
+    At this point, the program control is at the first statement of the function <tt>ComputeSeriesValue (x=2, n=3)</tt>
+
+    <li>Next let's step through the program until we get into <tt>ComputeFactorial</tt>.
+
+    <pre>(gdb) next
+    18  double xpow=1;
+    (gdb) n
+    20  for (int k = 0; k &lt;= n; k++) {
+    (gdb) 
+    21    seriesValue += xpow / ComputeFactorial(k) ;
+    (gdb) s
+    ComputeFactorial (number=0) at broken.cpp:7
+    7  int fact=0;
+    </pre>
+
+    Here we use the <tt>next</tt> command, which is similar to
+    <tt>step</tt> except it will step over (instead of into) functions.
+    The distinction doesn't matter here since there are no functions.  You
+    may use the shortest, unambigious spelling of a GDB command to save
+    some typing.  Here we use <tt>n</tt> and <tt>s</tt> instead of
+    <tt>next</tt> and <tt>step</tt>, respectively.  If the command is simply a repeat of the
+    previous command, you can just hit return, which will execute the last
+    command.  Finally, we step (with
+    <tt>s</tt>) into <tt>ComputeFactorial()</tt>.  (If we'd used
+    <tt>next</tt>, it would have stepped over <tt>ComputeFactorial</tt>.)
+
+    </li><li>Where are we?</li>
+
+    If you want to know where you are in the program's execution (and how,
+    to some extent, you got there), you can view the contents of the stack
+    using the <tt>backtrace</tt> command as follows:
+
+    <pre>(gdb) bt
+    #0  ComputeFactorial (number=0) at broken.cpp:7
+    #1  0x08048907 in ComputeSeriesValue (x=3, n=2) at broken.cpp:21
+    #2  0x08048a31 in main () at broken.cpp:43
+    </pre>
+
+    <li>Watching changes
+
+    We can step through the program and examine the values using the
+    <tt>print</tt> command.
+
+    <pre>(gdb) n
+    9  for (int j = 0; j &lt;= number; j++) {
+    (gdb) n
+    10    fact = fact * j;
+    (gdb) n
+    9  for (int j = 0; j &lt;= number; j++) {
+    (gdb) print fact
+    $2 = 0
+    (gdb) n
+    13  return fact;
+    (gdb) quit
+    </pre>
+
+    The <tt>print</tt> command (abbreviated <tt>p</tt>) reveals that the
+    value of <tt>fact</tt> never changes.  Note that the function is returning a value of 0 for the
+    function call <tt>ComputeFactorial(number=0)</tt>.   This is an ERROR!<p>
+
+    By taking a closer look at the values printed above, we realize that we are computing <tt>fact=fact * j</tt>
+    where <tt>fact</tt> has been initialized to 0; <tt>fact</tt> should have
+    been initialized to 1.  We quit GDB with the <tt>quit</tt> command.
+    Next we need to change the following line:
+
+    </p><pre>int fact = 1;
+    </pre>
+
+    Recompile the code and run it, you will get the expected output.
+
+    <h2><span style="font-size:20.0pt;mso-bidi-font-size:18.0pt">Debugging a program
+            that produces a core dump<o:p>
+            </o:p>
+    </span></h2>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">This
+    program causes a core dump due to a segmentation fault. We will try to trace the
+    reason for this core dump.</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Download
+    the program, from <a href="testit.c">here.</a></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>1.<span style="mso-spacerun: yes">&nbsp; </span>Compile the program using
+    the following command.</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+    </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">g++
+        testit.c �g �o testit<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>2.<span style="mso-spacerun: yes">&nbsp; </span>Run it normally, you
+    should get the following result:</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><i><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;
+        </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Segmentation
+            fault (core dumped)</span></i><span style="font-size:10.0pt;mso-bidi-font-size:
+        12.0pt;font-family:&quot;Arial Unicode MS&quot;"><o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:-.25in;mso-list:l5 level1 lfo1;tab-stops:list .5in">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>The core dump generates a file called <i>core</i>which can be used for
+    debugging. Since, this program is really short, we will not need to set any
+    breakpoints. Use the following command to start running the debugger to debug
+    the <i>core</i> file produced by <i>testit.</i></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    text-indent:.5in"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">gdb
+        testit core<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    text-indent:.5in">The output of the above command should look like this:</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">bash$
+        gdb testit core<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">GNU
+        gdb 19991004<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Copyright
+        1998 Free Software ���.�<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Core
+        was generated by `testit'.<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Program
+        terminated with signal 11, Segmentation fault.<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Reading
+        symbols from /usr/lib/libstdc++-libc6.1-1.so.2...done.<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Reading
+        symbols from /lib/libm.so.6...done.<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Reading
+        symbols from /lib/libc.so.6...done.<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Reading
+        symbols from /lib/ld-linux.so.2...done.<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">#0<span style="mso-spacerun: yes">&nbsp;
+        </span>0x804851a in main () at testit.c:10<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:.5in;line-height:10.0pt;mso-line-height-rule:exactly"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">10<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span><span style="mso-spacerun:
+            yes">&nbsp;&nbsp;&nbsp;</span>temp[3]='F';</span><span style="font-size:10.0pt;mso-bidi-font-size:
+        12.0pt"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span><o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:-.25in;mso-list:l5 level1 lfo1;tab-stops:list .5in">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>As we can see from the output above, the core dump was produced</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.25in"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>as a result of execution of the statement on line 10: <i>temp[3]
+        =�F�;</i></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    text-indent:.25in"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>Take
+    a closer look at the declaration of temp on line 5 :</p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+    </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><span style="font-size:10.0pt;
+        mso-bidi-font-size:12.0pt;font-family:&quot;Arial Unicode MS&quot;">Line 5<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>char *temp = "Paras";<o:p>
+        </o:p>
+    </span></p>
+    <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+    margin-left:.5in;text-indent:6.0pt">We find that<span style="mso-spacerun:
+        yes">&nbsp; </span><i>temp</i><span style="mso-spacerun: yes">&nbsp; </span>is a
+    char* which has been assigned a <i>string literal</i>, and so we cannot modify
+    the contents of the literal as on line 10. This is what is causing a core dump</p>
+    
+    
+    
+    
+    <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></li></ol><div id="feedly-mini" title="feedly Mini tookit"></div><div id="__dic_menulayer__" style="z-index: 99999998; padding: 0px; position: absolute; overflow: hidden; white-space: nowrap; display: none; left: 1204px; top: 2513px; width: 82px;"><a id="m_dic" href="javascript:void(0)" title="Search dictionary or translate with this selected words (Google Translate)" style="display: none;"><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/dic.png" border="0"></a><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/blank.png" id="m_dic2_b" style="width: 2px; display: none;"><a id="m_dic2" href="javascript:void(0)" title="Open input box to search dictionary (Google Translate)" style="display: none;"><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/dic2.png" border="0"></a><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/blank.png" id="m_search_b" style="width: 2px;"><a id="m_search" href="javascript:void(0)" title="You can easily web search."><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/search.png" border="0"></a><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/blank.png" id="m_search2_b" style="width: 2px; display: none;"><a id="m_search2" href="javascript:void(0)" title="Show input box to search web." style="display: none;"><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/search2.png" border="0"></a><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/blank.png" id="m_url_b" style="width: 2px; display: none;"><a id="m_url" href="javascript:void(0)" style="display: none;"><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/internet.png" border="0"></a><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/blank.png" id="m_conf_b" style="width: 2px; display: none;"><a id="m_conf" href="javascript:void(0)" title="Options" style="display: none;"><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/configure.png" border="0"></a><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/blank.png" id="m_close_b" style="width: 2px; display: none;"><a id="m_close" href="javascript:void(0)" title="Disable toolmenu on this page." style="display: none;"><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/close.png" border="0"></a><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/blank.png" id="m_expand_b" style="width: 2px;"><a id="m_expand" href="javascript:void(0)" title="Expand menu"><img src="chrome-extension://oiplkfaidhjklglajdpfehoagkmlcakh/images/forward.png" border="0"></a></div><div id="__dic_layer__" style="z-index: 99999997; padding: 0px; position: absolute; overflow: hidden; border: 1px solid rgb(255, 255, 255); -webkit-box-shadow: rgb(153, 153, 153) 0px 0px 10px; display: none; width: 390px; height: 380px; background-color: rgb(255, 255, 255);"></div></body>`
+    }
+    }
+    }

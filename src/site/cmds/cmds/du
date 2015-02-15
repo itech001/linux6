@@ -1,0 +1,23 @@
+# File size in human-readable format(-h) of everything in that folder
+du -sh *
+
+# List human readable size of all sub folders from current location 
+du -h --max-depth=1
+
+# Sorted filesystem usage
+du -s * | sort -nr
+
+# List human readable size of all sub folders from current location 
+du -h --max-depth=1
+
+# Sorted filesystem usage
+du -s * | sort -nr
+
+# sorted by size (mac)
+du -hs * | sort
+
+# list subfolders with size (mac)
+du -h -d 1
+
+# List the largest directories in reversed order (useful alias)
+du -kx | egrep -v "\./.+/" | sort -n

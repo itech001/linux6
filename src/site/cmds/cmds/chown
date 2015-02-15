@@ -1,0 +1,2 @@
+# change owner of entire directory recursively
+chown -R brouser:brogroup path/to/directory/

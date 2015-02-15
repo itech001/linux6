@@ -1,0 +1,55 @@
+# Lists all of the files in my current directory in ascending order based on last modification time.  
+# -l flag displays info like mode, owner, group, etc.
+# -t flag sorts by time of last modification
+# -r reverses the order of the sort, so that the most recent entry is on bottom rather than top
+ls -ltr
+
+# Displays your current directory how it ought to be shown:
+# -A : print all files except ./ and ../
+# -l : show detailed file information
+# -t : sort by time-last-modified
+# -r : reverse the sort, to show most recent on bottom
+# -h : show file sizes in humna-readable format
+# -G : colorize the output
+ls -AltrhG
+
+# Prints all files, including "hidden" files/directories (ones starting with '.')
+ls -a
+
+# Show result in one colomn
+ls -1
+
+# List only directories.
+ls -d */
+
+# -F append indicator (one of */=>@|) to entries
+# -h Human readable file sizes
+# -l long list format 
+# -A "almost" all - excludes . and ..
+ls -FhlA
+
+# find the file you just downloaded
+pushd ~/Downloads; ls -toh | head; popd
+
+# your_comment_here
+#list the contents of a directory
+ls .
+
+#list the contents of a directory with attributes
+ls -l .
+
+#list the all contents of a directory including hidden files/direcotories
+ls -a .
+
+#recursively list the files and directories
+ls -R .
+
+# Prints the number of files in the directory (including other directories)
+ls -1 | wc -l
+
+# Show the inodes
+ls -i
+
+# List directories and their files
+ls *
+

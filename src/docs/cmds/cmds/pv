@@ -1,0 +1,2 @@
+# View progress of the dd command
+dd if=/dev/urandom | pv | dd of=/dev/null

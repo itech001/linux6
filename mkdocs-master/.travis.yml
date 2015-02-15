@@ -1,0 +1,17 @@
+language: python
+python: "2.7"
+env:
+- TOX_ENV=py26
+- TOX_ENV=py27
+- TOX_ENV=py33
+- TOX_ENV=py34
+- TOX_ENV=flake8
+- TOX_ENV=docs
+- TOX_ENV=json
+- TOX_ENV=coverage
+install:
+- pip install tox
+script: "./.travis.sh"
+matrix:
+  allow_failures:
+    - env: TOXENV=coverage

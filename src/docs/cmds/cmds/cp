@@ -1,0 +1,15 @@
+# Copy directories recursive using the option -r.
+cp -r ~/videos/anime/ /media/backup/
+
+# Copy /home/el/file1.txt to /home/el/file1copy.txt
+cp /home/el/file1.txt /home/el/file1copy.txt
+
+# copy all file but skip existing files (do not overwrite)
+cp -vrn ../source/* ./dest/
+
+# Copy many files to a single target location
+cp file_1 file_2 ... file_n target_directory
+
+# Do hardlinks instead of copying files
+cp -al source/ target/
+

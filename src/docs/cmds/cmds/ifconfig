@@ -1,0 +1,19 @@
+# Show all network interfaces:
+ifconfig -a
+
+# Show a network interface:
+ifconfig eth0
+ifconfig wlan0
+
+# Assign an address to an interface (may need root or sudo privileges):
+ifconfig eth0 192.168.108.24
+
+# Create a virtual interface linked to a real one and assign an address:
+ifconfig eth0:1 10.0.0.53
+
+# Enable or disable an interface:
+ifconfig eth0 down
+ifconfig wlan1 up
+
+# Find your local IP address
+ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'

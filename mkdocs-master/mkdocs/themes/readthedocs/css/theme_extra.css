@@ -1,0 +1,137 @@
+/*
+ * Sphinx doesn't have support for section dividers like we do in
+ * MkDocs, this styles the section titles in the nav
+ *
+ * https://github.com/tomchristie/mkdocs/issues/175
+ */
+.wy-menu-vertical span {
+    line-height: 18px;
+    padding: 0.4045em 1.618em;
+    display: block;
+    position: relative;
+    font-size: 90%;
+    color: #838383;
+}
+
+.wy-menu-vertical .toctree-l2 a {
+    padding: 0.4045em 2.427em;
+}
+
+/*
+ * Long navigations run off the bottom of the screen as the nav
+ * area doesn't scroll.
+ *
+ * https://github.com/tomchristie/mkdocs/pull/202
+ */
+.wy-nav-side {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/*
+ * Fix wrapping in the code highlighting
+ *
+ * https://github.com/tomchristie/mkdocs/issues/233
+ */
+code {
+    white-space: pre;
+}
+
+/*
+ * Additions specific to the HTML Tipue generates. These mostly
+ * copy the styles from the upstream theme and apply them to
+ * Tipue ID's and classes.
+ */
+
+#tipue_search_content
+{
+    padding-top: 15px;
+}
+
+#tipue_search_results_count
+{
+    line-height: 24px;
+    margin: 0px 0px 24px;
+    font-size: 16px;
+}
+
+.tipue_search_content_title
+{
+    margin-top: 23px;
+    border-top: 1px solid #E1E4E5;
+    padding-top: 24px;
+}
+
+.tipue_search_content_title a {
+    font-size: 20px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.tipue_search_content_url
+{
+     display: none;
+}
+
+.tipue_search_content_text
+{
+    color: #808080;
+}
+
+.tipue_search_content_text .h01
+{
+    background: none repeat scroll 0% 0% #F1C40F;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0px 6px;
+}
+
+#tipue_search_foot
+{
+     margin: 51px 0 21px 0;
+}
+#tipue_search_foot_boxes
+{
+    padding: 0;
+    margin: 0;
+}
+#tipue_search_foot_boxes li
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+#tipue_search_foot_boxes li a
+{
+    padding: 9px 15px 10px 15px;
+     background-color: #f1f1f1;
+     border: 1px solid #dcdcdc;
+     border-radius: 1px;
+    color: #333;
+    margin-right: 7px;
+    text-decoration: none;
+    text-align: center;
+}
+#tipue_search_foot_boxes li.current
+{
+    padding: 9px 15px 10px 15px;
+     background: #fff;
+     border: 1px solid #dcdcdc;
+     border-radius: 1px;
+    color: #333;
+    margin-right: 7px;
+    text-align: center;
+}
+#tipue_search_foot_boxes li a:hover
+{
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+#tipue_search_input{
+    width: 100%;
+    border-radius: 50px;
+    padding: 6px 12px;
+    border-color: #D1D4D5;
+}

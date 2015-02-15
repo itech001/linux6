@@ -1,0 +1,8 @@
+# Displays the IP information for the given interface
+ip addr show eth0
+
+# inspect routing table
+ip route
+
+# set default route (for example when connected to both wifi and lan)
+sudo ip route change default via 192.168.1.1

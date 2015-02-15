@@ -1,0 +1,185 @@
+<div class="content clear-block">
+        <h1>An Introduction to Vim.</h1>
+        <p>I've started using vim again.  I thought I would post some of my vim notes.</p>
+        <p>I generally use <a href="http://www.vim.org/">vim</a> 50% in the terminal, and now 50% as <a href="http://cream.sourceforge.net/">Cream</a> (<strong>UPDATE:</strong> After learning more Vim commands I switched from Cream to regular Gvim).</p>
+        <p>Cream is a version of gvim that makes using vim really easy.  If you want an easy introduction to vim, try Cream first.</p>
+        <p>Vim has a reputation as being difficult to use.  That is because when you first start it up you are presented with nothing but the following screen.  It won't let you type any text, and depending on what keys you push, the editor may perform strange behavior.</p>
+        <p><img src="http://tips.webdesign10.com/files/vim.png" alt="vim"></p>
+        <p>Basically there are two modes in Vim: <em>Normal mode</em> and <em>Insert mode</em>.  It starts up in normal mode which means that you cannot type text into your text file until you enter insert mode.</p>
+        <p>Because just about every Unix-based system (including Linux and Mac OSX) has vim by default, knowing the basics of vim can be good for emergencies.  On some Linux distros there is no emacs but there is vim. If your computer becomes unbootable but you can still boot into a terminal, just knowing the basics of Vim might be able to help you edit the required files to fix your system.</p>
+        <p>Also, despite their somewhat cryptic operation, editors like Vim and emacs are very powerful and very fast to use once you learn them.  There are entire books written about Vim, and the links at the bottom of this page can give you an idea about how complex and powerful Vim is.</p>
+        <h2>How to use Vim</h2>
+        <p>To start Vim in Linux, just type <tt>vim</tt> in the terminal.  You can optionally specify a file to open or create — if the file exists it will open the file, and if the file does not exist, it will be created.  For example:</p>
+        <p>$ <tt>vim file.txt</tt></p>
+        <p>Pressing either the letter <em>i</em> key or the <em>INS</em> key will put you into Insert mode where you can enter text.  Push the <em>ESC</em> key to switch to <em>Normal</em> mode where you can enter Vim commands.</p>
+        <p>The following commands will be enough to start.  There is also a tutorial built into vim that you can study to learn more.  To start the Vim tutor, just type <tt>vimtutor</tt> in a terminal.  The following summarizes most of what the vimtutor teaches as well as additional commands found in the user manual. After you go through the vimtutor, the following makes a good review that you can bookmark in case your memory of vim gets a little rusty down the road. The vimtutor also gives instructions on how to set up a configuration file that will automatically provide syntax highlighting when you start vim.</p>
+        <h3>Getting help</h3>
+        <p><em>F1</em> — this key will get you into the help pages of Vim from within the program, although if you are running vim inside a something like GNOME terminal, you might get the help pages for GNOME terminal when you use F1.  The following help commands will always be available:</p>
+        <ul>
+            <li><tt>:help</tt> — open the help pages</li>
+            <li><tt>:q</tt> — this will close the help screen.  If the help screen is not open, it will exit Vim.</li>
+            <li><tt>:help user-manual</tt> — this will open the full user manual</li>
+        </ul>
+        <h3>Closing Vim</h3>
+        <ul>
+            <li><tt>:q</tt> — quit Vim</li>
+            <li><tt>:wq</tt> — save file and quit Vim</li>
+            <li><tt>:q!</tt> — quit without saving</li>
+        </ul>
+        <h3>Saving a file in Vim</h3>
+        <ul>
+            <li><tt>:w</tt> — saves the current file.</li>
+            <li><tt>:w FILENAME</tt> — save the file with the filename that you provide.  If you specify a different name than the filename that you originally opened, Vim will go back to the original file name if you save it another time in the same session without specifying the new file name.</li>
+            <li><tt>:saveas FILENAME</tt> — this will save the file with your new name and continue editing it under the new filename.</li>
+            <li><tt>:#,# w FILENAME</tt> — saves just text between line numbers that you specify.</li>
+        </ul>
+        <h3>Moving around the document</h3>
+        <ul>
+            <li><tt>h</tt> — moves cursor left</li>
+            <li><tt>l</tt> — moves cursor right</li>
+            <li><tt>j</tt> — moves cursor down</li>
+            <li><tt>k</tt> — moves cursor up</li>
+        </ul>
+        <p><span class="highlight">USEFUL TIP:</span>  If you want to get used to navigating through a document in vim, start playing a free game called <a href="http://www.nethack.org/">Nethack</a>.  If you are using Ubuntu or another Debian-based version of GNU/Linux, you can install Nethack in the terminal by typing: <tt>sudo apt-get install nethack-console</tt>.  Once Nethack is installed, start it by typing <tt>nethack</tt> in a terminal.</p>
+        <ul>
+            <li><tt>w</tt> — moves cursor to beginning of next word</li>
+            <li><tt>b</tt> — moves to the beginning of previous word</li>
+            <li><tt>e</tt> — moves cursor to end of the next word</li>
+            <li><tt>ge</tt> — moves to the end of the previous word</li>
+            <li><tt>$</tt> — moves cursor to the end of line</li>
+            <li><tt>^</tt> — moves cursor to the first non-space character of line</li>
+            <li><tt></tt> — pressing the number zero moves to the absolute beginning of the line</li>
+            <li><tt>[number] Shift-g</tt> — moves you to the specified line number</li>
+            <li><tt>Ctrl-g</tt> — tells you what line you are on</li>
+            <li><tt>gg</tt> — go to the first line of the file</li>
+            <li><tt>[number]%</tt> — moves to to a certain percentage of the file, e.g., typing <tt>30%</tt> moves you to 30% from the top of the file.</li>
+        </ul>
+        <p>Like most Vim commands, prefix the command with a number to repeat it.  So typing <tt>3w</tt> will move the cursor forward by 3 words.</p>
+        <h3>Adding text</h3>
+        <p>Vim generally starts in <em>Normal mode</em>.  To insert text into your file, press the letter <em>i</em>.  To return to Normal mode, press the <tt>ESC</tt> key, or more conveniently <tt>Ctrl-c</tt> or <tt>Ctrl-[</tt>.</p>
+        <ul>
+            <li><tt>i</tt> — enters insert mode, inserting new text <em>before</em> the point of the cursor</li>
+            <li><tt>Shift-I</tt> — moves the cursor to the beginning of the line and enters insert mode.</li>
+            <li><tt>a</tt> — enters insert mode, inserting (appending) new text <em>after</em> the current point of the cursor</li>
+            <li><tt>Shift-A</tt> — enters insert mode, appending text to the end of the current line</li>
+            <li><tt>o</tt> — opens a line below the cursor and enters <em>insert mode</em>.</li>
+            <li><tt>Shift-O</tt> — opens a line above the cursor and enters <em>insert mode</em></li>
+        </ul>
+        <h3>Deleting text</h3>
+        <ul>
+            <li><tt>dd</tt> — deletes the current line</li>
+            <li><tt>x</tt> — deletes one letter under the cursor
+            </li><li>
+            </li><li><tt>dw</tt> — deletes from the cursor to the end of the word including the space</li>
+            <li><tt>de</tt> — deletes from the cursor to the end of the word not including the space</li>
+            <li><tt>d$</tt> — deletes from cursor to the end of the current line</li>
+        </ul>
+        <p>You can tell Vim to repeat commands by giving it a number.  For example, typing <tt>4dw</tt> will delete from the cursor to the end of the current word, plus 3 more words including the space after the word.  It can also be typed with the number in the middle like this <tt>d4w</tt> and it will do the exact same thing as the previous example.</p>
+        <h3>How to undo commands in Vim</h3>
+        <p>This is one of the most important things to know:</p>
+        <ul>
+            <li><tt>u</tt> — undo command</li>
+            <li><tt>U</tt> — undo everything on the line</li>
+            <li><tt>CTRL-r</tt> — redo command (after undoing it)</li>
+        </ul>
+        <h3>"Copy / paste" in Vim, or "putting" text</h3>
+        <p>When you delete text it is stored by Vim and you replace it by <em>putting</em> it back with the <em>p</em> key.</p>
+        <ul>
+            <li><tt>p</tt> — paste the last deleted text on the line below the cursor.</li>
+        </ul>
+        <h3>Retreiving and inserting a file into another file</h3>
+        <p>You can insert another text file into the current text file.</p>
+        <ul>
+            <li><tt>:r FILENAME</tt> — inserts FILENAME into the current file.</li>
+        </ul>
+        <h3>Replacing text</h3>
+        <ul>
+            <li><tt>r</tt> — press the letter <em>r</em> and then the letter that you want to replace the letter under the cursor with.</li>
+            <li><tt>Shift-R</tt> — this works like the <em>Insert</em> key.  It allows you to type on top of the text, replacing it.  When done, press <em>ESC</em> to exit.</li>
+        </ul>
+        <h3>Changing text</h3>
+        <ul>
+            <li><tt>cw</tt> — change the text from the cursor to the end of the word (deletes and goes into <em>insert mode</em></li>
+            <li><tt>c$</tt> — change the text from the cursor to the end of the line</li>
+        </ul>
+        <h3>Searching for text</h3>
+        <ul>
+            <li><tt>/</tt> — search for text in a forward direction</li>
+            <li><tt>?</tt> — search for text in a backwards direction</li>
+            <li><tt>n</tt> — search again in the same direction</li>
+            <li><tt>Shift-N</tt> — search again in the opposite direction</li>
+            <li><tt>f</tt> — press <em>f</em> and then another character and the cursor will move to that character on the current line.</li>
+            <li><tt>Shift-F</tt> — like <em>f</em> but searches backwards</li>
+            <li><tt>t</tt> — like <em>f</em> except that it moves the cursor one character before the specified character</li>
+            <li><tt>Shift-T</tt> — like <em>t</em> but in a backwards direction</li>
+        </ul>
+        <p>There are many other nice tricks you can employ.  While in the search mode, try the following options:</p>
+        <ul>
+            <li><tt>:set ic</tt> — ignore case (i.e., case-insensitive search)</li>
+            <li><tt>:set hls is</tt> — make it a highlighted incremental search</li>
+            <li><tt>:set noh</tt> — remove the highlighing option</li>
+        </ul>
+        <h3>Substitute, or find and replace text</h3>
+        <ul>
+            <li><tt>:s/old/new</tt> — Substitutes <em>new</em> for <em>old</em> on the current line, but only the first occurance of the word.</li>
+            <li><tt>:s/old/new/g</tt> — substitutes <em>new</em> for <em>old</em> every time it appears on the current line.</li>
+            <li><tt>:#,#s/old/new/g</tt> — substitutes <em>new</em> for <em>old</em> every time it occurs between line numbers placed where the # symbols are. (Ctrl-g will tell you the current line number that the cursor is on.)</li>
+            <li><tt>:%s/old/new/g</tt> — substitutes <em>new</em> for <em>old</em> every time it occurs in the entire file.</li>
+            <li><tt>:%s/old/new/gc</tt> — this works like the previous example except asks for confirmation each time the text is replaced.</li>
+        </ul>
+        <h3>Matching parentheses</h3>
+        <ul>
+            <li><tt>%</tt> — helps you find matching brackets: (, [, and {</li>
+        </ul>
+        <h3>Executing commands</h3>
+        <p>You can send commands to the terminal from within Vim, for example to list the contents of a directory.</p>
+        <p>Here are a couple of examples in Linux, or in Windows under Cygwin:</p>
+        <ul>
+            <li><tt>:!ls</tt> — This will list the contents of the current directory, and then return you to Vim when you are done.  If you are using Vim at a command prompt in Microsoft Windows without Cygwin, you should be able to type <tt>:!dir</tt> to get a list of directory contents.  If you are using Vim at the command line in Windows and don't have <a href="http://www.cygwin.com/" title="Cygwin, Linux-like environment for Windows">Cygwin</a>, consider downloading it and trying it.</li>
+        </ul>
+        <p>You can even run external programs from within Vim by prefixing the commands with <tt>:!</tt>.</p>
+        <h2>More vim Tutorials</h2>
+        <ul>
+            <li><a href="http://vimdoc.sourceforge.net/">Vim docs</a> — Everything about vim.</li>
+            <li><a href="http://www.successtheory.com/tips/vimtips.html">More good vim tips</a>, especially for advanced searching.</li>
+            <li><a href="http://www.moolenaar.net/habits.html">Seven Habits of Effective Text Editing</a></li>
+            <li><a href="http://www.oualline.com/vim-cook.html">Vim Cookbook</a></li>
+            <li><a href="http://portablegvim.sourceforge.net/">Portable GVim</a> — Take Vim with you.</li>
+        </ul>
+        <h2>Vim Cheatsheets</h2>
+        <ul>
+            <li><a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">Graphical cheatsheet and tutorials</a></li>
+            <li><a href="http://www.fprintf.net/vimCheatSheet.html">Vim cheatsheet</a></li>
+            <li><a href="http://worldtimzone.com/res/vi.html">Small Vim cheatsheet</a> — good for beginners because there is not a lot of information on it.</li>
+            <li><a href="http://bullium.com/support/vim.html">Vim cheatsheet in several formats</a></li>
+            <li><a href="http://docs.cs.byu.edu/docs/vi_intro/5.php">Download a good Vim cheatsheet here</a></li>
+            <li><a href="http://www.gentoo.org/doc/en/vi-guide.xml">Learning Vi, the cheatsheet technique</a></li>
+        </ul>
+        <form action="/another-vim-tutorial" accept-charset="UTF-8" method="post" id="fivestar-form-node-45" class="fivestar-widget">
+            <div><div class="fivestar-form-vote-45 clear-block"><input type="hidden" name="content_type" id="edit-content-type" value="node">
+                    <input type="hidden" name="content_id" id="edit-content-id" value="45">
+                    <div class="fivestar-form-item  fivestar-average-text fivestar-smart-stars fivestar-average-stars fivestar-labels-hover fivestar-processed"><div class="form-item" id="edit-vote-wrapper">
+                             <label for="edit-vote">Average: </label>
+                              <input type="hidden" name="vote_count" id="edit-vote-count" value="10">
+                              <input type="hidden" name="vote_average" id="edit-vote-average" value="98">
+                              <input type="hidden" name="auto_submit_path" id="edit-auto-submit-path" value="/fivestar/vote/node/45/vote" class="fivestar-path">
+                              <select name="vote" class="form-select" id="edit-vote-1" style="display: none;"><option value="-">Select rating</option><option value="0">Cancel rating</option><option value="20">Poor</option><option value="40">Okay</option><option value="60">Good</option><option value="80">Great</option><option value="100" selected="selected">Awesome</option></select><div class="fivestar-widget clear-block fivestar-widget-5"><div class="cancel"><a href="#0" title="Cancel rating">Cancel rating</a></div><div class="star star-1 star-odd star-first on"><a href="#20" title="Poor">Poor</a></div><div class="star star-2 star-even on"><a href="#40" title="Okay">Okay</a></div><div class="star star-3 star-odd on"><a href="#60" title="Good">Good</a></div><div class="star star-4 star-even on"><a href="#80" title="Great">Great</a></div><div class="star star-5 star-odd star-last on"><a href="#100" title="Awesome" style="width: 90%;">Awesome</a></div></div><input type="hidden" name="auto_submit_token" id="edit-auto-submit-token" value="61e6aa0a234b3168b0ea9fe2167b2c9a" class="fivestar-token">
+
+                               <div class="description"><div class="fivestar-summary fivestar-summary-average-count fivestar-feedback-enabled"><span class="average-rating">Average: <span>4.9</span></span> <span class="total-votes">(<span>10</span> votes)</span></div></div>
+                           </div>
+                       </div><input type="hidden" name="destination" id="edit-destination" value="node/45">
+                       <input type="submit" name="op" id="edit-fivestar-submit" value="Rate" class="form-submit fivestar-submit" style="display: none;">
+                       <input type="hidden" name="form_build_id" id="form-eeOE75n1jy1zoTgFcH6z4FIbf2f-qQeaE-u86SGqgZ0" value="form-eeOE75n1jy1zoTgFcH6z4FIbf2f-qQeaE-u86SGqgZ0">
+                       <input type="hidden" name="form_id" id="edit-fivestar-form-node-45" value="fivestar_form_node_45">
+                   </div>
+           </div></form>
+             <div id="book-navigation-208" class="book-navigation">
+
+                         <div class="page-links clear-block">
+                                           <a href="/vim-tutorials" class="page-previous" title="Go to previous page">‹ Vim Tutorials</a>
+                                                               <a href="/vim-tutorials" class="page-up" title="Go to parent page">up</a>
+                                                                                   <a href="/vim-tips" class="page-next" title="Go to next page">Getting Started With Vim ›</a>
+                                                                                             </div>
+
+                                                                                               </div>
+                                                                                                 <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>}]))]

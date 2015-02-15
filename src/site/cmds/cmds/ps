@@ -1,0 +1,12 @@
+#Displays all of the running processes on a machine which contain the word "caseysProcess"
+ ps aux | grep caseysProcess
+
+# Show all processes running by a specific user
+ps -u username
+
+# display info about a given process
+ps -ef | grep my_shitty_script.pl
+
+# get the pids of all processes matching a string (ruby, in this case)
+# it also skips the pid of the current grep process
+ ps aux | grep ruby | grep -v grep | awk '{ print $2  }' }'

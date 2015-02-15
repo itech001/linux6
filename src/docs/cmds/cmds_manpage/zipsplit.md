@@ -1,0 +1,79 @@
+#zipsplit  
+
+
+
+###name
+```
+       zipsplit - split a zipfile into smaller zipfiles
+
+
+```
+###synopsis
+```
+       zipsplit [-t] [-i] [-p] [-s] [-n size] [-r room] [-b path] [-h] [-v] [-L] zipfile
+
+
+```
+###arguments
+```
+       zipfile  Zipfile to split.
+
+
+```
+###options
+```
+       -t     Report how many files it will take, but don't make them.
+
+       -i     Make index (zipsplit.idx) and count its size against first zip file.
+
+       -n size
+              Make zip files no larger than "size" (default = 36000).
+
+       -r room
+              Leave room for "room" bytes on the first disk (default = 0).
+
+       -b path
+              Use path for the output zip files.
+
+       -p     Pause between output zip files.
+
+       -s     Do a sequential split even if it takes more zip files.
+
+       -h     Show a short help.
+
+       -v     Show version information.
+
+       -L     Show software license.
+
+
+```
+###description
+```
+       zipsplit reads a zipfile and splits it into smaller zipfiles.
+
+
+```
+###examples
+```
+       To be filled in.
+
+
+```
+###bugs
+```
+       Does not yet support large (> 2 GB) or split archives.
+
+
+```
+###see also
+```
+       zip(1), unzip(1)
+
+```
+###author
+```
+       Info-ZIP
+
+
+
+```

@@ -1,0 +1,2 @@
+# Unmount (rather than eject) a volume (like a CD or a second hard drive)
+umount /media/[your_username]/[volume_name]

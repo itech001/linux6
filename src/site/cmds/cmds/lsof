@@ -1,0 +1,56 @@
+# List all web processes
+lsof -i :80
+
+# List all IP sockets, and the process using them. 
+lsof -i
+
+# Lists all open files under '/some/path'
+lsof /some/path
+
+# Show which PIDs have the most files open
+sudo lsof | awk '{print $2}' | sort | uniq -c | sort -n
+
+# list all files open by the process [PID]
+lsof +p [PID]
+
+# List open network connections without resolving hostnames, userids, or ports (via '/etc/services'). Makes it faster.
+lsof -i -nlP
+
+# Show local server listening port 80
+lsof -i:80 -sTCP:LISTEN
+
+# Show all local servers
+lsof -sTCP:LISTEN
+
+# Show what files a user has open
+lsof -u USER
+
+# Show files open by users other than the specified has open
+lsof -u ^USER
+
+# Show connections to specified host
+lsof -i@192.168.0.1
+
+# See files/connections open by binary
+lsof -c firefox
+
+# Files open by specified PID
+lsof -p 101
+
+# Find listening ports
+lsof -i -sTCP:LISTEN
+
+# Find established connections
+lsof -i -sTCP:ESTABLISHED
+
+# Return PID for a binary
+lsof -t -c firefox
+
+# Show everything USER is doing connected to 192.168.0.1
+lsof -u USER -i @192.168.0.1
+
+# Show open connections within a port range
+lsof -i @192.168.1.2:6881=6887
+
+# Show what files or filehandles are open in the /tmp directory (if its not a seperate partition). This can be slow.
+lsof +D /tmp

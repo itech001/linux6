@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/calendar/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>calendar - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#calendar">calendar</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#files">files</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#standards">standards</a></li>
+        
+            <li><a href="#compatibility">compatibility</a></li>
+        
+            <li><a href="#history">history</a></li>
+        
+            <li><a href="#bugs">bugs</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="calendar">calendar</h1>
+<h3 id="name">name</h3>
+<pre><code>     calendar — reminder service
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>     calendar [-ab] [-A num] [-B num] [-l num] [-w num] [-f calendarfile] [-t [[[cc]yy]mm]dd]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>     The calendar utility checks the current directory or the directory specified by the CALENDAR_DIR environment variable for a file named calendar and displays lines that begin with either today's date or tomorrow's.  On Fridays, events on Friday through Monday are displayed.
+
+     The options are as follows:
+
+     -A num  Print lines from today and next num days (forward, future).  Defaults to one. (same as -l)
+
+     -a      Process the “calendar” files of all users and mail the results to them.  This requires superuser privileges.
+
+     -B num  Print lines from today and previous num days (backward, past).
+
+     -b      Enforce special date calculation mode for KOI8 calendars.
+
+     -l num  Print lines from today and next num days (forward, future). Defaults to one. (same as -A)
+
+     -w num  Print lines from today and next num days, only if today is Friday (forward, future). Defaults to two, which causes calendar to print entries through the weekend on Fridays.
+
+     -f calendarfile
+             Use calendarfile as the default calendar file.
+
+     -t [[[cc]yy]mm]dd
+             Act like the specified value is “today” instead of using the current date.  If yy is specified, but cc is not, a value for yy between 69 and 99 results in a cc value of 19.  Otherwise, a cc value of 20 is used.
+
+     To handle calendars in your national code table you can specify “LANG=&lt;locale_name&gt;” in the calendar file as early as possible.  To handle national Easter names in the calendars, “Easter=&lt;national_name&gt;” (for Catholic Easter) or “Paskha=&lt;national_name&gt;” (for Orthodox Easter) can be used.
+
+     A special locale name exists: ‘utf-8’.  Specifying “LANG=utf-8” indicates that the dates will be read using the C locale, and the descriptions will be encoded in UTF-8.  This is usually used for the distributed calendar files.  The “CALENDAR” variable can be used to specify the style.  Only ‘Julian’ and ‘Gregorian’ styles are currently supported.  Use “CALENDAR=” to return to the default (Gregorian).
+
+     To enforce special date calculation mode for Cyrillic calendars you should specify “LANG=&lt;local_name&gt;” and “BODUN=&lt;bodun_prefix&gt;” where &lt;local_name&gt; can be ru_RU.KOI8-R, uk_UA.KOI8-U or by_BY.KOI8-B.
+
+     Note that the locale is reset to the user's default for each new file that is read. This is so that locales from one file do not accidentally carry over into another file.
+
+     Other lines should begin with a month and day.  They may be entered in almost any format, either numeric or as character strings.  If proper locale is set, national months and weekdays names can be used.  A single asterisk (`*') matches every month.  A day without a month matches that day of every week.  A month without a day matches the first of that month.  Two numbers default to the month followed by the day.  Lines with leading tabs default to the last entered date, allowing multiple line specifications for a single date.  “Easter” (may be followed by a positive or negative integer) is Easter for this year.  “Paskha” (may be followed by a positive or negative integer) is Orthodox Easter for this year.  Weekdays may be followed by “-4” ... “+5” (aliases last, first, second, third, fourth) for moving events like “the last Monday in April”.
+
+     By convention, dates followed by an asterisk (‘*’) are not fixed, i.e., change from year to year.
+
+     Day descriptions start after the first &lt;tab&gt; character in the line; if the line does not contain a &lt;tab&gt; character, it isn't printed out.  If the first character in the line is a &lt;tab&gt; character, it is treated as the continuation of the previous description.
+
+     The calendar file is preprocessed by cpp(1), allowing the inclusion of shared files such as company holidays or meetings.  If the shared file is not referenced by a full pathname, cpp(1) searches in the current (or home) directory first, and then in the directory directory /etc/calendar, and finally in /usr/share/calendar.  Empty lines and lines protected by the C commenting syntax (/* ... */) are ignored.
+
+     Some possible calendar entries (a \t sequence denotes a &lt;tab&gt; character):
+
+           LANG=C
+           Easter=Ostern
+
+           #include &lt;calendar.usholiday&gt;
+           #include &lt;calendar.birthday&gt;
+
+           6/15\tJune 15 (if ambiguous, will default to month/day).
+           Jun. 15\tJune 15.
+           15 June\tJune 15.
+           Thursday\tEvery Thursday.
+           June\tEvery June 1st.
+           15 *\t15th of every month.
+
+           May Sun+2\tsecond Sunday in May (Muttertag)
+           04/SunLast\tlast Sunday in April,
+           \tsummer time in Europe
+           Easter\tEaster
+           Ostern-2\tGood Friday (2 days before Easter)
+           Paskha\tOrthodox Easter
+
+</code></pre>
+
+<h3 id="files">files</h3>
+<pre><code>     calendar              File in current directory.
+     ~/.calendar           Directory in the user's home directory (which calendar changes into, if it exists).
+     ~/.calendar/calendar  File to use if no calendar file exists in the current directory.
+     ~/.calendar/nomail    calendar will not send mail if this file exists.
+     calendar.all          International and national calendar files.
+     calendar.birthday     Births and deaths of famous (and not-so-famous) people.
+     calendar.christian    Christian holidays (should be updated yearly by the local system administrator so that roving holidays are set correctly for the current year).
+     calendar.computer     Days of special significance to computer people.
+     calendar.croatian     Croatian calendar.
+     calendar.discord      Discordian calendar (all rites reversed).
+     calendar.fictional    Fantasy and fiction dates (mostly LOTR).
+     calendar.french       French calendar.
+     calendar.german       German calendar.
+     calendar.history      Miscellaneous history.
+     calendar.holiday      Other holidays (including the not-well-known, obscure, and really obscure).
+     calendar.judaic       Jewish holidays (should be updated yearly by the local system administrator so that roving holidays are set correctly for the current year).
+     calendar.music        Musical events, births, and deaths (strongly oriented toward rock n' roll).
+     calendar.openbsd      OpenBSD related events.
+     calendar.pagan        Pagan holidays, celebrations and festivals.
+     calendar.russian      Russian calendar.
+     calendar.space        Cosmic history.
+     calendar.ushistory    U.S. history.
+     calendar.usholiday    U.S. holidays.
+     calendar.world        World wide calendar.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>     at(1), cal(1), cpp(1), mail(1), cron(8)
+
+</code></pre>
+
+<h3 id="standards">standards</h3>
+<pre><code>     The calendar program previously selected lines which had the correct date anywhere in the line.  This is no longer true: the date is only recognized when it occurs at the beginning of a line.
+
+</code></pre>
+
+<h3 id="compatibility">compatibility</h3>
+<pre><code>     The calendar command will only display lines that use a &lt;tab&gt; character to separate the date and description, or that begin with a &lt;tab&gt;. This is different than in previous releases.
+
+     The -t flag argument syntax is from the original FreeBSD calendar program.
+
+     The -l and -w flags are Debian-specific enhancements. Also, the original calendar program did not accept 0 as an argument to the -A flag.
+
+     Using ‘utf-8’ as a locale name is a Debian-specific enhancement.
+
+</code></pre>
+
+<h3 id="history">history</h3>
+<pre><code>     A calendar command appeared in Version 7 AT&amp;T UNIX.
+
+</code></pre>
+
+<h3 id="bugs">bugs</h3>
+<pre><code>     calendar doesn't handle all Jewish holidays or moon phases.
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

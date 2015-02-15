@@ -1,0 +1,17 @@
+# move a file 
+mv source_file.txt ~/new/location.txt
+
+# Move multiple files into a directory
+mv file1.txt file2.txt file3.txt destination_folder/
+
+# Rename a file
+mv old_name.txt new_name.txt
+
+# Rename a file that starts with '-' (avoids "illegal option --" error)
+mv ./-file.txt file.txt
+
+# move a directory
+mv sourceDir destDir
+
+# move a directory to be a subdirectory
+mv sourceDir destDir/sourceDir

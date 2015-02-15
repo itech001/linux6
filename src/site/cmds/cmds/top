@@ -1,0 +1,6 @@
+# monitor the process with pid 1, 2, and 3 
+top -p 1, 2, 3
+
+# Run the top command once, and only show the header and first 8 processes
+# Can be further parsed with '| awk ...' in various scripts
+top -n 1 | head -n 15

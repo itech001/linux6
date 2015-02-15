@@ -1,0 +1,17 @@
+# Change to the previous directory
+cd -
+
+# Changes the current working directory to two directories back.
+cd ../..
+
+# Enters my Documents folder (Documents directory is inside my current working directory).
+cd Documents
+
+# Enters Documents directory by using an absolute file path.
+cd ~/Documents
+
+# Change directory to your home folder
+cd
+
+# Change directory to your home folder
+cd ~

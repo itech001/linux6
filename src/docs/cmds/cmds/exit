@@ -1,0 +1,5 @@
+# exit the shell
+exit
+
+# exit the current process successfully
+exit(EXIT_SUCCESS);

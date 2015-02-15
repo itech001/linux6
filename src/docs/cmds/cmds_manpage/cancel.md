@@ -1,0 +1,65 @@
+#cancel  
+
+
+
+###name
+```
+       cancel - cancel jobs
+
+```
+###synopsis
+```
+       cancel [ -E ] [ -U username ] [ -a ] [ -h hostname[:port] ] [ -u username ] [ -x ] [ id ] [ destination ] [ destination-id ]
+
+```
+###description
+```
+       cancel cancels existing print jobs. The -a option will remove all jobs from the specified destination.
+
+```
+###options
+```
+       The following options are recognized by cancel:
+
+       -E
+            Forces encryption when connecting to the server.
+
+       -U username
+            Specifies the username to use when connecting to the server.
+
+       -a
+            Cancel all jobs on the named destination, or all jobs on all destinations if none is provided.
+
+       -h hostname[:port]
+            Chooses an alternate server.
+
+       -u username
+            Cancels jobs owned by username.
+
+       -x
+            Deletes job data files in addition to canceling.
+
+```
+###compatibility
+```
+       Unlike the System V printing system, CUPS allows printer names to contain any printable character except SPACE, TAB, "/", or "#".  Also, printer and class names are not case-sensitive.
+
+```
+###notes
+```
+       Administrators wishing to prevent unauthorized cancellation of jobs via the -u option should require authentication for Cancel-Jobs operations in cupsd.conf(5).
+
+```
+###see also
+```
+       lp(1), lpmove(8), lpstat(1),
+       http://localhost:631/help
+
+```
+###copyright
+```
+       Copyright 2007-2013 by Apple Inc.
+
+
+
+```

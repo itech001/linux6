@@ -1,0 +1,3 @@
+# .gz extentions can be
+# uncompressed with gunzip
+gunzip file.gz

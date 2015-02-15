@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/dev/gdb/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>gdb - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../git_cheat_sheet/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../adv/article/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#how-to-debug-using-gdb">How to Debug Using GDB</a></li>
+        
+            <li><a href="#debugging-a-program-with-a-logical-error">Debugging a program with a logical error</a></li>
+        
+            <li><a href="#debugging-a-program-that-produces-a-core-dump">Debugging a program that produces a core dump</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="how-to-debug-using-gdb">How to Debug Using GDB</h1>
+<p>Modified from <a href="http://cs.baylor.edu/~donahoo/tools/gdb/tutorial.html">gdb tutorial</a>  </p>
+<p>We are going to be using two programs to illustrate how GDB can be used to
+debug code.</p>
+<h3 id="debugging-a-program-with-a-logical-error">Debugging a program with a logical error</h3>
+<p>code for broken.cpp  </p>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+
+using namespace std;
+
+int ComputeFactorial(int number) {
+  int fact = 0;
+
+  for (int j = 1; j &lt;= number; j++) {
+    fact = fact * j;
+  }
+
+  return fact;
+}
+
+double ComputeSeriesValue(double x, int n) {
+  double seriesValue = 0.0;
+  double xpow = 1;
+
+  for (int k = 0; k &lt;= n; k++) {
+    seriesValue += xpow / ComputeFactorial(k);
+    xpow = xpow * x;
+  }
+
+  return seriesValue;
+}
+
+int main() {
+  cout &lt;&lt; “This program is used to compute the value of the following series : “ &lt;&lt; endl;
+
+  cout &lt;&lt; “(x^0)/0! + (x^1)/1! + (x^2)/2! + (x^3)/3! + (x^4)/4! + ........ + (x^n)/n! “ &lt;&lt; endl;
+
+  cout &lt;&lt; “Please enter the value of x : “ ;
+
+  double x;
+  cin &gt;&gt; x;
+
+  int n;
+  cout &lt;&lt; endl &lt;&lt; “Please enter an integer value for n : “ ;
+  cin &gt;&gt; n;
+  cout &lt;&lt; endl;
+
+  double seriesValue = ComputeSeriesValue(x, n);
+  cout &lt;&lt; “The value of the series for the values entered is “
+    &lt;&lt; seriesValue &lt;&lt; endl;
+
+  return 0;
+}
+</code></pre>
+
+<p>The first sample program has some logical errors. The program is supposed to
+output the summation of (X^0)/0! + (X^1)/1! + (X^2)/2! + (X^3)/3! + (X^4)/4! +
+... + (X^n)/n!, given x and n as inputs. However the program outputs a value
+of infinity, regardless of the inputs. We will take you step by step through
+the debugging process and trace the errors:</p>
+<ol>
+<li>Download the sample program <a href="../broken.cpp">broken.cpp</a></li>
+<li>Compile the program and execute the program.<blockquote>
+<p>% g++ -g broken.cpp -o broken<br />
+    % ./broken</p>
+</blockquote>
+</li>
+</ol>
+<p>Whatever the input, the output will be inf. The -g option is important because
+it enables meaningful GDB debugging.</p>
+<ol>
+<li>Start the debugger<blockquote>
+<p>% gdb broken</p>
+</blockquote>
+</li>
+</ol>
+<p>This only starts the debugger; it does not start running the program in the
+debugger.</p>
+<ol>
+<li>Look at the source code and set a breakpoint at line 43<blockquote>
+<p>(gdb) b 43</p>
+</blockquote>
+</li>
+</ol>
+<p>which is</p>
+<blockquote>
+<p>double seriesValue = ComputeSeriesValue(x, n);</p>
+</blockquote>
+<ol>
+<li>Now, we start to run the program in the debugger.<blockquote>
+<p>(gdb) run</p>
+</blockquote>
+</li>
+</ol>
+<p>Note: If you need to supply the command-line arguments for the execution of
+the program, simply include them after the run command, just as normally done
+on the command line.</p>
+<ol>
+<li>The program starts running and asks us for the input.
+Let's enter the values as x=2 and n=3. The expected output value is 5. The
+following is a snapshot of the program running in the debugger:</li>
+</ol>
+<blockquote>
+<p>This program is used to compute the value of the following series :
+    (x^0)/0! + (x^1)/1! + (x^2)/2! + (x^3)/3! + (x^4)/4! + ........ + (x^n)/n!
+    Please enter the value of x : 2<br />
+    lease enter an integer value for n : 3<br />
+    Breakpoint 1, main () at broken.cpp:43<br />
+    43  double seriesValue = ComputeSeriesValue(x, n);  </p>
+</blockquote>
+<p>Note that the program execution stopped at our first (and only) breakpoint.</p>
+<ol>
+<li>Step into the ComputeSeriesValue() function
+To step into a function call, we use the following command:</li>
+</ol>
+<blockquote>
+<p>(gdb) step<br />
+    ComputeSeriesValue (x=2, n=3) at broken.cpp:17<br />
+    17  double seriesValue=0.0;  </p>
+</blockquote>
+<p>At this point, the program control is at the first statement of the function
+ComputeSeriesValue (x=2, n=3)</p>
+<ol>
+<li>Next let's step through the program until we get into ComputeFactorial.<blockquote>
+<p>(gdb) next<br />
+    18  double xpow=1;<br />
+    (gdb) n<br />
+    20  for (int k = 0; k &lt;= n; k++) {<br />
+    (gdb)
+    21    seriesValue += xpow / ComputeFactorial(k) ;<br />
+    (gdb) s<br />
+    ComputeFactorial (number=0) at broken.cpp:7<br />
+    7  int fact=0;  </p>
+</blockquote>
+</li>
+</ol>
+<p>Here we use the next command, which is similar to step except it will step
+over (instead of into) functions. The distinction doesn't matter here since
+there are no functions. You may use the shortest, unambigious spelling of a
+GDB command to save some typing. Here we use n and s instead of next and step,
+respectively. If the command is simply a repeat of the previous command, you
+can just hit return, which will execute the last command. Finally, we step
+(with s) into ComputeFactorial(). (If we'd used next, it would have stepped
+over ComputeFactorial.)</p>
+<ol>
+<li>Where are we?
+If you want to know where you are in the program's execution (and how, to some
+extent, you got there), you can view the contents of the stack using the
+backtrace command as follows:</li>
+</ol>
+<blockquote>
+<p>(gdb) bt<br />
+    #0  ComputeFactorial (number=0) at broken.cpp:7<br />
+    #1  0x08048907 in ComputeSeriesValue (x=3, n=2) at broken.cpp:21<br />
+    #2  0x08048a31 in main () at broken.cpp:43  </p>
+</blockquote>
+<ol>
+<li>Watching changes We can step through the program and examine the values using the print command.</li>
+</ol>
+<blockquote>
+<p>(gdb) n<br />
+    9  for (int j = 0; j &lt;= number; j++) {<br />
+    (gdb) n<br />
+    10    fact = fact * j;<br />
+    (gdb) n<br />
+    9  for (int j = 0; j &lt;= number; j++) {<br />
+    (gdb) print fact<br />
+    $2 = 0<br />
+    (gdb) n<br />
+    13  return fact;<br />
+    (gdb) quit  </p>
+</blockquote>
+<p>The print command (abbreviated p) reveals that the value of fact never
+changes. Note that the function is returning a value of 0 for the function
+call ComputeFactorial(number=0). This is an ERROR!</p>
+<p>By taking a closer look at the values printed above, we realize that we are
+computing fact=fact * j where fact has been initialized to 0; fact should have
+been initialized to 1. We quit GDB with the quit command. Next we need to
+change the following line:</p>
+<blockquote>
+<p>int fact = 1;</p>
+</blockquote>
+<p>Recompile the code and run it, you will get the expected output.</p>
+<h3 id="debugging-a-program-that-produces-a-core-dump">Debugging a program that produces a core dump</h3>
+<p>code for testit.c  </p>
+<pre><code>#include &lt;stdio.h&gt;
+void main()
+{
+    char *temp = “Paras”;
+
+    int i;
+    i=0;
+
+    temp[3]=’F’;
+
+    for (i =0 ; i &lt; 5 ; i++ )
+        printf(“%c\n”, temp[i]);
+}
+</code></pre>
+
+<p>This program causes a core dump due to a segmentation fault. We will try to
+trace the reason for this core dump.</p>
+<p>Download the program, from <a href="../testit.c">here.</a></p>
+<ol>
+<li>Compile the program using the following command.</li>
+</ol>
+<blockquote>
+<p>g++ testit.c -g -o testit</p>
+</blockquote>
+<ol>
+<li>Run it normally, you should get the following result:</li>
+</ol>
+<blockquote>
+<p>_ Segmentation fault (core dumped)_</p>
+</blockquote>
+<ol>
+<li>The core dump generates a file called <em>core_which can be used for
+debugging. Since, this program is really short, we will not need to set any
+breakpoints. Use the following command to start running the debugger to debug
+the _core</em> file produced by <em>testit.</em></li>
+</ol>
+<blockquote>
+<p>gdb testit core</p>
+</blockquote>
+<p>The output of the above command should look like this:</p>
+<p>bash$ gdb testit core</p>
+<blockquote>
+<p>GNU gdb 19991004<br />
+Copyright 1998 Free Software
+Core was generated by `testit'.<br />
+Program terminated with signal 11, Segmentation fault.<br />
+Reading symbols from /usr/lib/libstdc++-libc6.1-1.so.2...done.<br />
+Reading symbols from /lib/libm.so.6...done.<br />
+Reading symbols from /lib/libc.so.6...done.<br />
+Reading symbols from /lib/ld-linux.so.2...done.<br />
+0 0x804851a in main () at testit.c:10<br />
+10 temp[3]='F';  </p>
+</blockquote>
+<ol>
+<li>As we can see from the output above, the core dump was produced</li>
+</ol>
+<p>as a result of execution of the statement on line 10: _temp[3] ='F';</p>
+<p>Take a closer look at the declaration of temp on line 5 :</p>
+<blockquote>
+<p>Line 5 char *temp = "Paras";</p>
+</blockquote>
+<p>We find that <em>temp</em> is a char* which has been assigned a <em>string literal</em>, and
+so we cannot modify the contents of the literal as on line 10. This is what is
+causing a core dump</p>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

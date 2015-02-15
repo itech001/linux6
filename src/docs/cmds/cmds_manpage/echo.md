@@ -1,0 +1,89 @@
+#echo  
+
+
+
+###name
+```
+       echo - display a line of text
+
+```
+###synopsis
+```
+       echo [SHORT-OPTION]... [STRING]...
+       echo LONG-OPTION
+
+```
+###description
+```
+       Echo the STRING(s) to standard output.
+
+       -n     do not output the trailing newline
+
+       -e     enable interpretation of backslash escapes
+
+       -E     disable interpretation of backslash escapes (default)
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       If -e is in effect, the following sequences are recognized:
+
+       \\     backslash
+
+       \a     alert (BEL)
+
+       \b     backspace
+
+       \c     produce no further output
+
+       \e     escape
+
+       \f     form feed
+
+       \n     new line
+
+       \r     carriage return
+
+       \t     horizontal tab
+
+       \v     vertical tab
+
+       \0NNN  byte with octal value NNN (1 to 3 digits)
+
+       \xHH   byte with hexadecimal value HH (1 to 2 digits)
+
+       NOTE: your shell may have its own version of echo, which usually supersedes the version described here.  Please refer to your shell's documentation for details about the options it supports.
+
+```
+###author
+```
+       Written by Brian Fox and Chet Ramey.
+
+```
+###reporting bugs
+```
+       Report echo bugs to bug-coreutils@gnu.org
+       GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+       General help using GNU software: <http://www.gnu.org/gethelp/>
+       Report echo translation bugs to <http://translationproject.org/team/>
+
+```
+###copyright
+```
+       Copyright © 2013 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+```
+###see also
+```
+       The full documentation for echo is maintained as a Texinfo manual.  If the info and echo programs are properly installed at your site, the command
+
+              info coreutils 'echo invocation'
+
+       should give you access to the complete manual.
+
+
+
+```

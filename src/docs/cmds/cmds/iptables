@@ -1,0 +1,19 @@
+# basics of iptables
+# switch -A INPUT/OUTPUT
+# switch -p tcp/udp
+# switch -j ACCEPT/DROP
+# destination port as --dport 80
+# Add a rule to the top of the INPUT chain to drop all incoming connections on all ports from the specified IP address
+iptables -I INPUT 1 -s xxx.xxx.xxx.xxx -j DROP
+
+# switch -L : List all 
+# switch -D : drop a defined rule
+#// iptables -D INPUT 2 would drop the second rule in the list
+#
+# A valid input chain to allow all on port 80 would look like this:
+# // iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+# this means all traffic on tcp port 80 is accepted
+#
+#
+#
+# lso I would recommend apt-get install iptables-persistent to help save and reload the rules automatically.
