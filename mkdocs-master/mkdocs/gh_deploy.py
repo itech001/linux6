@@ -6,7 +6,7 @@ import os
 def gh_deploy(config):
     if not os.path.exists('.git'):
         print('Cannot deploy - this directory does not appear to be a git repository')
-        return
+        #return
 
     print("Copying '%s' to `gh-pages` branch and pushing to GitHub." % config['site_dir'])
     try:

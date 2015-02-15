@@ -2,9 +2,8 @@ template: base_without_toc.html
 
 #Useful Bash Alias  
 
-#more alias :  
-#http://alias.sh  
-#http://xmodulo.com/useful-bash-aliases-functions.html  
+more alias :  
+http://xmodulo.com/useful-bash-aliases-functions.html  
 
 ```
 # User specific aliases and functions
