@@ -22,7 +22,7 @@ Welcome everyone to contribute any other articles and suggestions by pull reques
 1. preview by: mkdocs serve, and open localhost:8000 in browser
 1. git commit and git push 
 1. deploy by: mkdocs gh-deploy (obsolete)
-1. will be deployed by trivs CI automatically
+1. will be deployed by travis CI automatically
 
 ###contribution
 1. file issues.
@@ -30,7 +30,7 @@ Welcome everyone to contribute any other articles and suggestions by pull reques
 
 ###License
 1. MIT License for this source code
-1. [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for the content of www.ciandcd.com which includes all blogs, pages and articles 
+1. [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for the content of www.linux6.com which includes all blogs, pages and articles 
 
 ###Author
 itech001@126.com 
