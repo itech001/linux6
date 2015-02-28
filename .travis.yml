@@ -5,9 +5,12 @@ install:
   - sudo apt-get install git
   - pip install -r requirements.txt
   - pip install mkdocs
+  - pip uninstall mkdocs
   - pip install Markdown
   - pip install ghp-import
 script:
+  - source env/setup.sh 
+  - cd src
   - mkdocs build
   - ghp-import -n output -m "update by travis-ci"
   - git push -qf https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages
