@@ -5,7 +5,7 @@ install:
   - sudo apt-get install git
   - pip install -r requirements.txt
   - pip install mkdocs
-  - pip uninstall mkdocs
+  - pip uninstall -f mkdocs
   - pip install Markdown
   - pip install ghp-import
 script:
