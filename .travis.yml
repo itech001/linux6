@@ -8,6 +8,7 @@ install:
   - pip install Markdown
   - pip install ghp-import
 script:
+  - cd ${TRAVIS_REPO_SLUG}
   - source env/setup.sh 
   - cd src
   - mkdocs build
