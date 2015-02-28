@@ -10,7 +10,7 @@ install:
   - pip install Markdown
   - pip install ghp-import
 script:
-  - cd ${TRAVIS_BUILD_DIR}/env ; source ${TRAVIS_BUILD_DIR}/env/setup.sh ; mkdocs build
+  - env/build.sh
 after_success:
   - cd ${TRAVIS_BUILD_DIR}/src
   - ghp-import -n site -m "update by travis-ci"
