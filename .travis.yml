@@ -12,7 +12,7 @@ install:
 script:
   - env/build.sh
   - pwd
-  - ghp-import -n ${TRAVIS_BUILD_DIR}/src/site -m "update by travis-ci"
+  - ghp-import -n src/site -m "update by travis-ci"
   - git push -qf https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages
 after_success:
   - echo OK
