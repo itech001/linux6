@@ -7,7 +7,10 @@ Welcome everyone to contribute any other articles and suggestions by pull reques
 
 ![](linux6.png)  
 
-##contribute steps:
+###build status
+![](https://travis-ci.org/itech001/linux6.svg?branch=master)
+
+###contribute steps:
 1. make sure you have python installed
 1. install mkdocs dependences: pip install mkdocs && pip uninstall mkdocs
 1. get code: git clone https://github.com/itech001/linux6.git(or your forked repo)
@@ -18,7 +21,16 @@ Welcome everyone to contribute any other articles and suggestions by pull reques
 1. build by: mkdocs build
 1. preview by: mkdocs serve, and open localhost:8000 in browser
 1. git commit and git push 
-1. deploy by: mkdocs gh-deploy 
+1. deploy by: mkdocs gh-deploy (obsolete)
+1. will be deployed by trivs CI automatically
 
-##Author
+###contribution
+1. file issues.
+1. pull requests.
+
+###License
+1. MIT License for this source code
+1. [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for the content of www.ciandcd.com which includes all blogs, pages and articles 
+
+###Author
 itech001@126.com 
