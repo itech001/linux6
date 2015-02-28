@@ -1,0 +1,15 @@
+language: python
+python:
+  - 2.7
+install:
+  - sudo apt-get install git
+  - pip install -r requirements.txt
+  - pip install mkdocs
+  - pip install Markdown
+  - pip install ghp-import
+script:
+  - mkdocs build
+  - ghp-import -n output -m "update by travis-ci"
+  - git push -qf https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages
+after_success:
+  - echo OK
