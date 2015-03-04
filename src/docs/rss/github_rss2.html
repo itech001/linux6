@@ -119,7 +119,7 @@ function run2() {
     var r = rss[i];
     var r2 = r.replace('http://','');
     r2 = r2.replace('www.','');
-    var r3 = r.split('_')[2]; r3 = r3 + '_daily';
+    var r3 = r.split('_')[2] + '_' + r.split('_')[3]; 
     list = list + "<li><a href=\"" + r + "\">" + r3 + "</a></li>";
   }
   list = list + '</ul></div>';
