@@ -9,6 +9,7 @@ install:
   - pip install mkdocs
   - pip install Markdown
   - pip install ghp-import
+  - pip install watchdog
 script:
   - env/build.sh
   - pwd
