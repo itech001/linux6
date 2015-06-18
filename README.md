@@ -8,7 +8,8 @@ Welcome everyone to contribute any other articles and suggestions by pull reques
 ![](linux6.png)  
 
 ###build status
-![https://travis-ci.org/itech001/linux6](https://travis-ci.org/itech001/linux6.svg?branch=master)
+
+[![Build Status](https://travis-ci.org/itech001/linux6.svg?branch=master)](https://travis-ci.org/itech001/linux6)
 
 ###contribute steps:
 1. make sure you have python installed
