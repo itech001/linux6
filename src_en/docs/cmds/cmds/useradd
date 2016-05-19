@@ -1,0 +1,2 @@
+# Create a new user, set ahis shell, create his home directory, set it to /home/john, and name the user
+useradd -s /bin/bash -m -d /home/john john

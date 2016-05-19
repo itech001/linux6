@@ -1,0 +1,5 @@
+# Searches through all my binary directories in my root folder for the executable "ls".  Tells me where the program is located.
+whereis ls
+
+# Find waldo.
+whereis waldo

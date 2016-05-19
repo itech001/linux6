@@ -1,0 +1,8 @@
+# Show most used commands
+history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+
+# Displays all previous commands run from this user containing the phrase "execute".  Numbers each command.  You can then run one of the commands by typing !number
+$ history | grep -i execute
+675 ./executeShellCommand
+678 ./transferFiles -o LARGE
+$ !678

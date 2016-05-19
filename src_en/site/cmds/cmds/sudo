@@ -1,0 +1,23 @@
+# Run previous command with sudo 
+sudo !!
+
+# Run a command run X commands ago with sudo (X id a number)
+sudo !-X
+sudo !-2
+
+# Allows you to execute sudo commands for 5 minutes without repeatedly entering a password for 5 minutes. Each successive call to 'sudo -v' extends the lease by +5 minutes
+sudo -v
+
+# Forgot to sudo? Run the previous command as root.  
+sudo !!
+
+# Switches you to root user allowing you to execute 
+# commands at sudo level without having to use sudo
+# for every execution
+# USE WITH CAUTION!!!
+sudo su
+
+# Allows users to run programs as the 'root' user. Super powerful. 
+# Caution advised. Recommended alias: 'sudude'. 
+# sudo chmod a+x
+sudo

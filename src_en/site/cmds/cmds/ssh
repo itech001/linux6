@@ -1,0 +1,43 @@
+# ssh port forwarding
+# route all local requests to 8080 to remote port 80
+ssh -L 8080:localhost:80 user@remoteserver
+
+# Create ssh tunnel with SOCKS interface on localhost:1234
+ssh -D 1234 user@remotemachine
+
+# SSH-VPN create a tun interface with ssh (use as root on both sides) add ip's to both sides and change your default route
+ssh root@server -vNTw any:any
+
+# see your path on a remote machine from a non-login shell
+ssh you@remotemachine echo \$PATH
+
+#Open a tunnel from 192.168.1.10's port 80 to your local port 2001 
+ssh -N -L2001:localhost:80 192.168.1.10
+
+# You can connect to the remote screen or tmux directly
+ssh user@host -t 'tmux a -t session_name||tmux new -s session_name'
+
+# ssh tunneling traffic to port 1080
+ssh -C2ND 1080 user@host
+
+# To enable the ability to forward X11 windows to a machine logged in using SSH. This is great if you would like to run a graphical program from a remote computer on your local machine logged in with SSH.
+ssh -X user@remote-server
+
+# open a previously created tomb with this:
+$ sudo tomb open secret.tomb -k secret.tomb.key
+
+# close all tombs with this:
+$ tomb close
+
+# to create a tomb, do this:
+# 1. create a file of 100MB called secret.tomb
+$ sudo tomb dig -s 100 secret.tomb
+# 2. create a key-file called secret.tomb.key
+$ sudo tomb forge secret.tomb.key
+# 3. lock the tomb with the key-file
+$ sudo tomb lock secret.tomb -k secret.tomb.key
+# Just connect to a remote server and get a shell
+# -p is needed, if remote SSH is not listining on
+# standard port (22)
+
+ssh -p 1234 user@remoteserver.com

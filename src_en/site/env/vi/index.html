@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/env/vi/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>VIM_intro - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../vim_setting/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../vim_cheatsheet/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#vim">VIM</a></li>
+        
+            <li><a href="#an-introduction-to-vim">An Introduction to Vim</a></li>
+        
+            <li><a href="#vimtutor">vimtutor</a></li>
+        
+            <li><a href="#getting-help">Getting help</a></li>
+        
+            <li><a href="#open-vim">Open Vim</a></li>
+        
+            <li><a href="#closing-vim">Closing Vim</a></li>
+        
+            <li><a href="#saving-a-file-in-vim">Saving a file in Vim</a></li>
+        
+            <li><a href="#moving-around-the-document">Moving around the document</a></li>
+        
+            <li><a href="#adding-text">Adding text</a></li>
+        
+            <li><a href="#deleting-text">Deleting text</a></li>
+        
+            <li><a href="#how-to-undo-commands-in-vim">How to undo commands in Vim</a></li>
+        
+            <li><a href="#copy-paste-in-vim">Copy / paste in Vim</a></li>
+        
+            <li><a href="#retreiving-and-inserting-a-file-into-another-file">Retreiving and inserting a file into another file</a></li>
+        
+            <li><a href="#replacing-text">Replacing text</a></li>
+        
+            <li><a href="#changing-text">Changing text</a></li>
+        
+            <li><a href="#searching-for-text">Searching for text</a></li>
+        
+            <li><a href="#substitute-or-find-and-replace-text">Substitute, or find and replace text</a></li>
+        
+            <li><a href="#matching-parentheses">Matching parentheses</a></li>
+        
+            <li><a href="#executing-commands">Executing commands</a></li>
+        
+            <li><a href="#more-vim-tutorials">More vim Tutorials</a></li>
+        
+            <li><a href="#vim-cheatsheets">Vim Cheatsheets</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="vim">VIM</h1>
+<p>Modified from <a href="http://tips.webdesign10.com/another-vim-tutorial">another-vim-tutorial</a>  </p>
+<h3 id="an-introduction-to-vim">An Introduction to Vim</h3>
+<p>Vim is an open-source, powerful and configurable text editor.</p>
+<h3 id="vimtutor">vimtutor</h3>
+<p>There is also a tutorial built into vim that you can study to learn more. To start the Vim tutor, just type vimtutor in a terminal.</p>
+<h3 id="getting-help">Getting help</h3>
+<p><strong>F1</strong> — this key will get you into the help pages of Vim from within the
+program, although if you are running vim inside a something like GNOME
+terminal, you might get the help pages for GNOME terminal when you use F1.</p>
+<p>The following help commands will always be available:</p>
+<blockquote>
+<p>:help — open the help pages<br />
+:q — this will close the help screen. If the help screen is not open, it will exit Vim.<br />
+:help user-manual — this will open the full user manual  </p>
+</blockquote>
+<h3 id="open-vim">Open Vim</h3>
+<p>To start Vim in Linux, just type vim in the terminal. You can optionally
+specify a file to open or create — if the file exists it will open the file,
+and if the file does not exist, it will be created. For example:</p>
+<blockquote>
+<p>vim file.txt</p>
+</blockquote>
+<p>Pressing either the letter <strong>i</strong> key or the <strong>INS</strong> key will put you into Insert
+mode where you can enter text. Push the <strong>ESC</strong> key to switch to Normal mode
+where you can enter Vim commands.</p>
+<h3 id="closing-vim">Closing Vim</h3>
+<blockquote>
+<p>:q — quit Vim<br />
+:wq — save file and quit Vim<br />
+:q! — quit without saving  </p>
+</blockquote>
+<h3 id="saving-a-file-in-vim">Saving a file in Vim</h3>
+<blockquote>
+<p>:w — saves the current file.<br />
+:w FILENAME — save the file with the filename that you provide. If you specify a different name than the filename that you originally opened, Vim will go back to the original file name if you save it another time in the same session without specifying the new file name.<br />
+:saveas FILENAME — this will save the file with your new name and continue editing it under the new filename.<br />
+:#,# w FILENAME — saves just text between line numbers that you specify.  </p>
+</blockquote>
+<h3 id="moving-around-the-document">Moving around the document</h3>
+<blockquote>
+<p>h — moves cursor left<br />
+l — moves cursor right<br />
+j — moves cursor down<br />
+k — moves cursor up</p>
+<p>w — moves cursor to beginning of next word<br />
+b — moves to the beginning of previous word<br />
+e — moves cursor to end of the next word<br />
+ge — moves to the end of the previous word<br />
+$ — moves cursor to the end of line<br />
+^ — moves cursor to the first non-space character of line<br />
+0 — pressing the number zero moves to the absolute beginning of the line<br />
+[number] Shift-g — moves you to the specified line number<br />
+Ctrl-g — tells you what line you are on<br />
+gg — go to the first line of the file<br />
+[number]% — moves to to a certain percentage of the file, e.g., typing 30% moves you to 30% from the top of the file.  </p>
+</blockquote>
+<p>Like most Vim commands, prefix the command with a number to repeat it. So
+typing 3w will move the cursor forward by 3 words.  </p>
+<h3 id="adding-text">Adding text</h3>
+<p>Vim generally starts in Normal mode. To insert text into your file, press
+the letter <strong>i</strong>. To return to Normal mode, press the <strong>ESC</strong> key, or more
+conveniently Ctrl-c or Ctrl-[.  </p>
+<blockquote>
+<p>i — enters insert mode, inserting new text before the point of the cursor<br />
+I — moves the cursor to the beginning of the line and enters insert mode.<br />
+a — enters insert mode, inserting (appending) new text <em>after</em> the current point of the cursor<br />
+A — enters insert mode, appending text to the end of the current line<br />
+o — opens a line below the cursor and enters insert mode.<br />
+O — opens a line above the cursor and enters insert mode  </p>
+</blockquote>
+<h3 id="deleting-text">Deleting text</h3>
+<blockquote>
+<p>dd — deletes the current line<br />
+x — deletes one letter under the cursor<br />
+dw — deletes from the cursor to the end of the word including the space<br />
+de — deletes from the cursor to the end of the word not including the space<br />
+d$ — deletes from cursor to the end of the current line  </p>
+</blockquote>
+<p>You can tell Vim to repeat commands by giving it a number. For example, typing
+4dw will delete from the cursor to the end of the current word, plus 3 more
+words including the space after the word. It can also be typed with the number
+in the middle like this d4w and it will do the exact same thing as the
+previous example.</p>
+<h3 id="how-to-undo-commands-in-vim">How to undo commands in Vim</h3>
+<p>This is one of the most important things to know:</p>
+<blockquote>
+<p>u — undo command<br />
+U — undo everything on the line<br />
+CTRL-r — redo command (after undoing it)  </p>
+</blockquote>
+<h3 id="copy-paste-in-vim">Copy / paste in Vim</h3>
+<p>When you delete text it is stored by Vim and you replace it by putting it
+back with the <strong>p</strong> key.</p>
+<blockquote>
+<p>y - copy
+p — paste the last deleted text on the line below the cursor.</p>
+</blockquote>
+<h3 id="retreiving-and-inserting-a-file-into-another-file">Retreiving and inserting a file into another file</h3>
+<p>You can insert another text file into the current text file.</p>
+<blockquote>
+<p>:r FILENAME — inserts FILENAME into the current file.</p>
+</blockquote>
+<h3 id="replacing-text">Replacing text</h3>
+<blockquote>
+<p>r — press the letter <strong>r</strong> and then the letter that you want to replace the letter under the cursor with.<br />
+Shift-R — this works like the Insert key. It allows you to type on top of the text, replacing it. When done, press <strong>ESC</strong> to exit.</p>
+</blockquote>
+<h3 id="changing-text">Changing text</h3>
+<blockquote>
+<p>cw — change the text from the cursor to the end of the word (deletes and goes into insert mode<br />
+c$ — change the text from the cursor to the end of the line</p>
+</blockquote>
+<h3 id="searching-for-text">Searching for text</h3>
+<blockquote>
+<p>/ — search for text in a forward direction<br />
+? — search for text in a backwards direction<br />
+n — search again in the same direction<br />
+Shift-N — search again in the opposite direction<br />
+f — press <strong>f</strong> and then another character and the cursor will move to that character on the current line.<br />
+Shift-F — like <strong>f</strong> but searches backwards<br />
+t — like <strong>f</strong> except that it moves the cursor one character before the specified character<br />
+Shift-T — like <strong>t</strong> but in a backwards direction  </p>
+</blockquote>
+<p>There are many other nice tricks you can employ. While in the search mode, try
+the following options:</p>
+<blockquote>
+<p>:set ic — ignore case (i.e., case-insensitive search)<br />
+:set hls is — make it a highlighted incremental search<br />
+:set noh — remove the highlighing option  </p>
+</blockquote>
+<h3 id="substitute-or-find-and-replace-text">Substitute, or find and replace text</h3>
+<blockquote>
+<p>:s/old/new/ — Substitutes new for old on the current line, but only the first occurance of the word.<br />
+:s/old/new/g — substitutes new for old every time it appears on the current line.<br />
+:#,#s/old/new/g — substitutes new for old every time it occurs between line numbers placed where the # symbols are. (Ctrl-g will tell you the current line number that the cursor is on.)<br />
+:%s/old/new/g — substitutes new for old every time it occurs in the entire file.<br />
+:%s/old/new/gc — this works like the previous example except asks for confirmation each time the text is replaced.  </p>
+</blockquote>
+<h3 id="matching-parentheses">Matching parentheses</h3>
+<blockquote>
+<p>% — helps you find matching brackets: (, [, and {</p>
+</blockquote>
+<h3 id="executing-commands">Executing commands</h3>
+<p>You can send commands to the terminal from within Vim, for example to list the
+contents of a directory.</p>
+<p>Here are a couple of examples in Linux, :</p>
+<blockquote>
+<p>:!ls — This will list the contents of the current directory, and then return you to Vim when you are done.</p>
+</blockquote>
+<p>You can even run external programs from within Vim by prefixing the commands
+with :!.</p>
+<h3 id="more-vim-tutorials">More vim Tutorials</h3>
+<blockquote>
+<p><a href="http://vimdoc.sourceforge.net/">Vim docs</a> — Everything about vim.<br />
+<a href="http://www.successtheory.com/tips/vimtips.html">More good vim tips</a>, especially for advanced searching.<br />
+<a href="http://www.moolenaar.net/habits.html">Seven Habits of Effective Text Editing</a><br />
+<a href="http://www.oualline.com/vim-cook.html">Vim Cookbook</a><br />
+<a href="http://portablegvim.sourceforge.net/">Portable GVim</a> — Take Vim with you.  </p>
+</blockquote>
+<h3 id="vim-cheatsheets">Vim Cheatsheets</h3>
+<blockquote>
+<p><a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">Graphical cheatsheet and tutorials</a><br />
+<a href="http://www.fprintf.net/vimCheatSheet.html">Vim cheatsheet</a><br />
+<a href="http://worldtimzone.com/res/vi.html">Small Vim cheatsheet</a> <br />
+<a href="http://bullium.com/support/vim.html">Vim cheatsheet in several formats</a><br />
+<a href="http://docs.cs.byu.edu/docs/vi_intro/5.php">Download a good Vim cheatsheet here</a><br />
+<a href="http://www.gentoo.org/doc/en/vi-guide.xml">Learning Vi, the cheatsheet technique</a>  </p>
+</blockquote>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

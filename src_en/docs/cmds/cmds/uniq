@@ -1,0 +1,9 @@
+# This will show a count of all lines that have more than 1 copy. So only show the duplicates. (-d)
+uniq -cd
+
+# your_comment_here
+uniq unique_file.data 
+sort data_file | uniq
+
+# Count number of dublicates in file
+uniq -C

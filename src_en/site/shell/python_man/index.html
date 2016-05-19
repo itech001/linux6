@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/shell/python_man/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>python_man - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#python_man">python_man</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#command-line-options">command line options</a></li>
+        
+            <li><a href="#interpreter-interface">interpreter interface</a></li>
+        
+            <li><a href="#files-and-directories">files and directories</a></li>
+        
+            <li><a href="#environment-variables">environment variables</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#internet-resources">internet resources</a></li>
+        
+            <li><a href="#licensing">licensing</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="python_man">python_man</h1>
+<h3 id="name">name</h3>
+<pre><code>       python - an interpreted, interactive, object-oriented programming language
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       python [ -B ] [ -d ] [ -E ] [ -h ] [ -i ] [ -m module-name ]
+              [ -O ] [ -OO ] [ -R ] [ -Q argument ] [ -s ] [ -S ] [ -t ] [ -u ]
+              [ -v ] [ -V ] [ -W argument ] [ -x ] [ -3 ] [ -?  ]
+              [ -c command | script | - ] [ arguments ]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       Python is an interpreted, interactive, object-oriented programming language that combines remarkable power with very clear syntax.  For an introduction to programming in Python you are referred to the Python Tutorial.  The Python Library Reference documents built-in and standard types, constants, functions and modules.  Finally, the Python Reference Manual describes the syntax and semantics of the core language in (perhaps too) much detail.  (These documents may be located via the INTERNET RESOURCES below; they may be installed on your system as well.)
+
+       Python's basic power can be extended with your own modules written in C or C++.  On most systems such modules may be dynamically loaded.  Python is also adaptable as an extension language for existing applications.  See the internal documentation for hints.
+
+       Documentation for installed Python modules and packages can be viewed by running the pydoc program.
+
+</code></pre>
+
+<h3 id="command-line-options">command line options</h3>
+<pre><code>       -B     Don't write .py[co] files on import. See also PYTHONDONTWRITEBYTECODE.
+
+       -c command
+              Specify the command to execute (see next section).  This terminates the option list (following options are passed as arguments to the command).
+
+       -d     Turn on parser debugging output (for wizards only, depending on compilation options).
+
+       -E     Ignore environment variables like PYTHONPATH and PYTHONHOME that modify the behavior of the interpreter.
+
+       -h ,  -? ,  --help
+              Prints the usage for the interpreter executable and exits.
+
+       -i     When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command.  It does not read the $PYTHONSTARTUP file.  This can be useful to inspect global variables or a stack trace when a script raises an exception.
+
+       -m module-name
+              Searches sys.path for the named module and runs the corresponding .py file as a script.
+
+       -O     Turn on basic optimizations.  This changes the filename extension for compiled (bytecode) files from .pyc to .pyo.  Given twice, causes docstrings to be discarded.
+
+       -OO    Discard docstrings in addition to the -O optimizations.
+
+       -R     Turn on &quot;hash randomization&quot;, so that the hash() values of str, bytes and datetime objects are &quot;salted&quot; with an unpredictable pseudo-random value.  Although they remain constant within an individual Python process, they are not predictable between repeated invocations of Python.
+
+              This is intended to provide protection against a denial of service caused by carefully-chosen inputs that exploit the worst case performance of a dict construction, O(n^2) complexity.  See http://www.ocert.org/advisories/ocert-2011-003.html for details.
+
+       -Q argument
+              Division control; see PEP 238.  The argument must be one of &quot;old&quot; (the default, int/int and long/long return an int or long), &quot;new&quot; (new division semantics, i.e. int/int and long/long returns a float), &quot;warn&quot; (old division semantics with a warning for int/int and long/long), or &quot;warnall&quot; (old division semantics with a warning for all use of the division operator).  For a use of &quot;warnall&quot;, see the Tools/scripts/fixdiv.py script.
+
+       -s     Don't add user site directory to sys.path.
+
+       -S     Disable the import of the module site and the site-dependent manipulations of sys.path that it entails.
+
+       -t     Issue a warning when a source file mixes tabs and spaces for indentation in a way that makes it depend on the worth of a tab expressed in spaces.  Issue an error when the option is given twice.
+
+       -u     Force stdin, stdout and stderr to be totally unbuffered.  On systems where it matters, also put stdin, stdout and stderr in binary mode.  Note that there is internal buffering in xreadlines(), readlines() and file-object iterators (&quot;for line in sys.stdin&quot;) which is not influenced by this option.  To work around this, you will want to use &quot;sys.stdin.readline()&quot; inside a &quot;while 1:&quot; loop.
+
+       -v     Print a message each time a module is initialized, showing the place (filename or built-in module) from which it is loaded.  When given twice, print a message for each file that is checked for when searching for a module.  Also provides information on module cleanup at exit.
+
+       -V ,  --version
+              Prints the Python version number of the executable and exits.
+
+       -W argument
+              Warning control.  Python sometimes prints warning message to sys.stderr.  A typical warning message has the following form: file:line: category: message.  By default, each warning is printed once for each source line where it occurs.  This option controls how often warnings are printed.  Multiple -W options may be given; when a warning matches more than one option, the action for the last matching option is performed.  Invalid -W options are ignored (a warning message is printed about invalid options when the first warning is issued).  Warnings can also be controlled from within a Python program using the warnings module.
+
+              The simplest form of argument is one of the following action strings (or a unique abbreviation): ignore to ignore all warnings; default to explicitly request the default behavior (printing each warning once per source line); all to print a warning each time it occurs (this may generate many messages if a warning is triggered repeatedly for the same source line, such as inside a loop); module to print each warning only the first time it occurs in each module; once to print each warning only the first time it occurs in the program; or error to raise an exception instead of printing a warning message.
+
+              The full form of argument is action:message:category:module:line.  Here, action is as explained above but only applies to messages that match the remaining fields.  Empty fields match all values; trailing empty fields may be omitted.  The message field matches the start of the warning message printed; this match is case-insensitive.  The category field matches the warning category.  This must be a class name; the match test whether the actual warning category of the message is a subclass of the specified warning category.  The full class name must be given.  The module field matches the (fully-qualified) module name; this match is case-sensitive.  The line field matches the line number, where zero matches all line numbers and is thus equivalent to an omitted line number.
+
+       -x     Skip the first line of the source.  This is intended for a DOS specific hack only.  Warning: the line numbers in error messages will be off by one!
+
+       -3     Warn about Python 3.x incompatibilities that 2to3 cannot trivially fix.
+
+</code></pre>
+
+<h3 id="interpreter-interface">interpreter interface</h3>
+<pre><code>       The interpreter interface resembles that of the UNIX shell: when called with standard input connected to a tty device, it prompts for commands and executes them until an EOF is read; when called with a file name argument or with a file as standard input, it reads and executes a script from that file; when called with -c command, it executes the Python statement(s) given as command.  Here command may contain multiple statements separated by newlines.  Leading whitespace is significant in Python statements!  In non-interactive mode, the entire input is parsed before it is executed.
+
+       If available, the script name and additional arguments thereafter are passed to the script in the Python variable sys.argv, which is a list of strings (you must first import sys to be able to access it).  If no script name is given, sys.argv[0] is an empty string; if -c is used, sys.argv[0] contains the string '-c'.  Note that options interpreted by the Python interpreter itself are not placed in sys.argv.
+
+       In interactive mode, the primary prompt is `&gt;&gt;&gt;'; the second prompt (which appears when a command is not complete) is `...'.  The prompts can be changed by assignment to sys.ps1 or sys.ps2.  The interpreter quits when it reads an EOF at a prompt.  When an unhandled exception occurs, a stack trace is printed and control returns to the primary prompt; in non-interactive mode, the interpreter exits after printing the stack trace.  The interrupt signal raises the KeyboardInterrupt exception; other UNIX signals are not caught (except that SIGPIPE is sometimes ignored, in favor of the IOError exception).  Error messages are written to stderr.
+
+</code></pre>
+
+<h3 id="files-and-directories">files and directories</h3>
+<pre><code>       These are subject to difference depending on local installation conventions; ${prefix} and ${exec_prefix} are installation-dependent and should be interpreted as for GNU software; they may be the same.  On Debian GNU/{Hurd,Linux} the default for both is /usr.
+
+       ${exec_prefix}/bin/python
+              Recommended location of the interpreter.
+
+       ${prefix}/lib/python&lt;version&gt;
+       ${exec_prefix}/lib/python&lt;version&gt;
+              Recommended locations of the directories containing the standard modules.
+
+       ${prefix}/include/python&lt;version&gt;
+       ${exec_prefix}/include/python&lt;version&gt;
+              Recommended locations of the directories containing the include files needed for developing Python extensions and embedding the interpreter.
+
+       ~/.pythonrc.py
+              User-specific initialization file loaded by the user module; not used by default or by most applications.
+
+</code></pre>
+
+<h3 id="environment-variables">environment variables</h3>
+<pre><code>       PYTHONHOME
+              Change the location of the standard Python libraries.  By default, the libraries are searched in ${prefix}/lib/python&lt;version&gt; and ${exec_prefix}/lib/python&lt;version&gt;, where ${prefix} and ${exec_prefix} are installation-dependent directories, both defaulting to /usr/local.  When $PYTHONHOME is set to a single directory, its value replaces both ${prefix} and ${exec_prefix}.  To specify different values for these, set $PYTHONHOME to ${prefix}:${exec_prefix}.
+
+       PYTHONPATH
+              Augments the default search path for module files.  The format is the same as the shell's $PATH: one or more directory pathnames separated by colons.  Non-existent directories are silently ignored.  The default search path is installation dependent, but generally begins with ${prefix}/lib/python&lt;version&gt; (see PYTHONHOME above).  The default search path is always appended to $PYTHONPATH.  If a script argument is given, the directory containing the script is inserted in the path in front of $PYTHONPATH.  The search path can be manipulated from within a Python program as the variable sys.path.
+
+       PYTHONSTARTUP
+              If this is the name of a readable file, the Python commands in that file are executed before the first prompt is displayed in interactive mode.  The file is executed in the same name space where interactive commands are executed so that objects defined or imported in it can be used without qualification in the interactive session.  You can also change the prompts sys.ps1 and sys.ps2 in this file.
+
+       PYTHONY2K
+              Set this to a non-empty string to cause the time module to require dates specified as strings to include 4-digit years, otherwise 2-digit years are converted based on rules described in the time module documentation.
+
+       PYTHONOPTIMIZE
+              If this is set to a non-empty string it is equivalent to specifying the -O option. If set to an integer, it is equivalent to specifying -O multiple times.
+
+       PYTHONDEBUG
+              If this is set to a non-empty string it is equivalent to specifying the -d option. If set to an integer, it is equivalent to specifying -d multiple times.
+
+       PYTHONDONTWRITEBYTECODE
+              If this is set to a non-empty string it is equivalent to specifying the -B option (don't try to write .py[co] files).
+
+       PYTHONINSPECT
+              If this is set to a non-empty string it is equivalent to specifying the -i option.
+
+       PYTHONIOENCODING
+              If this is set before running the interpreter, it overrides the encoding used for stdin/stdout/stderr, in the syntax encodingname:errorhandler The errorhandler part is optional and has the same meaning as in str.encode. For stderr, the errorhandler
+               part is ignored; the handler will always be ´backslashreplace´.
+
+       PYTHONNOUSERSITE
+              If this is set to a non-empty string it is equivalent to specifying the -s option (Don't add the user site directory to sys.path).
+
+       PYTHONUNBUFFERED
+              If this is set to a non-empty string it is equivalent to specifying the -u option.
+
+       PYTHONVERBOSE
+              If this is set to a non-empty string it is equivalent to specifying the -v option. If set to an integer, it is equivalent to specifying -v multiple times.
+
+       PYTHONWARNINGS
+              If this is set to a comma-separated string it is equivalent to specifying the -W option for each separate value.
+
+       PYTHONHASHSEED
+              If this variable is set to &quot;random&quot;, the effect is the same as specifying the -R option: a random value is used to seed the hashes of str, bytes and datetime objects.
+
+              If PYTHONHASHSEED is set to an integer value, it is used as a fixed seed for generating the hash() of the types covered by the hash randomization.  Its purpose is to allow repeatable hashing, such as for selftests for the interpreter itself, or to allow a cluster of python processes to share hash values.
+
+              The integer must be a decimal number in the range [0,4294967295].  Specifying the value 0 will lead to the same hash values as when hash randomization is disabled.
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       The Python Software Foundation: http://www.python.org/psf
+
+</code></pre>
+
+<h3 id="internet-resources">internet resources</h3>
+<pre><code>       Main website:  http://www.python.org/
+       Documentation:  http://docs.python.org/
+       Developer resources:  http://docs.python.org/devguide/
+       Downloads:  http://python.org/download/
+       Module repository:  http://pypi.python.org/
+       Newsgroups:  comp.lang.python, comp.lang.python.announce
+
+</code></pre>
+
+<h3 id="licensing">licensing</h3>
+<pre><code>       Python is distributed under an Open Source license.  See the file &quot;LICENSE&quot; in the Python source distribution for information on terms &amp; conditions for accessing and otherwise using Python and for a DISCLAIMER OF ALL WARRANTIES.
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

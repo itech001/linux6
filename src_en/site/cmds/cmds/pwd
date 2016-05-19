@@ -1,0 +1,2 @@
+# Prints path to current working directory.
+pwd

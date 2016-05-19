@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/strip/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>strip - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#strip">strip</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#copyright">copyright</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="strip">strip</h1>
+<h3 id="name">name</h3>
+<pre><code>       strip - Discard symbols from object files.
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       strip [-F bfdname |--target=bfdname]
+             [-I bfdname |--input-target=bfdname]
+             [-O bfdname |--output-target=bfdname]
+             [-s|--strip-all]
+             [-S|-g|-d|--strip-debug]
+             [--strip-dwo]
+             [-K symbolname |--keep-symbol=symbolname]
+             [-N symbolname |--strip-symbol=symbolname]
+             [-w|--wildcard]
+             [-x|--discard-all] [-X |--discard-locals]
+             [-R sectionname |--remove-section=sectionname]
+             [-o file] [-p|--preserve-dates]
+             [-D|--enable-deterministic-archives]
+             [-U|--disable-deterministic-archives]
+             [--keep-file-symbols]
+             [--only-keep-debug]
+             [-v |--verbose] [-V|--version]
+             [--help] [--info]
+             objfile...
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       GNU strip discards all symbols from object files objfile.  The list of object files may include archives.  At least one object file must be given.
+
+       strip modifies the files named in its argument, rather than writing modified copies under different names.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       -F bfdname
+       --target=bfdname
+           Treat the original objfile as a file with the object code format bfdname, and rewrite it in the same format.
+
+       --help
+           Show a summary of the options to strip and exit.
+
+       --info
+           Display a list showing all architectures and object formats available.
+
+       -I bfdname
+       --input-target=bfdname
+           Treat the original objfile as a file with the object code format bfdname.
+
+       -O bfdname
+       --output-target=bfdname
+           Replace objfile with a file in the output format bfdname.
+
+       -R sectionname
+       --remove-section=sectionname
+           Remove any section named sectionname from the output file.  This option may be given more than once.  Note that using this option inappropriately may make the output file unusable.  The wildcard character * may be given at the end of sectionname.  If so, then any section starting with sectionname will be removed.
+
+       -s
+       --strip-all
+           Remove all symbols.
+
+       -g
+       -S
+       -d
+       --strip-debug
+           Remove debugging symbols only.
+
+       --strip-dwo
+           Remove the contents of all DWARF .dwo sections, leaving the remaining debugging sections and all symbols intact.  See the description of this option in the objcopy section for more information.
+
+       --strip-unneeded
+           Remove all symbols that are not needed for relocation processing.
+
+       -K symbolname
+       --keep-symbol=symbolname
+           When stripping symbols, keep symbol symbolname even if it would normally be stripped.  This option may be given more than once.
+
+       -N symbolname
+       --strip-symbol=symbolname
+           Remove symbol symbolname from the source file. This option may be given more than once, and may be combined with strip options other than -K.
+
+       -o file
+           Put the stripped output in file, rather than replacing the existing file.  When this argument is used, only one objfile argument may be specified.
+
+       -p
+       --preserve-dates
+           Preserve the access and modification dates of the file.
+
+       -D
+       --enable-deterministic-archives
+           Operate in deterministic mode.  When copying archive members and writing the archive index, use zero for UIDs, GIDs, timestamps, and use consistent file modes for all files.
+
+           If binutils was configured with --enable-deterministic-archives, then this mode is on by default.  It can be disabled with the -U option, below.
+
+       -U
+       --disable-deterministic-archives
+           Do not operate in deterministic mode.  This is the inverse of the -D option, above: when copying archive members and writing the archive index, use their actual UID, GID, timestamp, and file mode values.
+
+           This is the default unless binutils was configured with --enable-deterministic-archives.
+
+       -w
+       --wildcard
+           Permit regular expressions in symbolnames used in other command line options.  The question mark (?), asterisk (*), backslash (\) and square brackets ([]) operators can be used anywhere in the symbol name.  If the first character of the symbol name is the exclamation point (!) then the sense of the switch is reversed for that symbol.  For example:
+
+                     -w -K !foo -K fo*
+
+           would cause strip to only keep symbols that start with the letters &quot;fo&quot;, but to discard the symbol &quot;foo&quot;.
+
+       -x
+       --discard-all
+           Remove non-global symbols.
+
+       -X
+       --discard-locals
+           Remove compiler-generated local symbols.  (These usually start with L or ..)
+
+       --keep-file-symbols
+           When stripping a file, perhaps with --strip-debug or --strip-unneeded, retain any symbols specifying source file names, which would otherwise get stripped.
+
+       --only-keep-debug
+           Strip a file, removing contents of any sections that would not be stripped by --strip-debug and leaving the debugging sections intact.  In ELF files, this preserves all note sections in the output.
+
+           The intention is that this option will be used in conjunction with --add-gnu-debuglink to create a two part executable.  One a stripped binary which will occupy less space in RAM and in a distribution and the second a debugging information file which is only needed if debugging abilities are required.  The suggested procedure to create these files is as follows:
+
+           1.&lt;Link the executable as normal.  Assuming that is is called&gt;
+               &quot;foo&quot; then...
+
+           1.&lt;Run &quot;objcopy --only-keep-debug foo foo.dbg&quot; to&gt;
+               create a file containing the debugging info.
+
+           1.&lt;Run &quot;objcopy --strip-debug foo&quot; to create a&gt;
+               stripped executable.
+
+           1.&lt;Run &quot;objcopy --add-gnu-debuglink=foo.dbg foo&quot;&gt;
+               to add a link to the debugging info into the stripped executable.
+
+           Note---the choice of &quot;.dbg&quot; as an extension for the debug info file is arbitrary.  Also the &quot;--only-keep-debug&quot; step is optional.  You could instead do this:
+
+           1.&lt;Link the executable as normal.&gt;
+           1.&lt;Copy &quot;foo&quot; to &quot;foo.full&quot;&gt;
+           1.&lt;Run &quot;strip --strip-debug foo&quot;&gt;
+           1.&lt;Run &quot;objcopy --add-gnu-debuglink=foo.full foo&quot;&gt;
+
+           i.e., the file pointed to by the --add-gnu-debuglink can be the full executable.  It does not have to be a file created by the --only-keep-debug switch.
+
+           Note---this switch is only intended for use on fully linked files.  It does not make sense to use it on object files where the debugging information may be incomplete.  Besides the gnu_debuglink feature currently only supports the presence of one filename containing debugging information, not multiple filenames on a one-per-object-file basis.
+
+       -V
+       --version
+           Show the version number for strip.
+
+       -v
+       --verbose
+           Verbose output: list all object files modified.  In the case of archives, strip -v lists all members of the archive.
+
+       @file
+           Read command-line options from file.  The options read are inserted in place of the original @file option.  If file does not exist, or cannot be read, then the option will be treated literally, and not removed.
+
+           Options in file are separated by whitespace.  A whitespace character may be included in an option by surrounding the entire option in either single or double quotes.  Any character (including a backslash) may be included by prefixing the character to be included with a backslash.  The file may itself contain additional @file options; any such options will be processed recursively.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       the Info entries for binutils.
+
+</code></pre>
+
+<h3 id="copyright">copyright</h3>
+<pre><code>       Copyright (c) 1991-2013 Free Software Foundation, Inc.
+
+       Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, with no Front-Cover Texts, and with no Back-Cover Texts.  A copy of the license is included in the section entitled &quot;GNU Free Documentation License&quot;.
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,2 @@
+# Starts an ftp session with example.com, you'll usually be prompted for credential afterwards
+ftp example.com

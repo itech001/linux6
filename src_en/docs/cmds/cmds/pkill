@@ -1,0 +1,2 @@
+# Kills a process named 'chromium'
+pkill chromium

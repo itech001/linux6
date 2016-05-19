@@ -1,0 +1,5 @@
+# search the filesystem for a file containing wat in the filename
+locate filename
+
+# where are those crazy java files kept?
+locate libjvm.so

@@ -1,0 +1,459 @@
+
+From <a href="http://my-guides.net/en/guides/linux/basic-linux-commands">my-guides</a><br> 
+
+<h3 style="visibility: visible;"><span>Viewing,</span> copying, moving and deleting files</h3>
+<div align="left">
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>ls</td>
+			<td>Display the contents of the current directory</td>
+		</tr>
+		<tr>
+			<td>ls -a</td>
+			<td>Display also hidden files and hidden directories</td>
+		</tr>
+		<tr>
+			<td>cp filename /path/dir_name</td>
+			<td>Copy filename into directory /path/dir_name</td>
+		</tr>
+		<tr>
+			<td>cp -r dir_name /path/dir_name2</td>
+			<td>Copy the entire dir_name into /path/dir_name2</td>
+		</tr>
+		<tr>
+			<td>cp filename1 filename2 /path/dir_name</td>
+			<td>Copy filename1 and filename2 into /path/dir_name</td>
+		</tr>
+		<tr>
+			<td>rm name</td>
+			<td>Remove a file or directory called name</td>
+		</tr>
+		<tr>
+			<td>rm -r name</td>
+			<td>Remove an entire directory as well as its included files and subdirectories</td>
+		</tr>
+		<tr>
+			<td>mv filename /path/dir_name</td>
+			<td>Move filename into /path/dir_name</td>
+		</tr>
+		<tr>
+			<td>mv filename1 filename2</td>
+			<td>Rename filename1 to filename2</td>
+		</tr>
+
+		<tr>
+			<td>cat filename</td>
+			<td>Display filenames contents</td>
+		</tr>
+
+		<tr>
+			<td>more filename</td>
+			<td>Display filename in pages. Use spacebar to view next page</td>
+		</tr>
+
+		<tr>
+			<td>head filename</td>
+			<td>Display filenames first 10 lines</td>
+		</tr>
+		<tr>
+			<td>head -15 filename</td>
+			<td>Display filenames first 15 lines</td>
+		</tr>
+
+		<tr>
+			<td>tail filename</td>
+			<td>Display filenames last 10 lines</td>
+		</tr>
+		<tr>
+			<td>tail -15 filename</td>
+			<td>Display filenames last 15 lines</td>
+		</tr>
+
+		<tr>
+			<td>pwd</td>
+			<td>Display current directory</td>
+		</tr>
+
+		<tr>
+			<td>cd /path/dir_name</td>
+			<td>Change to directory /path/dir_name</td>
+		</tr>
+		<tr>
+			<td>cd ..</td>
+			<td>Go 1 directory up</td>
+		</tr>
+
+		<tr>
+			<td>mkdir dir_name</td>
+			<td>Create directory dir_name</td>
+		</tr>
+		<tr>
+			<td>rmdir dir_name</td>
+			<td>Delete directory dir_name</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>Finding</span> files and text within files</h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>updatedb</td>
+			<td>Update (create first time used) a database of all files under the root directory /</td>
+		</tr>
+		<tr>
+			<td>locate filename</td>
+			<td>Find file filename searching in the database</td>
+		</tr>
+
+		<tr>
+			<td>find / -name filename</td>
+			<td>Starting from the root directory search for the file called filename</td>
+		</tr>
+		<tr>
+			<td>find / -name *filename</td>
+			<td>Same as above but search for file containing the string filename</td>
+		</tr>
+
+		<tr>
+			<td>grep string /path/dir_name</td>
+			<td>Starting from /path/dir_name search for all files containing string</td>
+		</tr>
+
+		<tr>
+			<td>which application_name</td>
+			<td>Search $path for application app_name</td>
+		</tr>
+		<tr>
+			<td>whereis application_name</td>
+			<td>Search $path, man pages and source files for application_name</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>Archived</span> files</h3>
+<p>
+<b>Decompress</b>
+</p>
+<p>
+<b></b>
+</p>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td style="font-style: normal">tar -xzf filename.tgz</td>
+			<td style="font-style: normal">Decompress tzg file</td>
+		</tr>
+		<tr>
+			<td>tar -xzf filename.tar.gz</td>
+			<td>Decompress tar.gz file</td>
+		</tr>
+		<tr>
+			<td>tar -xjf filename.tar.bz2</td>
+			<td>Decompress tar.bz2 file</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+<p>
+<b>Compress</b>
+</p>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>tar -czf filename.tar /path/dir_name</td>
+			<td>Compress directory /path/dir_name to filename.tar</td>
+		</tr>
+		<tr>
+			<td>gzip -c filename &gt; filename.gz</td>
+			<td>Compress /path/dir_name to filename.tar.gz</td>
+		</tr>
+		<tr>
+			<td>bzip2 -c filename &gt; filename.bz2</td>
+			<td>Compress /path/dir_name to filename.tar.bz2</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>Using</span> rpm files&nbsp;</h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>rpm -hiv package.rpm</td>
+			<td>Install rpm called package.rpm</td>
+		</tr>
+		<tr>
+			<td>rpm -hiv --force package.rpm</td>
+			<td>Install rpm called package.rpm by force</td>
+		</tr>
+		<tr>
+			<td>rpm -hUv package.rpm</td>
+			<td>Upgrade rpm called package.rpm</td>
+		</tr>
+		<tr>
+			<td>rpm -e package.rpm</td>
+			<td>Delete rpm called package.rpm</td>
+		</tr>
+		<tr>
+			<td>rpm -qpil package.rpm</td>
+			<td>List files in not-installed rpm called package.rpm</td>
+		</tr>
+		<tr>
+			<td>rpm -ql package.rpm</td>
+			<td>List files in installed rpm called package.rpm</td>
+		</tr>
+		<tr>
+			<td>rpm -q str</td>
+			<td>List installed rpms containing the string str</td>
+		</tr>
+		<tr>
+			<td>rpm -qf /path/application_name</td>
+			<td>Display the rpm that contains application application_name</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>Starting</span> and Stoping&nbsp;</h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>startx</td>
+			<td>Start the X system</td>
+		</tr>
+		<tr>
+			<td>shutdown -h now</td>
+			<td>Shutdown the system now and do not reboot</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="left">
+			halt
+			</div>
+			</td>
+			<td>Same as above</td>
+		</tr>
+		<tr>
+			<td>shutdown -r now</td>
+			<td>Reboot</td>
+		</tr>
+		<tr>
+			<td>reboot</td>
+			<td>Same as above</td>
+		</tr>
+		<tr>
+			<td>shutdown -r +10</td>
+			<td>Reboot in 10 minutes</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>Mounting</span> filesystems</h3>
+<div align="left">
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>mount -t vfat /dev/sd(a)(1) /mnt/c_drive</td>
+			<td>Mount the first partition 1 of the first hard disk drive a which is in fat32 vfat dormat under /mnt/c_drive directory</td>
+		</tr>
+		<tr>
+			<td>mount -t iso9660 /dev/cdrom /mnt/cdrom</td>
+			<td>Mount cdrom under /mnt/cdrom directory</td>
+		</tr>
+
+		<tr>
+			<td>umount /mnt/hda1</td>
+			<td>Unmout the above</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>User</span> administration</h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>users</td>
+			<td>Display users currently logged in<br>
+			</td>
+		</tr>
+		<tr>
+			<td>adduser username</td>
+			<td>Create a new user called username</td>
+		</tr>
+		<tr>
+			<td>passwd username</td>
+			<td>Define password for user called username</td>
+		</tr>
+		<tr>
+			<td>who</td>
+			<td>List logged-in users</td>
+		</tr>
+		<tr>
+			<td>whoami</td>
+			<td>Display current user</td>
+		</tr>
+		<tr>
+			<td>finger username</td>
+			<td>Displays info about user username</td>
+		</tr>
+		<tr>
+			<td>su</td>
+			<td>Log in as root from current login</td>
+		</tr>
+		<tr>
+			<td>su -</td>
+			<td>Log in as root from current login and take root's path</td>
+		</tr>
+		<tr>
+			<td>exit</td>
+			<td>Exit from console login (ie, logout).</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;">Processes&nbsp; </h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>command</td>
+			<td>Execute command in the foreground</td>
+		</tr>
+		<tr>
+			<td>command &amp;</td>
+			<td>Execute command in the background</td>
+		</tr>
+		<tr>
+			<td>ctrl+z</td>
+			<td>Suspend a program</td>
+		</tr>
+		<tr>
+			<td>ctrl+c</td>
+			<td>Interrupt a program</td>
+		</tr>
+		<tr>
+			<td>ps</td>
+			<td>List all processes</td>
+		</tr>
+		<tr>
+			<td>kill -9 pid</td>
+			<td>Kill process with id pid</td>
+		</tr>
+		<tr>
+			<td>top</td>
+			<td>Monitor processes in real time</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;">
+Networking&nbsp; </h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>hostname</td>
+			<td>List the system's hostname</td>
+		</tr>
+		<tr>
+			<td>ifconfig</td>
+			<td>Set/Display network information</td>
+		</tr>
+		<tr>
+			<td>host ip</td>
+			<td>Resolves ip's hostname</td>
+		</tr>
+		<tr>
+			<td>ping ip/hostname</td>
+			<td>Check if ip/hostname is reachable</td>
+		</tr>
+		<tr>
+			<td>traceroute ip/hostname</td>
+			<td>Find network path to ip/hostname</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>System</span> Information</h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>uname -a</td>
+			<td>General system information</td>
+		</tr>
+		<tr>
+			<td>fdisk -l</td>
+			<td>List partition tables</td>
+		</tr>
+		<tr>
+			<td>cp filename /path/dir_name</td>
+			<td>Copy filename into directory /path/dir_name</td>
+		</tr>
+		<tr>
+			<td>df -T -h</td>
+			<td>List filesystem disk space usage</td>
+		</tr>
+		<tr>
+			<td>lspci</td>
+			<td>List PCI devices</td>
+		</tr>
+		<tr>
+			<td>lsusb</td>
+			<td>List USB devices</td>
+		</tr>
+		<tr>
+			<td>free -m</td>
+			<td>Display RAM+Swap usage</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+<h3 style="visibility: visible;"><span>Program</span> Compile</h3>
+<table border="1" width="561">
+	<tbody>
+		<tr>
+			<td>gcc -o output file.c</td>
+			<td>Compile a C program</td>
+		</tr>
+		<tr>
+			<td>./output</td>
+			<td>Run a C program you have compiled</td>
+		</tr>
+		<tr>
+			<td>g++ -o output file.cpp</td>
+			<td>Compile a C++ program</td>
+		</tr>
+		<tr>
+			<td>./output</td>
+			<td>Run a C++ program you have compiled</td>
+		</tr>
+		<tr>
+			<td>./configure &amp;&amp; make &amp;&amp; su -c 'make install'</td>
+			<td>Configure, compile and install a program with Makefile</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/tput/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>tput - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#tput">tput</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#examples">examples</a></li>
+        
+            <li><a href="#files">files</a></li>
+        
+            <li><a href="#exit-codes">exit codes</a></li>
+        
+            <li><a href="#diagnostics">diagnostics</a></li>
+        
+            <li><a href="#portability">portability</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="tput">tput</h1>
+<h3 id="name">name</h3>
+<pre><code>       tput, reset - initialize a terminal or query terminfo database
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       tput [-Ttype] capname [parms ... ]
+       tput [-Ttype] init
+       tput [-Ttype] reset
+       tput [-Ttype] longname
+       tput -S  &lt;&lt;
+       tput -V
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       The tput utility uses the terminfo database to make the values of terminal-dependent capabilities and information available to the shell (see sh(1)), to initialize or reset the terminal, or return the long name of the requested terminal type.  The result depends upon the capability's type:
+
+              string
+                   tput writes the string to the standard output.  No trailing newline is supplied.
+
+              integer
+                   tput writes the decimal value to the standard output, with a trailing newline.
+
+              boolean
+                   tput simply sets the exit code (0 for TRUE if the terminal has the capability, 1 for FALSE if it does not), and writes nothing to the standard output.
+
+       Before using a value returned on the standard output, the application should test the exit code (e.g., $?, see sh(1)) to be sure it is 0.  (See the EXIT CODES and DIAGNOSTICS sections.)  For a complete list of capabilities and the capname associated with each, see terminfo(5).
+
+       -Ttype indicates the type of terminal.  Normally this option is unnecessary, because the default is taken from the environment variable TERM.  If -T is specified, then the shell variables LINES and COLUMNS will also be ignored.
+
+       capname
+              indicates the capability from the terminfo database.  When termcap support is compiled in, the termcap name for the capability is also accepted.
+
+       parms  If the capability is a string that takes parameters, the arguments parms will be instantiated into the string.
+
+              Most parameters are numbers.  Only a few terminfo capabilities require string parameters; tput uses a table to decide which to pass as strings.  Normally tput uses tparm (3X) to perform the substitution.  If no parameters are given for the capability, tput writes the string without performing the substitution.
+
+       -S     allows more than one capability per invocation of tput.  The capabilities must be passed to tput from the standard input instead of from the command line (see example).  Only one capname is allowed per line.  The -S option changes the meaning of the 0 and 1 boolean and string exit codes (see the EXIT CODES section).
+
+              Again, tput uses a table and the presence of parameters in its input to decide whether to use tparm (3X), and how to interpret the parameters.
+
+       -V     reports the version of ncurses which was used in this program, and exits.
+
+       init   If the terminfo database is present and an entry for the user's terminal exists (see -Ttype, above), the following will occur:
+
+              (1)    if present, the terminal's initialization strings will be output as detailed in the terminfo(5) section on Tabs and Initialization,
+
+              (2)    any delays (e.g., newline) specified in the entry will be set in the tty driver,
+
+              (3)    tabs expansion will be turned on or off according to the specification in the entry, and
+
+              (4)    if tabs are not expanded, standard tabs will be set (every 8 spaces).
+
+              If an entry does not contain the information needed for any of the four above activities, that activity will silently be skipped.
+
+       reset  Instead of putting out initialization strings, the terminal's reset strings will be output if present (rs1, rs2, rs3, rf).  If the reset strings are not present, but initialization strings are, the initialization strings will be output.  Otherwise, reset acts identically to init.
+
+       longname
+              If the terminfo database is present and an entry for the user's terminal exists (see -Ttype above), then the long name of the terminal will be put out.  The long name is the last name in the first line of the terminal's description in the terminfo database [see term(5)].
+
+       If tput is invoked by a link named reset, this has the same effect as tput reset.  See tset for comparison, which has similar behavior.
+
+</code></pre>
+
+<h3 id="examples">examples</h3>
+<pre><code>       tput init
+            Initialize the terminal according to the type of terminal in the environmental variable TERM.  This command should be included in everyone's .profile after the environmental variable TERM has been exported, as illustrated on the profile(5) manual page.
+
+       tput -T5620 reset
+            Reset an AT&amp;T 5620 terminal, overriding the type of terminal in the environmental variable TERM.
+
+       tput cup 0 0
+            Send the sequence to move the cursor to row 0, column 0 (the upper left corner of the screen, usually known as the &quot;home&quot; cursor position).
+
+       tput clear
+            Echo the clear-screen sequence for the current terminal.
+
+       tput cols
+            Print the number of columns for the current terminal.
+
+       tput -T450 cols
+            Print the number of columns for the 450 terminal.
+
+       bold=`tput smso` offbold=`tput rmso`
+            Set the shell variables bold, to begin stand-out mode sequence, and offbold, to end standout mode sequence, for the current terminal.  This might be followed by a prompt: echo &quot;${bold}Please type in your name: ${offbold}\c&quot;
+
+       tput hc
+            Set exit code to indicate if the current terminal is a hard copy terminal.
+
+       tput cup 23 4
+            Send the sequence to move the cursor to row 23, column 4.
+
+       tput cup
+            Send the terminfo string for cursor-movement, with no parameters substituted.
+
+       tput longname
+            Print the long name from the terminfo database for the type of terminal specified in the environmental variable TERM.
+
+            tput -S &lt;&lt;!
+            &gt; clear
+            &gt; cup 10 10
+            &gt; bold
+            &gt; !
+
+            This example shows tput processing several capabilities in one invocation.  It clears the screen, moves the cursor to position 10, 10 and turns on bold (extra bright) mode.  The list is terminated by an exclamation mark (!) on a line by itself.
+
+</code></pre>
+
+<h3 id="files">files</h3>
+<pre><code>       /etc/terminfo
+              compiled terminal description database
+
+       /usr/share/tabset/*
+              tab settings for some terminals, in a format appropriate to be output to the terminal (escape sequences that set margins and tabs); for more information, see the &quot;Tabs and Initialization&quot; section of terminfo(5)
+
+</code></pre>
+
+<h3 id="exit-codes">exit codes</h3>
+<pre><code>       If the -S option is used, tput checks for errors from each line, and if any errors are found, will set the exit code to 4 plus the number of lines with errors.  If no errors are found, the exit code is 0.  No indication of which line failed can be given so exit code 1 will never appear.  Exit codes 2, 3, and 4 retain their usual interpretation.  If the -S option is not used, the exit code depends on the type of capname:
+
+            boolean
+                   a value of 0 is set for TRUE and 1 for FALSE.
+
+            string a value of 0 is set if the capname is defined for this terminal type (the value of capname is returned on standard output); a value of 1 is set if capname is not defined for this terminal type (nothing is written to standard output).
+
+            integer
+                   a value of 0 is always set, whether or not capname is defined for this terminal type.  To determine if capname is defined for this terminal type, the user must test the value written to standard output.  A value of -1 means that capname is not defined for this terminal type.
+
+            other  reset or init may fail to find their respective files.  In that case, the exit code is set to 4 + errno.
+
+       Any other exit code indicates an error; see the DIAGNOSTICS section.
+
+</code></pre>
+
+<h3 id="diagnostics">diagnostics</h3>
+<pre><code>       tput prints the following error messages and sets the corresponding exit codes.
+
+       exit code   error message
+       ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       0           (capname is a numeric variable that is not specified in the terminfo(5) database for this terminal type, e.g.  tput -T450 lines and tput -T2621 xmc)
+       1           no error message is printed, see the EXIT CODES section.
+       2           usage error
+       3           unknown terminal type or no terminfo database
+       4           unknown terminfo capability capname
+       &gt;4          error occurred in -S
+       ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+</code></pre>
+
+<h3 id="portability">portability</h3>
+<pre><code>       The longname and -S options, and the parameter-substitution features used in the cup example, are not supported in BSD curses or in AT&amp;T/USL curses before SVr4.
+
+       X/Open documents only the operands for clear, init and reset.  In this implementation, clear is part of the capname support.  Other implementations of tput on SVr4-based systems such as Solaris, IRIX64 and HPUX as well as others such as AIX and Tru64 provide support for capname operands.
+
+       A few platforms such as FreeBSD and NetBSD recognize termcap names rather than terminfo capability names in their respective tput commands.
+
+       Most implementations which provide support for capname operands use the tparm function to expand parameters in it.  That function expects a mixture of numeric and string parameters, requiring tput to know which type to use.  This implementation uses a table to determine that for the standard capname operands, and an internal library function to analyze nonstandard capname operands.  Other implementations may simply guess that an operand containing only digits is intended to be a number.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       clear(1), stty(1), tabs(1), terminfo(5), termcap(3NCURSES).
+
+       This describes ncurses version 5.9 (patch 20140118).
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

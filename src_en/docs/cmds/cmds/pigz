@@ -1,0 +1,11 @@
+# pigz parallel gzip implementation example - gzip one file with 4 cpu cores
+pigz -p 4 filename.txt
+
+#to gzip entire folder must pass to gzip with tar (and set variable for cores)
+#gzip /dirtogzip into /directory/gzipfile.tar.gz using 4 cores
+export PIGZ="-p4"
+tar cf /directory/gzipfile.tar.gz --use-compress-program=pigz /dirtogzip
+
+# uncompress file with pigz (although standard gnu gzip can be used also -pigz 
+# decompression may be slightly faster but not to the extent of the compression)
+gzip -d filename.gz

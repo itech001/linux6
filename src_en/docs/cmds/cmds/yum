@@ -1,0 +1,14 @@
+# Lists the installed packages
+yum list installed
+
+# your_comment_here
+yum search <name> : searches for <name> in packages
+
+# searches for <name> in the packages
+yum search <name>
+
+# Search for a command or binary inside any package
+yum provides */<your_command>
+
+# Lists all the groups of software you can install with yum
+yum grouplist

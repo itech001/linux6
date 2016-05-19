@@ -1,0 +1,4 @@
+# Compresses a file into a .gz file
+gzip file # creates file.gz
+# gzip a file and keep the original
+gzip < file > file.gz

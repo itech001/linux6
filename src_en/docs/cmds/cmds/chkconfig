@@ -1,0 +1,2 @@
+# turn on a service in centos for runlevels 3, 4, and 5
+chkconfig --level 345 my_service_name on

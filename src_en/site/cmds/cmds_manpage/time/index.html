@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/time/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>time - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#time">time</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#formatting-the-output">formatting the output</a></li>
+        
+            <li><a href="#examples">examples</a></li>
+        
+            <li><a href="#accuracy">accuracy</a></li>
+        
+            <li><a href="#diagnostics">diagnostics</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="time">time</h1>
+<h3 id="name">name</h3>
+<pre><code>       time - run programs and summarize system resource usage
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       time   [ -apqvV ] [ -f FORMAT ] [ -o FILE ]
+              [ --append ] [ --verbose ] [ --quiet ] [ --portability ]
+              [ --format=FORMAT ] [ --output=FILE ] [ --version ]
+              [ --help ] COMMAND [ ARGS ]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       time run the program COMMAND with any given arguments ARG....  When COMMAND finishes, time displays information about resources used by COMMAND (on the standard error output, by default).  If COMMAND exits with non-zero status, time displays a warning message and the exit status.
+
+       time determines which information to display about the resources used by the COMMAND from the string FORMAT.  If no format is specified on the command line, but the TIME environment variable is set, its value is used as the format.  Otherwise, a default format built into time is used.
+
+       Options to time must appear on the command line before COMMAND.  Anything on the command line after COMMAND is passed as arguments to COMMAND.
+
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       -o FILE, --output=FILE
+              Write the resource use statistics to FILE instead of to the standard error stream.  By default, this overwrites the file, destroying the file's previous contents.  This option is useful for collecting information on interactive programs and programs that produce output on the standard error stream.
+
+       -a, --append
+              Append the resource use information to the output file instead of overwriting it.  This option is only useful with the `-o' or `--output' option.
+
+       -f FORMAT, --format FORMAT
+              Use FORMAT as the format string that controls the output of time.  See the below more information.
+
+       --help Print a summary of the command line options and exit.
+
+       -p, --portability
+              Use the following format string, for conformance with POSIX standard 1003.2:
+                        real %e
+                        user %U
+                        sys %S
+
+       -v, --verbose
+              Use the built-in verbose format, which displays each available piece of information on the program's resource use on its own line, with an English description of its meaning.
+
+       --quiet
+              Do not report the status of the program even if it is different from zero.
+
+       -V, --version
+              Print the version number of time and exit.
+
+
+</code></pre>
+
+<h3 id="formatting-the-output">formatting the output</h3>
+<pre><code>       The format string FORMAT controls the contents of the time output.  The format string can be set using the `-f' or `--format', `-v' or `--verbose', or `-p' or `--portability' options.  If they are not given, but the TIME environment variable is set, its value is used as the format string.  Otherwise, a built-in default format is used.  The default format is:
+         %Uuser %Ssystem %Eelapsed %PCPU (%Xtext+%Ddata %Mmax)k
+         %Iinputs+%Ooutputs (%Fmajor+%Rminor)pagefaults %Wswaps
+
+       The format string usually consists of `resource specifiers' interspersed with plain text.  A percent sign (`%') in the format string causes the following character to be interpreted as a resource specifier, which is similar to the formatting characters in the printf(3) function.
+
+       A backslash (`\') introduces a `backslash escape', which is translated into a single printing character upon output.  `\t' outputs a tab character, `\n' outputs a newline, and `\\' outputs a backslash.  A backslash followed by any other character outputs a question mark (`?') followed by a backslash, to indicate that an invalid backslash escape was given.
+
+       Other text in the format string is copied verbatim to the output.  time always prints a newline after printing the resource use information, so normally format strings do not end with a newline character (or `\n').
+
+       There are many resource specifications.  Not all resources are measured by all versions of Unix, so some of the values might be reported as zero.  Any character following a percent sign that is not listed in the table below causes a question mark (`?') to be output, followed by that character, to indicate that an invalid resource specifier was given.
+
+       The resource specifiers, which are a superset of those recognized by the tcsh(1) builtin `time' command, are:
+              %      A literal `%'.
+              C      Name and command line arguments of the command being timed.
+              D      Average size of the process's unshared data area, in Kilobytes.
+              E      Elapsed real (wall clock) time used by the process, in [hours:]minutes:seconds.
+              F      Number of major, or I/O-requiring, page faults that occurred while the process was running.  These are faults where the page has actually migrated out of primary memory.
+              I      Number of file system inputs by the process.
+              K      Average total (data+stack+text) memory use of the process, in Kilobytes.
+              M      Maximum resident set size of the process during its lifetime, in Kilobytes.
+              O      Number of file system outputs by the process.
+              P      Percentage of the CPU that this job got.  This is just user + system times divided by the total running time.  It also prints a percentage sign.
+              R      Number of minor, or recoverable, page faults.  These are pages that are not valid (so they fault) but which have not yet been claimed by other virtual pages.  Thus the data in the page is still valid but the system tables must be updated.
+              S      Total number of CPU-seconds used by the system on behalf of the process (in kernel mode), in seconds.
+              U      Total number of CPU-seconds that the process used directly (in user mode), in seconds.
+              W      Number of times the process was swapped out of main memory.
+              X      Average amount of shared text in the process, in Kilobytes.
+              Z      System's page size, in bytes.  This is a per-system constant, but varies between systems.
+              c      Number of times the process was context-switched involuntarily (because the time slice expired).
+              e      Elapsed real (wall clock) time used by the process, in seconds.
+              k      Number of signals delivered to the process.
+              p      Average unshared stack size of the process, in Kilobytes.
+              r      Number of socket messages received by the process.
+              s      Number of socket messages sent by the process.
+              t      Average resident set size of the process, in Kilobytes.
+              w      Number of times that the program was context-switched voluntarily, for instance while waiting for an I/O operation to complete.
+              x      Exit status of the command.
+
+</code></pre>
+
+<h3 id="examples">examples</h3>
+<pre><code>       To run the command `wc /etc/hosts' and show the default information:
+            time wc /etc/hosts
+
+       To run the command `ls -Fs' and show just the user, system, and total time:
+            time -f &quot;\t%E real,\t%U user,\t%S sys&quot; ls -Fs
+
+       To edit the file BORK and have `time' append the elapsed time and number of signals to the file `log', reading the format string from the environment variable `TIME':
+            export TIME=&quot;\t%E,\t%k&quot; # If using bash or ksh
+            setenv TIME &quot;\t%E,\t%k&quot; # If using csh or tcsh
+            time -a -o log emacs bork
+
+       Users of the bash shell need to use an explicit path in order to run the external time command and not the shell builtin variant.  On system where time is installed in /usr/bin, the first example would become
+            /usr/bin/time wc /etc/hosts
+
+</code></pre>
+
+<h3 id="accuracy">accuracy</h3>
+<pre><code>       The elapsed time is not collected atomically with the execution of the program; as a result, in bizarre circumstances (if the time command gets stopped or swapped out in between when the program being timed exits and when time calculates how long it took to run), it could be much larger than the actual execution time.
+
+       When the running time of a command is very nearly zero, some values (e.g., the percentage of CPU used) may be reported as either zero (which is wrong) or a question mark.
+
+       Most information shown by time is derived from the wait3(2) system call.  The numbers are only as good as those returned by wait3(2).  On systems that do not have a wait3(2) call that returns status information, the times(2) system call is used instead.  However, it provides much less information than wait3(2), so on those systems time reports the majority of the resources as zero.
+
+       The `%I' and `%O' values are allegedly only `real' input and output and do not include those supplied by caching devices.  The meaning of `real' I/O reported by `%I' and `%O' may be muddled for workstations, especially diskless ones.
+
+</code></pre>
+
+<h3 id="diagnostics">diagnostics</h3>
+<pre><code>       The time command returns when the program exits, stops, or is terminated by a signal.  If the program exited normally, the return value of time is the return value of the program it executed and measured.  Otherwise, the return value is 128 plus the number of the signal which caused the program to stop or terminate.
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       time was written by David MacKenzie.  This man page was added by Dirk Eddelbuettel &lt;edd@debian.org&gt;, the Debian GNU/Linux maintainer, for use by the Debian GNU/Linux distribution but may of course be used by others.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       tcsh(1), printf(3)
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

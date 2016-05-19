@@ -1,0 +1,2 @@
+# Print the first 10 lines of sample.txt
+head -n 10 sample.txt

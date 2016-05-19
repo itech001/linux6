@@ -1,0 +1,8 @@
+# To parse the word sir (using the ' ' as a delimeter, the choosing the second word) 
+echo "hello sir" | cut -d' ' -f2
+
+# get the first 5 character of a string
+echo 'do you even cut bro?' | cut -c1-5
+
+# use `col` to format an output so you can select the third string using the default tab as a delimeter 
+who | col | cut -f3

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/shell/bash/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>Bash - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../../cmds/for/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../bash_example/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-12" role="main">
+
+<h1 id="bash">bash</h1>
+<p><a href="../bash_man/index.html">bash manpage</a><br />
+more examples: <a href="https://github.com/itech001/100-shell-script-examples">100 shell script examples</a> /  <a href="https://github.com/itech001/bash-example">bash example</a></p>
+<pre><code>
+[bash tutorial](http://linuxconfig.org/bash-scripting-tutorial)
+
+#!/bin/bash
+#Variables
+STRING=&quot;HELLO WORLD!!!&quot;
+echo $STRING 
+
+OF=myhome_directory_$(date +%Y%m%d).tar.gz
+tar -czf $OF /home/linuxconfig 
+
+#Global vs. Local variables
+#Define bash global variable
+#This variable is global and can be used anywhere in this bash script
+VAR=&quot;global variable&quot;
+function bash {
+#Define bash local variable
+#This variable is local to bash function only
+local VAR=&quot;local variable&quot;
+echo $VAR
+}
+echo $VAR
+bash
+# Note the bash global variable did not change
+# &quot;local&quot; is bash reserved word
+echo $VAR
+
+#Passing arguments to the bash script
+# use predefined variables to access passed arguments
+#echo arguments to the shell
+echo $1 $2 $3 ' -&gt; echo $1 $2 $3'
+
+# We can also store arguments from bash command line in special array
+args=(&quot;$@&quot;)
+#echo arguments to the shell
+echo ${args[0]} ${args[1]} ${args[2]} ' -&gt; args=(&quot;$@&quot;); echo ${args[0]} ${args[1]} ${args[2]}'
+
+#use $@ to print out all arguments at once
+echo $@ ' -&gt; echo $@'
+
+# use $# variable to print out
+# number of arguments passed to the bash script
+echo Number of arguments passed: $# ' -&gt; echo Number of arguments passed: $#' 
+
+#Executing shell commands with bash
+# use backticks &quot; ` ` &quot; to execute shell command
+echo `uname -o`
+# executing bash command without backticks
+echo uname -o 
+
+#Reading User Input
+echo -e &quot;Hi, please type the word: \c &quot;
+read  word
+echo &quot;The word you entered is: $word&quot;
+echo -e &quot;Can you please enter two words? &quot;
+read word1 word2
+echo &quot;Here is your input: \&quot;$word1\&quot; \&quot;$word2\&quot;&quot;
+echo -e &quot;How do you feel about bash scripting? &quot;
+# read command now stores a reply into the default build-in variable $REPLY
+read
+echo &quot;You said $REPLY, I'm glad to hear that! &quot;
+echo -e &quot;What are your favorite colours ? &quot;
+# -a makes read command to read into an array
+read -a colours
+echo &quot;My favorite colours are also ${colours[0]}, ${colours[1]} and ${colours[2]}:-)&quot; 
+
+#Bash Trap Command
+# bash trap command
+trap bashtrap INT
+# bash clear screen command
+clear;
+# bash trap function is executed when CTRL-C is pressed:
+# bash prints message =&gt; Executing bash trap subrutine !
+bashtrap()
+{
+    echo &quot;CTRL+C Detected !...executing bash trap !&quot;
+}
+# for loop from 1/10 to 10/10
+for a in `seq 1 10`; do
+    echo &quot;$a/10 to Exit.&quot; 
+    sleep 1;
+done
+echo &quot;Exit Bash Trap Example!!!&quot; 
+
+#Arrays
+#Declare simple bash array
+#Declare array with 4 elements
+ARRAY=( 'Debian Linux' 'Redhat Linux' Ubuntu Linux )
+# get number of elements in the array
+ELEMENTS=${#ARRAY[@]}
+
+# echo each element in array 
+# for loop
+for (( i=0;i&lt;$ELEMENTS;i++)); do
+    echo ${ARRAY[${i}]}
+done 
+
+#Read file into bash array
+# Declare array
+declare -a ARRAY
+# Link filedescriptor 10 with stdin
+exec 10&lt;&amp;0
+# stdin replaced with a file supplied as a first argument
+exec &lt; $1
+let count=0
+
+while read LINE; do
+
+    ARRAY[$count]=$LINE
+    ((count++))
+done
+
+echo Number of elements: ${#ARRAY[@]}
+# echo array's content
+echo ${ARRAY[@]}
+# restore stdin from filedescriptor 10
+# and close filedescriptor 10
+exec 0&lt;&amp;10 10&lt;&amp;-
+
+
+#Simple Bash if/else statement
+directory=&quot;./BashScripting&quot;
+
+# bash check if directory exists
+if [ -d $directory ]; then
+    echo &quot;Directory exists&quot;
+else 
+    echo &quot;Directory does not exists&quot;
+fi 
+
+#Nested if/else
+# Declare variable choice and assign value 4
+choice=4
+# Print to stdout
+ echo &quot;1. Bash&quot;
+ echo &quot;2. Scripting&quot;
+ echo &quot;3. Tutorial&quot;
+ echo -n &quot;Please choose a word [1,2 or 3]? &quot;
+# Loop while the variable choice is equal 4
+# bash while loop
+while [ $choice -eq 4 ]; do
+
+# read user input
+read choice
+# bash nested if/else
+if [ $choice -eq 1 ] ; then
+
+        echo &quot;You have chosen word: Bash&quot;
+
+else                   
+
+        if [ $choice -eq 2 ] ; then
+                 echo &quot;You have chosen word: Scripting&quot;
+        else
+
+                if [ $choice -eq 3 ] ; then
+                        echo &quot;You have chosen word: Tutorial&quot;
+                else
+                        echo &quot;Please make a choice between 1-3 !&quot;
+                        echo &quot;1. Bash&quot;
+                        echo &quot;2. Scripting&quot;
+                        echo &quot;3. Tutorial&quot;
+                        echo -n &quot;Please choose a word [1,2 or 3]? &quot;
+                        choice=4
+                fi   
+        fi
+fi
+done 
+
+
+#Arithmetic Comparisons
+-lt &lt;
+-gt &gt;
+-le &lt;=
+-ge &gt;=
+-eq ==
+-ne !=
+# declare integers
+NUM1=2
+NUM2=2
+if [ $NUM1 -eq $NUM2 ]; then
+    echo &quot;Both Values are equal&quot;
+else 
+    echo &quot;Values are NOT equal&quot;
+fi 
+
+# declare integers
+NUM1=2
+NUM2=1
+if [ $NUM1 -eq $NUM2 ]; then
+    echo &quot;Both Values are equal&quot;
+else 
+    echo &quot;Values are NOT equal&quot;
+fi 
+
+# declare integers
+NUM1=2
+NUM2=1
+if   [ $NUM1 -eq $NUM2 ]; then
+    echo &quot;Both Values are equal&quot;
+elif [ $NUM1 -gt $NUM2 ]; then
+    echo &quot;NUM1 is greater then NUM2&quot;
+else 
+    echo &quot;NUM2 is greater then NUM1&quot;
+fi 
+
+#String Comparisons
+=   equal
+!=  not equal
+&lt;   less then
+&gt;   greater then
+-n s1   string s1 is not empty
+-z s1   string s1 is empty
+
+#Declare string S1
+S1=&quot;Bash&quot;
+#Declare string S2
+S2=&quot;Scripting&quot;
+if [ $S1 = $S2 ]; then
+    echo &quot;Both Strings are equal&quot;
+else 
+    echo &quot;Strings are NOT equal&quot;
+fi 
+
+#Declare string S1
+S1=&quot;Bash&quot;
+#Declare string S2
+S2=&quot;Bash&quot;
+if [ $S1 = $S2 ]; then
+    echo &quot;Both Strings are equal&quot;
+else 
+    echo &quot;Strings are NOT equal&quot;
+fi 
+
+#Bash File Testing
+
+-b filename Block special file
+-c filename Special character file
+-d directoryname    Check for directory existence
+-e filename Check for file existence
+-f filename Check for regular file existence not a directory
+-G filename Check if file exists and is owned by effective group ID.
+-g filename true if file exists and is set-group-id.
+-k filename Sticky bit
+-L filename Symbolic link
+-O filename True if file exists and is owned by the effective user id.
+-r filename Check if file is a readable
+-S filename Check if file is socket
+-s filename Check if file is nonzero size
+-u filename Check if file set-ser-id bit is set
+-w filename Check if file is writable
+-x filename Check if file is executable
+
+file=&quot;./file&quot;
+if [ -e $file ]; then
+    echo &quot;File exists&quot;
+else 
+    echo &quot;File does not exists&quot;
+fi 
+
+while [ ! -e myfile ]; do
+# Sleep until file does exists/is created
+sleep 1
+done 
+
+#Loops 
+#Bash for loop
+# bash for loop
+for f in $( ls /var/ ); do
+    echo $f
+done 
+
+
+#from command line
+for f in $( ls /var/ ); do echo $f; done 
+
+#Bash while loop
+COUNT=6
+# bash while loop
+while [ $COUNT -gt 0 ]; do
+    echo Value of count is: $COUNT
+    let COUNT=COUNT-1
+done 
+
+#Bash until loop
+COUNT=0
+# bash until loop
+until [ $COUNT -gt 5 ]; do
+        echo Value of count is: $COUNT
+        let COUNT=COUNT+1
+done 
+
+#Control bash loop with
+# This bash script will locate and replace spaces
+# in the filenames
+DIR=&quot;.&quot;
+# Controlling a loop with bash read command by redirecting STDOUT as
+# a STDIN to while loop
+# find will not truncate filenames containing spaces
+find $DIR -type f | while read file; do
+# using POSIX class [:space:] to find space in the filename
+if [[ &quot;$file&quot; = *[[:space:]]* ]]; then
+# substitute space with &quot;_&quot; character and consequently rename the file
+mv &quot;$file&quot; `echo $file | tr ' ' '_'`
+fi;
+# end of while loop
+done 
+
+
+#Bash Functions
+# BASH FUNCTIONS CAN BE DECLARED IN ANY ORDER
+function function_B {
+        echo Function B.
+}
+function function_A {
+        echo $1
+}
+function function_D {
+        echo Function D.
+}
+function function_C {
+        echo $1
+}
+# FUNCTION CALLS
+# Pass parameter to function A
+function_A &quot;Function A.&quot;
+function_B
+# Pass parameter to function C
+function_C &quot;Function C.&quot;
+function_D 
+
+#Bash Select
+PS3='Choose one word: ' 
+
+# bash select
+select word in &quot;linux&quot; &quot;bash&quot; &quot;scripting&quot; &quot;tutorial&quot; 
+do
+  echo &quot;The word you have selected is: $word&quot;
+# Break, otherwise endless loop
+  break  
+done
+
+exit 0 
+
+
+#Case statement conditional
+echo &quot;What is your preferred programming / scripting language&quot;
+echo &quot;1) bash&quot;
+echo &quot;2) perl&quot;
+echo &quot;3) phyton&quot;
+echo &quot;4) c++&quot;
+echo &quot;5) I do not know !&quot;
+read case;
+#simple case bash structure
+# note in this case $case is variable and does not have to
+# be named case this is just an example
+case $case in
+    1) echo &quot;You selected bash&quot;;;
+    2) echo &quot;You selected perl&quot;;;
+    3) echo &quot;You selected phyton&quot;;;
+    4) echo &quot;You selected c++&quot;;;
+    5) exit
+esac 
+
+
+#Bash quotes and quotations
+# Escaping Meta characters
+#Declare bash string variable
+BASH_VAR=&quot;Bash Script&quot;
+
+# echo variable BASH_VAR
+echo $BASH_VAR
+
+#when meta character such us &quot;$&quot; is escaped with &quot;\&quot; it will be read literally
+echo \$BASH_VAR 
+
+# backslash has also special meaning and it can be suppressed with yet another &quot;\&quot;
+echo &quot;\\&quot; 
+
+#Single quotes
+#Declare bash string variable
+ BASH_VAR=&quot;Bash Script&quot;
+
+ # echo variable BASH_VAR
+ echo $BASH_VAR
+
+ # meta characters special meaning in bash is suppressed when  using single quotes 
+ echo '$BASH_VAR  &quot;$BASH_VAR&quot;' 
+
+#Double Quotes
+#Declare bash string variable
+BASH_VAR=&quot;Bash Script&quot;
+
+# echo variable BASH_VAR
+echo $BASH_VAR
+
+# meta characters and its special meaning in bash is 
+# suppressed when using double quotes except &quot;$&quot;, &quot;\&quot; and &quot;`&quot;
+
+echo &quot;It's $BASH_VAR  and \&quot;$BASH_VAR\&quot; using backticks: `date`&quot; 
+
+#Bash quoting with ANSI-C style
+\a  alert (bell)    \b  backspace
+\e  an escape character \f  form feed
+\n  newline \r  carriage return
+\t  horizontal tab  \v  vertical tab
+\\  backslash   \`  single quote
+\nnn    octal value of characters ( see [http://www.asciitable.com/ ASCII table] )  \xnn    hexadecimal value of characters ( see [http://www.asciitable.com/ ASCII table] )
+
+#Arithmetic Operations
+let RESULT1=$1+$2
+echo $1+$2=$RESULT1 ' -&gt; # let RESULT1=$1+$2'
+declare -i RESULT2
+RESULT2=$1+$2
+echo $1+$2=$RESULT2 ' -&gt; # declare -i RESULT2; RESULT2=$1+$2'
+echo $1+$2=$(($1 + $2)) ' -&gt; # $(($1 + $2))' 
+
+#Bash Arithmetics
+echo '### let ###'
+# bash addition
+let ADDITION=3+5
+echo &quot;3 + 5 =&quot; $ADDITION
+
+# bash subtraction
+let SUBTRACTION=7-8
+echo &quot;7 - 8 =&quot; $SUBTRACTION 
+
+# bash multiplication
+let MULTIPLICATION=5*8
+echo &quot;5 * 8 =&quot; $MULTIPLICATION
+
+# bash division
+let DIVISION=4/2
+echo &quot;4 / 2 =&quot; $DIVISION
+
+# bash modulus
+let MODULUS=9%4
+echo &quot;9 % 4 =&quot; $MODULUS
+
+# bash power of two
+let POWEROFTWO=2**2
+echo &quot;2 ^ 2 =&quot; $POWEROFTWO
+
+
+echo '### Bash Arithmetic Expansion ###'
+# There are two formats for arithmetic expansion: $[ expression ] 
+# and $(( expression #)) its your choice which you use
+
+echo 4 + 5 = $((4 + 5))
+echo 7 - 7 = $[ 7 - 7 ]
+echo 4 x 6 = $((3 * 2))
+echo 6 / 3 = $((6 / 3))
+echo 8 % 7 = $((8 % 7))
+echo 2 ^ 8 = $[ 2 ** 8 ]
+
+
+echo '### Declare ###'
+
+echo -e &quot;Please enter two numbers \c&quot;
+# read user input
+read num1 num2
+declare -i result
+result=$num1+$num2
+echo &quot;Result is:$result &quot;
+
+# bash convert binary number 10001
+result=2#10001
+echo $result
+
+# bash convert octal number 16
+result=8#16
+echo $result
+
+# bash convert hex number 0xE6A
+result=16#E6A
+echo $result 
+
+#Round floating point number
+# get floating point number
+floating_point_number=3.3446
+echo $floating_point_number
+# round floating point number with bash
+for bash_rounded_number in $(printf %.0f $floating_point_number); do
+echo &quot;Rounded number with bash:&quot; $bash_rounded_number
+done 
+
+#Bash floating point calculations
+# Simple linux bash calculator 
+echo &quot;Enter input:&quot; 
+read userinput
+echo &quot;Result with 2 digits after decimal point:&quot;
+echo &quot;scale=2; ${userinput}&quot; | bc 
+echo &quot;Result with 10 digits after decimal point:&quot;
+echo &quot;scale=10; ${userinput}&quot; | bc 
+echo &quot;Result as rounded integer:&quot;
+echo $userinput | bc 
+
+#Redirections
+#STDOUT from bash script to STDERR
+echo &quot;Redirect this STDOUT to STDERR&quot; 1&gt;&amp;2 
+#STDERR from bash script to STDOUT
+cat $1 2&gt;&amp;1 
+#stdout to screen
+ls file1 
+#stdout to file
+ls file1 &gt; STDOUT
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

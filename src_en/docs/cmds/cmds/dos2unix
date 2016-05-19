@@ -1,0 +1,2 @@
+# remove DOS/Mac control characters/line endings and convert file to unix
+dos2unix /home/el/yourdosfile.txt

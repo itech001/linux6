@@ -1,0 +1,54 @@
+# RPM Package Manager
+# install a package
+rpm -Uvh package.rpm
+
+# install a package that doesn't have needed dependencies (never do this)
+rpm -Uvh --nodeps --force package.rpm
+
+# List information about an installed package
+rpm -qi package
+
+# List information about a package file
+rpm -qip package.rpm
+
+# Remove a package
+rpm -e package
+
+# Remove a package without checking dependencies (never do this)
+rpm -e --nodeps package
+
+# Search for a package
+rpm -qa |grep package
+
+# Output package information based on package variables
+rpm -q package --qf %{name}-%{version}%{arch}
+
+# List known variables
+rpm --showrc
+
+# What packages does this package require
+rpm -q package --requires
+
+# What capabilities does this package provide
+rpm -q package --provides
+
+# What packages require this package/capability
+rpm -q package --whatrequires
+
+# Install package into another base directory
+rpm --root /some/path -Uvh package.rpm
+
+# Show the scripts (postun,preun,post,pre) in the package
+rpm -q package --scripts
+
+# Rebuild rpm database
+rpm --rebuilddb
+
+# Lists all the files this package will install
+rpm -ql package
+
+# your_comment_here
+RPM is a cross-plataform tool by RHEL
+rmp [operation] [option] [packages-files|package-names]
+example:
+rmp -Uvh samba-3.6.5-86.fc17.1.x86_64.rmp

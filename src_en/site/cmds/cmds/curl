@@ -1,0 +1,60 @@
+# get the contents of a web page
+curl http://bropages.org
+
+# download a file and write it to another file called myfile.html
+curl -o myfile.html http://bropages.org
+
+# Download a file using its original filename, follow all redirects, and continue where you left off if the download previously failed
+curl -LOC - http://foo.bar/file.ext
+
+# send a header with curl
+curl --header "X-BeerIsInteresting: 1" www.bropages.org
+
+#gets the headers for a given page
+curl -I http://google.com
+
+# Get my external IP address 
+curl ifconfig.me/ip
+
+# Get my remote host
+curl ifconfig.me/host
+
+# Get my user agent
+curl ifconfig.me/ua
+
+# Get port
+curl ifconfig.me/port
+
+# Post a file to a shiny enterprise webservice api
+curl -d @invoice.pdf -X POST http://devnull-as-a-service.com/dev/null
+
+# POST request
+curl --data "param1=value1&amp;param2=value2" http://www.bropages.com
+
+# POST the JSON encoded object
+# {
+#         "command": "sup",
+#             "chill": true
+# }
+# with header 'X-BRO-HEADER' and value 91384934 to api.bro.com
+curl -X POST api.bro.com -d '{"command": "sup", "chill": true}' -H "X-BRO-HEADER: 91384934"
+
+# Use curl and ignore certificate errors
+curl --insecure http://my.homespun.website.com
+
+# Curl without progress bar, so you can pipe output
+curl -s http://path.to/resource | less
+curl -s http://path.to/resource | vim --
+
+# POST the contents of a file (data.json in this example)
+curl -X POST -d @data.json http://httpbin.org/post
+
+# POST a raw binary file with absolutely no extra processing
+curl --data-binary @"image.png" http://an.imageprocessor.com
+
+# Run a curl and output the response headers to STDOUT
+curl -D - http://www.google.com -s -o /dev/null
+
+# Download http://test.com/file.txt and print it to stdout. 
+curl -o - http://test.com/file.txt
+

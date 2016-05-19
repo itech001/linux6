@@ -1,0 +1,3 @@
+# mount foobar from remote host to existing local mountpoint, show Foobar as
+# volume name in Finder and automatically reconnect upon loss of connection.
+sshfs user@host:/foobar /Volumes/foobar -ovolname=Foobar,reconnect

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/bzip2/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>bzip2 - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#bzip2">bzip2</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#memory-management">memory management</a></li>
+        
+            <li><a href="#recovering-data-from-damaged-files">recovering data from damaged files</a></li>
+        
+            <li><a href="#performance-notes">performance notes</a></li>
+        
+            <li><a href="#caveats">caveats</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="bzip2">bzip2</h1>
+<p>bzip2(1)                              General Commands Manual                              bzip2(1)</p>
+<h3 id="name">name</h3>
+<pre><code>       bzip2, bunzip2 - a block-sorting file compressor, v1.0.6
+       bzcat - decompresses files to stdout
+       bzip2recover - recovers data from damaged bzip2 files
+
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       bzip2 [ -cdfkqstvzVL123456789 ] [ filenames ...  ]
+       bzip2 [ -h|--help ]
+       bunzip2 [ -fkvsVL ] [ filenames ...  ]
+       bunzip2 [ -h|--help ]
+       bzcat [ -s ] [ filenames ...  ]
+       bzcat [ -h|--help ]
+       bzip2recover filename
+
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       bzip2  compresses  files using the Burrows-Wheeler block sorting text compression algorithm,
+       and Huffman coding.  Compression is generally considerably better than that achieved by more
+       conventional  LZ77/LZ78-based  compressors, and approaches the performance of the PPM family
+       of statistical compressors.
+
+       The command-line options are deliberately very similar to those of GNU gzip,  but  they  are
+       not identical.
+
+       bzip2  expects  a  list  of  file  names  to accompany the command-line flags.  Each file is
+       replaced by a compressed version of itself, with the name  &quot;original_name.bz2&quot;.   Each  com‐
+       pressed  file  has the same modification date, permissions, and, when possible, ownership as
+       the corresponding original, so that these properties can be correctly restored at decompres‐
+       sion time.  File name handling is naive in the sense that there is no mechanism for preserv‐
+       ing original file names, permissions, ownerships or dates in filesystems  which  lack  these
+       concepts, or have serious file name length restrictions, such as MS-DOS.
+
+       bzip2 and bunzip2 will by default not overwrite existing files.  If you want this to happen,
+       specify the -f flag.
+
+       If no file names are specified, bzip2 compresses from standard input to standard output.  In
+       this  case,  bzip2  will  decline to write compressed output to a terminal, as this would be
+       entirely incomprehensible and therefore pointless.
+
+       bunzip2 (or bzip2 -d) decompresses all specified files.  Files which  were  not  created  by
+       bzip2 will be detected and ignored, and a warning issued.  bzip2 attempts to guess the file‐
+       name for the decompressed file from that of the compressed file as follows:
+
+              filename.bz2    becomes   filename
+              filename.bz     becomes   filename
+              filename.tbz2   becomes   filename.tar
+              filename.tbz    becomes   filename.tar
+              anyothername    becomes   anyothername.out
+
+       If the file does not end in one of the recognised endings, .bz2, .bz, .tbz2 or  .tbz,  bzip2
+       complains  that  it  cannot  guess the name of the original file, and uses the original name
+       with .out appended.
+
+       As with compression, supplying no filenames causes  decompression  from  standard  input  to
+       standard output.
+
+       bunzip2  will  correctly  decompress  a  file which is the concatenation of two or more com‐
+       pressed files.  The result is the concatenation of  the  corresponding  uncompressed  files.
+       Integrity testing (-t) of concatenated compressed files is also supported.
+
+       You  can  also  compress  or  decompress files to the standard output by giving the -c flag.
+       Multiple files may be compressed and decompressed like this.  The resulting outputs are  fed
+       sequentially  to  stdout.   Compression  of multiple files in this manner generates a stream
+       containing multiple compressed file representations.  Such a stream can be decompressed cor‐
+       rectly  only  by  bzip2  version  0.9.0 or later.  Earlier versions of bzip2 will stop after
+       decompressing the first file in the stream.
+
+       bzcat (or bzip2 -dc) decompresses all specified files to the standard output.
+
+       bzip2 will read arguments from the environment variables BZIP2 and BZIP, in that order,  and
+       will  process them before any arguments read from the command line.  This gives a convenient
+       way to supply default arguments.
+
+       Compression is always performed, even if the compressed file is  slightly  larger  than  the
+       original.  Files of less than about one hundred bytes tend to get larger, since the compres‐
+       sion mechanism has a constant overhead in the region of 50 bytes.   Random  data  (including
+       the  output of most file compressors) is coded at about 8.05 bits per byte, giving an expan‐
+       sion of around 0.5%.
+
+       As a self-check for your protection, bzip2 uses 32-bit CRCs to make  sure  that  the  decom‐
+       pressed  version  of a file is identical to the original.  This guards against corruption of
+       the compressed data, and against undetected bugs in bzip2 (hopefully  very  unlikely).   The
+       chances of data corruption going undetected is microscopic, about one chance in four billion
+       for each file processed.  Be aware, though, that the check occurs upon decompression, so  it
+       can  only  tell  you that something is wrong.  It can't help you recover the original uncom‐
+       pressed data.  You can use bzip2recover to try to recover data from damaged files.
+
+       Return values: 0 for a normal exit, 1 for environmental problems (file  not  found,  invalid
+       flags,  I/O  errors, &amp;c), 2 to indicate a corrupt compressed file, 3 for an internal consis‐
+       tency error (eg, bug) which caused bzip2 to panic.
+
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       -c --stdout
+              Compress or decompress to standard output.
+
+       -d --decompress
+              Force decompression.  bzip2, bunzip2 and bzcat are really the same program,  and  the
+              decision about what actions to take is done on the basis of which name is used.  This
+              flag overrides that mechanism, and forces bzip2 to decompress.
+
+       -z --compress
+              The complement to -d: forces compression, regardless of the invocation name.
+
+       -t --test
+              Check integrity of the specified file(s), but don't  decompress  them.   This  really
+              performs a trial decompression and throws away the result.
+
+       -f --force
+              Force  overwrite of output files.  Normally, bzip2 will not overwrite existing output
+              files.  Also forces bzip2 to break hard links to files, which it  otherwise  wouldn't
+              do.
+
+              bzip2 normally declines to decompress files which don't have the correct magic header
+              bytes.  If forced (-f), however, it will pass such files through unmodified.  This is
+              how GNU gzip behaves.
+
+       -k --keep
+              Keep (don't delete) input files during compression or decompression.
+
+       -s --small
+              Reduce  memory  usage,  for compression, decompression and testing.  Files are decom‐
+              pressed and tested using a modified algorithm which only requires 2.5 bytes per block
+              byte.   This  means any file can be decompressed in 2300 k of memory, albeit at about
+              half the normal speed.
+
+              During compression, -s selects a block size of 200 k,  which  limits  memory  use  to
+              around  the same figure, at the expense of your compression ratio.  In short, if your
+              machine is low on memory (8 megabytes or less), use -s for  everything.   See  MEMORY
+              MANAGEMENT below.
+
+       -q --quiet
+              Suppress non-essential warning messages.  Messages pertaining to I/O errors and other
+              critical events will not be suppressed.
+
+       -v --verbose
+              Verbose mode -- show the compression ratio for each  file  processed.   Further  -v's
+              increase  the  verbosity level, spewing out lots of information which is primarily of
+              interest for diagnostic purposes.
+
+       -h --help
+              Print a help message and exit.
+
+       -L --license -V --version
+              Display the software version, license terms and conditions.
+
+       -1 (or --fast) to -9 (or --best)
+              Set the block size to 100 k, 200 k ...  900 k when compressing.  Has no  effect  when
+              decompressing.   See MEMORY MANAGEMENT below.  The --fast and --best aliases are pri‐
+              marily for GNU gzip compatibility.  In particular, --fast doesn't make things signif‐
+              icantly faster.  And --best merely selects the default behaviour.
+
+       --     Treats  all subsequent arguments as file names, even if they start with a dash.  This
+              is so you can handle files with names beginning with a dash, for  example:  bzip2  --
+              -myfilename.
+
+       --repetitive-fast --repetitive-best
+              These  flags  are  redundant  in versions 0.9.5 and above.  They provided some coarse
+              control over the behaviour of the sorting algorithm in earlier  versions,  which  was
+              sometimes  useful.   0.9.5  and  above have an improved algorithm which renders these
+              flags irrelevant.
+
+
+</code></pre>
+
+<h3 id="memory-management">memory management</h3>
+<pre><code>       bzip2 compresses large files in blocks.  The block size affects both the  compression  ratio
+       achieved,  and  the amount of memory needed for compression and decompression.  The flags -1
+       through -9 specify the block size to be 100,000 bytes through 900,000  bytes  (the  default)
+       respectively.   At  decompression time, the block size used for compression is read from the
+       header of the compressed file, and bunzip2 then  allocates  itself  just  enough  memory  to
+       decompress  the file.  Since block sizes are stored in compressed files, it follows that the
+       flags -1 to -9 are irrelevant to and so ignored during decompression.
+
+       Compression and decompression requirements, in bytes, can be estimated as:
+
+              Compression:   400 k + ( 8 x block size )
+
+              Decompression: 100 k + ( 4 x block size ), or
+                             100 k + ( 2.5 x block size )
+
+       Larger block sizes give rapidly diminishing marginal returns.  Most of the compression comes
+       from the first two or three hundred k of block size, a fact worth bearing in mind when using
+       bzip2 on small machines.  It is also important to appreciate that the  decompression  memory
+       requirement is set at compression time by the choice of block size.
+
+       For  files  compressed  with  the  default 900 k block size, bunzip2 will require about 3700
+       kbytes to decompress.  To support decompression of any file on a 4 megabyte machine, bunzip2
+       has  an  option  to  decompress  using  approximately half this amount of memory, about 2300
+       kbytes.  Decompression speed is also halved, so you should use this option only where neces‐
+       sary.  The relevant flag is -s.
+
+       In  general,  try  and  use the largest block size memory constraints allow, since that max‐
+       imises the compression achieved.  Compression and decompression speed  are  virtually  unaf‐
+       fected by block size.
+
+       Another  significant  point  applies to files which fit in a single block -- that means most
+       files you'd encounter using a large block size.  The amount of real memory touched  is  pro‐
+       portional  to  the  size  of the file, since the file is smaller than a block.  For example,
+       compressing a file 20,000 bytes long with the flag -9 will cause the compressor to  allocate
+       around  7600 k  of  memory, but only touch 400 k + 20000 * 8 = 560 kbytes of it.  Similarly,
+       the decompressor will allocate 3700 k but only touch 100 k + 20000 * 4 = 180 kbytes.
+
+       Here is a table which summarises the maximum memory usage for different block  sizes.   Also
+       recorded  is  the  total compressed size for 14 files of the Calgary Text Compression Corpus
+       totalling 3,141,622 bytes.  This column gives some feel  for  how  compression  varies  with
+       block size.  These figures tend to understate the advantage of larger block sizes for larger
+       files, since the Corpus is dominated by smaller files.
+
+                  Compress   Decompress   Decompress   Corpus
+           Flag     usage      usage       -s usage     Size
+
+            -1      1200k       500k         350k      914704
+            -2      2000k       900k         600k      877703
+            -3      2800k      1300k         850k      860338
+            -4      3600k      1700k        1100k      846899
+            -5      4400k      2100k        1350k      845160
+            -6      5200k      2500k        1600k      838626
+            -7      6100k      2900k        1850k      834096
+            -8      6800k      3300k        2100k      828642
+            -9      7600k      3700k        2350k      828642
+
+
+</code></pre>
+
+<h3 id="recovering-data-from-damaged-files">recovering data from damaged files</h3>
+<pre><code>       bzip2 compresses files in blocks, usually 900 kbytes long.  Each block is  handled  indepen‐
+       dently.   If a media or transmission error causes a multi-block .bz2 file to become damaged,
+       it may be possible to recover data from the undamaged blocks in the file.
+
+       The compressed representation of each block is delimited by a 48-bit pattern, which makes it
+       possible  to  find  the block boundaries with reasonable certainty.  Each block also carries
+       its own 32-bit CRC, so damaged blocks can be distinguished from undamaged ones.
+
+       bzip2recover is a simple program whose purpose is to search for blocks in  .bz2  files,  and
+       write  each  block  out  into  its  own  .bz2  file.   You can then use bzip2 -t to test the
+       integrity of the resulting files, and decompress those which are undamaged.
+
+       bzip2recover takes a single argument, the name of the damaged file, and writes a  number  of
+       files  &quot;rec00001file.bz2&quot;, &quot;rec00002file.bz2&quot;, etc., containing the  extracted  blocks.  The
+       output filenames are designed so that the use of wildcards in subsequent processing  --  for
+       example,  &quot;bzip2  -dc  rec*file.bz2  &gt; recovered_data&quot; -- processes the files in the correct
+       order.
+
+       bzip2recover should be of most use dealing with large .bz2 files, as these will contain many
+       blocks.  It is clearly futile to use it on damaged single-block files, since a damaged block
+       cannot be recovered.  If you wish to minimise any  potential  data  loss  through  media  or
+       transmission errors, you might consider compressing with a smaller block size.
+
+
+</code></pre>
+
+<h3 id="performance-notes">performance notes</h3>
+<pre><code>       The  sorting  phase of compression gathers together similar strings in the file.  Because of
+       this, files containing very long runs of repeated symbols, like &quot;aabaabaabaab ...&quot; (repeated
+       several  hundred times) may compress more slowly than normal.  Versions 0.9.5 and above fare
+       much better than previous versions in this respect.  The ratio between worst-case and  aver‐
+       age-case  compression time is in the region of 10:1.  For previous versions, this figure was
+       more like 100:1.  You can use the -vvvv option to monitor progress in great detail,  if  you
+       want.
+
+       Decompression speed is unaffected by these phenomena.
+
+       bzip2 usually allocates several megabytes of memory to operate in, and then charges all over
+       it in a fairly random fashion.  This means that performance, both for compressing and decom‐
+       pressing, is largely determined by the speed at which your machine can service cache misses.
+       Because of this, small changes to the code to reduce the miss rate  have  been  observed  to
+       give  disproportionately  large performance improvements.  I imagine bzip2 will perform best
+       on machines with very large caches.
+
+
+</code></pre>
+
+<h3 id="caveats">caveats</h3>
+<pre><code>       I/O error messages are not as helpful as they could be.  bzip2  tries  hard  to  detect  I/O
+       errors  and  exit cleanly, but the details of what the problem is sometimes seem rather mis‐
+       leading.
+
+       This manual page pertains to version 1.0.6 of bzip2.  Compressed data created by  this  ver‐
+       sion  is  entirely forwards and backwards compatible with the previous public releases, ver‐
+       sions 0.1pl2, 0.9.0, 0.9.5, 1.0.0, 1.0.1, 1.0.2 and above, but with the following exception:
+       0.9.0  and  above  can  correctly decompress multiple concatenated compressed files.  0.1pl2
+       cannot do this; it will stop after decompressing just the first file in the stream.
+
+       bzip2recover versions prior to 1.0.2 used 32-bit integers to represent bit positions in com‐
+       pressed files, so they could not handle compressed files more than 512 megabytes long.  Ver‐
+       sions 1.0.2 and above use 64-bit ints on some platforms which support  them  (GNU  supported
+       targets, and Windows).  To establish whether or not bzip2recover was built with such a limi‐
+       tation, run it without arguments.  In any event you can build yourself an unlimited  version
+       if you can recompile it with MaybeUInt64 set to be an unsigned 64-bit integer.
+
+
+
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       Julian Seward, jsewardbzip.org.
+
+       http://www.bzip.org
+
+       The  ideas embodied in bzip2 are due to (at least) the following people: Michael Burrows and
+       David Wheeler (for the block sorting transformation), David Wheeler (again, for the  Huffman
+       coder),  Peter  Fenwick  (for  the  structured  coding  model in the original bzip, and many
+       refinements), and Alistair Moffat, Radford Neal and Ian Witten (for the arithmetic coder  in
+       the  original bzip).  I am much indebted for their help, support and advice.  See the manual
+       in the source distribution for pointers to sources of documentation.  Christian  von  Roques
+       encouraged  me  to  look for faster sorting algorithms, so as to speed up compression.  Bela
+       Lubkin encouraged me to improve the  worst-case  compression  performance.   Donna  Robinson
+       XMLised the documentation.  The bz* scripts are derived from those of GNU gzip.  Many people
+       sent patches, helped with portability problems, lent machines, gave advice and  were  gener‐
+       ally helpful.
+
+
+
+                                                                                           bzip2(1)
+</code></pre>
+
+<p>```</p>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

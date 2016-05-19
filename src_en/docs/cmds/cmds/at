@@ -1,0 +1,2 @@
+# send a command to at
+echo "say 'time to go'" | at 16:30

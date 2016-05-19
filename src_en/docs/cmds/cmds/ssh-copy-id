@@ -1,0 +1,2 @@
+# upload the key file ~/.ssh/id_rsa via ssh on port 80 to server
+ssh-copy-id -i ~/.ssh/id_rsa example.com

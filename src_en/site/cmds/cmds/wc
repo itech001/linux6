@@ -1,0 +1,8 @@
+# count the number of lines in a file
+wc -l [file ...]
+
+# Find the length of the longest line in a file, good for <80 char checks
+wc -L code.txt
+
+# Count the number of lines of all files in a directory
+find path/to/dir | xargs wc -l

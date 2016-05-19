@@ -1,0 +1,17 @@
+# test if a file exists
+test -f somefile
+
+# test is a directory exists
+test -d somedirectory
+
+# test if two strings are equal
+STRING1 = STRING2
+
+# test if two integers are qual
+INTEGER1 -eq INTEGER2
+
+# your_comment_here
+xyour_command_here
+
+# your_comment_here
+test

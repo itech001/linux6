@@ -1,0 +1,35 @@
+# loop over a list of files in bash
+for f in file1 file2 file3
+do
+	echo "doing stuff to $f"
+	# your commands here
+done
+
+# loop over all PDF files in the working directory
+for f in *.pdf
+do
+	echo "doing stuff to $f"
+	# your commands here
+done
+
+# do it in one line
+for f in *.pdf; do command; done
+
+# Do stuff 10 times
+for i in $(seq 10); do echo $i; done
+
+# WEB - Shows cookies, eTag and modules installed
+for i in `cat 80.txt` ; do curl -iskXHEAD http://$i/ > $i 2>&amp;1 ; echo Scanned $i ; done
+
+# Find the IP address for every subdomain in list.txt.
+for x in $(cat list.txt); do host $x | grep 'has address' | cut -d ' ' -f4; done
+
+# DNS cache poisioning
+for i in `53.txt`; do dig @"$i" +short porttest.dns-oarc.net TXT; done; > CachePoison.txt
+
+# Non-recursive DNS queries
+for i in `cat 53.txt`; do dig @"$i" www.google.com A +norecurse; done > NonRecurive.txt
+
+# Bash 3.0+ has ranges {start..end..incr} builtin:
+for i in {1..10}; do echo $i; done
+for i in {0..8..2}

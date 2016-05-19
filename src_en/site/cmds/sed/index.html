@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/sed/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>sed - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../grep/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../awk/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-12" role="main">
+
+<h1 id="the-examples-for-sed">The examples for sed</h1>
+<pre><code>The examples for sed
+
+
+# double space a file
+sed G
+
+
+# double space a file which already has blank lines in it. Output file
+# should contain no more than one blank line between lines of text.
+sed '/^$/d;G'
+
+
+# triple space a file
+sed 'G;G'
+
+
+# undo double-spacing (assumes even-numbered lines are always blank)
+sed 'n;d'
+
+
+# insert a blank line above every line which matches &quot;regex&quot;
+sed '/regex/{x;p;x;}'
+
+
+# insert a blank line below every line which matches &quot;regex&quot;
+sed '/regex/G'
+
+
+# insert a blank line above and below every line which matches &quot;regex&quot;
+sed '/regex/{x;p;x;G;}'
+
+
+NUMBERING:
+
+# number each line of a file (simple left alignment). Using a tab (see
+# note on '\t' at end of file) instead of space will preserve margins.
+sed = filename | sed 'N;s/\n/\t/'
+
+
+# number each line of a file (number on left, right-aligned)
+sed = filename | sed 'N; s/^/     /; s/ *\(.\{6,\}\)\n/\1  /'
+
+
+# number each line of file, but only print numbers if line is not blank
+sed '/./=' filename | sed '/./N; s/\n/ /'
+
+
+# count lines (emulates &quot;wc -l&quot;)
+sed -n '$='
+
+
+TEXT CONVERSION AND SUBSTITUTION:
+
+# IN UNIX ENVIRONMENT: convert DOS newlines (CR/LF) to Unix format
+sed 's/.$//'               # assumes that all lines end with CR/LF
+sed 's/^M$//'              # in bash/tcsh, press Ctrl-V then Ctrl-M
+sed 's/\x0D$//'            # gsed 3.02.80, but top script is easier
+
+
+# IN UNIX ENVIRONMENT: convert Unix newlines (LF) to DOS format
+sed &quot;s/$/`echo -e \\\r`/&quot;            # command line under ksh
+sed 's/$'&quot;/`echo \\\r`/&quot;             # command line under bash
+sed &quot;s/$/`echo \\\r`/&quot;               # command line under zsh
+sed 's/$/\r/'                        # gsed 3.02.80
+
+
+# IN DOS ENVIRONMENT: convert Unix newlines (LF) to DOS format
+sed &quot;s/$//&quot;                          # method 1
+sed -n p                             # method 2
+
+
+# IN DOS ENVIRONMENT: convert DOS newlines (CR/LF) to Unix format
+# Can only be done with UnxUtils sed, version 4.0.7 or higher.
+# Cannot be done with other DOS versions of sed. Use &quot;tr&quot; instead.
+sed &quot;s/\r//&quot; infile &gt;outfile         # UnxUtils sed v4.0.7 or higher
+tr -d \r &lt;infile &gt;outfile            # GNU tr version 1.22 or higher
+
+
+# delete leading whitespace (spaces, tabs) from front of each line
+# aligns all text flush left
+sed 's/^[ \t]*//'                    # see note on '\t' at end of file
+
+
+# delete trailing whitespace (spaces, tabs) from end of each line
+sed 's/[ \t]*$//'                    # see note on '\t' at end of file
+
+
+# delete BOTH leading and trailing whitespace from each line
+sed 's/^[ \t]*//;s/[ \t]*$//'
+
+
+# insert 5 blank spaces at beginning of each line (make page offset)
+sed 's/^/     /'
+
+
+# align all text flush right on a 79-column width
+sed -e :a -e 's/^.\{1,78\}$/ &amp;/;ta'  # set at 78 plus 1 space
+
+
+# center all text in the middle of 79-column width. In method 1,
+# spaces at the beginning of the line are significant, and trailing
+# spaces are appended at the end of the line. In method 2, spaces at
+# the beginning of the line are discarded in centering the line, and
+# no trailing spaces appear at the end of lines.
+sed  -e :a -e 's/^.\{1,77\}$/ &amp; /;ta'                     # method 1
+sed  -e :a -e 's/^.\{1,77\}$/ &amp;/;ta' -e 's/\( *\)\1/\1/'  # method 2
+
+
+# substitute (find and replace) &quot;foo&quot; with &quot;bar&quot; on each line
+sed 's/foo/bar/'             # replaces only 1st instance in a line
+sed 's/foo/bar/4'            # replaces only 4th instance in a line
+sed 's/foo/bar/g'            # replaces ALL instances in a line
+sed 's/\(.*\)foo\(.*foo\)/\1bar\2/' # replace the next-to-last case
+sed 's/\(.*\)foo/\1bar/'            # replace only the last case
+
+
+# substitute &quot;foo&quot; with &quot;bar&quot; ONLY for lines which contain &quot;baz&quot;
+sed '/baz/s/foo/bar/g'
+
+
+# substitute &quot;foo&quot; with &quot;bar&quot; EXCEPT for lines which contain &quot;baz&quot;
+sed '/baz/!s/foo/bar/g'
+
+
+# change &quot;scarlet&quot; or &quot;ruby&quot; or &quot;puce&quot; to &quot;red&quot;
+sed 's/scarlet/red/g;s/ruby/red/g;s/puce/red/g'   # most seds
+gsed 's/scarlet\|ruby\|puce/red/g'                # GNU sed only
+
+
+# reverse order of lines (emulates &quot;tac&quot;)
+# bug/feature in HHsed v1.5 causes blank lines to be deleted
+sed '1!G;h;$!d'               # method 1
+sed -n '1!G;h;$p'             # method 2
+
+
+# reverse each character on the line (emulates &quot;rev&quot;)
+sed '/\n/!G;s/\(.\)\(.*\n\)/&amp;\2\1/;//D;s/.//'
+
+
+# join pairs of lines side-by-side (like &quot;paste&quot;)
+sed '$!N;s/\n/ /'
+
+
+# if a line ends with a backslash, append the next line to it
+sed -e :a -e '/\\$/N; s/\\\n//; ta'
+
+
+# if a line begins with an equal sign, append it to the previous line
+# and replace the &quot;=&quot; with a single space
+sed -e :a -e '$!N;s/\n=/ /;ta' -e 'P;D'
+
+
+# add commas to numeric strings, changing &quot;1234567&quot; to &quot;1,234,567&quot;
+gsed ':a;s/\B[0-9]\{3\}\&gt;/,&amp;/;ta'                     # GNU sed
+sed -e :a -e 's/\(.*[0-9]\)\([0-9]\{3\}\)/\1,\2/;ta'  # other seds
+
+
+# add commas to numbers with decimal points and minus signs (GNU sed)
+gsed ':a;s/\(^\|[^0-9.]\)\([0-9]\+\)\([0-9]\{3\}\)/\1\2,\3/g;ta'
+
+
+# add a blank line every 5 lines (after lines 5, 10, 15, 20, etc.)
+gsed '0~5G'                  # GNU sed only
+sed 'n;n;n;n;G;'             # other seds
+
+
+SELECTIVE PRINTING OF CERTAIN LINES:
+
+# print first 10 lines of file (emulates behavior of &quot;head&quot;)
+sed 10q
+
+
+# print first line of file (emulates &quot;head -1&quot;)
+sed q
+
+
+# print the last 10 lines of a file (emulates &quot;tail&quot;)
+sed -e :a -e '$q;N;11,$D;ba'
+
+
+# print the last 2 lines of a file (emulates &quot;tail -2&quot;)
+sed '$!N;$!D'
+
+
+# print the last line of a file (emulates &quot;tail -1&quot;)
+sed '$!d'                    # method 1
+sed -n '$p'                  # method 2
+
+
+# print only lines which match regular expression (emulates &quot;grep&quot;)
+sed -n '/regexp/p'           # method 1
+sed '/regexp/!d'             # method 2
+
+
+# print only lines which do NOT match regexp (emulates &quot;grep -v&quot;)
+sed -n '/regexp/!p'          # method 1, corresponds to above
+sed '/regexp/d'              # method 2, simpler syntax
+
+
+# print the line immediately before a regexp, but not the line
+# containing the regexp
+sed -n '/regexp/{g;1!p;};h'
+
+
+# print the line immediately after a regexp, but not the line
+# containing the regexp
+sed -n '/regexp/{n;p;}'
+
+
+# print 1 line of context before and after regexp, with line number
+# indicating where the regexp occurred (similar to &quot;grep -A1 -B1&quot;)
+sed -n -e '/regexp/{=;x;1!p;g;$!N;p;D;}' -e h
+
+
+# grep for AAA and BBB and CCC (in any order)
+sed '/AAA/!d; /BBB/!d; /CCC/!d'
+
+
+# grep for AAA and BBB and CCC (in that order)
+sed '/AAA.*BBB.*CCC/!d'
+
+
+# grep for AAA or BBB or CCC (emulates &quot;egrep&quot;)
+sed -e '/AAA/b' -e '/BBB/b' -e '/CCC/b' -e d    # most seds
+gsed '/AAA\|BBB\|CCC/!d'                        # GNU sed only
+
+
+# print paragraph if it contains AAA (blank lines separate paragraphs)
+# HHsed v1.5 must insert a 'G;' after 'x;' in the next 3 scripts below
+sed -e '/./{H;$!d;}' -e 'x;/AAA/!d;'
+
+
+# print paragraph if it contains AAA and BBB and CCC (in any order)
+sed -e '/./{H;$!d;}' -e 'x;/AAA/!d;/BBB/!d;/CCC/!d'
+
+
+# print paragraph if it contains AAA or BBB or CCC
+sed -e '/./{H;$!d;}' -e 'x;/AAA/b' -e '/BBB/b' -e '/CCC/b' -e d
+gsed '/./{H;$!d;};x;/AAA\|BBB\|CCC/b;d'         # GNU sed only
+
+
+# print only lines of 65 characters or longer
+sed -n '/^.\{65\}/p'
+
+
+# print only lines of less than 65 characters
+sed -n '/^.\{65\}/!p'        # method 1, corresponds to above
+sed '/^.\{65\}/d'            # method 2, simpler syntax
+
+
+# print section of file from regular expression to end of file
+sed -n '/regexp/,$p'
+
+
+# print section of file based on line numbers (lines 8-12, inclusive)
+sed -n '8,12p'               # method 1
+sed '8,12!d'                 # method 2
+
+
+# print line number 52
+sed -n '52p'                 # method 1
+sed '52!d'                   # method 2
+sed '52q;d'                  # method 3, efficient on large files
+
+
+# beginning at line 3, print every 7th line
+gsed -n '3~7p'               # GNU sed only
+sed -n '3,${p;n;n;n;n;n;n;}' # other seds
+
+
+# print section of file between two regular expressions (inclusive)
+sed -n '/Iowa/,/Montana/p'             # case sensitive
+
+
+SELECTIVE DELETION OF CERTAIN LINES:
+
+# print all of file EXCEPT section between 2 regular expressions
+sed '/Iowa/,/Montana/d'
+
+
+# delete duplicate, consecutive lines from a file (emulates &quot;uniq&quot;).
+# First line in a set of duplicate lines is kept, rest are deleted.
+sed '$!N; /^\(.*\)\n\1$/!P; D'
+
+
+# delete duplicate, nonconsecutive lines from a file. Beware not to
+# overflow the buffer size of the hold space, or else use GNU sed.
+sed -n 'G; s/\n/&amp;&amp;/; /^\([ -~]*\n\).*\n\1/d; s/\n//; h; P'
+
+
+# delete all lines except duplicate lines (emulates &quot;uniq -d&quot;).
+sed '$!N; s/^\(.*\)\n\1$/\1/; t; D'
+
+
+# delete the first 10 lines of a file
+sed '1,10d'
+
+
+# delete the last line of a file
+sed '$d'
+
+
+# delete the last 2 lines of a file
+sed 'N;$!P;$!D;$d'
+
+
+# delete the last 10 lines of a file
+sed -e :a -e '$d;N;2,10ba' -e 'P;D'   # method 1
+sed -n -e :a -e '1,10!{P;N;D;};N;ba'  # method 2
+
+
+# delete every 8th line
+gsed '0~8d'                           # GNU sed only
+sed 'n;n;n;n;n;n;n;d;'                # other seds
+
+
+# delete ALL blank lines from a file (same as &quot;grep '.' &quot;)
+sed '/^$/d'                           # method 1
+sed '/./!d'                           # method 2
+
+
+# delete all CONSECUTIVE blank lines from file except the first; also
+# deletes all blank lines from top and end of file (emulates &quot;cat -s&quot;)
+sed '/./,/^$/!d'          # method 1, allows 0 blanks at top, 1 at EOF
+sed '/^$/N;/\n$/D'        # method 2, allows 1 blank at top, 0 at EOF
+
+
+# delete all CONSECUTIVE blank lines from file except the first 2:
+sed '/^$/N;/\n$/N;//D'
+
+
+# delete all leading blank lines at top of file
+sed '/./,$!d'
+
+
+# delete all trailing blank lines at end of file
+sed -e :a -e '/^\n*$/{$d;N;ba' -e '}'  # works on all seds
+sed -e :a -e '/^\n*$/N;/\n$/ba'        # ditto, except for gsed 3.02*
+
+
+# delete the last line of each paragraph
+sed -n '/^$/{p;h;};/./{x;/./p;}'
+
+
+SPECIAL APPLICATIONS:
+
+# remove nroff overstrikes (char, backspace) from man pages. The 'echo'
+# command may need an -e switch if you use Unix System V or bash shell.
+sed &quot;s/.`echo \\\b`//g&quot;    # double quotes required for Unix environment
+sed 's/.^H//g'             # in bash/tcsh, press Ctrl-V and then Ctrl-H
+sed 's/.\x08//g'           # hex expression for sed v1.5
+
+
+# get Usenet/e-mail message header
+sed '/^$/q'                # deletes everything after first blank line
+
+
+# get Usenet/e-mail message body
+sed '1,/^$/d'              # deletes everything up to first blank line
+
+
+# get Subject header, but remove initial &quot;Subject: &quot; portion
+sed '/^Subject: */!d; s///;q'
+
+
+# get return address header
+sed '/^Reply-To:/q; /^From:/h; /./d;g;q'
+
+
+# parse out the address proper. Pulls out the e-mail address by itself
+# from the 1-line return address header (see preceding script)
+sed 's/ *(.*)//; s/&gt;.*//; s/.*[:&lt;] *//'
+
+
+# add a leading angle bracket and space to each line (quote a message)
+sed 's/^/&gt; /'
+
+
+# delete leading angle bracket &amp; space from each line (unquote a message)
+sed 's/^&gt; //'
+
+
+# remove most HTML tags (accommodates multiple-line tags)
+sed -e :a -e 's/&lt;[^&gt;]*&gt;//g;/&lt;/N;//ba'
+
+
+# extract multi-part uuencoded binaries, removing extraneous header
+# info, so that only the uuencoded portion remains. Files passed to
+# sed must be passed in the proper order. Version 1 can be entered
+# from the command line; version 2 can be made into an executable
+# Unix shell script. (Modified from a script by Rahul Dhesi.)
+sed '/^end/,/^begin/d' file1 file2 ... fileX | uudecode   # vers. 1
+sed '/^end/,/^begin/d' &quot;$@&quot; | uudecode                    # vers. 2
+
+
+# zip up each .TXT file individually, deleting the source file and
+# setting the name of each .ZIP file to the basename of the .TXT file
+# (under DOS: the &quot;dir /b&quot; switch returns bare filenames in all caps).
+echo @echo off &gt;zipup.bat
+dir /b *.txt | sed &quot;s/^\(.*\)\.TXT/pkzip -mo \1 \1.TXT/&quot; &gt;&gt;zipup.bat
+
+
+TYPICAL USE: Sed takes one or more editing commands and applies all of
+them, in sequence, to each line of input. After all the commands have
+been applied to the first input line, that line is output and a second
+input line is taken for processing, and the cycle repeats. The
+preceding examples assume that input comes from the standard input
+device (i.e, the console, normally this will be piped input). One or
+more filenames can be appended to the command line if the input does
+not come from stdin. Output is sent to stdout (the screen). Thus:
+
+cat filename | sed '10q'        # uses piped input
+sed '10q' filename              # same effect, avoids a useless &quot;cat&quot;
+sed '10q' filename &gt; newfile    # redirects output to disk
+
+
+For additional syntax instructions, including the way to apply editing
+commands from a disk file instead of the command line, consult &quot;sed &amp;
+awk, 2nd Edition,&quot; by Dale Dougherty and Arnold Robbins (O'Reilly,
+1997; http://www.ora.com), &quot;UNIX Text Processing,&quot; by Dale Dougherty
+and Tim O'Reilly (Hayden Books, 1987) or the tutorials by Mike Arst
+distributed in U-SEDIT2.ZIP (many sites). To fully exploit the power
+of sed, one must understand &quot;regular expressions.&quot; For this, see
+&quot;Mastering Regular Expressions&quot; by Jeffrey Friedl (O'Reilly, 1997).
+The manual (&quot;man&quot;) pages on Unix systems may be helpful (try &quot;man
+sed&quot;, &quot;man regexp&quot;, or the subsection on regular expressions in &quot;man
+ed&quot;), but man pages are notoriously difficult. They are not written to
+teach sed use or regexps to first-time users, but as a reference text
+for those already acquainted with these tools.
+
+QUOTING SYNTAX: The preceding examples use single quotes ('...')
+instead of double quotes (&quot;...&quot;) to enclose editing commands, since
+sed is typically used on a Unix platform. Single quotes prevent the
+Unix shell from intrepreting the dollar sign ($) and backquotes
+(`...`), which are expanded by the shell if they are enclosed in
+double quotes. Users of the &quot;csh&quot; shell and derivatives will also need
+to quote the exclamation mark (!) with the backslash (i.e., \!) to
+properly run the examples listed above, even within single quotes.
+Versions of sed written for DOS invariably require double quotes
+(&quot;...&quot;) instead of single quotes to enclose editing commands.
+
+USE OF '\t' IN SED SCRIPTS: For clarity in documentation, we have used
+the expression '\t' to indicate a tab character (0x09) in the scripts.
+However, most versions of sed do not recognize the '\t' abbreviation,
+so when typing these scripts from the command line, you should press
+the TAB key instead. '\t' is supported as a regular expression
+metacharacter in awk, perl, and HHsed, sedmod, and GNU sed v3.02.80.
+
+VERSIONS OF SED: Versions of sed do differ, and some slight syntax
+variation is to be expected. In particular, most do not support the
+use of labels (:name) or branch instructions (b,t) within editing
+commands, except at the end of those commands. We have used the syntax
+which will be portable to most users of sed, even though the popular
+GNU versions of sed allow a more succinct syntax. When the reader sees
+a fairly long command such as this:
+
+sed -e '/AAA/b' -e '/BBB/b' -e '/CCC/b' -e d
+
+
+it is heartening to know that GNU sed will let you reduce it to:
+
+sed '/AAA/b;/BBB/b;/CCC/b;d'      # or even
+sed '/AAA\|BBB\|CCC/b;d'
+
+
+In addition, remember that while many versions of sed accept a command
+like &quot;/one/ s/RE1/RE2/&quot;, some do NOT allow &quot;/one/! s/RE1/RE2/&quot;, which
+contains space before the 's'. Omit the space when typing the command.
+
+OPTIMIZING FOR SPEED: If execution speed needs to be increased (due to
+large input files or slow processors or hard disks), substitution will
+be executed more quickly if the &quot;find&quot; expression is specified before
+giving the &quot;s/.../.../&quot; instruction. Thus:
+
+sed 's/foo/bar/g' filename         # standard replace command
+sed '/foo/ s/foo/bar/g' filename   # executes more quickly
+sed '/foo/ s//bar/g' filename      # shorthand sed syntax
+
+
+On line selection or deletion in which you only need to output lines
+from the first part of the file, a &quot;quit&quot; command (q) in the script
+will drastically reduce processing time for large files. Thus:
+
+sed -n '45,50p' filename           # print line nos. 45-50 of a file
+sed -n '51q;45,50p' filename       # same, but executes much faster
+
+# replace string in all matched files
+sed -i ‘s/2012.07-SP3/2014.07/g’ config_files_*
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

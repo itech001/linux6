@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/shell/bash_example/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>Bash_example - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../bash/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../bash_summary/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-12" role="main">
+
+<pre><code>###bash example
+https://raw.githubusercontent.com/buildbot/buildbot/master/common/validate.sh
+
+
+#! /bin/bash
+TEST='buildbot.test buildslave.test'
+
+# some colors
+# plain
+_ESC=$'\e'
+GREEN=&quot;$_ESC[0;32m&quot;
+MAGENTA=&quot;$_ESC[0;35m&quot;
+RED=&quot;$_ESC[0;31m&quot;
+LTCYAN=&quot;$_ESC[1;36m&quot;
+YELLOW=&quot;$_ESC[1;33m&quot;
+NORM=&quot;$_ESC[0;0m&quot;
+
+## parse options
+
+quick=false
+no_js=false
+help=false
+while [ $# -gt 0 ]; do
+    case $1 in
+        --quick) quick=true ;;
+        --no-js) no_js=true ;;
+        --help) help=true ;;
+        -*) echo &quot;$0: error - unrecognized option $1&quot; 1&gt;&amp;2; help=true ;;
+        *) REVRANGE=&quot;$1..HEAD&quot; ;;
+    esac
+    shift
+done
+
+if $help; then
+    echo &quot;USAGE: common/validate.sh [oldrev] [--quick] [--no-js] [--help]&quot;
+    echo &quot;  This script will test a set of patches (oldrev..HEAD) for basic acceptability as a patch&quot;
+    echo &quot;  Run it in an activated virtualenv with the current Buildbot installed, as well as&quot;
+    echo &quot;      sphinx, pyflakes, mock, and so on&quot;
+    echo &quot;To use a different directory for tests, pass TRIALTMP=/path as an env variable&quot;
+    echo &quot;if --quick is passed validate will skip unit tests and concentrate on coding style&quot;
+    echo &quot;if --no-js is passed validate will skip tests that require Node and NPM&quot;
+    echo &quot;if --help is passed validate will output this message and exit&quot;
+    echo &quot;if no oldrev is passed validate will assume master...HEAD&quot;
+    exit 1
+fi
+
+[ -z &quot;$REVRANGE&quot; ] &amp;&amp; REVRANGE=&quot;master..HEAD&quot;
+
+status() {
+    echo &quot;${LTCYAN}-- ${*} --${NORM}&quot;
+}
+
+ok=true
+problem_summary=&quot;&quot;
+not_ok() {
+    ok=false
+    echo &quot;${RED}** ${*} **${NORM}&quot;
+    problem_summary=&quot;$problem_summary&quot;$'\n'&quot;${RED}**${NORM} ${*}&quot;
+}
+
+warning() {
+    echo &quot;${YELLOW}** ${*} **${NORM}&quot;
+    problem_summary=&quot;$problem_summary&quot;$'\n'&quot;${YELLOW}**${NORM} ${*} (warning)&quot;
+}
+
+check_tabs() {
+    git diff &quot;$REVRANGE&quot; | grep -q $'+.*\t'
+}
+
+check_long_lines() {
+    # only check python files
+    local long_lines=false
+    for f in $(git diff --name-only --stat &quot;$REVRANGE&quot; | grep '.py$'); do
+        # don't try to check removed files
+        [ ! -f &quot;$f&quot; ] &amp;&amp; continue
+        if [ $(git diff &quot;$REVRANGE&quot; $f | grep -E -c '^\+.{80}') != 0 ]; then
+            echo &quot; $f&quot;
+            long_lines=true
+        fi
+    done
+    $long_lines
+}
+
+
+check_yield_defer_returnValue() {
+    local yields=false
+    if git diff &quot;$REVRANGE&quot; | grep '+.*yield defer.returnValue'; then
+        yields=true
+    fi
+    $yields
+}
+
+check_relnotes() {
+    if git diff --exit-code &quot;$REVRANGE&quot; master/docs/relnotes/index.rst &gt;/dev/null 2&gt;&amp;1; then
+        return 1
+    else
+        return 0
+    fi
+}
+run_tests() {
+    if [ -n &quot;${TRIALTMP}&quot; ]; then
+        TEMP_DIRECTORY_OPT=&quot;--temp-directory ${TRIALTMP}&quot;
+    else
+        warning &quot;please provide a TRIALTMP env variable pointing to a ramfs for 30x speed up of the integration tests&quot;
+    fi
+    find . -name \*.pyc -exec rm {} \;
+    trial --reporter text ${TEMP_DIRECTORY_OPT} ${TEST}
+}
+
+if ! git diff --no-ext-diff --quiet --exit-code; then
+    not_ok &quot;changed files in working copy&quot;
+    if ! $quick; then
+        exit 1
+    fi
+fi
+
+# get a list of changed files, used below; this uses a tempfile to work around
+# shell behavior when piping to 'while'
+tempfile=$(mktemp -t tmp.XXXXXX)
+trap &quot;rm -f ${tempfile}; exit 1&quot; 1 2 3 15
+git diff --name-only $REVRANGE | grep '\.py$' | grep -v '\(^master/docs\|/setup\.py\)' &gt; ${tempfile}
+py_files=()
+while read line; do
+    if test -f &quot;${line}&quot;; then
+        py_files+=($line)
+    fi
+done &lt; ${tempfile}
+
+echo &quot;${MAGENTA}Validating the following commits:${NORM}&quot;
+git log &quot;$REVRANGE&quot; --pretty=oneline || exit 1
+
+if ! $quick &amp;&amp; ! $no_js; then
+    for module in www/base www/console_view www/waterfall_view www/codeparameter;
+    do
+        status &quot;running 'setup.py develop' for $module&quot;
+        if ! (cd $module; python setup.py develop &gt;/dev/null ); then
+            warning &quot;$module/setup.py failed; retrying with cleared libs/&quot;
+            rm -rf &quot;$module/libs&quot;
+            (cd $module; python setup.py develop &gt;/dev/null ) || not_ok &quot;$module/setup.py failed&quot;
+        fi
+    done
+else
+    warning &quot;Skipping JavaScript Tests&quot;
+fi
+
+if ! $quick; then
+    status &quot;running Python tests&quot;
+    run_tests || not_ok &quot;Python tests failed&quot;
+else
+    warning &quot;Skipping Python Tests&quot;
+fi
+
+status &quot;checking formatting&quot;
+check_tabs &amp;&amp; not_ok &quot;$REVRANGE adds tabs&quot;
+check_long_lines &amp;&amp; warning &quot;$REVRANGE adds long lines&quot;
+check_yield_defer_returnValue &amp;&amp; not_ok &quot;$REVRANGE yields defer.returnValue&quot;
+
+status &quot;checking for release notes&quot;
+check_relnotes || warning &quot;$REVRANGE does not add release notes&quot;
+
+status &quot;checking import module convention in modified files&quot;
+RES=true
+for filename in ${py_files[@]}; do
+  if ! python common/fiximports.py &quot;$filename&quot;; then
+    echo &quot;cannot fix imports of $filename&quot;
+    RES=false
+  fi
+done
+$RES || warning &quot;some import fixes failed -- not enforcing for now&quot;
+
+status &quot;running autopep8&quot;
+if [[ -z `which autopep8` ]]; then
+    warning &quot;autopep8 is not installed&quot;
+elif [[ ! -f common/pep8rc ]]; then
+    warning &quot;common/pep8rc not found&quot;
+else
+    changes_made=false
+    for filename in ${py_files[@]}; do
+        LINEWIDTH=$(grep -E &quot;max-line-length&quot; common/pep8rc | sed 's/ //g' | cut -d'=' -f 2)
+        # even if we dont enforce errors, if they can be fixed automatically, thats better..
+        IGNORES=E123,E501,W6
+        # ignore is not None for SQLAlchemy code..
+        if [[ &quot;$filename&quot; =~ &quot;/db/&quot; ]]; then
+            IGNORES=$IGNORES,E711,E712
+        fi
+        autopep8 --in-place --max-line-length=$LINEWIDTH --ignore=$IGNORES &quot;$filename&quot;
+        if ! git diff --quiet --exit-code &quot;$filename&quot;; then
+            changes_made=true
+        fi
+    done
+    if ${changes_made}; then
+        not_ok &quot;autopep8 made changes&quot;
+    fi
+fi
+
+status &quot;running pep8&quot;
+if [[ -z `which pep8` ]]; then
+    warning &quot;pep8 is not installed&quot;
+elif [[ ! -f common/pep8rc ]]; then
+    warning &quot;common/pep8rc not found&quot;
+else
+    pep8_ok=true
+    for filename in ${py_files[@]}; do
+        if ! pep8 --config=common/pep8rc &quot;$filename&quot;; then
+            pep8_ok=false
+        fi
+    done
+    $pep8_ok || not_ok &quot;pep8 failed&quot;
+fi
+
+status &quot;running pyflakes&quot;
+if [[ -z `which pyflakes` ]]; then
+    warning &quot;pyflakes is not installed&quot;
+else
+    pyflakes_ok=true
+    for filename in ${py_files[@]}; do
+        if ! pyflakes &quot;$filename&quot;; then
+            pyflakes_ok=false
+        fi
+    done
+    $pyflakes_ok || not_ok &quot;pyflakes failed&quot;
+fi
+
+
+status &quot;running pylint&quot;
+if [[ -z `which pylint` ]]; then
+    warning &quot;pylint is not installed&quot;
+elif [[ ! -f common/pylintrc ]]; then
+    warning &quot;common/pylintrc not found&quot;
+else
+    pylint_ok=true
+    for filename in ${py_files[@]}; do
+        if ! pylint --rcfile=common/pylintrc --disable=R,line-too-long --enable=W0611 --output-format=text --report=no &quot;$filename&quot;; then
+            pylint_ok=false
+        fi
+    done
+    $pylint_ok || not_ok &quot;pylint failed&quot;
+fi
+
+if git diff --name-only $REVRANGE | grep ^master/docs/ ; then
+    status &quot;building docs&quot;
+    make -C master/docs VERSION=latest clean html || not_ok &quot;docs failed&quot;
+else
+    status &quot;not building docs, because it was not changed&quot;
+fi
+
+echo &quot;&quot;
+if $ok; then
+    if [ -z &quot;${problem_summary}&quot; ]; then
+        echo &quot;${GREEN}GOOD!${NORM}&quot;
+    else
+        echo &quot;${YELLOW}WARNINGS${NORM}${problem_summary}&quot;
+    fi
+    exit 0
+else
+    echo &quot;${RED}NO GOOD!${NORM}${problem_summary}&quot;
+    exit 1
+fi
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

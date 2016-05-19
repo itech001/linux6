@@ -1,0 +1,40 @@
+# Saves the HTML of a webpage to a particular file.
+wget -O bro.html http://bropages.org/
+
+# Download a file from a webserver and save to hard drive.
+wget http://www.openss7.org/repos/tarballs/strx25-0.9.2.1.tar.bz2
+
+# Download an entire website (more robust than wget -m)
+wget --random-wait -r -p -e robots=off -U mozilla http://www.example.com
+
+# Save file into directory
+# (set prefix for downloads)
+wget -P path/to/directory http://bropages.org/bro.html
+
+# wget example useful for automating a web call and appending results to a log
+wget -q --no-check-certificate -O - "http://bropages.org" >> ~/bropages.log
+
+# When downloading a huge file, it may become practical to pause and resume a download. Adding the option -c or --continue will resume an interrupted download.
+wget -c https://scans.io/data/umich/https/certificates/raw_certificates.csv.gz
+
+# Open tarball without downloading
+wget -qO - "http://www.tarball.com/tarball.gz" | tar zxvf -
+
+# Get your external ip address from icanhazip.com and echo to STDOUT
+wget -O - http://icanhazip.com/ | tail
+
+# (continue) downloading file from URL wich requires HTTP authentication
+wget -c --http-user=username --http-password=password http://auth.example.com/file.dat
+
+# Download a list of urls from a file 
+wget -i urls.txt
+
+# Recursively download only files with the pdf extension upto two levels away
+wget -r -l 2 -A "*.pdf" http://papers.xtremepapers.com/CIE/Cambridge%20Checkpoint/
+
+# Download a web page or file, and name the resultant file what the remote server says it should be.
+# (Great for outfits like Sourceforge where the download link is a long, intractable string of characters)
+wget --content-disposition http://example.com/download.php?id=12345&amp;file=foobar.tgz&amp;datetime=20141004
+
+# Mirror an entire website
+wget -m http://google.com

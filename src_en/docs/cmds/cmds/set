@@ -1,0 +1,2 @@
+# stop script execution if error happen ( exitcode != 0 ) http://tldp.org/LDP/abs/html/exitcodes.html
+set -e

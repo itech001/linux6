@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/stop/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>stop - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#stop">stop</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#commands">commands</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#reporting-bugs">reporting bugs</a></li>
+        
+            <li><a href="#copyright">copyright</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="stop">stop</h1>
+<h3 id="name">name</h3>
+<pre><code>       initctl - init daemon control tool
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       initctl [OPTION]...  COMMAND [OPTION]...  ARG...
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       initctl allows a system administrator to communicate and interact with the Upstart init(8) daemon.
+
+       If D-Bus has been configured to allow non-privileged users to invoke all Upstart D-Bus methods, this command is also able to manage user jobs.  See init(5) for further details.
+
+       When run as initctl, the first non-option argument is the COMMAND.  Global options may be specified before or after the command.
+
+       You may also create symbolic or hard links to initctl named after commands.  When invoked through these links the tool will behave only as that command, with global and command-specific options intermixed.  The default installation supplies such links for the start, stop, restart, reload and status commands.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       --user User mode. In this mode, initctl will talk to the init(8) daemon using the D-Bus private socket defined in the UPSTART_SESSION environment variable.
+
+              Note that if the UPSTART_SESSION variable is defined, this option is implied.
+
+       --session
+              Connect to init(8) daemon using the existing D-Bus session bus (for testing purposes only).
+
+       --system
+              Communication with the init(8) daemon is normally performed over a private socket connection.  This has the advantage of speed and robustness, when issuing commands to start or stop services or even reboot the system you do not want to be affected by changes to the D-Bus system bus daemon.
+
+              The disadvantage to using the private socket however is security, init(8) only permits the root user to communicate over this socket which means that read-only commands such as status and list cannot be made by other users.
+
+              The --system option instructs initctl to communicate via the D-Bus system bus rather than over the private socket.
+
+              This is only possible if the system bus daemon is running and if init(8) is connected to it.  The advantage is that the default security configuration allows non-root users to use read-only commands.
+
+       --dest Specifies the well-known name of the init(8) daemon when using --system.
+
+              There is normally no need to use this option since the init(8) daemon uses the default com.ubuntu.Upstart name.  However it may be useful for debugging.
+
+       --no-wait
+              Applies to the start, stop, restart and emit commands.
+
+              Normally initctl will wait for the command to finish before returning.
+
+              For the start, stop and restart commands, finishing means that the named job is running (or has finished for tasks) or has been fully stopped.
+
+              For the emit command, finishing means that all of the jobs affected by the event are running (or have finished for tasks) or have been fully stopped.
+
+              This option instead causes these commands to only wait for the goal change or event to be queued.
+
+       --quiet
+              Reduces output of all commands to errors only.
+
+</code></pre>
+
+<h3 id="commands">commands</h3>
+<pre><code>       start  JOB [KEY=VALUE]...
+
+              Requests that a new instance of the named JOB be started by changing its goal to start.  The status of the job is displayed on standard output when the command completes.
+
+              See status for a description of the output format.
+
+              The optional KEY=VALUE arguments specify environment variables to be passed to the starting job, and placed in its environment.  They also serve to specify which instance of multi-instance jobs should be started.
+
+              Most jobs only permit a single instance; those that use the instance stanza in their configuration define a string expanded from environment variables to name the instance.  As many unique instances may be started as unique names may be generated by the stanza.  Thus the environment variables also serve to select which instance of JOB is to be acted upon.
+
+              If the job is already running, start will return an error.
+
+              When called from the pre-stop stanza of a job configuration, start may be called without argument to cancel the stop.
+
+       stop   JOB [KEY=VALUE]...
+
+              Requests that an instance of the named JOB be stopped by changing its goal to stop.  The status of the job is displayed on standard output when the command completes.
+
+              See status for a description of the output format and start for a discussion on instances.
+
+              When called from the pre-start stanza of a job configuration, stop may be called without an argument to cancel the start.
+
+              By default SIGTERM is sent to the job process. If it does not respond within a reasonable period, it will be forcibly stopped by sending SIGKILL.
+
+              This behaviour can be changed using the kill signal and kill timeout stanzas. See init(5) for further details.
+
+       restart
+              JOB [KEY=VALUE]...
+
+              Requests that an instance of the named JOB be restarted by first changing its goal to stop, and then changing its goal to start.  The status of the job is displayed on standard output when the command completes.
+
+              This command is similar to running stop followed by start with one exception: the job instance being restarted will retain its original configuration.  To have the new instance run with the latest job configuration, stop the job and then start it again instead.
+
+              See status for a description of the output format and start for a discussion on instances.
+
+              Note that this command can only be used when there is an instance of JOB, if there is none then it returns an error instead of starting a new one.
+
+       reload JOB [KEY=VALUE]...
+
+              Sends the SIGHUP signal to running process of the named JOB instance.
+
+              See start for a discussion on instances.
+
+       status JOB [KEY=VALUE]...
+
+              Requests the status an instance of the named JOB, outputting to standard output.
+
+              See start for a discussion on instances.
+
+              For a single-instance job a line like the following is output:
+
+                job start/running, process 1234
+
+              The job name is given first followed by the current goal and state of the selected instance.  The goal is either start or stop, the status may be one of waiting, starting, pre-start, spawned, post-start, running, pre-stop, stopping, killed or post-stop.
+
+              Table 1 in the Job States section of init(8) summarises job goal and state transitions.
+
+              If the job has an active process, the process id will follow on the same line.  If the state is pre-start or post-stop this will be the process id of the equivalent process, otherwise it will be the process id of the main process.
+
+                job start/pre-start, process 902
+
+              The post-start and pre-stop states may have multiple processes attached, the extra processes will follow on consecutive lines indented by a tab:
+
+                job start/post-start, process 1234
+                        post-start process 1357
+
+              If there is no main process, they may follow on the same line but will be prefixed to indicate that it is not the main process id being given:
+
+                job start/post-start, (post-start) process 1357
+
+              Jobs that permit multiple instances have names for each instance, the output is otherwise identical to the above except that the instance name follows the job name in parentheses:
+
+                job (tty1) start/post-start, process 1234
+                        post-start process 1357
+
+       list
+
+              Requests a list of the known jobs and instances, outputs the status of each to standard output.
+
+              Note that this command includes in the enumeration as-yet-to-run jobs (in other words configuration files for which no job instances have yet been created) in the output with status &quot;stop/waiting&quot;. In effect such entries denote configuration files which represent potential future jobs.
+
+              See status for a description of the output format and start for a discussion on instances.
+
+              No particular order is used for the output, and there is no difference in the output (other than the instance name appearing in parentheses) between single-instance and multiple-instance jobs.
+
+       emit   EVENT [KEY=VALUE]...
+
+              Requests that the named EVENT be emitted, potentially causing jobs to be started and stopped depending on their use of the start on and stop on stanzas in their configuration.
+
+              The optional KEY=VALUE arguments specify environment variables to be included with the event and thus exported into the environment of any jobs started and stopped by the event.
+
+              The environment may also serve to specify which instance of multi-instance jobs should be started or stopped.  See start for a discussion on instances.
+
+              There is no limitation on the event names that may be emitted with this command, you are free to invent new events and use them in your job configurations.
+
+              The most well-known event used by the default Upstart configuration is the runlevel(7) event.  This is normally emitted by the telinit(8) and shutdown(8) tools.
+
+       reload-configuration
+
+              Requests that the init(8) daemon reloads its configuration.
+
+              This command is generally not necessary since init(8) watches its configuration directories with inotify(7) and automatically reloads in cases of changes.
+
+              No jobs will be started by this command.
+
+
+       version
+
+              Requests and outputs the version of the running init daemon.
+
+       log-priority
+              [PRIORITY]
+
+              When called with a PRIORITY argument, it requests that the init(8) daemon log all messages with that priority or greater.  This may be used to both increase and decrease the volume of logged messages.
+
+              PRIORITY may be one of debug, info, message, warn, error or fatal.
+
+              When called without argument, it requests the current minimum message priority that the init(8) daemon will log and outputs to standard output.
+
+       show-config
+              [OPTIONS] [CONF]
+
+              Display emits, start on and stop on job configuration details (in that order) for specified job configuration, CONF. If CONF is not specified, list information for all valid job configurations.
+
+              Note that a job configuration is the name of a job configuration file, without the extension. Note too that this information is static: it does not refer to any running job.
+
+              For each event emitted, a separate line is displayed beginning with two space characters followed by, 'emits event' where 'event' denotes a single emitted event.
+
+              The start on and stop on conditions are listed on separate lines beginning with two space characters and followed by 'start on' and 'stop on' respectively and ending with the appropriate condition.
+
+              If a job configuration has no emits, start on, or stop on conditions, the name of the job configuration will be displayed with no further details.
+
+              Note that the start on and stop on conditions will be fully bracketed, regardless of whether they appear like this in the job configuration file. This is useful to see how the init(8) daemon perceives the condition.
+
+              Example output:
+
+              foo
+                emits boing
+                emits blip
+                start on (starting A and (B or C var=2))
+                stop on (bar HELLO=world testing=123 or stopping wibble)
+
+              OPTIONS
+
+              -e, --enumerate
+
+                     If specified, rather than listing the precise start on and stop on conditions, outputs the emits lines along with one line for each event or job the CONF in question may be started or stopped by if it were to become a job. If the start on condition specifies a non-job event, this will be listed verbatim, whereas for a job event, the name of the job as opposed to the event the job emits will be listed.
+
+                     The type of entity, its triggering event (if appropriate) and its full environment is displayed in brackets following its name for clarity.
+
+                     This option is useful for tools which generate graphs of relationships between jobs and events. It is also instructive since it shows how the init(8) daemon has parsed the job configuration file.
+
+                     Example output (an analog of the default output format above):
+
+                     foo
+                       emits boing
+                       emits blip
+                       start on starting (job: A, env:)
+                       start on B (job:, env:)
+                       start on C (job:, env: var=2)
+                       stop on bar (job:, env: HELLO=world testing=123)
+                       stop on stopping (job: wibble, event: stopping, env:)
+
+       check-config
+              [OPTIONS] [CONF]
+
+              Considers all job configurations looking for jobs that cannot be started or stopped, given the currently available job configurations. This is achieved by considering the start on, stop on and emits stanzas for each job configuration and identifying unreachable scenarios.
+
+              This option is useful for determining the impact of adding or removing job configuration files.
+
+              Note that to use this command, it is necessary to ensure that all job configuration files advertise the events they emit correctly.
+
+              If errors are identified, the name of the job configuration will be displayed. Subsequent lines will show the failed conditions for the job configuration, one per line. Condition lines begin with two spaces and are followed with either &quot;start on: &quot; or &quot;stop on: &quot;, the word &quot;unknown&quot;, the type of entity that is not known and finally its name.
+
+              Note that only job configurations that are logically in error (those with unsatisfiable conditions) will be displayed. Note too that job configurations that are syntactically invalid may trigger an error if they would cause a condition to be in error.
+
+              Assuming job configuration file /etc/init/foo.conf contains the following:
+
+                start on starting grape
+                stop on peach
+
+              The check-config command might display:
+
+                foo
+                  start on: unknown job grape
+                  stop on: unknown event peach
+
+              If any errors are detected, the exit code will be 1 (one). If all checks pass, the exit code will be 0 (zero).
+
+              Note that for complex start on and stop on conditions, this command may give what appears to be misleading output when an error condition is found since all expressions in the failing condition that are in error will generate error output. For example, if job configuration /etc/init/bar.conf contains the following:
+
+                start on (A and (started B or (starting C or D)))
+
+              And only event A can be satisfied, the output will be:
+
+                bar
+                  start on: unknown job B
+                  start on: unknown job C
+                  start on: unknown event D
+
+              OPTIONS
+
+              -i [EVENTS], --ignore-events [EVENTS]
+
+                     If specified, the argument should be a list of comma-separated events to ignore when checking the job configuration files.
+
+                     This option may be useful to ignore errors if a particular job configuration file does not advertise it emits an event.
+
+                     Note that internal events (such as startup(7) and starting(7)) are automatically ignored.
+
+              -w, --warn
+                     If specified, treat any unknown jobs and events as errors.
+
+       notify-disk-writeable
+              Notify the init(8) daemon that the disk is now writeable. This currently causes the init(8) daemon to flush its internal cache of 'early job' output data.  An early job is any job which finishes before the log disk becomes writeable. If job logging is not disabled, this command should be called once the log disk becomes writeable to ensure that output from all early jobs is flushed. If the data is written successfully to disk, the internal cache is deleted.
+
+       notify-dbus-address
+              Notify the init(8) daemon of the D-Bus address it should use to connect to.
+
+              This command is only permitted when running in User Session Mode.  See init(5) for further details.
+
+       list-env
+              [OPTIONS]
+
+              Display a lexicographically sorted list of all variables and their values in a job environment table.
+
+              When run from within a job, this command will automatically query the job-specific environment table; otherwise the global environment table that is applied to all jobs when they first start is queried.
+
+              Note that the global job environment table comprises those variables already set in the init(8) daemons environment at startup, the minimal set of standard system variables added by the init(8) daemon, and any variables set using set-env.  See init(5) for further details.
+
+              OPTIONS
+
+              -g, --global
+                     Operate on the global job environment table. This option is implied when not run from within a job.
+
+       get-env
+              [OPTIONS] VARIABLE
+
+              Display the value of the specified variable in a job environment table.
+
+              When run from within a job, this command will automatically query the job-specific environment table; otherwise the global environment table that is applied to all jobs when they first start is queried.
+
+              OPTIONS
+
+              -g, --global
+                     Operate on the global job environment table. This option is implied when not run from within a job.
+
+       set-env
+              [OPTIONS] VARIABLE[=VALUE]
+
+              Adds or updates a variable in a job environment table. Variables set in this way will apply to all the subsequently-starting processes for a job.
+
+              This command is only permitted when running in User Session Mode.  See init(5) for further details.
+
+              OPTIONS
+
+              -r, --retain
+                     If the specified variable is already set, do not modify it.
+
+              -g, --global
+                     Operate on the global job environment table and all existing running job environment tables. This option is implied when not run from within a job.
+
+                     This is an advanced option whose use is discouraged since it can change the environment of a job as it moves between different process stages (for example between pre-start and the main process). See init(5) for further details.
+
+       unset-env
+              [OPTIONS] VARIABLE
+
+              Remove the specified variable from a job environment table. If the variable does not already exist in the table, no change will be made.
+
+              This command is only permitted when running in User Session Mode.  See init(5) for further details.
+
+              OPTIONS
+
+              -r, --retain
+                     If the specified variable is already set, do not modify it.
+
+              -g, --global
+                     Operate on the global job environment table  and all existing running jobenvironment tables. This option is implied when not run from within a job.
+
+                     This is an advanced option whose use is discouraged since it can change the environment of a job as it moves between different process stages (for example between pre-start and the main process). See init(5) for further details.
+
+       reset-env
+              [OPTIONS]
+
+              Discards all changes make to a job environment table, setting it back to its default set of variables and values.
+
+              This command is only permitted when running in User Session Mode.  See init(5) for further details.
+
+              Note that the effect of the Session Init process that manages the User Session Mode restarting is equivalent to this command having been called.
+
+              OPTIONS
+
+              -r, --retain
+                     If the specified variable is already set, do not modify it.
+
+              -g, --global
+                     Operate on the global job environment table. This option is implied when not run from within a job.
+
+                     Note that unlike set-env and unset-env, this option does not modify running job environment tables.
+
+       list-sessions
+
+              List the pid of the Session Init process followed by the value of UPSTART_SESSION in use for that session separted by a space character. Session files relating to non-longer running Session Init processes are considered 'stale' and are not listed (although when run using --verbose, the full path of the stale session file is displayed).
+
+       usage  JOB [KEY=VALUE]...
+
+              Show usage information for the named JOB.  If the job specified does not define the usage stanza, a blank usage will be displayed.
+
+              Example output for a job that specifies the usage stanza is shown below. See init(5) for further details of the usage stanza:
+
+                Usage: tty DEV=ttyX - where X is console id
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       Written by Scott James Remnant &lt;scott@netsplit.com&gt; and James Hunt &lt;james.hunt@canonical.com&gt;.
+
+</code></pre>
+
+<h3 id="reporting-bugs">reporting bugs</h3>
+<pre><code>       Report bugs at &lt;https://launchpad.net/upstart/+bugs&gt;
+
+</code></pre>
+
+<h3 id="copyright">copyright</h3>
+<pre><code>       Copyright © 2009-2013 Canonical Ltd.
+       This is free software; see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       init(5) init(8) telinit(8) shutdown(8)
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

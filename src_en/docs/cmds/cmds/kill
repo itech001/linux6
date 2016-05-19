@@ -1,0 +1,20 @@
+# Sends a "SIGKILL" signal to process with id 925.  The -9 option sends the kill signal.  The 925 id was found by using 'ps'.
+kill -9 925
+
+# Kill a running processID
+kill 1000
+
+# Kill all processes running on port 9001
+kill `sudo lsof -t -i:9001`
+
+# kill -0 PID determines if PID is running (without locking the kernel process table or forking new shell)
+kill -0 $(cat $PIDFILE) || breakLockRestart "Daemon died; restarting."
+kill -0 $(cat $PIDFILE) &amp;&amp; die "$0 already running. Exiting."
+
+# Kill a process by grepping its process name, replace [p]rocessname with your own process, surround first char with []
+ps aufx | grep [p]rocessname | awk -v N=2 '{print $N}' | sudo xargs kill -9
+
+# Kill anyone over the internet.
+kill enemies
+kill wife
+kill -9 wife

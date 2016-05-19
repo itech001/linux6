@@ -1,0 +1,34 @@
+# Sync 2 folders/destinations recursively, overwrite, update, verbosely
+rsync -ruv ~/source/dir ~/destination/dir
+
+# Makes the remote folder look *exactly* like the source dir including file
+# permissions, ownership, etc.
+# -a Archive (sets a number of things).
+# -v Versose
+# --delete Dangerous!  Will remove files on the remote which do not exist
+#          in source.
+# Be sure you have remotedir set properly and maybe run without --delete
+# once to ensure that it does what you think it will do.
+rsync -av --progress --delete sourcedir user@host:remotedir
+# Remotely SYNC two directories, smarter than scp and easier than creating a tar
+rsync -rtvP --bwlimit=65 [source] [destination] 
+
+# Where
+#
+# -r is recursive
+# -t retains the files' modification time
+# -v to show what is going on
+# -P shows the progress
+# --bwlimit=65 limits the upload to 65Kb/sec
+# Download a remote file from an ssh-compatable server.
+# Reverse the arguments to upload.
+rsync -vP user@my_server:remote_dir/remote_file local_dir/local_filename
+
+# -v gives a bit more information
+# -P shows progress and allows transfer to be resumed with the same
+#    command after killing rsync
+# ssh on a different port, with progress
+rsync -P -rsh='ssh -p9001' user@remote.box:source.file destination.file
+
+# transfer a local file to a remote-server, with progress
+rsync --progress localFile.txt remote-server:/targetDirectory

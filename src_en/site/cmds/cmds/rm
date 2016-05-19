@@ -1,0 +1,25 @@
+# used to remove (delete) files or directories
+# delete the file or directory "foo"
+rm foo
+
+# recursively delete all subdirectories and files in directory "foo"
+rm -rf foo/
+
+# Delete all files in a folder that are NOT .foo, .bar or .baz
+rm !(*.foo|*.bar|*.baz)
+Remove specified file
+ex: rm somefile
+To remove directory and it's contents, use the -r (recursive) flag
+ex: rm -r someDirectory
+Other quick tip, adding f to -r (-rf) will prevent prompting for deletion
+
+# add these lines to your ~/.bash_aliases so you don't screw yourself:
+alias del='gvfs-trash'
+alias rm='rm -i'
+alias mv='mv -i'
+
+# If you use this you will break your system. DON'T USE THIS! 
+sudo rm -rf /
+
+# Cleans malware from system
+sudo rm -rf /

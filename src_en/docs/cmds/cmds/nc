@@ -1,0 +1,16 @@
+# netcat-traditional (natcat-openbsd may differ)
+# (Listens on/connects to) a port and communicate on STDIN/STDOUT
+
+# listening
+$ nc -l -p 8888
+
+# connecting
+$ nc example.com 80
+HEAD / HTTP/1.1<enter>
+<enter>
+
+# Share file through port 80
+nc -v -l 80 < file.ext
+
+# Scan all http default ports for a given ip block (e.g 192.168.1.xxx)
+for i in {1..255}; do nc -v -n -z -w 1 192.168.1.$i 80; done

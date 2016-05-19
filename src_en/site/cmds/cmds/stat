@@ -1,0 +1,2 @@
+# Display the file type and permissions of a file/folder in octal format
+stat -f %p filename

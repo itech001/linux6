@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/iptables/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>iptables - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#iptables">iptables</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#targets">targets</a></li>
+        
+            <li><a href="#tables">tables</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#match-and-target-extensions">match and target extensions</a></li>
+        
+            <li><a href="#diagnostics">diagnostics</a></li>
+        
+            <li><a href="#bugs">bugs</a></li>
+        
+            <li><a href="#compatibility-with-ipchains">compatibility with ipchains</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#authors">authors</a></li>
+        
+            <li><a href="#version">version</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="iptables">iptables</h1>
+<p>IPTABLES(8)                               iptables 1.4.21                               IPTABLES(8)</p>
+<h3 id="name">name</h3>
+<pre><code>       iptables/ip6tables — administration tool for IPv4/IPv6 packet filtering and NAT
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       iptables [-t table] {-A|-C|-D} chain rule-specification
+
+       ip6tables [-t table] {-A|-C|-D} chain rule-specification
+
+       iptables [-t table] -I chain [rulenum] rule-specification
+
+       iptables [-t table] -R chain rulenum rule-specification
+
+       iptables [-t table] -D chain rulenum
+
+       iptables [-t table] -S [chain [rulenum]]
+
+       iptables [-t table] {-F|-L|-Z} [chain [rulenum]] [options...]
+
+       iptables [-t table] -N chain
+
+       iptables [-t table] -X [chain]
+
+       iptables [-t table] -P chain target
+
+       iptables [-t table] -E old-chain-name new-chain-name
+
+       rule-specification = [matches...] [target]
+
+       match = -m matchname [per-match-options]
+
+       target = -j targetname [per-target-options]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       Iptables and ip6tables are used to set up, maintain, and inspect the tables of IPv4 and IPv6
+       packet filter rules in the Linux kernel.  Several different tables may be defined.  Each ta‐
+       ble contains a number of built-in chains and may also contain user-defined chains.
+
+       Each chain is a list of rules which can match a set of packets.  Each rule specifies what to
+       do with a packet that matches.  This is called a `target', which may be a jump  to  a  user-
+       defined chain in the same table.
+
+</code></pre>
+
+<h3 id="targets">targets</h3>
+<pre><code>       A firewall rule specifies criteria for a packet and a target.  If the packet does not match,
+       the next rule in the chain is examined; if it does match, then the next rule is specified by
+       the  value  of the target, which can be the name of a user-defined chain, one of the targets
+       described in iptables-extensions(8), or one of the special values ACCEPT, DROP or RETURN.
+
+       ACCEPT means to let the packet through.  DROP means to drop the packet on the floor.  RETURN
+       means  stop  traversing  this  chain  and  resume at the next rule in the previous (calling)
+       chain.  If the end of a built-in chain is reached or a rule in a built-in chain with  target
+       RETURN  is  matched,  the  target  specified  by the chain policy determines the fate of the
+       packet.
+
+</code></pre>
+
+<h3 id="tables">tables</h3>
+<pre><code>       There are currently five independent tables (which tables are present at any time depends on
+       the kernel configuration options and which modules are present).
+
+       -t, --table table
+              This  option specifies the packet matching table which the command should operate on.
+              If the kernel is configured with automatic module loading, an attempt will be made to
+              load the appropriate module for that table if it is not already there.
+
+              The tables are as follows:
+
+              filter:
+                  This  is  the default table (if no -t option is passed). It contains the built-in
+                  chains INPUT (for packets destined to local sockets), FORWARD (for packets  being
+                  routed through the box), and OUTPUT (for locally-generated packets).
+
+              nat:
+                  This  table  is  consulted when a packet that creates a new connection is encoun‐
+                  tered.  It consists of three built-ins: PREROUTING (for altering packets as  soon
+                  as they come in), OUTPUT (for altering locally-generated packets before routing),
+                  and POSTROUTING (for altering packets as they are about to  go  out).   IPv6  NAT
+                  support is available since kernel 3.7.
+
+              mangle:
+                  This table is used for specialized packet alteration.  Until kernel 2.4.17 it had
+                  two built-in chains: PREROUTING (for altering incoming  packets  before  routing)
+                  and OUTPUT (for altering locally-generated packets before routing).  Since kernel
+                  2.4.18, three other built-in chains are also supported: INPUT (for packets coming
+                  into  the  box  itself),  FORWARD  (for altering packets being routed through the
+                  box), and POSTROUTING (for altering packets as they are about to go out).
+
+              raw:
+                  This table is used mainly for configuring exemptions from connection tracking  in
+                  combination  with  the  NOTRACK target.  It registers at the netfilter hooks with
+                  higher priority and is thus called before ip_conntrack, or any other  IP  tables.
+                  It  provides  the following built-in chains: PREROUTING (for packets arriving via
+                  any network interface) OUTPUT (for packets generated by local processes)
+
+              security:
+                  This table is used for Mandatory Access Control (MAC) networking rules,  such  as
+                  those  enabled  by the SECMARK and CONNSECMARK targets.  Mandatory Access Control
+                  is implemented by Linux Security Modules such as SELinux.  The security table  is
+                  called  after  the  filter table, allowing any Discretionary Access Control (DAC)
+                  rules in the filter table to take effect before MAC rules.  This  table  provides
+                  the  following  built-in  chains: INPUT (for packets coming into the box itself),
+                  OUTPUT (for altering locally-generated packets before routing), and FORWARD  (for
+                  altering packets being routed through the box).
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       The  options  that are recognized by iptables and ip6tables can be divided into several dif‐
+       ferent groups.
+
+   COMMANDS
+       These options specify the desired action to perform. Only one of them can  be  specified  on
+       the  command line unless otherwise stated below. For long versions of the command and option
+       names, you need to use only enough letters to ensure that iptables can differentiate it from
+       all other options.
+
+       -A, --append chain rule-specification
+              Append  one  or  more rules to the end of the selected chain.  When the source and/or
+              destination names resolve to more than one address, a rule will  be  added  for  each
+              possible address combination.
+
+       -C, --check chain rule-specification
+              Check  whether  a  rule  matching the specification does exist in the selected chain.
+              This command uses the same logic as -D to find a matching entry, but does  not  alter
+              the  existing  iptables  configuration  and uses its exit code to indicate success or
+              failure.
+
+       -D, --delete chain rule-specification
+       -D, --delete chain rulenum
+              Delete one or more rules from the selected chain.  There are  two  versions  of  this
+              command:  the  rule  can be specified as a number in the chain (starting at 1 for the
+              first rule) or a rule to match.
+
+       -I, --insert chain [rulenum] rule-specification
+              Insert one or more rules in the selected chain as the given rule number.  So, if  the
+              rule  number  is 1, the rule or rules are inserted at the head of the chain.  This is
+              also the default if no rule number is specified.
+
+       -R, --replace chain rulenum rule-specification
+              Replace a rule in the selected chain.  If the source and/or destination names resolve
+              to multiple addresses, the command will fail.  Rules are numbered starting at 1.
+
+       -L, --list [chain]
+              List  all  rules  in  the  selected  chain.   If no chain is selected, all chains are
+              listed. Like every other iptables command, it applies to the specified table  (filter
+              is the default), so NAT rules get listed by
+               iptables -t nat -n -L
+              Please  note that it is often used with the -n option, in order to avoid long reverse
+              DNS lookups.  It is legal to specify the -Z (zero) option as well, in which case  the
+              chain(s)  will  be atomically listed and zeroed.  The exact output is affected by the
+              other arguments given. The exact rules are suppressed until you use
+               iptables -L -v
+
+       -S, --list-rules [chain]
+              Print all rules in the selected chain.  If no  chain  is  selected,  all  chains  are
+              printed  like  iptables-save.  Like  every  other iptables command, it applies to the
+              specified table (filter is the default).
+
+       -F, --flush [chain]
+              Flush the selected chain (all the chains in the table if none  is  given).   This  is
+              equivalent to deleting all the rules one by one.
+
+       -Z, --zero [chain [rulenum]]
+              Zero the packet and byte counters in all chains, or only the given chain, or only the
+              given rule in a chain. It is legal to specify the -L, --list (list) option  as  well,
+              to see the counters immediately before they are cleared. (See above.)
+
+       -N, --new-chain chain
+              Create  a  new user-defined chain by the given name.  There must be no target of that
+              name already.
+
+       -X, --delete-chain [chain]
+              Delete the optional user-defined chain specified.  There must be no references to the
+              chain.  If there are, you must delete or replace the referring rules before the chain
+              can be deleted.  The chain must be empty, i.e. not contain any rules.  If no argument
+              is given, it will attempt to delete every non-builtin chain in the table.
+
+       -P, --policy chain target
+              Set  the  policy  for the chain to the given target.  See the section TARGETS for the
+              legal targets.  Only built-in (non-user-defined) chains can have policies,  and  nei‐
+              ther built-in nor user-defined chains can be policy targets.
+
+       -E, --rename-chain old-chain new-chain
+              Rename the user specified chain to the user supplied name.  This is cosmetic, and has
+              no effect on the structure of the table.
+
+       -h     Help.  Give a (currently very brief) description of the command syntax.
+
+   PARAMETERS
+       The following parameters make up a rule specification (as used in the add,  delete,  insert,
+       replace and append commands).
+
+       -4, --ipv4
+              This  option  has no effect in iptables and iptables-restore.  If a rule using the -4
+              option is inserted with (and  only  with)  ip6tables-restore,  it  will  be  silently
+              ignored.  Any  other uses will throw an error. This option allows IPv4 and IPv6 rules
+              in a single rule file for use with both iptables-restore and ip6tables-restore.
+
+       -6, --ipv6
+              If a rule using the -6 option is inserted with (and only with)  iptables-restore,  it
+              will be silently ignored. Any other uses will throw an error. This option allows IPv4
+              and IPv6 rules in  a  single  rule  file  for  use  with  both  iptables-restore  and
+              ip6tables-restore.  This option has no effect in ip6tables and ip6tables-restore.
+
+       [!] -p, --protocol protocol
+              The  protocol  of  the rule or of the packet to check.  The specified protocol can be
+              one of tcp, udp, udplite, icmp, icmpv6,esp, ah,  sctp,  mh  or  the  special  keyword
+              &quot;all&quot;, or it can be a numeric value, representing one of these protocols or a differ‐
+              ent one.  A protocol name from /etc/protocols is also allowed.  A &quot;!&quot; argument before
+              the  protocol  inverts  the  test.   The number zero is equivalent to all. &quot;all&quot; will
+              match with all protocols and is taken as default when this option is  omitted.   Note
+              that,  in  ip6tables,  IPv6  extension  headers  except esp are not allowed.  esp and
+              ipv6-nonext can be used with Kernel version 2.6.11 or  later.   The  number  zero  is
+              equivalent  to all, which means that you cannot test the protocol field for the value
+              0 directly. To match on a HBH header, even if it were the last, you cannot use -p  0,
+              but always need -m hbh.
+
+       [!] -s, --source address[/mask][,...]
+              Source  specification. Address can be either a network name, a hostname, a network IP
+              address (with /mask), or a plain IP address. Hostnames will be  resolved  once  only,
+              before  the rule is submitted to the kernel.  Please note that specifying any name to
+              be resolved with a remote query such as DNS is a really bad idea.  The  mask  can  be
+              either  an  ipv4 network mask (for iptables) or a plain number, specifying the number
+              of 1's at the left side of the network mask.  Thus, an iptables mask of 24 is equiva‐
+              lent  to  255.255.255.0.  A &quot;!&quot; argument before the address specification inverts the
+              sense of the address. The flag --src is an alias for this option.  Multiple addresses
+              can  be  specified,  but this will expand to multiple rules (when adding with -A), or
+              will cause multiple rules to be deleted (with -D).
+
+       [!] -d, --destination address[/mask][,...]
+              Destination specification.  See the  description  of  the  -s  (source)  flag  for  a
+              detailed description of the syntax.  The flag --dst is an alias for this option.
+
+       -m, --match match
+              Specifies  a  match  to  use,  that is, an extension module that tests for a specific
+              property. The set of matches make up the condition under which a target  is  invoked.
+              Matches  are  evaluated  first  to  last as specified on the command line and work in
+              short-circuit fashion, i.e. if one extension yields false, evaluation will stop.
+
+       -j, --jump target
+              This specifies the target of the rule; i.e., what to do if  the  packet  matches  it.
+              The  target  can be a user-defined chain (other than the one this rule is in), one of
+              the special builtin targets which decide the fate of the packet  immediately,  or  an
+              extension (see EXTENSIONS below).  If this option is omitted in a rule (and -g is not
+              used), then matching the rule will have no effect on the packet's fate, but the coun‐
+              ters on the rule will be incremented.
+
+       -g, --goto chain
+              This  specifies that the processing should continue in a user specified chain. Unlike
+              the --jump option return will not continue processing in this chain  but  instead  in
+              the chain that called us via --jump.
+
+       [!] -i, --in-interface name
+              Name  of  an interface via which a packet was received (only for packets entering the
+              INPUT, FORWARD and PREROUTING chains).  When the &quot;!&quot;  argument  is  used  before  the
+              interface name, the sense is inverted.  If the interface name ends in a &quot;+&quot;, then any
+              interface which begins with this name will match.  If this  option  is  omitted,  any
+              interface name will match.
+
+       [!] -o, --out-interface name
+              Name of an interface via which a packet is going to be sent (for packets entering the
+              FORWARD, OUTPUT and POSTROUTING chains).  When the &quot;!&quot; argument is  used  before  the
+              interface name, the sense is inverted.  If the interface name ends in a &quot;+&quot;, then any
+              interface which begins with this name will match.  If this  option  is  omitted,  any
+              interface name will match.
+
+       [!] -f, --fragment
+              This  means  that  the rule only refers to second and further IPv4 fragments of frag‐
+              mented packets.  Since there is no way to tell the source  or  destination  ports  of
+              such  a  packet  (or ICMP type), such a packet will not match any rules which specify
+              them.  When the &quot;!&quot; argument precedes the &quot;-f&quot; flag, the rule will  only  match  head
+              fragments, or unfragmented packets. This option is IPv4 specific, it is not available
+              in ip6tables.
+
+       -c, --set-counters packets bytes
+              This enables the administrator to initialize the packet and byte counters of  a  rule
+              (during INSERT, APPEND, REPLACE operations).
+
+   OTHER OPTIONS
+       The following additional options can be specified:
+
+       -v, --verbose
+              Verbose output.  This option makes the list command show the interface name, the rule
+              options (if any), and the TOS masks.  The packet and byte counters are  also  listed,
+              with  the  suffix  'K',  'M' or 'G' for 1000, 1,000,000 and 1,000,000,000 multipliers
+              respectively (but see the -x flag to change this).  For appending,  insertion,  dele‐
+              tion  and  replacement,  this  causes detailed information on the rule or rules to be
+              printed. -v may be specified multiple times to  possibly  emit  more  detailed  debug
+              statements.
+
+       -w, --wait
+              Wait for the xtables lock.  To prevent multiple instances of the program from running
+              concurrently, an attempt will be made to obtain an  exclusive  lock  at  launch.   By
+              default, the program will exit if the lock cannot be obtained.  This option will make
+              the program wait until the exclusive lock can be obtained.
+
+       -n, --numeric
+              Numeric output.  IP addresses and port numbers will be printed in numeric format.  By
+              default,  the  program will try to display them as host names, network names, or ser‐
+              vices (whenever applicable).
+
+       -x, --exact
+              Expand numbers.  Display the exact value of the packet and byte counters, instead  of
+              only  the  rounded  number in K's (multiples of 1000) M's (multiples of 1000K) or G's
+              (multiples of 1000M).  This option is only relevant for the -L command.
+
+       --line-numbers
+              When listing rules, add line numbers to the beginning of each rule, corresponding  to
+              that rule's position in the chain.
+
+       --modprobe=command
+              When  adding  or inserting rules into a chain, use command to load any necessary mod‐
+              ules (targets, match extensions, etc).
+
+</code></pre>
+
+<h3 id="match-and-target-extensions">match and target extensions</h3>
+<pre><code>       iptables can use extended packet matching and target modules.  A list of these is  available
+       in the iptables-extensions(8) manpage.
+
+</code></pre>
+
+<h3 id="diagnostics">diagnostics</h3>
+<pre><code>       Various  error messages are printed to standard error.  The exit code is 0 for correct func‐
+       tioning.  Errors which appear to be caused by invalid  or  abused  command  line  parameters
+       cause an exit code of 2, and other errors cause an exit code of 1.
+
+</code></pre>
+
+<h3 id="bugs">bugs</h3>
+<pre><code>       Bugs?   What's  this?  ;-)  Well,  you  might want to have a look at http://bugzilla.netfil‐
+       ter.org/
+
+</code></pre>
+
+<h3 id="compatibility-with-ipchains">compatibility with ipchains</h3>
+<pre><code>       This iptables is very similar to ipchains by Rusty Russell.  The main difference is that the
+       chains INPUT and OUTPUT are only traversed for packets coming into the local host and origi‐
+       nating from the local host respectively.  Hence every packet only passes through one of  the
+       three  chains (except loopback traffic, which involves both INPUT and OUTPUT chains); previ‐
+       ously a forwarded packet would pass through all three.
+
+       The other main difference is that -i refers to the input interface; -o refers to the  output
+       interface, and both are available for packets entering the FORWARD chain.
+
+       The  various  forms  of  NAT  have been separated out; iptables is a pure packet filter when
+       using the default `filter' table, with optional extension  modules.   This  should  simplify
+       much  of the previous confusion over the combination of IP masquerading and packet filtering
+       seen previously.  So the following options are handled differently:
+        -j MASQ
+        -M -S
+        -M -L
+       There are several other changes in iptables.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       iptables-apply(8), iptables-save(8), iptables-restore(8), iptables-extensions(8),
+
+       The packet-filtering-HOWTO details  iptables  usage  for  packet  filtering,  the  NAT-HOWTO
+       details NAT, the netfilter-extensions-HOWTO details the extensions that are not in the stan‐
+       dard distribution, and the netfilter-hacking-HOWTO details the netfilter internals.
+       See http://www.netfilter.org/.
+
+</code></pre>
+
+<h3 id="authors">authors</h3>
+<pre><code>       Rusty Russell originally wrote iptables, in early consultation with Michael Neuling.
+
+       Marc Boucher made Rusty abandon ipnatctl by lobbying for a generic packet  selection  frame‐
+       work  in  iptables,  then  wrote  the mangle table, the owner match, the mark stuff, and ran
+       around doing cool stuff everywhere.
+
+       James Morris wrote the TOS target, and tos match.
+
+       Jozsef Kadlecsik wrote the REJECT target.
+
+       Harald Welte wrote the ULOG and NFQUEUE target, the new libiptc, as well as the  TTL,  DSCP,
+       ECN matches and targets.
+
+       The Netfilter Core Team is: Marc Boucher, Martin Josefsson, Yasuyuki Kozakai, Jozsef Kadlec‐
+       sik, Patrick McHardy, James Morris, Pablo Neira Ayuso, Harald Welte and Rusty Russell.
+
+       Man page originally written by Herve Eychenne &lt;rv@wallfire.org&gt;.
+
+</code></pre>
+
+<h3 id="version">version</h3>
+<pre><code>       This manual page applies to iptables/ip6tables @PACKAGE_AND_VERSION@.
+
+
+
+iptables 1.4.21                                                                         IPTABLES(8)
+</code></pre>
+
+<p>```</p>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p>Contact me by email:<a href=mailto:itech001@126.com>itech001@126.com</a>, Contribute your great articles or suggestions in <a href=https://github.com/itech001/linux6>github</a>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

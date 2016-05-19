@@ -1,0 +1,5 @@
+# split a file by number of lines 
+split -l 5000 filename
+
+# split a gz file into equal sized gz pieces from stdin
+zcat bigfile.gz | split -d --filter='gzip > $FILE.gz' --number=r/32 - /output/dir

@@ -1,0 +1,5 @@
+# change the current user to el
+su el
+
+# run command "rm -rf bar" as user "tim"
+su tim -c 'rm -rf bar'

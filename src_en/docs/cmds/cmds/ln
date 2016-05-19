@@ -1,0 +1,8 @@
+# Creates a soft link
+ln -s /full/path/to/original/file /full/path/to/link
+
+# Creates a hard link
+ln /full/path/ln/original/file /full/path/to/link
+
+# Creates a soft link from relative path
+ln -sr somefile.txt /path/to/link

@@ -1,0 +1,5 @@
+# Repeatedly outputs "kitty"
+yes kitty
+
+# Repeatedly outputs "y"
+yes

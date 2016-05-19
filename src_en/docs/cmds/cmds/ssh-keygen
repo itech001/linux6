@@ -1,0 +1,4 @@
+# generate a key without any keyboard interaction
+ssh-keygen -t dsa -N '' -f path/to/keyfile -y
+# remove host from known_hosts file
+ssh-keygen -R hostname

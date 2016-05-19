@@ -1,0 +1,18 @@
+# unzip a zip file, extract in current directory
+unzip -e archive.zip
+
+# Extracts contents to specified directory
+unzip archive.zip -d /path/to/other/directory/
+
+# unzip many files in one command: must add \ before wildchar
+# otherwise command will extract first zip and search other files in it
+unzip -e \*.zip
+
+# use unzip -l to see the contents of an archive
+unzip -l archive.zip
+
+# Unzip overwriting content of current directory
+unzip -o archive.zip
+
+# Unzip all *.zip files
+unzip '*.zip'

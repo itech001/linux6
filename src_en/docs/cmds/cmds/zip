@@ -1,0 +1,17 @@
+# Zips up everything in my current directory recursively into the file archive.zip
+zip -r archive.zip *
+
+# put README.txt and test.c into the zip file named archive.zip
+zip archive.zip README.txt test.c
+
+# Recursively zip all files in the directory foo into foo.zip
+zip -r foo foo
+
+# Recursively zip everything, starting from the current directory, that matches the given pattern into archive.zip
+# Note: the `R` flag is case sensitive!
+zip -R archive "*.png"
+zip --recurse-patterns archive "*.png"
+
+# Use the `unzip` command to extract a zip file, unlike `tar` and `gzip` where you use a command line argument to decompress
+unzip file.zip # Extracts to current directory
+unzup file.zip -d dir # Extracts to specified directory

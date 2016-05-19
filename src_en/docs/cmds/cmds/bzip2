@@ -1,0 +1,9 @@
+# add file1, file2 and file3 to a tar, then compress them creating file4.tar.bz2
+tar -cf file4.tar file1 file2 file3
+bzip2 file4.tar
+
+# Compress file, creating file.bz2, removing the old file
+bzip2 file
+
+# Unzip file.bz2, creating file, removing file.bz2. (See also bunzip2)
+bzip2 -d file.bz2
