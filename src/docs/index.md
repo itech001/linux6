@@ -21,45 +21,45 @@ linux6 有初学者的快速入门步骤，有Linux常用的知识点查询，�
 [git命令速查](dev/git-cheat-sheet.md)  
 [gdb入门](dev/gdb.md)  
 ### 更多有用的参考
-> 更多有用的linux资源
+> 更多有用的linux资源  
 [有用的Linux连接](ref/linux_resources.md)  
 [惊死人的Linux大全](ref/awesomes.md)  
 
 
-# For the advanced users
-### custom env
-> You can do more customization for your environment to improve efficiency.  
-[vim setting](env/vim_setting.md)  
-[dotfiles](env/dotfiles.md)  
-[alias](env/alias.md)  
-[shortcut](env/shortcut.md)  
-### more script
-> You can choose perl or python for more complex tasks.  
-[shell_compare](shell/shell_compare.md)  
-[zsh](shell/zsh.md)  
-[perl](shell/perl.md)  
-[python](shell/python.md)  
-### more tools
->more tools to improve efficiency.  
+# Linux的高级用户
+### 自定义环境
+> 根据个人爱好，选择和配置自己喜爱和高效的环境  
+[vim配置及自定义](env/vim_setting.md)  
+[各种其他的配置](env/dotfiles.md)  
+[快捷命令大全](env/alias.md)  
+[快捷键](env/shortcut.md)  
+### 更多脚本类型
+> bash适合简单的逻辑处理，更复杂的需求需要其他更加高级的脚本   
+[shell的比较](shell/shell_compare.md)  
+[zsh最牛逼的shell](shell/zsh.md)  
+[perl更高级的shell](shell/perl.md)  
+[python与perl大不同，更面向对象](shell/python.md)  
+### 高级命令
+>懂了这些高级用法，才有那么一点点装逼的资本 
 [find](cmds/find.md)  
 [xargs](cmds/xargs.md)
 [grep](cmds/grep.md)  
 [sed](cmds/sed.md)  
 [awk](cmds/awk.md)  
 [tmux](env/tmux.md)  
-### advanced topics
->advanced topics about linux theory, and custom your Linux.  
-[advanced topics](adv/article.md)  
-[linux rss](rss/linux_rss2.md)  
-[github trend](rss/github_rss2.md)  
-### interview questions
->common questions for Linux interview  
+### 更高级的主题
+>会用那只是菜鸟，知道实现原理那才是大牛 
+[高级主题](adv/article.md)  
+[linux最新闻，不过需要砌墙](rss/linux_rss2.md)  
+[github上的牛逼项目](rss/github_rss2.md)  
+### 面试问题
+>一问三不知  
 [common](faq/common.md)  
-# More Help
-### ask questions
->any other questions, you can ask in below forums.  
+# 更多免费的帮助
+### 会问问题
+>会问问题，知道去哪里找答案，就基本没有你搞不定的问题了  
 [askubuntu](http://askubuntu.com/)  
 [stackexchange](http://unix.stackexchange.com/)  
 [serverfault](http://serverfault.com/)  
-# Contribute
->If you have any great articles and want to share with others, please send me the links, and I will add them in this site.  
+# 摄取的时候不要忘记贡献
+>欢迎分享你的心得，小技巧，众人拾柴火焰高，对不对？ 还有分享是最好的学习方法，分享还能交朋友。
