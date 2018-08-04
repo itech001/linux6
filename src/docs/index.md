@@ -1,5 +1,7 @@
 
-linux6.com, 这里有初学者的快速入门步骤，这里有Linux常用的知识点查询，这里有针对高级用户所需要主题的深入讲解 !!!  
+  
+linux6.com  
+这里有初学者的快速入门步骤，这里有Linux常用的知识点查询，这里有针对高级用户所需要主题的深入讲解 !!!  
 
 # 初学者  
 ### 设置环境
@@ -61,5 +63,5 @@ linux6.com, 这里有初学者的快速入门步骤，这里有Linux常用的知
 [askubuntu](http://askubuntu.com/)  
 [stackexchange](http://unix.stackexchange.com/)  
 [serverfault](http://serverfault.com/)  
-# 摄取的时候不要忘记贡献
+# 贡献
 >欢迎分享你的心得，小技巧，众人拾柴火焰高，对不对？ 还有分享是最好的学习方法，分享还能交朋友。 交朋友的加wx：xzwjohyeah。  
