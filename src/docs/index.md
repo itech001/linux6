@@ -1,33 +1,29 @@
 
-This site is mainly for the Linux beginners to study Linux in shortest time !!!  
-For advance Linux users, you can ignore tutorial articles and just focus on advanced topics!!!
+linux6 有初学者的快速入门步骤，有Linux常用的知识点查询，有高级用户所需要的高级主题的深入讲解 !!!  
 
-You can follow below guides:
-
-# For the Linux beginners
-### setup env
-> Firstly you need one Linux environment for your study, the easiest way is to setup one virtual machine. I suggest you to use virtual box and download installed distribution from virtualimages.com.  
-> [setup virtualbox Linux OS](env/virtualbox.md)  
->When you  have Linux OS, you need install VIM and study how to use it. VIM is used when you edit any files.  
-> [install VIM](env/vim_setting.md)  
-> [VIM introduction](env/vi.md)  
-### study cmds
-> After you have Linux OS, you can start to play all kinds of commands in terminal. You can find examples for common used commands, or check all commands manpages.  
-[cmds common](cmds/cmds_common.md)
-[cmds example](cmds/cmds_example.md)  
-[cmds manpages](cmds/cmds_overview.md)
-### study script
-> When you are familar with some basic commands, the next step is to study shell, by shell you can complete some complex and repeat tasks. For Linux OS, the popular shell is bash.  
-[bash](shell/bash.md)  
-### study dev tools
-> If you are developers, git is necessary for you to manage your source code, and gdb also is necessary for you to debug source code.  
-[git tutorial](dev/git.md)  
-[git cheat-sheet](dev/git-cheat-sheet.md)  
-[gdb tutorial](dev/gdb.md)  
-### all useful refs
-> For more reference about environment, commands and shell, you can find many  useful resources.  
-[useful links](ref/linux_resources.md)  
-[awesome resources](ref/awesomes.md)  
+# 初学者  
+### 设置环境
+> 最简单的办法是使用虚拟机. 建议使用virtualbox和配套的已经安装好的镜像virtualimages.com。  
+> [设置Virtualbox Linux环境](env/virtualbox.md)  
+> [安装VIM文本编辑器](env/vim_setting.md)  
+> [VIM的入门](env/vi.md)  
+### Linux的基本命令
+> Linux的使用大部分在终端环境，必须的学习基本的命令的使用。    
+[常用命令](cmds/cmds_common.md)
+[命令实例](cmds/cmds_example.md)  
+[命令的详讲](cmds/cmds_overview.md)
+### 学习脚本
+> 基本命令会用后， 更多的操作需要借助脚本来完成。    
+[bash脚本](shell/bash.md)  
+### 常用开发工具
+> 如果是开发者，必备的开发工具。    
+[git入门](dev/git.md)  
+[git命令速查](dev/git-cheat-sheet.md)  
+[gdb入门](dev/gdb.md)  
+### 更多有用的参考
+> 更多有用的linux资源
+[有用的Linux连接](ref/linux_resources.md)  
+[惊死人的Linux大全](ref/awesomes.md)  
 
 
 # For the advanced users
