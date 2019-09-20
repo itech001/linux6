@@ -25,6 +25,7 @@ pages:
 - ['shell/bash.md', 'Script','Bash']
 - ['shell/bash_example.md','Script','Bash_example']
 - ['shell/bash_summary.html','Script','Bash_summary']
+- ['shell/bash_bible.md','Script','Bash_bible']
 - ['shell/csh.md','Script','Csh']
 - ['shell/zsh.md','Script','Zsh']
 - ['shell/shell_compare.html','Script','Shell_compare']
