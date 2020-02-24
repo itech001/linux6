@@ -6,10 +6,7 @@ This site [www.linux6.com](http://www.linux6.com) is for linux beginners and adv
 
 ![](linux6.png)  
 
-
-###build status
-
-[![Build Status](https://travis-ci.org/itech001/linux6.svg?branch=master)](https://travis-ci.org/itech001/linux6)
+###build status [![Build Status](https://travis-ci.org/itech001/linux6.svg?branch=master)](https://travis-ci.org/itech001/linux6)
 
 ###contribute steps:
 1. make sure you have python installed
@@ -21,15 +18,10 @@ This site [www.linux6.com](http://www.linux6.com) is for linux beginners and adv
 1. build by: mkdocs build
 1. preview by: mkdocs serve, and open localhost:8000 in browser
 1. commit by: git push 
-1. will be deployed by travis CI automatically
+1. your changes will be deployed by travis CI automatically
 
 ###contribution
-1. file issues.
-1. pull requests.
-
-###License
-1. MIT License for this source code
-1. [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for the content of www.linux6.com which includes all blogs, pages and articles 
+1. file issues; 2. pull requests.
 
 ###Author
 itech001@126.com  
