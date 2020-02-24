@@ -64,4 +64,4 @@ linux6.com
 [stackexchange](http://unix.stackexchange.com/)  
 [serverfault](http://serverfault.com/)  
 # 贡献
->欢迎分享你的心得，小技巧，众人拾柴火焰高，对不对？ 还有分享是最好的学习方法，分享还能交朋友。 交朋友的加wx：mzty999。  
+>欢迎分享你的心得，小技巧，众人拾柴火焰高，对不对？ 还有分享是最好的学习方法，分享还能交朋友。 交朋友的加wx：xzwjohyeah。  
