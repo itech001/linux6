@@ -6,9 +6,9 @@ This site [www.linux6.com](http://www.linux6.com) is for linux beginners and adv
 
 ![](linux6.png)  
 
-###build status [![Build Status](https://travis-ci.org/itech001/linux6.svg?branch=master)](https://travis-ci.org/itech001/linux6)
+**build status** [![Build Status](https://travis-ci.org/itech001/linux6.svg?branch=master)](https://travis-ci.org/itech001/linux6)
 
-###contribute steps:
+**contribute steps:**
 1. make sure you have python installed
 1. install mkdocs dependences: pip install mkdocs  
 1. get code: git clone https://github.com/itech001/linux6.git 
@@ -20,10 +20,10 @@ This site [www.linux6.com](http://www.linux6.com) is for linux beginners and adv
 1. commit by: git push 
 1. your changes will be deployed by travis CI automatically
 
-###contribution
+**contribution**
 1. file issues; 2. pull requests.
 
-###Author
+**Author**
 itech001@126.com  
 
 ![weinxin group](weixin.jpg)
