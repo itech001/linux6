@@ -65,5 +65,5 @@ include_nav: True
 include_next_prev: False
 include_search: true
 copyright: '<div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br>
-<img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg height="200" width="200"></div>.'
+<img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.'
 google_analytics: ''
