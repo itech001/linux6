@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/eject/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>eject - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#eject">eject</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#long-options">long options</a></li>
+        
+            <li><a href="#examples">examples</a></li>
+        
+            <li><a href="#exit-status">exit status</a></li>
+        
+            <li><a href="#notes">notes</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="eject">eject</h1>
+<h3 id="name">name</h3>
+<pre><code>       eject - eject removable media
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       eject -h
+       eject [-vnrsfmqp] [&lt;name&gt;]
+       eject [-vn] -d
+       eject [-vn] -a on|off|1|0 [&lt;name&gt;]
+       eject [-vn] -c slot [&lt;name&gt;]
+       eject [-vn] -i on|off|1|0 [&lt;name&gt;]
+       eject [-vn] -t [&lt;name&gt;]
+       eject [-vn] -T [&lt;name&gt;]
+       eject [-vn] -x &lt;speed&gt; [&lt;name&gt;]
+       eject [-vn] -X [&lt;name&gt;]
+       eject -V
+
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       Eject allows removable media (typically a CD-ROM, floppy disk, tape, or JAZ or ZIP disk) to be ejected under software control. The command can also control some multi-disc CD-ROM changers, the auto-eject feature supported by some devices, and close the disc tray of some CD-ROM drives.
+
+       The device corresponding to &lt;name&gt; is ejected. The name can be a device file or mount point, either a full path or with the leading &quot;/dev&quot;, &quot;/media&quot; or &quot;/mnt&quot; omitted. If no name is specified, the default name &quot;cdrom&quot; is used.
+
+       There are four different methods of ejecting, depending on whether the device is a CD-ROM, SCSI device, removable floppy, or tape. By default eject tries all four methods in order until it succeeds.
+
+       If the device is currently mounted, it is unmounted before ejecting.
+
+
+COMMAND-LINE OPTIONS
+       -h   This option causes eject to display a brief description of the command options.
+
+
+       -v   This makes eject run in verbose mode; more information is displayed about what the command is doing.
+
+
+       -d   If invoked with this option, eject lists the default device name.
+
+
+       -a on|1|off|0
+            This option controls the auto-eject mode, supported by some devices.  When enabled, the drive automatically ejects when the device is closed.
+
+
+       -c &lt;slot&gt;
+            With this option a CD slot can be selected from an ATAPI/IDE CD-ROM changer. Linux 2.0 or higher is required to use this feature. The CD-ROM drive can not be in use (mounted data CD or playing a music CD) for a change request to work. Please also note that the first slot of the changer is referred to as 0, not 1.
+
+
+       -i on|1|off|0
+            This option controls locking of the hardware eject button. When enabled, the drive will not be ejected when the button is pressed.  This is useful when you are carrying a laptop in a bag or case and don't want it to eject if the button is inadvertently pressed.
+
+
+       -t   With this option the drive is given a CD-ROM tray close command. Not all devices support this command.
+
+
+       -T   With this option the drive is given a CD-ROM tray close command if it's opened, and a CD-ROM tray eject command if it's closed. Not all devices support this command, because it uses the above CD-ROM tray close command.
+
+
+       -x &lt;speed&gt;
+            With this option the drive is given a CD-ROM select speed command.  The speed argument is a number indicating the desired speed (e.g. 8 for 8X speed), or 0 for maximum data rate. Not all devices support this command and you can only specify speeds that the drive is capable of. Every time the media is changed this option is cleared. This option can be used alone, or with the -t and -c options.
+
+
+       -X   With this option the CD-ROM drive will be probed to detect the available speeds. The output is a list of speeds which can be used as an argument of the -x option. This only works with Linux 2.6.13 or higher, on previous versions solely the maximum speed will be reported. Also note that some drive may not correctly report the speed and therefore this option does not work with them.
+
+
+       -n   With this option the selected device is displayed but no action is performed.
+
+
+       -r   This option specifies that the drive should be ejected using a CDROM eject command.
+
+
+       -s   This option specifies that the drive should be ejected using SCSI commands.
+
+
+       -f   This option specifies that the drive should be ejected using a removable floppy disk eject command.
+
+
+       -q   This option specifies that the drive should be ejected using a tape drive offline command.
+
+
+       -p   This option allow you to use /proc/mounts instead /etc/mtab. It also passes the -n option to umount(1).
+
+
+       -m   This option allows eject to work with device drivers which automatically mount removable media and therefore must be always mount(1)ed.  The option tells eject to not try to unmount the given device, even if it is mounted according to /etc/mtab or /proc/mounts.
+
+
+       -V   This option causes eject to display the program version and exit.
+
+
+</code></pre>
+
+<h3 id="long-options">long options</h3>
+<pre><code>       All options have corresponding long names, as listed below. The long names can be abbreviated as long as they are unique.
+
+       -h --help
+       -v --verbose
+       -d --default
+       -a --auto
+       -c --changerslot
+       -t --trayclose
+       -T --traytoggle
+       -x --cdspeed
+       -X --listspeed
+       -n --noop
+       -r --cdrom
+       -s --scsi
+       -f --floppy
+       -q --tape
+       -V --version
+       -p --proc
+       -m --no-unmount
+
+
+</code></pre>
+
+<h3 id="examples">examples</h3>
+<pre><code>       Eject the default device:
+
+              eject
+
+       Eject a device or mount point named cdrom:
+
+              eject cdrom
+
+       Eject using device name:
+
+              eject /dev/cdrom
+
+       Eject using mount point:
+
+              eject /mnt/cdrom/
+
+       Eject 4th IDE device:
+
+              eject hdd
+
+       Eject first SCSI device:
+
+              eject sda
+
+       Eject using SCSI partition name (e.g. a ZIP drive):
+
+              eject sda4
+
+       Select 5th disc on multi-disc changer:
+
+              eject -v -c4 /dev/cdrom
+
+       Turn on auto-eject on a SoundBlaster CD-ROM drive:
+
+              eject -a on /dev/sbpcd
+
+
+</code></pre>
+
+<h3 id="exit-status">exit status</h3>
+<pre><code>       Returns 0 if operation was successful, 1 if operation failed or command syntax was not valid.
+
+
+</code></pre>
+
+<h3 id="notes">notes</h3>
+<pre><code>       Eject only works with devices that support one or more of the four methods of ejecting. This includes most CD-ROM drives (IDE, SCSI, and proprietary), some SCSI tape drives, JAZ drives, ZIP drives (parallel port, SCSI, and IDE versions), and LS120 removable floppies. Users have also reported success with floppy drives on Sun SPARC and Apple Macintosh systems. If eject does not work, it is most likely a limitation of the kernel driver for the device and not the eject program itself.
+
+       The -r, -s, -f, and -q options allow controlling which methods are used to eject. More than one method can be specified. If none of these options are specified, it tries all four (this works fine in most cases).
+
+       Eject may not always be able to determine if the device is mounted (e.g. if it has several names). If the device name is a symbolic link, eject will follow the link and use the device that it points to.
+
+       If eject determines that the device can have multiple partitions, it will attempt to unmount all mounted partitions of the device before ejecting. If an unmount fails, the program will not attempt to eject the media.
+
+       You can eject an audio CD. Some CD-ROM drives will refuse to open the tray if the drive is empty. Some devices do not support the tray close command.
+
+       If the auto-eject feature is enabled, then the drive will always be ejected after running this command. Not all Linux kernel CD-ROM drivers support the auto-eject mode. There is no way to find out the state of the auto-eject mode.
+
+       You need appropriate privileges to access the device files. Running as root or setuid root is required to eject some devices (e.g. SCSI devices).
+
+       The heuristic used to find a device, given a name, is as follows. If the name ends in a trailing slash, it is removed (this is to support filenames generated using shell file name completion). If the name starts with '.' or '/', it tries to open it as a device file or mount point. If that fails, it tries prepending '/dev/', '/media/' ,'/mnt/', '/dev/cdroms', '/dev/rdsk/', '/dev/dsk/', and finally './' to the name, until a device file or mount point is found that can be opened. The program checks /etc/mtab for mounted devices. If that fails, it also checks /etc/fstab for mount points of currently unmounted devices.
+
+       Creating symbolic links such as /dev/cdrom or /dev/zip is recommended so that eject can determine the appropriate devices using easily remembered names.
+
+       To save typing you can create a shell alias for the eject options that work for your particular setup.
+
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       Eject was written by Jeff Tranter (tranter@pobox.com) and is released under the conditions of the GNU General Public License. See the file COPYING and notes in the source code for details.
+
+       The -x option was added by Nobuyuki Tsuchimura (tutimura@nn.iij4u.or.jp), with thanks to Roland Krivanek (krivanek@fmph.uniba.sk) and his cdrom_speed command.
+
+       The -T option was added by Sybren Stuvel (sybren@thirdtower.com), with big thanks to Benjamin Schwenk (benjaminschwenk@yahoo.de).
+
+       The -X option was added by Eric Piel (Eric.Piel@tremplin-utc.net).
+
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       mount(2), umount(2), mount(8), umount(8)
+       /usr/src/linux/Documentation/cdrom/
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/xrdb/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>xrdb - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#xrdb">xrdb</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#files">files</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#environment">environment</a></li>
+        
+            <li><a href="#bugs">bugs</a></li>
+        
+            <li><a href="#authors">authors</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="xrdb">xrdb</h1>
+<h3 id="name">name</h3>
+<pre><code>       xrdb - X server resource database utility
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       xrdb [-option ...] [filename]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       Xrdb is used to get or set the contents of the RESOURCE_MANAGER property on the root window of screen 0, or the SCREEN_RESOURCES property on the root window of any or all screens, or everything combined.  You would normally run this program from your X startup file.
+
+       Most X clients use the RESOURCE_MANAGER and SCREEN_RESOURCES properties to get user preferences about color, fonts, and so on for applications.  Having this information in the server (where it is available to all clients) instead of on disk, solves the problem in previous versions of X that required you to maintain defaults files on every machine that you might use.  It also allows for dynamic changing of defaults without editing files.
+
+       The RESOURCE_MANAGER property is used for resources that apply to all screens of the display.  The SCREEN_RESOURCES property on each screen specifies additional (or overriding) resources to be used for that screen.  (When there is only one screen, SCREEN_RESOURCES is normally not used, all resources are just placed in the RESOURCE_MANAGER property.)
+
+       The file specified by filename (or the contents from standard input if - or no filename is given) is optionally passed through the C preprocessor with the following symbols defined, based on the capabilities of the server being used:
+
+       SERVERHOST=hostname
+               the hostname portion of the display to which you are connected.
+
+       SRVR_name
+               the SERVERHOST hostname string turned into a legal identifier.  For example, &quot;my-dpy.lcs.mit.edu&quot; becomes SRVR_my_dpy_lcs_mit_edu.
+
+       HOST=hostname
+               the same as SERVERHOST.
+
+       DISPLAY_NUM=num
+               the number of the display on the server host.
+
+       CLIENTHOST=hostname
+               the name of the host on which xrdb is running.
+
+       CLNT_name
+               the CLIENTHOST hostname string turned into a legal identifier.  For example, &quot;expo.lcs.mit.edu&quot; becomes CLNT_expo_lcs_mit_edu.
+
+       RELEASE=num
+               the vendor release number for the server.  The interpretation of this number will vary depending on VENDOR.
+
+       REVISION=num
+               the X protocol minor version supported by this server (currently 0).
+
+       VERSION=num
+               the X protocol major version supported by this server (should always be 11).
+
+       VENDOR=&quot;vendor&quot;
+               a string literal specifying the vendor of the server.
+
+       VNDR_name
+               the VENDOR name string turned into a legal identifier.  For example, &quot;MIT X Consortium&quot; becomes VNDR_MIT_X_Consortium.
+
+       EXT_name
+               A symbol is defined for each protocol extension supported by the server.  Each extension string name is turned into a legal identifier.  For example, &quot;X3D-PEX&quot; becomes EXT_X3D_PEX.
+
+       NUM_SCREENS=num
+               the total number of screens.
+
+       SCREEN_NUM=num
+               the number of the current screen (from zero).
+
+       BITS_PER_RGB=num
+               the number of significant bits in an RGB color specification.  This is the log base 2 of the number of distinct shades of each primary that the hardware can generate.  Note that it usually is not related to PLANES.
+
+       CLASS=visualclass
+               one of StaticGray, GrayScale, StaticColor, PseudoColor, TrueColor, DirectColor.  This is the visual class of the root window.
+
+       CLASS_visualclass=visualid
+               the visual class of the root window in a form you can #ifdef on.  The value is the numeric id of the visual.
+
+       COLOR   defined only if CLASS is one of StaticColor, PseudoColor, TrueColor, or DirectColor.
+
+       CLASS_visualclass_depth=num
+               A symbol is defined for each visual supported for the screen.  The symbol includes the class of the visual and its depth; the value is the numeric id of the visual.  (If more than one visual has the same class and depth, the numeric id of the first one reported by the server is used.)
+
+       HEIGHT=num
+               the height of the root window in pixels.
+
+       WIDTH=num
+               the width of the root window in pixels.
+
+       PLANES=num
+               the number of bit planes (the depth) of the root window.
+
+       X_RESOLUTION=num
+               the x resolution of the screen in pixels per meter.
+
+       Y_RESOLUTION=num
+               the y resolution of the screen in pixels per meter.
+
+       SRVR_name, CLNT_name, VNDR_name, and EXT_name identifiers are formed by changing all characters other than letters and digits into underscores (_).
+
+       Lines that begin with an exclamation mark (!) are ignored and may be used as comments.
+
+       Note that since xrdb can read from standard input, it can be used to the change the contents of properties directly from a terminal or from a shell script.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       xrdb program accepts the following options:
+
+       -help   This option (or any unsupported option) will cause a brief description of the allowable options and parameters to be printed.
+
+       -version
+               This option will cause the xrdb version to be printed and the program to exit without performing any other operations.
+
+       -display display
+               This option specifies the X server to be used; see X(7).  It also specifies the screen to use for the -screen option, and it specifies the screen from which preprocessor symbols are derived for the -global option.
+
+       -all    This option indicates that operation should be performed on the screen-independent resource property (RESOURCE_MANAGER), as well as the screen-specific property (SCREEN_RESOURCES) on every screen of the display.  For example, when used in conjunction with -query, the contents of all properties are output.  For -load, -override and -merge, the input file is processed once for each screen.  The resources which occur in common in the output for every screen are collected, and these are applied as the screen-independent resources.  The remaining resources are applied for each individual per-screen property.  This the default mode of operation.
+
+       -global This option indicates that the operation should only be performed on the screen-independent RESOURCE_MANAGER property.
+
+       -screen This option indicates that the operation should only be performed on the SCREEN_RESOURCES property of the default screen of the display.
+
+       -screens
+               This option indicates that the operation should be performed on the SCREEN_RESOURCES property of each screen of the display.  For -load, -override and -merge, the input file is processed for each screen.
+
+       -n      This option indicates that changes to the specified properties (when used with -load, -override or -merge) or to the resource file (when used with -edit) should be shown on the standard output, but should not be performed.
+
+       -quiet  This option indicates that warning about duplicate entries should not be displayed.
+
+       -cpp filename
+               This option specifies the pathname of the C preprocessor program to be used.  Although xrdb was designed to use CPP, any program that acts as a filter and accepts the -D, -I, and -U options may be used.
+
+       -nocpp  This option indicates that xrdb should not run the input file through a preprocessor before loading it into properties.
+
+       -undef  This option is passed to the C preprocessor if used. It prevents it from predefining any system specific macros.
+
+       -symbols
+               This option indicates that the symbols that are defined for the preprocessor should be printed onto the standard output.
+
+       -query  This option indicates that the current contents of the specified properties should be printed onto the standard output.  Note that since preprocessor commands in the input resource file are part of the input file, not part of the property, they won't appear in the output from this option.  The -edit option can be used to merge the contents of properties back into the input resource file without damaging preprocessor commands.
+
+       -load   This option indicates that the input should be loaded as the new value of the specified properties, replacing whatever was there (i.e.  the old contents are removed).  This is the default action.
+
+       -override
+               This option indicates that the input should be added to, instead of replacing, the current contents of the specified properties.  New entries override previous entries.
+
+       -merge  This option indicates that the input should be merged and lexicographically sorted with, instead of replacing, the current contents of the specified properties.
+
+       -remove This option indicates that the specified properties should be removed from the server.
+
+       -retain This option indicates that the server should be instructed not to reset if xrdb is the first client.  This should never be necessary under normal conditions, since xdm and xinit always act as the first client.
+
+       -edit filename
+               This option indicates that the contents of the specified properties should be edited into the given file, replacing any values already listed there.  This allows you to put changes that you have made to your defaults back into your resource file, preserving any comments or preprocessor lines.
+
+       -backup string
+               This option specifies a suffix to be appended to the filename used with -edit to generate a backup file.
+
+       -Dname[=value]
+               This option is passed through to the preprocessor and is used to define symbols for use with conditionals such as #ifdef.
+
+       -Uname  This option is passed through to the preprocessor and is used to remove any definitions of this symbol.
+
+       -Idirectory
+               This option is passed through to the preprocessor and is used to specify a directory to search for files that are referenced with #include.
+
+</code></pre>
+
+<h3 id="files">files</h3>
+<pre><code>       Xrdb does not load any files on its own, but many desktop environments use xrdb to load ~/.Xresources files on session startup to initialize the resource database, as a generalized replacement for ~/.Xdefaults files.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       X(7), appres(1), listres(1), Xlib Resource Manager documentation, Xt resource documentation
+
+</code></pre>
+
+<h3 id="environment">environment</h3>
+<pre><code>       DISPLAY to figure out which display to use.
+
+</code></pre>
+
+<h3 id="bugs">bugs</h3>
+<pre><code>       The default for no arguments should be to query, not to overwrite, so that it is consistent with other programs.
+
+</code></pre>
+
+<h3 id="authors">authors</h3>
+<pre><code>       Bob Scheifler, Phil Karlton, rewritten from the original by Jim Gettys
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

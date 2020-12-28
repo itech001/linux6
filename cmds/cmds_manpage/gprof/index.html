@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/gprof/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>gprof - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#gprof">gprof</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#files">files</a></li>
+        
+            <li><a href="#bugs">bugs</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#copyright">copyright</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="gprof">gprof</h1>
+<h3 id="name">name</h3>
+<pre><code>       gprof - display call graph profile data
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       gprof [ -[abcDhilLrsTvwxyz] ] [ -[ACeEfFJnNOpPqQZ][name] ]
+        [ -I dirs ] [ -d[num] ] [ -k from/to ]
+        [ -m min-count ] [ -R map_file ] [ -t table-length ]
+        [ --[no-]annotated-source[=name] ]
+        [ --[no-]exec-counts[=name] ]
+        [ --[no-]flat-profile[=name] ] [ --[no-]graph[=name] ]
+        [ --[no-]time=name] [ --all-lines ] [ --brief ]
+        [ --debug[=level] ] [ --function-ordering ]
+        [ --file-ordering map_file ] [ --directory-path=dirs ]
+        [ --display-unused-functions ] [ --file-format=name ]
+        [ --file-info ] [ --help ] [ --line ] [ --min-count=n ]
+        [ --no-static ] [ --print-path ] [ --separate-files ]
+        [ --static-call-graph ] [ --sum ] [ --table-length=len ]
+        [ --traditional ] [ --version ] [ --width=n ]
+        [ --ignore-non-functions ] [ --demangle[=STYLE] ]
+        [ --no-demangle ] [--external-symbol-table=name]
+        [ image-file ] [ profile-file ... ]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       &quot;gprof&quot; produces an execution profile of C, Pascal, or Fortran77 programs.  The effect of called routines is incorporated in the profile of each caller.  The profile data is taken from the call graph profile file (gmon.out default) which is created by programs that are compiled with the -pg option of &quot;cc&quot;, &quot;pc&quot;, and &quot;f77&quot;.  The -pg option also links in versions of the library routines that are compiled for profiling.  &quot;Gprof&quot; reads the given object file (the default is &quot;a.out&quot;) and establishes the relation between its symbol table and the call graph profile from gmon.out.  If more than one profile file is specified, the &quot;gprof&quot; output shows the sum of the profile information in the given profile files.
+
+       If you use gcc 2.95.x or 3.0 to compile your binaries, you may need to add the -fprofile-arcs to the compile command line in order for the call graphs to be properly stored in gmon.out.
+
+       &quot;Gprof&quot; calculates the amount of time spent in each routine.  Next, these times are propagated along the edges of the call graph.  Cycles are discovered, and calls into a cycle are made to share the time of the cycle.
+
+       Several forms of output are available from the analysis.
+
+       The flat profile shows how much time your program spent in each function, and how many times that function was called.  If you simply want to know which functions burn most of the cycles, it is stated concisely here.
+
+       The call graph shows, for each function, which functions called it, which other functions it called, and how many times.  There is also an estimate of how much time was spent in the subroutines of each function.  This can suggest places where you might try to eliminate function calls that use a lot of time.
+
+       The annotated source listing is a copy of the program's source code, labeled with the number of times each line of the program was executed.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       These options specify which of several output formats &quot;gprof&quot; should produce.
+
+       Many of these options take an optional symspec to specify functions to be included or excluded.  These options can be specified multiple times, with different symspecs, to include or exclude sets of symbols.
+
+       Specifying any of these options overrides the default (-p -q), which prints a flat profile and call graph analysis for all functions.
+
+       &quot;-A[symspec]&quot;
+       &quot;--annotated-source[=symspec]&quot;
+           The -A option causes &quot;gprof&quot; to print annotated source code.  If symspec is specified, print output only for matching symbols.
+
+       &quot;-b&quot;
+       &quot;--brief&quot;
+           If the -b option is given, &quot;gprof&quot; doesn't print the verbose blurbs that try to explain the meaning of all of the fields in the tables.  This is useful if you intend to print out the output, or are tired of seeing the blurbs.
+
+       &quot;-C[symspec]&quot;
+       &quot;--exec-counts[=symspec]&quot;
+           The -C option causes &quot;gprof&quot; to print a tally of functions and the number of times each was called.  If symspec is specified, print tally only for matching symbols.
+
+           If the profile data file contains basic-block count records, specifying the -l option, along with -C, will cause basic-block execution counts to be tallied and displayed.
+
+       &quot;-i&quot;
+       &quot;--file-info&quot;
+           The -i option causes &quot;gprof&quot; to display summary information about the profile data file(s) and then exit.  The number of histogram, call graph, and basic-block count records is displayed.
+
+       &quot;-I dirs&quot;
+       &quot;--directory-path=dirs&quot;
+           The -I option specifies a list of search directories in which to find source files.  Environment variable GPROF_PATH can also be used to convey this information.  Used mostly for annotated source output.
+
+       &quot;-J[symspec]&quot;
+       &quot;--no-annotated-source[=symspec]&quot;
+           The -J option causes &quot;gprof&quot; not to print annotated source code.  If symspec is specified, &quot;gprof&quot; prints annotated source, but excludes matching symbols.
+
+       &quot;-L&quot;
+       &quot;--print-path&quot;
+           Normally, source filenames are printed with the path component suppressed.  The -L option causes &quot;gprof&quot; to print the full pathname of source filenames, which is determined from symbolic debugging information in the image file and is relative to the directory in which the compiler was invoked.
+
+       &quot;-p[symspec]&quot;
+       &quot;--flat-profile[=symspec]&quot;
+           The -p option causes &quot;gprof&quot; to print a flat profile.  If symspec is specified, print flat profile only for matching symbols.
+
+       &quot;-P[symspec]&quot;
+       &quot;--no-flat-profile[=symspec]&quot;
+           The -P option causes &quot;gprof&quot; to suppress printing a flat profile.  If symspec is specified, &quot;gprof&quot; prints a flat profile, but excludes matching symbols.
+
+       &quot;-q[symspec]&quot;
+       &quot;--graph[=symspec]&quot;
+           The -q option causes &quot;gprof&quot; to print the call graph analysis.  If symspec is specified, print call graph only for matching symbols and their children.
+
+       &quot;-Q[symspec]&quot;
+       &quot;--no-graph[=symspec]&quot;
+           The -Q option causes &quot;gprof&quot; to suppress printing the call graph.  If symspec is specified, &quot;gprof&quot; prints a call graph, but excludes matching symbols.
+
+       &quot;-t&quot;
+       &quot;--table-length=num&quot;
+           The -t option causes the num most active source lines in each source file to be listed when source annotation is enabled.  The default is 10.
+
+       &quot;-y&quot;
+       &quot;--separate-files&quot;
+           This option affects annotated source output only.  Normally, &quot;gprof&quot; prints annotated source files to standard-output.  If this option is specified, annotated source for a file named path/filename is generated in the file filename-ann.  If the underlying file system would truncate filename-ann so that it overwrites the original filename, &quot;gprof&quot; generates annotated source in the file filename.ann instead (if the original file name has an extension, that extension is replaced with .ann).
+
+       &quot;-Z[symspec]&quot;
+       &quot;--no-exec-counts[=symspec]&quot;
+           The -Z option causes &quot;gprof&quot; not to print a tally of functions and the number of times each was called.  If symspec is specified, print tally, but exclude matching symbols.
+
+       &quot;-r&quot;
+       &quot;--function-ordering&quot;
+           The --function-ordering option causes &quot;gprof&quot; to print a suggested function ordering for the program based on profiling data.  This option suggests an ordering which may improve paging, tlb and cache behavior for the program on systems which support arbitrary ordering of functions in an executable.
+
+           The exact details of how to force the linker to place functions in a particular order is system dependent and out of the scope of this manual.
+
+       &quot;-R map_file&quot;
+       &quot;--file-ordering map_file&quot;
+           The --file-ordering option causes &quot;gprof&quot; to print a suggested .o link line ordering for the program based on profiling data.  This option suggests an ordering which may improve paging, tlb and cache behavior for the program on systems which do not support arbitrary ordering of functions in an executable.
+
+           Use of the -a argument is highly recommended with this option.
+
+           The map_file argument is a pathname to a file which provides function name to object file mappings.  The format of the file is similar to the output of the program &quot;nm&quot;.
+
+                   c-parse.o:00000000 T yyparse
+                   c-parse.o:00000004 C yyerrflag
+                   c-lang.o:00000000 T maybe_objc_method_name
+                   c-lang.o:00000000 T print_lang_statistics
+                   c-lang.o:00000000 T recognize_objc_keyword
+                   c-decl.o:00000000 T print_lang_identifier
+                   c-decl.o:00000000 T print_lang_type
+                   ...
+
+           To create a map_file with GNU &quot;nm&quot;, type a command like &quot;nm --extern-only --defined-only -v --print-file-name program-name&quot;.
+
+       &quot;-T&quot;
+       &quot;--traditional&quot;
+           The -T option causes &quot;gprof&quot; to print its output in &quot;traditional&quot; BSD style.
+
+       &quot;-w width&quot;
+       &quot;--width=width&quot;
+           Sets width of output lines to width.  Currently only used when printing the function index at the bottom of the call graph.
+
+       &quot;-x&quot;
+       &quot;--all-lines&quot;
+           This option affects annotated source output only.  By default, only the lines at the beginning of a basic-block are annotated.  If this option is specified, every line in a basic-block is annotated by repeating the annotation for the first line.  This behavior is similar to &quot;tcov&quot;'s -a.
+
+       &quot;--demangle[=style]&quot;
+       &quot;--no-demangle&quot;
+           These options control whether C++ symbol names should be demangled when printing output.  The default is to demangle symbols.  The &quot;--no-demangle&quot; option may be used to turn off demangling. Different compilers have different mangling styles.  The optional demangling style argument can be used to choose an appropriate demangling style for your compiler.
+
+   Analysis Options
+       &quot;-a&quot;
+       &quot;--no-static&quot;
+           The -a option causes &quot;gprof&quot; to suppress the printing of statically declared (private) functions.  (These are functions whose names are not listed as global, and which are not visible outside the file/function/block where they were defined.)  Time spent in these functions, calls to/from them, etc., will all be attributed to the function that was loaded directly before it in the executable file.  This option affects both the flat profile and the call graph.
+
+       &quot;-c&quot;
+       &quot;--static-call-graph&quot;
+           The -c option causes the call graph of the program to be augmented by a heuristic which examines the text space of the object file and identifies function calls in the binary machine code.  Since normal call graph records are only generated when functions are entered, this option identifies children that could have been called, but never were.  Calls to functions that were not compiled with profiling enabled are also identified, but only if symbol table entries are present for them.  Calls to dynamic library routines are typically not found by this option.  Parents or children identified via this heuristic are indicated in the call graph with call counts of 0.
+
+       &quot;-D&quot;
+       &quot;--ignore-non-functions&quot;
+           The -D option causes &quot;gprof&quot; to ignore symbols which are not known to be functions.  This option will give more accurate profile data on systems where it is supported (Solaris and HPUX for example).
+
+       &quot;-k from/to&quot;
+           The -k option allows you to delete from the call graph any arcs from symbols matching symspec from to those matching symspec to.
+
+       &quot;-l&quot;
+       &quot;--line&quot;
+           The -l option enables line-by-line profiling, which causes histogram hits to be charged to individual source code lines, instead of functions.  This feature only works with programs compiled by older versions of the &quot;gcc&quot; compiler.  Newer versions of &quot;gcc&quot; are designed to work with the &quot;gcov&quot; tool instead.
+
+           If the program was compiled with basic-block counting enabled, this option will also identify how many times each line of code was executed.  While line-by-line profiling can help isolate where in a large function a program is spending its time, it also significantly increases the running time of &quot;gprof&quot;, and magnifies statistical inaccuracies.
+
+       &quot;-m num&quot;
+       &quot;--min-count=num&quot;
+           This option affects execution count output only.  Symbols that are executed less than num times are suppressed.
+
+       &quot;-nsymspec&quot;
+       &quot;--time=symspec&quot;
+           The -n option causes &quot;gprof&quot;, in its call graph analysis, to only propagate times for symbols matching symspec.
+
+       &quot;-Nsymspec&quot;
+       &quot;--no-time=symspec&quot;
+           The -n option causes &quot;gprof&quot;, in its call graph analysis, not to propagate times for symbols matching symspec.
+
+       &quot;-Sfilename&quot;
+       &quot;--external-symbol-table=filename&quot;
+           The -S option causes &quot;gprof&quot; to read an external symbol table file, such as /proc/kallsyms, rather than read the symbol table from the given object file (the default is &quot;a.out&quot;). This is useful for profiling kernel modules.
+
+       &quot;-z&quot;
+       &quot;--display-unused-functions&quot;
+           If you give the -z option, &quot;gprof&quot; will mention all functions in the flat profile, even those that were never called, and that had no time spent in them.  This is useful in conjunction with the -c option for discovering which routines were never called.
+
+   Miscellaneous Options
+       &quot;-d[num]&quot;
+       &quot;--debug[=num]&quot;
+           The -d num option specifies debugging options.  If num is not specified, enable all debugging.
+
+       &quot;-h&quot;
+       &quot;--help&quot;
+           The -h option prints command line usage.
+
+       &quot;-Oname&quot;
+       &quot;--file-format=name&quot;
+           Selects the format of the profile data files.  Recognized formats are auto (the default), bsd, 4.4bsd, magic, and prof (not yet supported).
+
+       &quot;-s&quot;
+       &quot;--sum&quot;
+           The -s option causes &quot;gprof&quot; to summarize the information in the profile data files it read in, and write out a profile data file called gmon.sum, which contains all the information from the profile data files that &quot;gprof&quot; read in.  The file gmon.sum may be one of the specified input files; the effect of this is to merge the data in the other input files into gmon.sum.
+
+           Eventually you can run &quot;gprof&quot; again without -s to analyze the cumulative data in the file gmon.sum.
+
+       &quot;-v&quot;
+       &quot;--version&quot;
+           The -v flag causes &quot;gprof&quot; to print the current version number, and then exit.
+
+   Deprecated Options
+       These options have been replaced with newer versions that use symspecs.
+
+       &quot;-e function_name&quot;
+           The -e function option tells &quot;gprof&quot; to not print information about the function function_name (and its children...) in the call graph.  The function will still be listed as a child of any functions that call it, but its index number will be shown as [not printed].  More than one -e option may be given; only one function_name may be indicated with each -e option.
+
+       &quot;-E function_name&quot;
+           The &quot;-E function&quot; option works like the &quot;-e&quot; option, but time spent in the function (and children who were not called from anywhere else), will not be used to compute the percentages-of-time for the call graph.  More than one -E option may be given; only one function_name may be indicated with each -E option.
+
+       &quot;-f function_name&quot;
+           The -f function option causes &quot;gprof&quot; to limit the call graph to the function function_name and its children (and their children...).  More than one -f option may be given; only one function_name may be indicated with each -f option.
+
+       &quot;-F function_name&quot;
+           The -F function option works like the &quot;-f&quot; option, but only time spent in the function and its children (and their children...) will be used to determine total-time and percentages-of-time for the call graph.  More than one -F option may be given; only one function_name may be indicated with each -F option.  The -F option overrides the -E option.
+
+</code></pre>
+
+<h3 id="files">files</h3>
+<pre><code>       &quot;a.out&quot;
+           the namelist and text space.
+
+       &quot;gmon.out&quot;
+           dynamic call graph and profile.
+
+       &quot;gmon.sum&quot;
+           summarized dynamic call graph and profile.
+
+</code></pre>
+
+<h3 id="bugs">bugs</h3>
+<pre><code>       The granularity of the sampling is shown, but remains statistical at best.  We assume that the time for each execution of a function can be expressed by the total time for the function divided by the number of times the function is called.  Thus the time propagated along the call graph arcs to the function's parents is directly proportional to the number of times that arc is traversed.
+
+       Parents that are not themselves profiled will have the time of their profiled children propagated to them, but they will appear to be spontaneously invoked in the call graph listing, and will not have their time propagated further.  Similarly, signal catchers, even though profiled, will appear to be spontaneous (although for more obscure reasons).  Any profiled children of signal catchers should have their times propagated properly, unless the signal catcher was invoked during the execution of the profiling routine, in which case all is lost.
+
+       The profiled program must call &quot;exit&quot;(2) or return normally for the profiling information to be saved in the gmon.out file.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       cc(1), prof(1), and the Info entry for gprof.
+
+       &quot;An Execution Profiler for Modular Programs&quot;, by S. Graham, P. Kessler, M. McKusick; Software - Practice and Experience, Vol. 13, pp. 671-685, 1983.
+
+       &quot;gprof: A Call Graph Execution Profiler&quot;, by S. Graham, P. Kessler, M. McKusick; Proceedings of the SIGPLAN '82 Symposium on Compiler Construction, SIGPLAN Notices, Vol. 17, No  6, pp. 120-126, June 1982.
+
+</code></pre>
+
+<h3 id="copyright">copyright</h3>
+<pre><code>       Copyright (c) 1988, 1992, 1997, 1998, 1999, 2000, 2001, 2003, 2007, 2008, 2009 Free Software Foundation, Inc.
+
+       Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, with no Front-Cover Texts, and with no Back-Cover Texts.  A copy of the license is included in the section entitled &quot;GNU Free Documentation License&quot;.
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

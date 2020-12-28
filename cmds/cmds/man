@@ -1,0 +1,33 @@
+# Shows the manual for using the command 'ls'
+man ls
+
+# Searches for all manual pages which mention "ruby"
+man -K "ruby"
+
+# Show the ASCII table
+man ascii
+
+# Search the section 3 of the manual for entry "printf"
+man 3 printf
+
+# Search man page names and short descriptions for STRING
+man -k STRING
+
+# look for bro manual. Unfortunatly there is none
+man bro
+
+# look for useful bro examples using man bro. Unfortunatly there is none
+bro man bro
+
+# keeps the sillyness going by looking for examples of meaningful uses of bro man bro
+bro bro man bro
+
+# this can really go for a while bro
+# Shows the manual for the conditional operator, '['
+man [
+
+# Opens up the manual page for the command 'machine'
+man machine
+
+# Opens up the manual page for the command 'touch'
+man touch

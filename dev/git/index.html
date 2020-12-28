@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/dev/git/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>git-tutorial - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../../shell/python/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../git_cheat_sheet/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#git-tutorial">Git Tutorial</a></li>
+        
+            <li><a href="#git-installation-on-linux">Git installation on Linux</a></li>
+        
+            <li><a href="#creating-a-new-repository">Creating a new repository</a></li>
+        
+            <li><a href="#the-working-tree">The working tree</a></li>
+        
+            <li><a href="#the-staging-index">The staging index</a></li>
+        
+            <li><a href="#committing">Committing</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="git-tutorial">Git Tutorial</h1>
+<p>Modified from <a href="http://www.ralfebert.de/tutorials/git/">git tutorals</a></p>
+<h3 id="git-installation-on-linux">Git installation on Linux</h3>
+<p>Linux distributions provide packages for <code>git</code>, for example Ubuntu 10.10 comes
+with git 1.7.1:</p>
+<blockquote>
+<p>sudo apt-get install git<br />
+  git --version<br />
+  git version 1.7.1  </p>
+</blockquote>
+<h3 id="creating-a-new-repository">Creating a new repository</h3>
+<p><code>git init</code> creates an empty git repository in the current folder:</p>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<p>This might surprise readers who are accustomed to traditional version control
+systems like CVS or SVN. A git repository can be a completely local
+undertaking. The whole <code>repository</code> content is stored in a folder named <code>.git</code>
+in the root of the project folder:<br />
+<img alt="" src="../../img/git_tutorial_git_init.png" /><br />
+Of course git can also work with remote or central repositories, but it does
+not require them. We will have a look at working with remote repositories in a
+forthcoming part of the tutorial. For the moment let us enjoy the freedom of
+creating a repository locally whenever and for whatever reason we may need
+one!</p>
+<h3 id="the-working-tree">The working tree</h3>
+<p>Your own files in the repository folder are called <code>working tree</code>:<br />
+<img alt="" src="../../img/git_tutorial_git_working_tree.png" />  </p>
+<h3 id="the-staging-index">The staging index</h3>
+<p>Git internally holds a thing called the <code>index</code>, which is a snapshot of your
+project files. After you have just created an empty repository, the index will
+be empty. You must manually stage the files from your <code>working tree</code> to the
+<code>index</code> using <code>git add</code>:</p>
+<blockquote>
+<p>git add somefile.txt</p>
+</blockquote>
+<p><code>git add</code> works recursively, so you can also add whole folders:</p>
+<blockquote>
+<p>git add somefolder</p>
+</blockquote>
+<p>The same applies if you change a file in your working tree - you have to add
+this change to the index with <code>git add</code>:</p>
+<blockquote>
+<p>edit somefile.txt<br />
+  git add somefile.txt</p>
+</blockquote>
+<p><img alt="" src="../../img/git_tutorial_git_add.png" />  </p>
+<p>It’s important to realize that the index is a full snapshot of your project
+files - it is not just a list of the changed files.</p>
+<h2 id="committing">Committing</h2>
+<p><code>git commit</code> takes the contents of the index and creates a new <code>commit</code>:</p>
+<blockquote>
+<p>git commit -m "the 1st commit"</p>
+</blockquote>
+<p>Committing is a completely local operation, not related to sending something
+to a remote server. It just takes the contents of the index and keeps a
+snapshot of your project files as they were in the index:  </p>
+<p><img alt="" src="../../img/git_tutorial_git_commit.png" />  </p>
+<p>Similiar to the index a <code>commit</code> is a full snapshot of your project files.
+Different from traditional version control systems, commits are not numbered.
+Instead, a <code>commit</code> gets assigned a SHA-1 hash of the snapshot contents:<br />
+<img alt="" src="../../img/git_tutorial_commit.png" />  </p>
+<p>This may look awkward the first time you see it. But it brings a huge
+advantage with it: every commit, which is a full snapshot of your project
+files, is identified by a cryptographically tamper-proof signature of your
+file contents. If somehow one byte of the contents or history of your files
+changes, you would end up with an entirely different hash. So you’re
+guaranteed to get out what you put into a git repository.</p>
+<p>Also, you don’t need to write the full commit hash when you want to refer to
+some specific commit - you can always abbreviate them by their first
+characters. The first seven characters are usually enough to identify one
+commit uniquely.</p>
+<h3 id="commit-history">Commit history</h3>
+<p>The workflow for editing files in a git repository looks like this:</p>
+<blockquote>
+<p>You make changes to the <code>working tree</code> files.
+ You add these changes to the <code>index</code> using <code>git add</code>.
+ You create a new commit from the <code>index</code> using <code>git commit</code>.</p>
+</blockquote>
+<p>As you do this repeatedly, you will create a new <code>commit</code> each time, pointing
+back to the previous commit:<br />
+<img alt="" src="../../img/git_tutorial_commits_history.png" />  </p>
+<p>This is how git keeps track of the project history. It stores snapshots of the
+project files as <code>commits</code>. These commits point back to the commit they were
+created from. Of course, all these snapshots are saved in a very efficient
+manner occupying only a fraction of disk space compared to a full copy of all
+your files.</p>
+<p>You can see the history using <code>git log</code>:</p>
+<blockquote>
+<p>git log<br />
+   commit 068b9b9...<br />
+   Author: Bob <a href="../&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#111;&#98;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#98;&#111;&#98;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a><br />
+   Date:   Wed Jun 17 17:21:16 2009 +0200<br />
+   the 3rd commit<br />
+   commit 3720b35...<br />
+   Author: Bob <a href="../&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#111;&#98;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#98;&#111;&#98;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a><br />
+   Date:   Wed Jun 17 17:21:10 2009 +0200<br />
+   the 2nd commit<br />
+   commit a2a1eb3...<br />
+   Author: Bob <a href="../&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#111;&#98;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#98;&#111;&#98;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a><br />
+   Date:   Wed Jun 17 17:21:10 2009 +0200<br />
+   the 1st commit</p>
+</blockquote>
+<p>git can also show a shorter version of the history using:</p>
+<blockquote>
+<p>git log --pretty=oneline --abbrev-commit<br />
+   068b9b9 the 3rd commit<br />
+   3720b35 the 2nd commit<br />
+   a2a1eb3 the 1st commit  </p>
+</blockquote>
+<h3 id="git-configuration-user-settings">Git configuration: user settings</h3>
+<p>If you look at the full commit messages above, you will see that they contain
+information about their author. Where does git take this information from when
+it created the commit? Initially, it tries to guess these from your username
+and hostname. You can also configure them for your project manually:</p>
+<blockquote>
+<p>git config user.name "Bob"<br />
+  git config user.email "bob@example.com"</p>
+</blockquote>
+<p>You can also configure this globally for all your git projects:</p>
+<blockquote>
+<p>git config --global user.name "Bob"<br />
+  git config --global user.email "bob@example.com"</p>
+</blockquote>
+<h3 id="seeing-what-will-be-committed">Seeing what will be committed</h3>
+<p><code>git status</code> shows you how the <code>working tree</code> is different from the <code>index</code>
+and how the <code>index</code> is different from the last <code>commit</code>:</p>
+<blockquote>
+<p>git status</p>
+</blockquote>
+<p>At first, you will see the changes that were already added to the <code>index</code>.
+This list represents what will be in your next commit:</p>
+<blockquote>
+<p>Changes to be committed:<br />
+  modified:   changed_file_added.txt</p>
+</blockquote>
+<p>Also, git will show the changes that have been made to the working tree, but
+were not yet added to the <code>index</code>:</p>
+<blockquote>
+<p>Changed but not updated:<br />
+  modified:   changed_file.txt<br />
+  untracked files:<br />
+  newfile.txt  </p>
+</blockquote>
+<h3 id="shortcut-how-to-add-changed-files-when-committing">Shortcut: How to add changed files when committing</h3>
+<p>When committing, you can leave the task of adding the changed files to git
+using the <code>-a</code> command line option:</p>
+<blockquote>
+<p>git commit -a -m "commit message"</p>
+</blockquote>
+<p>This will add all changed (but not new) files to the index before committing.</p>
+<h3 id="throwing-changes-away">Throwing changes away</h3>
+<p>What if you made some changes to your project and want to return to the
+original state? This depends on where the changes are.</p>
+<p>If you have not added them to the <code>index</code> yet, you can restore them from the
+<code>index</code> using <code>git checkout &lt;filename&gt;</code>:</p>
+<blockquote>
+<p>git checkout somefile.txt</p>
+</blockquote>
+<p>This restores a file or a folder as it is stored in the <code>index</code> to your
+<code>working tree</code>:  </p>
+<p><img alt="" src="../../img/git_tutorial_git_checkout_file.png" />  </p>
+<p>What if you have already added the changes to the <code>index</code>? You can restore the
+<code>index</code> to the last commit using <code>git reset</code>:</p>
+<blockquote>
+<p>git reset HEAD somefile.txt</p>
+</blockquote>
+<p>You can also restore the whole <code>index</code>:</p>
+<blockquote>
+<p>git reset HEAD</p>
+</blockquote>
+<p><code>HEAD</code> always refers to the last commit which has been made. Using this, the
+<code>index</code> is restored to the contents of the last commit - you can then use <code>git
+checkout</code> to restore your working tree as well:<br />
+<img alt="" src="../../img/git_tutorial_git_reset.png" />  </p>
+<h3 id="reverting-commits">Reverting commits</h3>
+<p>If you have already committed your changes, you can make use of git’s built-in
+“undo” command called <code>git revert &lt;commit&gt;</code>:</p>
+<blockquote>
+<p>git revert 068b9b9</p>
+</blockquote>
+<p>This will create a second commit which undoes the changes of the given commit:</p>
+<blockquote>
+<p>8b54ea7 Revert "the 3rd commit"<br />
+   068b9b9 the 3rd commit<br />
+   3720b35 the 2nd commit<br />
+   a2a1eb3 the 1st commit  </p>
+</blockquote>
+<p>Please note that you can also revert older commits:</p>
+<blockquote>
+<p>git revert 3720b35<br />
+  git log --pretty=oneline --abbrev-commit
+  ab621c7 Revert "the 2nd commit"
+  068b9b9 the 3rd commit
+  3720b35 the 2nd commit
+  a2a1eb3 the 1st commit</p>
+</blockquote>
+<p>However, reverting older commits can cause a conflict if the other commits
+changed the same contents in the meantime. We will see how such conflicts are
+resolved later on.</p>
+<h3 id="seeing-the-diff-between-commits">Seeing the diff between commits</h3>
+<p>To see the difference from one commit compared to its parent, use <code>git show
+&lt;commit&gt;</code>:</p>
+<blockquote>
+<p>git show 3720b35</p>
+</blockquote>
+<p>To compare two specific commits, use <code>git diff &lt;commit_from&gt;..&lt;commit_to&gt;</code>:</p>
+<blockquote>
+<p>git diff a2a1eb3..068b9b9</p>
+</blockquote>
+<p>To see the diffs for the complete history, use <code>git log -p</code></p>
+<blockquote>
+<p>git log -p</p>
+</blockquote>
+<h3 id="configuring-git-colored-console-output">Configuring git: colored console output</h3>
+<p>Many commands like <code>git status</code> and <code>git diff</code> can show colored console
+output, which helps reading their output. You can configure this globally
+using:</p>
+<blockquote>
+<p>git config --global color.ui auto</p>
+</blockquote>
+<h3 id="tagging-commits">Tagging commits</h3>
+<p><code>git tag &lt;name&gt; &lt;commit&gt;</code> assigns a tag to a commit. If <code>&lt;commit&gt;</code> is omitted,
+the last commit gets tagged:</p>
+<blockquote>
+<p>git tag working 3720b35<br />
+  git tag broken</p>
+</blockquote>
+<p>A tag is nothing more than a label that can be used to refer to the tagged
+commit:<br />
+<img alt="" src="../../img/git_tutorial_git_tag.png" /><br />
+Tags can be used everywhere where you can use the commit hash, for example in
+<code>git diff</code>:</p>
+<blockquote>
+<p>git diff working..broken</p>
+</blockquote>
+<p>Tags are perfect for labeling specific points in the history. It is very
+common to label commits with the version number when you publish a release of
+your project - this way you can find these important commits easily:</p>
+<blockquote>
+<p>git tag v1.0.3</p>
+</blockquote>
+<h3 id="branches">Branches</h3>
+<p>So far we have seen how you can create commits and work with them. Up until
+this point, all the history of our repository has been linear.</p>
+<p>Let’s say we we want to develop a new feature for our project. This is
+something very large and we want to keep those changes separate from other
+changes. With branches, we can do that.</p>
+<p>All the time, we were already working in a branch called <code>master</code>. This branch
+was created automatically when we created the repository. You can see all
+branches in the repository using <code>git branch</code>:</p>
+<blockquote>
+<p>git branch<br />
+  master</p>
+</blockquote>
+<p>So there is one branch called <code>master</code>. The asterisk denotes that this is the
+branch we are working on. A branch can be compared, to some extent, with a
+<code>tag</code>. At all times, a branch points to some commit, in our case to the latest
+commit we made. You can prove that using:</p>
+<blockquote>
+<p>git branch -v<br />
+  master 068b9b9 the 3rd commit</p>
+</blockquote>
+<p><img alt="" src="../../img/git_tutorial_git_branch_master.png" />  </p>
+<p>To track changes in a separate branch, we have to create a new one using <code>git
+branch &lt;name&gt; &lt;commit&gt;</code>. The specified commit will be the starting point for
+the new branch - if you omit it, the latest commit will be used:</p>
+<blockquote>
+<p>git branch newfeature</p>
+</blockquote>
+<p>This will create a new branch called <code>newfeature</code> based on the latest commit
+in <code>master</code>:<br />
+<img alt="" src="../../img/git_tutorial_git_branch_newfeature.png" />  </p>
+<p>At all times, there is one specific active branch. If you call <code>git branch</code>,
+you will see that a new branch named <code>newfeature</code> was created, but <code>master</code> is
+still the active one:</p>
+<blockquote>
+<p>git branch<br />
+  master<br />
+  newfeature</p>
+</blockquote>
+<p>You can switch between branches using <code>git checkout &lt;branchname&gt;</code>. This is the
+same command we used before to get files from the staging index to the working
+tree. The meaning of <code>git checkout</code> depends on its arguments.</p>
+<blockquote>
+<p>git checkout newfeature</p>
+</blockquote>
+<p>Now the active branch in our repository is <code>newfeature</code>:</p>
+<blockquote>
+<p>git branch<br />
+  master<br />
+  newfeature  </p>
+</blockquote>
+<p>We can start working in this branch using the already known commands <code>git
+add</code>, <code>git commit</code>, etc. Let’s see what happens when we create a new commit in
+the branch:</p>
+<blockquote>
+<p>edit somefile.txt<br />
+  git commit -a -m "api draft"</p>
+</blockquote>
+<p><img alt="" src="../../img/git_tutorial_git_branch_newfeature_active.png" />  </p>
+<p>The commit was added to the repository and the branch <code>newfeature</code> now points
+to the new commit. Conceptually a branch can be seen as a pointer to some
+commit. Whenever you commit something, this “pointer” of the active branch is
+moved forward to the new commit. This is everything it takes to keep branches
+separate.</p>
+<p>To continue the example, let’s say we are finished with working on our new
+feature for the moment and want to continue working on the master branch. That
+is easy - we just switch back to the <code>master</code> branch:</p>
+<blockquote>
+<p>git checkout master</p>
+</blockquote>
+<p>This will set the active branch back to <code>master</code>. It will also reset the
+<code>index</code> and your <code>working tree</code> to the contents of the last commit in master:  </p>
+<p><img alt="" src="../../img/git_tutorial_git_branch_master_checkout.png" />  </p>
+<p>So you will see the project in the exact same state it was in when we forked
+off the new branch. There will be no trace of the changes of the <code>newfeature</code>
+branch.</p>
+<p>What happens if we add some changes and commit these?</p>
+<blockquote>
+<p>edit somefile.txt<br />
+  git commit -a -m "bugfix"</p>
+</blockquote>
+<p>The same as before: A new commit will be created based on the latest commit in
+<code>master</code> and <code>master</code> will be pointing to the new commit after that:  </p>
+<p><img alt="" src="../../img/git_tutorial_git_branch_master_commit.png" />  </p>
+<p>Branches are very cheap and fast in git, you can create as many as you need.
+Some developers like to work with a <code>stable</code> and an <code>unstable</code> branch whereas
+some developers create a branch for every new feature they are working on -
+it’s up to you.</p>
+<h3 id="merging">Merging</h3>
+<p>Let’s say we have completed the new feature and want to get it back into the
+<code>master</code> branch. This can be achieved with the <code>git merge</code> command whilst
+having the master branch selected as the active branch:</p>
+<blockquote>
+<p>git merge newfeature</p>
+</blockquote>
+<p>If all goes well there will be no conflicts and git will just create a new
+commit containing the changes which have been made in both branches:  </p>
+<p><img alt="" src="../../img/git_tutorial_git_merge.png" />  </p>
+<p>Generally, git is very smart about merging. However, if the same contents were
+changed in both branches, a conflict will arise:</p>
+<blockquote>
+<p>CONFLICT (content): Merge conflict in somefile.txt<br />
+  Automatic merge failed; fix conflicts and then commit the result.</p>
+</blockquote>
+<p>We have to resolve this conflict manually. If you have a look at the file with
+the conflict, you will see the respective lines marked. On the top you will
+see the version from the active branch, below you will see the version from
+the merged branch:</p>
+<blockquote>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:somefile.txt<br />
+    this change was done in master<br />
+    =======<br />
+    this change was done in newfeature<br />
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; newfeature:somefile.txt  </p>
+</blockquote>
+<p>You have to resolve this conflict and remove the markers. After that you add
+the file to the <code>index</code> and commit the result:</p>
+<blockquote>
+<p>git add somefile.txt<br />
+  git commit</p>
+</blockquote>
+<p>After you have merged the branch, you can delete it should you not need it
+anymore:</p>
+<blockquote>
+<p>git branch -d newfeature</p>
+</blockquote>
+<p>You could also continue working in the branch and later merge it again. git
+will be smart enough to know that parts of the branch have been merged already
+and will only apply the new changes.</p>
+<h3 id="tools">Tools</h3>
+<p>Some versioning tasks can be performed in a simpler manner using GUI
+applications. git comes with the history browser <code>gitk</code>:  </p>
+<p><img alt="" src="../../img/git_tutorial_gitk.png" />  </p>
+<p>For staging changes and committing you can use <code>git gui</code>:  </p>
+<p><img alt="" src="../../img/git_tutorial_gitgui.png" />  </p>
+<p>These tools are not pretty, but they do their job very well. Mac OS X users
+can use a nice alternative application for both tasks called<br />
+<a href="http://gitx.frim.nl/">gitx</a><br />
+<img alt="" src="../../img/git_tutorial_gitx.png" />  </p>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

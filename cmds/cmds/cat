@@ -1,0 +1,16 @@
+#cat is used to read text files. 
+cat file.txt
+
+# cat concatenates a list of files
+cat file1 file2
+
+# abusing cat to read a single file is considered bad practice
+cat onefile | foo # DON'T DO THIS
+# instead use the following
+< onefile foo
+
+# random hex-calculation to let your terminal look busy
+cat /dev/urandom | hexdump -C | grep "ca fe"
+
+# Show tabs in a file
+cat -T file.txt

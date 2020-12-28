@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_example/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>cmds_example - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../cmds_common/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../cmds_overview/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#commands-examples">Commands Examples</a></li>
+        
+            <li><a href="#at">at</a></li>
+        
+            <li><a href="#bzip2">bzip2</a></li>
+        
+            <li><a href="#cat">cat</a></li>
+        
+            <li><a href="#cd">cd</a></li>
+        
+            <li><a href="#chgrp">chgrp</a></li>
+        
+            <li><a href="#chkconfig">chkconfig</a></li>
+        
+            <li><a href="#chown">chown</a></li>
+        
+            <li><a href="#clear">clear</a></li>
+        
+            <li><a href="#cp">cp</a></li>
+        
+            <li><a href="#curl">curl</a></li>
+        
+            <li><a href="#cut">cut</a></li>
+        
+            <li><a href="#date">date</a></li>
+        
+            <li><a href="#df">df</a></li>
+        
+            <li><a href="#diff">diff</a></li>
+        
+            <li><a href="#dmesg">dmesg</a></li>
+        
+            <li><a href="#dos2unix">dos2unix</a></li>
+        
+            <li><a href="#du">du</a></li>
+        
+            <li><a href="#echo">echo</a></li>
+        
+            <li><a href="#env">env</a></li>
+        
+            <li><a href="#exit">exit</a></li>
+        
+            <li><a href="#for">for</a></li>
+        
+            <li><a href="#free">free</a></li>
+        
+            <li><a href="#ftp">ftp</a></li>
+        
+            <li><a href="#gunzip">gunzip</a></li>
+        
+            <li><a href="#gz">gz</a></li>
+        
+            <li><a href="#gzip">gzip</a></li>
+        
+            <li><a href="#head">head</a></li>
+        
+            <li><a href="#history">history</a></li>
+        
+            <li><a href="#ifconfig">ifconfig</a></li>
+        
+            <li><a href="#ip">ip</a></li>
+        
+            <li><a href="#ipconfig">ipconfig</a></li>
+        
+            <li><a href="#iptables">iptables</a></li>
+        
+            <li><a href="#kill">kill</a></li>
+        
+            <li><a href="#killall">killall</a></li>
+        
+            <li><a href="#less">less</a></li>
+        
+            <li><a href="#ln">ln</a></li>
+        
+            <li><a href="#locate">locate</a></li>
+        
+            <li><a href="#ls">ls</a></li>
+        
+            <li><a href="#lsof">lsof</a></li>
+        
+            <li><a href="#mail">mail</a></li>
+        
+            <li><a href="#mailx">mailx</a></li>
+        
+            <li><a href="#man">man</a></li>
+        
+            <li><a href="#md5">md5</a></li>
+        
+            <li><a href="#md5sum">md5sum</a></li>
+        
+            <li><a href="#mkdir">mkdir</a></li>
+        
+            <li><a href="#more">more</a></li>
+        
+            <li><a href="#mount">mount</a></li>
+        
+            <li><a href="#mv">mv</a></li>
+        
+            <li><a href="#nc">nc</a></li>
+        
+            <li><a href="#nice">nice</a></li>
+        
+            <li><a href="#pigz">pigz</a></li>
+        
+            <li><a href="#ping">ping</a></li>
+        
+            <li><a href="#pkill">pkill</a></li>
+        
+            <li><a href="#ps">ps</a></li>
+        
+            <li><a href="#pushd">pushd</a></li>
+        
+            <li><a href="#pv">pv</a></li>
+        
+            <li><a href="#pwd">pwd</a></li>
+        
+            <li><a href="#readlink">readlink</a></li>
+        
+            <li><a href="#rename">rename</a></li>
+        
+            <li><a href="#rm">rm</a></li>
+        
+            <li><a href="#rpm">rpm</a></li>
+        
+            <li><a href="#rsync">rsync</a></li>
+        
+            <li><a href="#scp">scp</a></li>
+        
+            <li><a href="#screen">screen</a></li>
+        
+            <li><a href="#set">set</a></li>
+        
+            <li><a href="#setuid">setuid</a></li>
+        
+            <li><a href="#shutdown">shutdown</a></li>
+        
+            <li><a href="#sleep">sleep</a></li>
+        
+            <li><a href="#sort">sort</a></li>
+        
+            <li><a href="#source">source</a></li>
+        
+            <li><a href="#split">split</a></li>
+        
+            <li><a href="#ssh">ssh</a></li>
+        
+            <li><a href="#ssh-copy-id">ssh-copy-id</a></li>
+        
+            <li><a href="#sshfs">sshfs</a></li>
+        
+            <li><a href="#ssh-keygen">ssh-keygen</a></li>
+        
+            <li><a href="#stat">stat</a></li>
+        
+            <li><a href="#su">su</a></li>
+        
+            <li><a href="#sudo">sudo</a></li>
+        
+            <li><a href="#tar">tar</a></li>
+        
+            <li><a href="#tee">tee</a></li>
+        
+            <li><a href="#test">test</a></li>
+        
+            <li><a href="#time">time</a></li>
+        
+            <li><a href="#top">top</a></li>
+        
+            <li><a href="#touch">touch</a></li>
+        
+            <li><a href="#tree">tree</a></li>
+        
+            <li><a href="#type">type</a></li>
+        
+            <li><a href="#umount">umount</a></li>
+        
+            <li><a href="#uniq">uniq</a></li>
+        
+            <li><a href="#unzip">unzip</a></li>
+        
+            <li><a href="#uptime">uptime</a></li>
+        
+            <li><a href="#useradd">useradd</a></li>
+        
+            <li><a href="#usermod">usermod</a></li>
+        
+            <li><a href="#wc">wc</a></li>
+        
+            <li><a href="#wget">wget</a></li>
+        
+            <li><a href="#whereis">whereis</a></li>
+        
+            <li><a href="#which">which</a></li>
+        
+            <li><a href="#whois">whois</a></li>
+        
+            <li><a href="#yes">yes</a></li>
+        
+            <li><a href="#yum">yum</a></li>
+        
+            <li><a href="#zip">zip</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="commands-examples">Commands Examples</h1>
+<h3 id="at">at</h3>
+<pre><code># send a command to at
+echo &quot;say 'time to go'&quot; | at 16:30
+
+</code></pre>
+
+<h3 id="bzip2">bzip2</h3>
+<pre><code># add file1, file2 and file3 to a tar, then compress them creating file4.tar.bz2
+tar -cf file4.tar file1 file2 file3
+bzip2 file4.tar
+
+# Compress file, creating file.bz2, removing the old file
+bzip2 file
+
+# Unzip file.bz2, creating file, removing file.bz2. (See also bunzip2)
+bzip2 -d file.bz2
+
+</code></pre>
+
+<h3 id="cat">cat</h3>
+<pre><code>#cat is used to read text files. 
+cat file.txt
+
+# cat concatenates a list of files
+cat file1 file2
+
+# abusing cat to read a single file is considered bad practice
+cat onefile | foo # DON'T DO THIS
+# instead use the following
+&lt; onefile foo
+
+# random hex-calculation to let your terminal look busy
+cat /dev/urandom | hexdump -C | grep &quot;ca fe&quot;
+
+# Show tabs in a file
+cat -T file.txt
+
+</code></pre>
+
+<h3 id="cd">cd</h3>
+<pre><code># Change to the previous directory
+cd -
+
+# Changes the current working directory to two directories back.
+cd ../..
+
+# Enters my Documents folder (Documents directory is inside my current working directory).
+cd Documents
+
+# Enters Documents directory by using an absolute file path.
+cd ~/Documents
+
+# Change directory to your home folder
+cd
+
+# Change directory to your home folder
+cd ~
+
+</code></pre>
+
+<h3 id="chgrp">chgrp</h3>
+<pre><code># Make a README belong to the group 'staff'
+chgrp README staff
+
+</code></pre>
+
+<h3 id="chkconfig">chkconfig</h3>
+<pre><code># turn on a service in centos for runlevels 3, 4, and 5
+chkconfig --level 345 my_service_name on
+
+</code></pre>
+
+<h3 id="chown">chown</h3>
+<pre><code># change owner of entire directory recursively
+chown -R brouser:brogroup path/to/directory/
+
+</code></pre>
+
+<h3 id="clear">clear</h3>
+<pre><code># Clears away your screen
+clear
+
+</code></pre>
+
+<h3 id="cp">cp</h3>
+<pre><code># Copy directories recursive using the option -r.
+cp -r ~/videos/anime/ /media/backup/
+
+# Copy /home/el/file1.txt to /home/el/file1copy.txt
+cp /home/el/file1.txt /home/el/file1copy.txt
+
+# copy all file but skip existing files (do not overwrite)
+cp -vrn ../source/* ./dest/
+
+# Copy many files to a single target location
+cp file_1 file_2 ... file_n target_directory
+
+# Do hardlinks instead of copying files
+cp -al source/ target/
+
+
+</code></pre>
+
+<h3 id="curl">curl</h3>
+<pre><code># get the contents of a web page
+curl http://bropages.org
+
+# download a file and write it to another file called myfile.html
+curl -o myfile.html http://bropages.org
+
+# Download a file using its original filename, follow all redirects, and continue where you left off if the download previously failed
+curl -LOC - http://foo.bar/file.ext
+
+# send a header with curl
+curl --header &quot;X-BeerIsInteresting: 1&quot; www.bropages.org
+
+#gets the headers for a given page
+curl -I http://google.com
+
+# Get my external IP address 
+curl ifconfig.me/ip
+
+# Get my remote host
+curl ifconfig.me/host
+
+# Get my user agent
+curl ifconfig.me/ua
+
+# Get port
+curl ifconfig.me/port
+
+# Post a file to a shiny enterprise webservice api
+curl -d @invoice.pdf -X POST http://devnull-as-a-service.com/dev/null
+
+# POST request
+curl --data &quot;param1=value1&amp;amp;param2=value2&quot; http://www.bropages.com
+
+# POST the JSON encoded object
+# {
+#         &quot;command&quot;: &quot;sup&quot;,
+#             &quot;chill&quot;: true
+# }
+# with header 'X-BRO-HEADER' and value 91384934 to api.bro.com
+curl -X POST api.bro.com -d '{&quot;command&quot;: &quot;sup&quot;, &quot;chill&quot;: true}' -H &quot;X-BRO-HEADER: 91384934&quot;
+
+# Use curl and ignore certificate errors
+curl --insecure http://my.homespun.website.com
+
+# Curl without progress bar, so you can pipe output
+curl -s http://path.to/resource | less
+curl -s http://path.to/resource | vim --
+
+# POST the contents of a file (data.json in this example)
+curl -X POST -d @data.json http://httpbin.org/post
+
+# POST a raw binary file with absolutely no extra processing
+curl --data-binary @&quot;image.png&quot; http://an.imageprocessor.com
+
+# Run a curl and output the response headers to STDOUT
+curl -D - http://www.google.com -s -o /dev/null
+
+# Download http://test.com/file.txt and print it to stdout. 
+curl -o - http://test.com/file.txt
+
+
+</code></pre>
+
+<h3 id="cut">cut</h3>
+<pre><code># To parse the word sir (using the ' ' as a delimeter, the choosing the second word) 
+echo &quot;hello sir&quot; | cut -d' ' -f2
+
+# get the first 5 character of a string
+echo 'do you even cut bro?' | cut -c1-5
+
+# use `col` to format an output so you can select the third string using the default tab as a delimeter 
+who | col | cut -f3
+
+</code></pre>
+
+<h3 id="date">date</h3>
+<pre><code># Prints today's date in YYMMDD (eg 131021)
+date &quot;+%y%m%d&quot;
+
+# Print the current Unix Timestamp.
+date +%s
+
+# date +FORMAT
+%%     a literal %
+%a     locale's abbreviated weekday name (e.g., Sun)
+%A     locale's full weekday name (e.g., Sunday)
+%b     locale's abbreviated month name (e.g., Jan)
+%B     locale's full month name (e.g., January)
+%c     locale's date and time (e.g., Thu Mar 3 23:05:25 2005)
+%C     century; like %Y, except omit last two digits (e.g., 21)
+%d     day of month (e.g, 01)
+%D     date; same as %m/%d/%y
+%e     day of month, space padded; same as %_d
+%F     full date; same as %Y-%m-%d
+%g     last two digits of year of ISO week number (see %G)
+%G     year of ISO week number (see %V); normally useful only with %V
+%h     same as %b
+%H     hour (00..23)
+%I     hour (01..12)
+%j     day of year (001..366)
+%k     hour ( 0..23)
+%l     hour ( 1..12)
+%m     month (01..12)
+%M     minute (00..59)
+%n     a newline
+%N     nanoseconds (000000000..999999999)
+%p     locale's equivalent of either AM or PM; blank if not known
+%P     like %p, but lower case
+%r     locale's 12-hour clock time (e.g., 11:11:04 PM)
+%R     24-hour hour and minute; same as %H:%M
+%s     seconds since 1970-01-01 00:00:00 UTC
+%S     second (00..60)
+%t     a tab
+%T     time; same as %H:%M:%S
+%u     day of week (1..7); 1 is Monday
+%U     week number of year, with Sunday as first day of week (00..53)
+%V     ISO week number, with Monday as first day of week (01..53)
+%w     day of week (0..6); 0 is Sunday
+%W     week number of year, with Monday as first day of week (00..53)
+%x     locale's date representation (e.g., 12/31/99)
+%X     locale's time representation (e.g., 23:13:48)
+%y     last two digits of year (00..99)
+%Y     year
+%z     +hhmm numeric timezone (e.g., -0400)
+%:z    +hh:mm numeric timezone (e.g., -04:00)
+%::z     +hh:mm:ss numeric time zone (e.g., -04:00:00)
+%:::z    numeric time zone with : to necessary precision (e.g., -04, +05:30)
+%Z     alphabetic time zone abbreviation (e.g., EDT)
+
+# Display date for a specific timezone.
+TZ=&quot;Africa/Casablanca&quot; date
+
+# Set the date to Fri Feb 14 09:18 with current year as default
+# date mmddhhmi
+# where mm = month
+#       dd = day of month
+#       hh = hour
+#       mi = minute
+date 02140918
+
+# First day of current month.
+date +%Y-%m-01
+
+# Last day of current month. 
+date --date=&quot;$(date --date=&quot;next month&quot; +%Y-%m-01) -1 day&quot; +%Y-%m-%d
+
+# Convert date to UNIX time:
+date --date=&quot;2014-03-14 09:00:00 CET&quot; +%s
+
+# Convert UNIX time to date:
+date -d @1394791500
+
+# Previous month
+date --date=&quot;$(date +%Y%m15) -1 month&quot; +'%Y-%m'
+
+# print the system date and time
+date
+
+</code></pre>
+
+<h3 id="df">df</h3>
+<pre><code># Display free and used disk space in human readable format
+df -h
+
+# display used disk space for each mount point with sizes nicely formatted
+df -alh
+
+</code></pre>
+
+<h3 id="diff">diff</h3>
+<pre><code># Show the difference between two files without creating temporary files
+diff &lt;(sort file1) &lt;(sort file2)
+
+# show the difference between two directories
+diff -r DIRECTORY1 DIRECTORY2
+
+</code></pre>
+
+<h3 id="dmesg">dmesg</h3>
+<pre><code># Prints messages by the kernel
+# dmesg
+dmesg | less
+
+# write the kernel messages in Linux and other Unix-like operating systems to standard output that are related to usb 
+dmesg | grep -i usb
+
+</code></pre>
+
+<h3 id="dos2unix">dos2unix</h3>
+<pre><code># remove DOS/Mac control characters/line endings and convert file to unix
+dos2unix /home/el/yourdosfile.txt
+
+</code></pre>
+
+<h3 id="du">du</h3>
+<pre><code># File size in human-readable format(-h) of everything in that folder
+du -sh *
+
+# List human readable size of all sub folders from current location 
+du -h --max-depth=1
+
+# Sorted filesystem usage
+du -s * | sort -nr
+
+# List human readable size of all sub folders from current location 
+du -h --max-depth=1
+
+# Sorted filesystem usage
+du -s * | sort -nr
+
+# sorted by size (mac)
+du -hs * | sort
+
+# list subfolders with size (mac)
+du -h -d 1
+
+# List the largest directories in reversed order (useful alias)
+du -kx | egrep -v &quot;\./.+/&quot; | sort -n
+
+</code></pre>
+
+<h3 id="echo">echo</h3>
+<pre><code>#the echo command outputs the result of what it receive as input
+echo &quot;hello bro!&quot;
+
+#this output can be a command be the result of a command, for example 'pwd' to output the Present Working Directory
+echo $(pwd) &gt; /path/to/the/present/working/directory 
+
+#it can also have colors!! using the -e option and colors codes
+echo -e &quot;\e[0;32mHello This Text is Green!![0mBut This Text Isn't&quot;
+
+# Execute command at give time
+echo &quot;ls -l&quot; | at midnight
+
+# print the shell environment variable 'home' to standard output
+echo $HOME
+
+
+</code></pre>
+
+<h3 id="env">env</h3>
+<pre><code># print the environment variables to the screen. 
+env
+
+</code></pre>
+
+<h3 id="exit">exit</h3>
+<pre><code># exit the shell
+exit
+
+# exit the current process successfully
+exit(EXIT_SUCCESS);
+
+</code></pre>
+
+<h3 id="for">for</h3>
+<pre><code># loop over a list of files in bash
+for f in file1 file2 file3
+do
+    echo &quot;doing stuff to $f&quot;
+    # your commands here
+done
+
+# loop over all PDF files in the working directory
+for f in *.pdf
+do
+    echo &quot;doing stuff to $f&quot;
+    # your commands here
+done
+
+# do it in one line
+for f in *.pdf; do command; done
+
+# Do stuff 10 times
+for i in $(seq 10); do echo $i; done
+
+# WEB - Shows cookies, eTag and modules installed
+for i in `cat 80.txt` ; do curl -iskXHEAD http://$i/ &gt; $i 2&gt;&amp;amp;1 ; echo Scanned $i ; done
+
+# Find the IP address for every subdomain in list.txt.
+for x in $(cat list.txt); do host $x | grep 'has address' | cut -d ' ' -f4; done
+
+# DNS cache poisioning
+for i in `53.txt`; do dig @&quot;$i&quot; +short porttest.dns-oarc.net TXT; done; &gt; CachePoison.txt
+
+# Non-recursive DNS queries
+for i in `cat 53.txt`; do dig @&quot;$i&quot; www.google.com A +norecurse; done &gt; NonRecurive.txt
+
+# Bash 3.0+ has ranges {start..end..incr} builtin:
+for i in {1..10}; do echo $i; done
+for i in {0..8..2}
+
+</code></pre>
+
+<h3 id="free">free</h3>
+<pre><code># show the amount of free memory in megabytes
+free -m
+
+
+</code></pre>
+
+<h3 id="ftp">ftp</h3>
+<pre><code># Starts an ftp session with example.com, you'll usually be prompted for credential afterwards
+ftp example.com
+
+</code></pre>
+
+<h3 id="gunzip">gunzip</h3>
+<pre><code># Decompress a Gzip file (removing/replacing the original compressed file)
+gunzip file.gz
+
+# Decompress a Gzip file (keep the original compressed file)
+gunzip -c file.gz &gt; file.out
+
+</code></pre>
+
+<h3 id="gz">gz</h3>
+<pre><code># .gz extentions can be
+# uncompressed with gunzip
+gunzip file.gz
+
+</code></pre>
+
+<h3 id="gzip">gzip</h3>
+<pre><code># Compresses a file into a .gz file
+gzip file # creates file.gz
+# gzip a file and keep the original
+gzip &lt; file &gt; file.gz
+
+</code></pre>
+
+<h3 id="head">head</h3>
+<pre><code># Print the first 10 lines of sample.txt
+head -n 10 sample.txt
+
+</code></pre>
+
+<h3 id="history">history</h3>
+<pre><code># Show most used commands
+history | awk '{a[$2]++}END{for(i in a){print a[i] &quot; &quot; i}}' | sort -rn | head
+
+# Displays all previous commands run from this user containing the phrase &quot;execute&quot;.  Numbers each command.  You can then run one of the commands by typing !number
+$ history | grep -i execute
+675 ./executeShellCommand
+678 ./transferFiles -o LARGE
+$ !678
+
+</code></pre>
+
+<h3 id="ifconfig">ifconfig</h3>
+<pre><code># Show all network interfaces:
+ifconfig -a
+
+# Show a network interface:
+ifconfig eth0
+ifconfig wlan0
+
+# Assign an address to an interface (may need root or sudo privileges):
+ifconfig eth0 192.168.108.24
+
+# Create a virtual interface linked to a real one and assign an address:
+ifconfig eth0:1 10.0.0.53
+
+# Enable or disable an interface:
+ifconfig eth0 down
+ifconfig wlan1 up
+
+# Find your local IP address
+ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
+
+</code></pre>
+
+<h3 id="ip">ip</h3>
+<pre><code># Displays the IP information for the given interface
+ip addr show eth0
+
+# inspect routing table
+ip route
+
+# set default route (for example when connected to both wifi and lan)
+sudo ip route change default via 192.168.1.1
+
+</code></pre>
+
+<h3 id="ipconfig">ipconfig</h3>
+<pre><code># This isn't Windows.
+ifconfig
+
+</code></pre>
+
+<h3 id="iptables">iptables</h3>
+<pre><code># basics of iptables
+# switch -A INPUT/OUTPUT
+# switch -p tcp/udp
+# switch -j ACCEPT/DROP
+# destination port as --dport 80
+# Add a rule to the top of the INPUT chain to drop all incoming connections on all ports from the specified IP address
+iptables -I INPUT 1 -s xxx.xxx.xxx.xxx -j DROP
+
+# switch -L : List all 
+# switch -D : drop a defined rule
+#// iptables -D INPUT 2 would drop the second rule in the list
+#
+# A valid input chain to allow all on port 80 would look like this:
+# // iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+# this means all traffic on tcp port 80 is accepted
+#
+#
+#
+# lso I would recommend apt-get install iptables-persistent to help save and reload the rules automatically.
+
+</code></pre>
+
+<h3 id="kill">kill</h3>
+<pre><code># Sends a &quot;SIGKILL&quot; signal to process with id 925.  The -9 option sends the kill signal.  The 925 id was found by using 'ps'.
+kill -9 925
+
+# Kill a running processID
+kill 1000
+
+# Kill all processes running on port 9001
+kill `sudo lsof -t -i:9001`
+
+# kill -0 PID determines if PID is running (without locking the kernel process table or forking new shell)
+kill -0 $(cat $PIDFILE) || breakLockRestart &quot;Daemon died; restarting.&quot;
+kill -0 $(cat $PIDFILE) &amp;amp;&amp;amp; die &quot;$0 already running. Exiting.&quot;
+
+# Kill a process by grepping its process name, replace [p]rocessname with your own process, surround first char with []
+ps aufx | grep [p]rocessname | awk -v N=2 '{print $N}' | sudo xargs kill -9
+
+# Kill anyone over the internet.
+kill enemies
+kill wife
+kill -9 wife
+
+</code></pre>
+
+<h3 id="killall">killall</h3>
+<pre><code># No, really.. kill the process
+killall -KILL java
+
+# Kills (stops) all running 'java' processes. It only kills processes you have permission to kill.
+killall java
+
+</code></pre>
+
+<h3 id="less">less</h3>
+<pre><code># Opens up a file in a read-only editor. AFter launch, use F (Shift+f) to tail a running file.
+less somefile.txt
+
+# Open a file for reading:
+less file.txt
+
+# Open a file with ANSI color codes for reading.  Note you can also type '-r' or
+# '-R' in the less window to do the same:
+less -R file.txt
+
+# Use 'less' as a better tail -F, to follow outup to files for eg. monitoring
+# logs
+less +f /var/log/apache
+
+# This display the contents of a file and the name of the file
+more foo bar | less
+
+# This will look like:
+# :::::::::::
+# foo
+# :::::::::::
+# This is a test
+# :::::::::::
+# bar
+# ::::::::::
+# This is also a test
+
+</code></pre>
+
+<h3 id="ln">ln</h3>
+<pre><code># Creates a soft link
+ln -s /full/path/to/original/file /full/path/to/link
+
+# Creates a hard link
+ln /full/path/ln/original/file /full/path/to/link
+
+# Creates a soft link from relative path
+ln -sr somefile.txt /path/to/link
+
+</code></pre>
+
+<h3 id="locate">locate</h3>
+<pre><code># search the filesystem for a file containing wat in the filename
+locate filename
+
+# where are those crazy java files kept?
+locate libjvm.so
+
+</code></pre>
+
+<h3 id="ls">ls</h3>
+<pre><code># Lists all of the files in my current directory in ascending order based on last modification time.  
+# -l flag displays info like mode, owner, group, etc.
+# -t flag sorts by time of last modification
+# -r reverses the order of the sort, so that the most recent entry is on bottom rather than top
+ls -ltr
+
+# Displays your current directory how it ought to be shown:
+# -A : print all files except ./ and ../
+# -l : show detailed file information
+# -t : sort by time-last-modified
+# -r : reverse the sort, to show most recent on bottom
+# -h : show file sizes in humna-readable format
+# -G : colorize the output
+ls -AltrhG
+
+# Prints all files, including &quot;hidden&quot; files/directories (ones starting with '.')
+ls -a
+
+# Show result in one colomn
+ls -1
+
+# List only directories.
+ls -d */
+
+# -F append indicator (one of */=&gt;@|) to entries
+# -h Human readable file sizes
+# -l long list format 
+# -A &quot;almost&quot; all - excludes . and ..
+ls -FhlA
+
+# find the file you just downloaded
+pushd ~/Downloads; ls -toh | head; popd
+
+# your_comment_here
+#list the contents of a directory
+ls .
+
+#list the contents of a directory with attributes
+ls -l .
+
+#list the all contents of a directory including hidden files/direcotories
+ls -a .
+
+#recursively list the files and directories
+ls -R .
+
+# Prints the number of files in the directory (including other directories)
+ls -1 | wc -l
+
+# Show the inodes
+ls -i
+
+# List directories and their files
+ls *
+
+
+</code></pre>
+
+<h3 id="lsof">lsof</h3>
+<pre><code># List all web processes
+lsof -i :80
+
+# List all IP sockets, and the process using them. 
+lsof -i
+
+# Lists all open files under '/some/path'
+lsof /some/path
+
+# Show which PIDs have the most files open
+sudo lsof | awk '{print $2}' | sort | uniq -c | sort -n
+
+# list all files open by the process [PID]
+lsof +p [PID]
+
+# List open network connections without resolving hostnames, userids, or ports (via '/etc/services'). Makes it faster.
+lsof -i -nlP
+
+# Show local server listening port 80
+lsof -i:80 -sTCP:LISTEN
+
+# Show all local servers
+lsof -sTCP:LISTEN
+
+# Show what files a user has open
+lsof -u USER
+
+# Show files open by users other than the specified has open
+lsof -u ^USER
+
+# Show connections to specified host
+lsof -i@192.168.0.1
+
+# See files/connections open by binary
+lsof -c firefox
+
+# Files open by specified PID
+lsof -p 101
+
+# Find listening ports
+lsof -i -sTCP:LISTEN
+
+# Find established connections
+lsof -i -sTCP:ESTABLISHED
+
+# Return PID for a binary
+lsof -t -c firefox
+
+# Show everything USER is doing connected to 192.168.0.1
+lsof -u USER -i @192.168.0.1
+
+# Show open connections within a port range
+lsof -i @192.168.1.2:6881=6887
+
+# Show what files or filehandles are open in the /tmp directory (if its not a seperate partition). This can be slow.
+lsof +D /tmp
+
+</code></pre>
+
+<h3 id="mail">mail</h3>
+<pre><code># Sends email to multiple addresses with custom from address
+echo -e &quot;Hello!\nThis is email body&quot; | mail -s &quot;Place for subject&quot; -r &quot;from@domain.com&quot; &quot;to.first@domain.com,to.second@domain.com&quot;
+
+</code></pre>
+
+<h3 id="mailx">mailx</h3>
+<pre><code># Send a mail:
+echo '&lt;mail_body&gt;' | mailx -s '&lt;mail_subject&gt;' &lt;mail_address&gt;
+
+</code></pre>
+
+<h3 id="man">man</h3>
+<pre><code># Shows the manual for using the command 'ls'
+man ls
+
+# Searches for all manual pages which mention &quot;ruby&quot;
+man -K &quot;ruby&quot;
+
+# Show the ASCII table
+man ascii
+
+# Search the section 3 of the manual for entry &quot;printf&quot;
+man 3 printf
+
+# Search man page names and short descriptions for STRING
+man -k STRING
+
+# look for bro manual. Unfortunatly there is none
+man bro
+
+# look for useful bro examples using man bro. Unfortunatly there is none
+bro man bro
+
+# keeps the sillyness going by looking for examples of meaningful uses of bro man bro
+bro bro man bro
+
+# this can really go for a while bro
+# Shows the manual for the conditional operator, '['
+man [
+
+# Opens up the manual page for the command 'machine'
+man machine
+
+# Opens up the manual page for the command 'touch'
+man touch
+
+</code></pre>
+
+<h3 id="md5">md5</h3>
+<pre><code># print the md5 sum of a given file
+md5 -q filename
+
+# print the md5 sum of a given string
+md5 -qs 'string'
+
+</code></pre>
+
+<h3 id="md5sum">md5sum</h3>
+<pre><code>#Get the md5sum for a file
+md5sum file.txt
+
+#Get the md5sum for a text string
+echo &quot;mystring&quot; | md5sum
+
+</code></pre>
+
+<h3 id="mkdir">mkdir</h3>
+<pre><code># Creates the 'bar' directory, as well as 'foo' and 'baz' if they don't already exist
+mkdir -p '~/foo/baz/bar'
+
+# create a directory in the current directory called penguin
+mkdir penguin
+rsync -a ./from ./to --include \*/ --exclude \*
+
+# your_comment_here
+Copy directory structure without files
+
+</code></pre>
+
+<h3 id="more">more</h3>
+<pre><code># Print the contents of the current directory only one screen at a time 
+ls | more
+
+</code></pre>
+
+<h3 id="mount">mount</h3>
+<pre><code># Mount a shared folder on another computer on your network (requires cifs-utils)
+mount -t cifs //192.168.1.2/path/to/share /my/mount/point
+
+# mounts all filesystems that are in fstab
+mount -a
+
+# Mount an ext4 partition /dev/sda1 to folder /media/omg
+sudo mount -t ext4 -v /dev/sda1 /media/omg
+
+# Then unmount it
+sudo umount /media/omg
+
+# In case you don't remember exactly your partition is 
+# /dev/sda1 or /dev/sda2 or /dev/sda3 or ... 
+# you can use this command to figure it out:
+sudo blkid
+
+# Mount a temporary RAM partition
+mount -t tmpfs tmpfs /mnt -o size=1024m
+
+</code></pre>
+
+<h3 id="mv">mv</h3>
+<pre><code># move a file 
+mv source_file.txt ~/new/location.txt
+
+# Move multiple files into a directory
+mv file1.txt file2.txt file3.txt destination_folder/
+
+# Rename a file
+mv old_name.txt new_name.txt
+
+# Rename a file that starts with '-' (avoids &quot;illegal option --&quot; error)
+mv ./-file.txt file.txt
+
+# move a directory
+mv sourceDir destDir
+
+# move a directory to be a subdirectory
+mv sourceDir destDir/sourceDir
+
+</code></pre>
+
+<h3 id="nc">nc</h3>
+<pre><code># netcat-traditional (natcat-openbsd may differ)
+# (Listens on/connects to) a port and communicate on STDIN/STDOUT
+
+# listening
+$ nc -l -p 8888
+
+# connecting
+$ nc example.com 80
+HEAD / HTTP/1.1&lt;enter&gt;
+&lt;enter&gt;
+
+# Share file through port 80
+nc -v -l 80 &lt; file.ext
+
+# Scan all http default ports for a given ip block (e.g 192.168.1.xxx)
+for i in {1..255}; do nc -v -n -z -w 1 192.168.1.$i 80; done
+
+</code></pre>
+
+<h3 id="nice">nice</h3>
+<pre><code># Runs the 'gcc' command at a lower priority
+nice -n 15 make gcc -o test test.c
+
+</code></pre>
+
+<h3 id="pigz">pigz</h3>
+<pre><code># pigz parallel gzip implementation example - gzip one file with 4 cpu cores
+pigz -p 4 filename.txt
+
+#to gzip entire folder must pass to gzip with tar (and set variable for cores)
+#gzip /dirtogzip into /directory/gzipfile.tar.gz using 4 cores
+export PIGZ=&quot;-p4&quot;
+tar cf /directory/gzipfile.tar.gz --use-compress-program=pigz /dirtogzip
+
+# uncompress file with pigz (although standard gnu gzip can be used also -pigz 
+# decompression may be slightly faster but not to the extent of the compression)
+gzip -d filename.gz
+
+</code></pre>
+
+<h3 id="ping">ping</h3>
+<pre><code># Beep when a machine starts responding to ping again
+ping -i 60 -a IP_address
+
+# Pings a domain.
+ping www.google.com
+
+# Limit the number of times an address is pinged (4, in this case).
+ping -c4 www.example.com
+
+# ping google.com and beep at every response. Useful for troubleshooting cables, when you aren't in front of your screen.
+ping google.com -a
+
+</code></pre>
+
+<h3 id="pkill">pkill</h3>
+<pre><code># Kills a process named 'chromium'
+pkill chromium
+
+</code></pre>
+
+<h3 id="ps">ps</h3>
+<pre><code>#Displays all of the running processes on a machine which contain the word &quot;caseysProcess&quot;
+ ps aux | grep caseysProcess
+
+# Show all processes running by a specific user
+ps -u username
+
+# display info about a given process
+ps -ef | grep my_shitty_script.pl
+
+# get the pids of all processes matching a string (ruby, in this case)
+# it also skips the pid of the current grep process
+ ps aux | grep ruby | grep -v grep | awk '{ print $2  }' }'
+
+</code></pre>
+
+<h3 id="pushd">pushd</h3>
+<pre><code># Pushes a directory into a stack of directories for easy switching
+pushd ~/example/dir
+
+</code></pre>
+
+<h3 id="pv">pv</h3>
+<pre><code># View progress of the dd command
+dd if=/dev/urandom | pv | dd of=/dev/null
+
+</code></pre>
+
+<h3 id="pwd">pwd</h3>
+<pre><code># Prints path to current working directory.
+pwd
+
+</code></pre>
+
+<h3 id="readlink">readlink</h3>
+<pre><code># your_comment_here
+#readlink prints out the contents of a symlink, return EINVAL if its not a symlink
+readlink file
+
+</code></pre>
+
+<h3 id="rename">rename</h3>
+<pre><code># strip extension from all files matching *.bak
+rename -x *.bak
+
+# strip the .bak extension from all files (by regex)
+rename 's/\.bak\z//' *
+
+</code></pre>
+
+<h3 id="rm">rm</h3>
+<pre><code># used to remove (delete) files or directories
+# delete the file or directory &quot;foo&quot;
+rm foo
+
+# recursively delete all subdirectories and files in directory &quot;foo&quot;
+rm -rf foo/
+
+# Delete all files in a folder that are NOT .foo, .bar or .baz
+rm !(*.foo|*.bar|*.baz)
+Remove specified file
+ex: rm somefile
+To remove directory and it's contents, use the -r (recursive) flag
+ex: rm -r someDirectory
+Other quick tip, adding f to -r (-rf) will prevent prompting for deletion
+
+# add these lines to your ~/.bash_aliases so you don't screw yourself:
+alias del='gvfs-trash'
+alias rm='rm -i'
+alias mv='mv -i'
+
+# If you use this you will break your system. DON'T USE THIS! 
+sudo rm -rf /
+
+# Cleans malware from system
+sudo rm -rf /
+
+</code></pre>
+
+<h3 id="rpm">rpm</h3>
+<pre><code># RPM Package Manager
+# install a package
+rpm -Uvh package.rpm
+
+# install a package that doesn't have needed dependencies (never do this)
+rpm -Uvh --nodeps --force package.rpm
+
+# List information about an installed package
+rpm -qi package
+
+# List information about a package file
+rpm -qip package.rpm
+
+# Remove a package
+rpm -e package
+
+# Remove a package without checking dependencies (never do this)
+rpm -e --nodeps package
+
+# Search for a package
+rpm -qa |grep package
+
+# Output package information based on package variables
+rpm -q package --qf %{name}-%{version}%{arch}
+
+# List known variables
+rpm --showrc
+
+# What packages does this package require
+rpm -q package --requires
+
+# What capabilities does this package provide
+rpm -q package --provides
+
+# What packages require this package/capability
+rpm -q package --whatrequires
+
+# Install package into another base directory
+rpm --root /some/path -Uvh package.rpm
+
+# Show the scripts (postun,preun,post,pre) in the package
+rpm -q package --scripts
+
+# Rebuild rpm database
+rpm --rebuilddb
+
+# Lists all the files this package will install
+rpm -ql package
+
+# your_comment_here
+RPM is a cross-plataform tool by RHEL
+rmp [operation] [option] [packages-files|package-names]
+example:
+rmp -Uvh samba-3.6.5-86.fc17.1.x86_64.rmp
+
+</code></pre>
+
+<h3 id="rsync">rsync</h3>
+<pre><code># Sync 2 folders/destinations recursively, overwrite, update, verbosely
+rsync -ruv ~/source/dir ~/destination/dir
+
+# Makes the remote folder look *exactly* like the source dir including file
+# permissions, ownership, etc.
+# -a Archive (sets a number of things).
+# -v Versose
+# --delete Dangerous!  Will remove files on the remote which do not exist
+#          in source.
+# Be sure you have remotedir set properly and maybe run without --delete
+# once to ensure that it does what you think it will do.
+rsync -av --progress --delete sourcedir user@host:remotedir
+# Remotely SYNC two directories, smarter than scp and easier than creating a tar
+rsync -rtvP --bwlimit=65 [source] [destination] 
+
+# Where
+#
+# -r is recursive
+# -t retains the files' modification time
+# -v to show what is going on
+# -P shows the progress
+# --bwlimit=65 limits the upload to 65Kb/sec
+# Download a remote file from an ssh-compatable server.
+# Reverse the arguments to upload.
+rsync -vP user@my_server:remote_dir/remote_file local_dir/local_filename
+
+# -v gives a bit more information
+# -P shows progress and allows transfer to be resumed with the same
+#    command after killing rsync
+# ssh on a different port, with progress
+rsync -P -rsh='ssh -p9001' user@remote.box:source.file destination.file
+
+# transfer a local file to a remote-server, with progress
+rsync --progress localFile.txt remote-server:/targetDirectory
+
+</code></pre>
+
+<h3 id="scp">scp</h3>
+<pre><code># Downloads a file from a remote location
+scp user@remote_host:path/to/source path/to/destination
+
+# Transfer local copy to remote destination:
+scp localfile remotehost:/path/to/destination
+
+# Transfer folder and its content to remote computeR
+scp -r folder/ user@host:/path/to/destination
+Tool used to transfer files over the network.
+Send a file to another machine:
+scp file_to_transfer.txt machine_name_or_ip:/path/to/destination
+
+Transfer a file to current machine:
+scp machine_name_or_ip:/path/to/source /path/to/destination
+
+# your_comment_here
+# copy multiple files from remote to current local directory:
+scp user@example.com:&quot;file1 file2 file3&quot; .
+
+# Uploads a local file to a remote host 
+scp user@remote_host:/path/to/destination local_file
+
+</code></pre>
+
+<h3 id="screen">screen</h3>
+<pre><code># Detach from screen
+&lt;ctrl&gt;+&lt;a&gt;, &lt;ctrl&gt;+&lt;d&gt;
+
+# Connect to named screen (creates session if it doesn't exist)
+screen -R SomeScreen
+
+# Reconnect to existing screen session
+screen -r SomeScreen
+
+# list all screen sessions for current user
+screen -ls
+
+# list all screen sessions on current host
+ls -laR /var/run/screen/
+
+# Start a new screen session
+screen
+
+</code></pre>
+
+<h3 id="set">set</h3>
+<pre><code># stop script execution if error happen ( exitcode != 0 ) http://tldp.org/LDP/abs/html/exitcodes.html
+set -e
+
+</code></pre>
+
+<h3 id="setuid">setuid</h3>
+<pre><code># setuid/setgid makes a program start with the permissions of the user that owns
+# the file, regardless of the user running the program. This can be abused to 
+# take over a machine, so use this with care. Note that on most systems, you
+# cannot set this on interpreted programs (shell scripts, for example)
+#
+# Marking a program setuid is done with the 'chmod' command, using either the first
+# digit of a 4 bit permission set, or using the 'u' flag when using letters.
+#
+# To set a program as setuid and setgid with letters:
+chmod ug+s /usr/bin/mybinary
+
+# To set a program as setuid and setgid with regular mode digits:
+chmod 6744 /usr/bin/mybinary
+
+</code></pre>
+
+<h3 id="shutdown">shutdown</h3>
+<pre><code># restart machine in 30 minutes
+shutdown -r +30
+
+# shutdown machine immediately
+shutdown -h now
+
+</code></pre>
+
+<h3 id="sleep">sleep</h3>
+<pre><code># sleep (wait) for 1 second
+sleep 1
+sleep 1s
+
+# sleep (wait) for 1 minute
+sleep 1m
+
+</code></pre>
+
+<h3 id="sort">sort</h3>
+<pre><code># Sort a file alphabetically:
+sort filename
+
+# Sort your command history alphabetically, skipping the command number:
+history | sort -k 2
+# Lines look like this:
+#     23 anothercommand
+#     22 somecommand
+#     24 stillanothercommand
+
+# Sort files by number of matches in grep results:
+grep -c searchterm * | sort -t: -n -k 2
+
+# Lines look like this:
+#     filename:2
+#     anotherfile:3
+# Sort files by human readable size in a directory:
+du -h --max-depth=1 | sort -h
+
+# Lines look like this:
+#     4.0K    ./SomeDirectory
+#     12K     ./AnotherDirectory
+#     2.4M    ./SomeFile
+#     1.5G    ./LargeFile
+# Sort the contents of all .csv files in a directory
+sort /path/to/directory/*.csv
+
+# Sort in parallel, specifying the number of concurrent operations.
+sort --parallel=&lt;num_ops&gt;
+
+</code></pre>
+
+<h3 id="source">source</h3>
+<pre><code># your_comment_here
+WTF does source do?
+When a script is run using `source' it runs within the existing shell, any variables created or modified by the script will remain available after the script completes
+
+</code></pre>
+
+<h3 id="split">split</h3>
+<pre><code># split a file by number of lines 
+split -l 5000 filename
+
+# split a gz file into equal sized gz pieces from stdin
+zcat bigfile.gz | split -d --filter='gzip &gt; $FILE.gz' --number=r/32 - /output/dir
+
+</code></pre>
+
+<h3 id="ssh">ssh</h3>
+<pre><code># ssh port forwarding
+# route all local requests to 8080 to remote port 80
+ssh -L 8080:localhost:80 user@remoteserver
+
+# Create ssh tunnel with SOCKS interface on localhost:1234
+ssh -D 1234 user@remotemachine
+
+# SSH-VPN create a tun interface with ssh (use as root on both sides) add ip's to both sides and change your default route
+ssh root@server -vNTw any:any
+
+# see your path on a remote machine from a non-login shell
+ssh you@remotemachine echo \$PATH
+
+#Open a tunnel from 192.168.1.10's port 80 to your local port 2001 
+ssh -N -L2001:localhost:80 192.168.1.10
+
+# You can connect to the remote screen or tmux directly
+ssh user@host -t 'tmux a -t session_name||tmux new -s session_name'
+
+# ssh tunneling traffic to port 1080
+ssh -C2ND 1080 user@host
+
+# To enable the ability to forward X11 windows to a machine logged in using SSH. This is great if you would like to run a graphical program from a remote computer on your local machine logged in with SSH.
+ssh -X user@remote-server
+
+# open a previously created tomb with this:
+$ sudo tomb open secret.tomb -k secret.tomb.key
+
+# close all tombs with this:
+$ tomb close
+
+# to create a tomb, do this:
+# 1. create a file of 100MB called secret.tomb
+$ sudo tomb dig -s 100 secret.tomb
+# 2. create a key-file called secret.tomb.key
+$ sudo tomb forge secret.tomb.key
+# 3. lock the tomb with the key-file
+$ sudo tomb lock secret.tomb -k secret.tomb.key
+# Just connect to a remote server and get a shell
+# -p is needed, if remote SSH is not listining on
+# standard port (22)
+
+ssh -p 1234 user@remoteserver.com
+
+</code></pre>
+
+<h3 id="ssh-copy-id">ssh-copy-id</h3>
+<pre><code># upload the key file ~/.ssh/id_rsa via ssh on port 80 to server
+ssh-copy-id -i ~/.ssh/id_rsa example.com
+
+</code></pre>
+
+<h3 id="sshfs">sshfs</h3>
+<pre><code># mount foobar from remote host to existing local mountpoint, show Foobar as
+# volume name in Finder and automatically reconnect upon loss of connection.
+sshfs user@host:/foobar /Volumes/foobar -ovolname=Foobar,reconnect
+
+</code></pre>
+
+<h3 id="ssh-keygen">ssh-keygen</h3>
+<pre><code># generate a key without any keyboard interaction
+ssh-keygen -t dsa -N '' -f path/to/keyfile -y
+# remove host from known_hosts file
+ssh-keygen -R hostname
+
+</code></pre>
+
+<h3 id="stat">stat</h3>
+<pre><code># Display the file type and permissions of a file/folder in octal format
+stat -f %p filename
+
+</code></pre>
+
+<h3 id="su">su</h3>
+<pre><code># change the current user to el
+su el
+
+# run command &quot;rm -rf bar&quot; as user &quot;tim&quot;
+su tim -c 'rm -rf bar'
+
+</code></pre>
+
+<h3 id="sudo">sudo</h3>
+<pre><code># Run previous command with sudo 
+sudo !!
+
+# Run a command run X commands ago with sudo (X id a number)
+sudo !-X
+sudo !-2
+
+# Allows you to execute sudo commands for 5 minutes without repeatedly entering a password for 5 minutes. Each successive call to 'sudo -v' extends the lease by +5 minutes
+sudo -v
+
+# Forgot to sudo? Run the previous command as root.  
+sudo !!
+
+# Switches you to root user allowing you to execute 
+# commands at sudo level without having to use sudo
+# for every execution
+# USE WITH CAUTION!!!
+sudo su
+
+# Allows users to run programs as the 'root' user. Super powerful. 
+# Caution advised. Recommended alias: 'sudude'. 
+# sudo chmod a+x
+sudo
+
+</code></pre>
+
+<h3 id="tar">tar</h3>
+<pre><code># Create a tar archive
+tar -cf archive.tar file1 file2 ... fileN
+
+# Create a tar gzipp'd archive
+tar -zcf archive.tar.gz file1 file2 ... fileN
+
+# Create multi-part tar archives from a directory
+tar cf - /path/to/directory|split -b&lt;max_size_of_part&gt;M - archive.tar
+
+# Extract all files from a tar archive
+tar -xf archive.tar
+
+# Extract all files from a tar gzipped archive
+tar -zxf archive.tar.gz
+
+# Extract one file from a tar archive
+tar -xf archive.tar the_one_file
+
+# Lists all files in a tar archive
+tar -tf archive.tar
+# Create a tar file:
+tar cf archive.tar file1 [...]
+
+# Create a compressed tar file:
+tar cjf archive.tar.bz2 file1 [...]
+
+# Create a older compressed tar file:
+tar czf archive.tar.gz file [...]
+
+# Extract a .tar, .tar.gz, .tgz, .tar.bz, or .tbz2 file:
+tar xf archive.tbz2
+
+# list the files inside the archive:
+tar tf archive.tar
+
+# Unzip to target directory
+tar -xvf file.zip -C target_directory_path
+
+# extract a tarball
+bro -xjf package.tar.bz2
+
+# package up a folder and ignore a subfolder:
+tar --exclude=&quot;project/.git&quot; -czvf ~/Downloads/project.tgz project/
+
+# exclude a file/directory from your tar archive
+tar cvf archive.tar --exclude=.svn *
+
+# unpacking stuff with tar is obnoxious
+# heres a useful shell script for unpacking with tar
+# throw it in your .bashrc as a function or whatever.
+if [ -f &quot;$1&quot; ] ; then
+    case &quot;$1&quot; in
+        *.tar.bz2)   tar xvjf &quot;$1&quot;    ;;
+        *.tar.gz)    tar xvzf &quot;$1&quot;    ;;
+        *.tar)       tar xvf &quot;$1&quot;     ;;
+        *.tbz2)      tar xvjf &quot;$1&quot;    ;;
+        *.tgz)       tar xvzf &quot;$1&quot;    ;;
+        *.tar.xz)    tar xJf &quot;$1&quot;     ;;
+        *) echo &quot;don't know how to extract &quot;$1&quot;...&quot; ;;
+    esac
+else
+    echo &quot;&quot;$1&quot; is not a valid file!&quot;
+fi
+
+# copy directory
+tar -c source_dir | tar -xC destination_dir
+
+# unpacking stuff with tar is obnoxious
+# check out unp (unpack (almost) everything)
+brew install unp
+apt-get install unp
+
+</code></pre>
+
+<h3 id="tee">tee</h3>
+<pre><code># echo the text &quot;hi&quot; to STDOUT and to file.txt
+echo &quot;hi&quot; | tee -a file.txt
+
+# save your ruby irb session as you go
+irb | tee -a save-todays-ruby-session.hist
+
+</code></pre>
+
+<h3 id="test">test</h3>
+<pre><code># test if a file exists
+test -f somefile
+
+# test is a directory exists
+test -d somedirectory
+
+# test if two strings are equal
+STRING1 = STRING2
+
+# test if two integers are qual
+INTEGER1 -eq INTEGER2
+
+# your_comment_here
+xyour_command_here
+
+# your_comment_here
+test
+
+</code></pre>
+
+<h3 id="time">time</h3>
+<pre><code># time - run programs and summarize system resource usage
+time [program]
+
+</code></pre>
+
+<h3 id="top">top</h3>
+<pre><code># monitor the process with pid 1, 2, and 3 
+top -p 1, 2, 3
+
+# Run the top command once, and only show the header and first 8 processes
+# Can be further parsed with '| awk ...' in various scripts
+top -n 1 | head -n 15
+
+</code></pre>
+
+<h3 id="touch">touch</h3>
+<pre><code># Updates the timestamp of the file 'temp' or creates it if it doesn't exist
+touch temp
+# Change the unix timestamp of a file to an arbitary date
+touch -d '12 Jun 2005 10:05' /path/to/target_file
+
+</code></pre>
+
+<h3 id="tree">tree</h3>
+<pre><code># display all files and folders in a 'tree' layout
+tree ~
+
+# Display only the directories in tree format 
+tree -d
+
+</code></pre>
+
+<h3 id="type">type</h3>
+<pre><code># show the command that is run if you type a command
+# displays the kind of command the shell will execute, given a particular command name
+type ls
+
+</code></pre>
+
+<h3 id="umount">umount</h3>
+<pre><code># Unmount (rather than eject) a volume (like a CD or a second hard drive)
+umount /media/[your_username]/[volume_name]
+
+</code></pre>
+
+<h3 id="uniq">uniq</h3>
+<pre><code># This will show a count of all lines that have more than 1 copy. So only show the duplicates. (-d)
+uniq -cd
+
+# your_comment_here
+uniq unique_file.data 
+sort data_file | uniq
+
+# Count number of dublicates in file
+uniq -C
+
+</code></pre>
+
+<h3 id="unzip">unzip</h3>
+<pre><code># unzip a zip file, extract in current directory
+unzip -e archive.zip
+
+# Extracts contents to specified directory
+unzip archive.zip -d /path/to/other/directory/
+
+# unzip many files in one command: must add \ before wildchar
+# otherwise command will extract first zip and search other files in it
+unzip -e \*.zip
+
+# use unzip -l to see the contents of an archive
+unzip -l archive.zip
+
+# Unzip overwriting content of current directory
+unzip -o archive.zip
+
+# Unzip all *.zip files
+unzip '*.zip'
+
+</code></pre>
+
+<h3 id="uptime">uptime</h3>
+<pre><code># uptime - Tell how long the system has been running.
+uptime
+
+</code></pre>
+
+<h3 id="useradd">useradd</h3>
+<pre><code># Create a new user, set ahis shell, create his home directory, set it to /home/john, and name the user
+useradd -s /bin/bash -m -d /home/john john
+
+</code></pre>
+
+<h3 id="usermod">usermod</h3>
+<pre><code># Add existing user to existing group
+usermod -a -G group_name user_name
+
+</code></pre>
+
+<h3 id="wc">wc</h3>
+<pre><code># count the number of lines in a file
+wc -l [file ...]
+
+# Find the length of the longest line in a file, good for &lt;80 char checks
+wc -L code.txt
+
+# Count the number of lines of all files in a directory
+find path/to/dir | xargs wc -l
+
+</code></pre>
+
+<h3 id="wget">wget</h3>
+<pre><code># Saves the HTML of a webpage to a particular file.
+wget -O bro.html http://bropages.org/
+
+# Download a file from a webserver and save to hard drive.
+wget http://www.openss7.org/repos/tarballs/strx25-0.9.2.1.tar.bz2
+
+# Download an entire website (more robust than wget -m)
+wget --random-wait -r -p -e robots=off -U mozilla http://www.example.com
+
+# Save file into directory
+# (set prefix for downloads)
+wget -P path/to/directory http://bropages.org/bro.html
+
+# wget example useful for automating a web call and appending results to a log
+wget -q --no-check-certificate -O - &quot;http://bropages.org&quot; &gt;&gt; ~/bropages.log
+
+# When downloading a huge file, it may become practical to pause and resume a download. Adding the option -c or --continue will resume an interrupted download.
+wget -c https://scans.io/data/umich/https/certificates/raw_certificates.csv.gz
+
+# Open tarball without downloading
+wget -qO - &quot;http://www.tarball.com/tarball.gz&quot; | tar zxvf -
+
+# Get your external ip address from icanhazip.com and echo to STDOUT
+wget -O - http://icanhazip.com/ | tail
+
+# (continue) downloading file from URL wich requires HTTP authentication
+wget -c --http-user=username --http-password=password http://auth.example.com/file.dat
+
+# Download a list of urls from a file 
+wget -i urls.txt
+
+# Recursively download only files with the pdf extension upto two levels away
+wget -r -l 2 -A &quot;*.pdf&quot; http://papers.xtremepapers.com/CIE/Cambridge%20Checkpoint/
+
+# Download a web page or file, and name the resultant file what the remote server says it should be.
+# (Great for outfits like Sourceforge where the download link is a long, intractable string of characters)
+wget --content-disposition http://example.com/download.php?id=12345&amp;amp;file=foobar.tgz&amp;amp;datetime=20141004
+
+# Mirror an entire website
+wget -m http://google.com
+
+</code></pre>
+
+<h3 id="whereis">whereis</h3>
+<pre><code># Searches through all my binary directories in my root folder for the executable &quot;ls&quot;.  Tells me where the program is located.
+whereis ls
+
+# Find waldo.
+whereis waldo
+
+</code></pre>
+
+<h3 id="which">which</h3>
+<pre><code># locates executable
+which bro
+
+# Shows all install locations of an executable (in this case ruby)
+which -a ruby
+
+</code></pre>
+
+<h3 id="whois">whois</h3>
+<pre><code># Display WHOIS information of given website.
+whois http://example.com
+
+# Make whois ip if you only know domain name via host and awk
+for i in `host bropages.org | head -1 | awk -F&quot;[: ]+&quot; '/has address/ {print $4}'`; do whois $i; done
+
+# Make whois ip if you only know domain name via host and sed
+for i in `host bropages.org | head -1 | sed 's/^[^0-9]*//g'`; do whois $i; done
+
+# Make whois ip if you only know domain name via host and grep
+for i in `host bropages.org | head -1 | grep -Eo '([0-9]{1,3}\.){1,3}[0-9]{1,3}'`; do whois $i; done
+
+</code></pre>
+
+<h3 id="yes">yes</h3>
+<pre><code># Repeatedly outputs &quot;kitty&quot;
+yes kitty
+
+# Repeatedly outputs &quot;y&quot;
+yes
+
+</code></pre>
+
+<h3 id="yum">yum</h3>
+<pre><code># Lists the installed packages
+yum list installed
+
+# your_comment_here
+yum search &lt;name&gt; : searches for &lt;name&gt; in packages
+
+# searches for &lt;name&gt; in the packages
+yum search &lt;name&gt;
+
+# Search for a command or binary inside any package
+yum provides */&lt;your_command&gt;
+
+# Lists all the groups of software you can install with yum
+yum grouplist
+
+</code></pre>
+
+<h3 id="zip">zip</h3>
+<pre><code># Zips up everything in my current directory recursively into the file archive.zip
+zip -r archive.zip *
+
+# put README.txt and test.c into the zip file named archive.zip
+zip archive.zip README.txt test.c
+
+# Recursively zip all files in the directory foo into foo.zip
+zip -r foo foo
+
+# Recursively zip everything, starting from the current directory, that matches the given pattern into archive.zip
+# Note: the `R` flag is case sensitive!
+zip -R archive &quot;*.png&quot;
+zip --recurse-patterns archive &quot;*.png&quot;
+
+# Use the `unzip` command to extract a zip file, unlike `tar` and `gzip` where you use a command line argument to decompress
+unzip file.zip # Extracts to current directory
+unzup file.zip -d dir # Extracts to specified directory
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

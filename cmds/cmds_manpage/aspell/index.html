@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/aspell/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>aspell - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#aspell">aspell</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#commands">commands</a></li>
+        
+            <li><a href="#dictionary-options">dictionary options</a></li>
+        
+            <li><a href="#checker-options">checker options</a></li>
+        
+            <li><a href="#filter-options">filter options</a></li>
+        
+            <li><a href="#misc-options">misc options</a></li>
+        
+            <li><a href="#aspell-utility-options">aspell utility options</a></li>
+        
+            <li><a href="#configuration">configuration</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#support">support</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="aspell">aspell</h1>
+<h3 id="name">name</h3>
+<pre><code>       aspell - interactive spell checker
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       aspell [options] &lt;command&gt;
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       aspell is a utility program that connects to the Aspell library so that it can function as an ispell -a replacement, as an independent spell checker, as a test utility to test out Aspell library features, and as a utility for managing dictionaries used by the library.
+
+       The Aspell library contains an interface allowing other programs direct access to its functions and therefore reducing the complex task of spell checking to simple library calls.  The default library does not contain dictionary word lists.  To add language dictionaries, please check your distro first for modified dictionaries, otherwise look here for base language dictionaries &lt;http://aspell.net&gt;.
+
+       The following information describes the commands and options used by the Aspell Utility.
+
+       This manual page is maintained separately from the official documentation so it may be out of date or incomplete.  The official documentation is maintained as a Texinfo manual.  See the `aspell' entry in info for more complete documentation.
+
+</code></pre>
+
+<h3 id="commands">commands</h3>
+<pre><code>       &lt;command&gt; is one of:
+
+       usage, -?
+              Send a brief Aspell Utility usage message to standard output.  This is a short summary listing more common spell-check commands and options.
+
+       help   Send a detailed Aspell Utility help message to standard output.  This is a complete list showing all commands, options, filters and dictionaries.
+
+       version, -v
+              Print version number of Aspell Library and Utility to standard output.
+
+       check &lt;file&gt;, -c &lt;file&gt;
+              Spell-check a single file.
+
+       pipe, -a
+              Run Aspell in ispell -a compatibility mode.
+
+       list   Produce a list of misspelled words from standard input.
+
+       [dump] config
+              Dump all current configuration options to standard output.
+
+       config &lt;key&gt;
+              Send the current value of &lt;key&gt; to standard output.
+
+       soundslike
+              Output the soundslike equivalent of each word entered.
+
+       munch  Generate possible root words and affixes from an input list of words.
+
+       expand [1-4]
+              Expands the affix flags of each affix compressed word entered.
+
+       clean [strict]
+              Cleans an input word list so that every line is a valid word.
+
+       munch-list [simple] [single|multi] [keep]
+              Reduce the size of a word list via affix compression.
+
+       conv &lt;from&gt; &lt;to&gt; [&lt;norm-form&gt;]
+              Converts &lt;from&gt; one encoding &lt;to&gt; another.
+
+       norm (&lt;norm-map&gt;|&lt;from&gt; &lt;norm-map&gt; &lt;to&gt;) [&lt;norm-form&gt;]
+              Perform Unicode normalization.
+
+       [dump] dicts|filters|modes
+              Lists available dictionaries, filters, or modes.
+
+       dump|create|merge master|personal|repl &lt;wordlist&gt;
+              dump, create, or merge a master, personal, or replacement word list.
+
+</code></pre>
+
+<h3 id="dictionary-options">dictionary options</h3>
+<pre><code>       The following options may be used to control which dictionaries to use and how they behave.
+
+       --master=&lt;name&gt;, -d &lt;name&gt;
+              Base name of the dictionary to use.  If this option is specified then Aspell will either use this dictionary or die.
+
+       --dict-dir=&lt;directory&gt;
+              Location of the main dictionary word list.
+
+       --lang=&lt;string&gt;, -l &lt;string&gt;
+              Language to use.  It follows the same format of the LANG environmental variable on most systems. It consists of the two letter ISO 639 language code and an optional two letter ISO 3166 country code after a dash or underscore. The default value is based on the value of the LC_MESSAGES locale.
+
+       --size=&lt;string&gt;
+              The preferred size of the dictionary word list.  This consists of a two char digit code describing the size of the list, with typical values of: 10=tiny, 20=really small, 30=small, 40=med-small, 50=med, 60=med-large, 70=large, 80=huge, 90=insane.
+
+       --variety=&lt;string&gt;
+              Any extra information to distinguish this variety of dictionary from other dictionaries which may have the same lang and size.
+
+       --jargon=&lt;string&gt;
+              Please use the variety option since it replaces jargon as a better choice.  jargon will be removed in the future.
+
+       --word-list-path=&lt;list of directories&gt;
+              Search path for word list information files.
+
+       --personal=&lt;file&gt;, -p &lt;file&gt;
+              Personal word list file name.
+
+       --repl=&lt;file&gt;
+              Replacements list file name.
+
+       --extra-dicts=&lt;list&gt;
+              Extra dictionaries to use.
+
+       --ignore-accents
+              This option is not yet implemented.
+
+</code></pre>
+
+<h3 id="checker-options">checker options</h3>
+<pre><code>       These options control the behavior of Aspell when checking documents.
+
+       --ignore=&lt;integer&gt;, -W &lt;integer&gt;
+              Ignore words &lt;= &lt;integer&gt; characters in length.
+
+       --ignore-case, --dont-ignore-case
+              Ignore case when checking words.
+
+       --ignore-repl, --dont-ignore-repl
+              Ignore commands to store replacement pairs.
+
+       --save-repl, --dont-save-repl
+              Save the replacement word list on save all.
+
+       --sug-mode=&lt;mode&gt;
+              Suggestion &lt;mode&gt; = ultra|fast|normal|bad-spellers
+
+</code></pre>
+
+<h3 id="filter-options">filter options</h3>
+<pre><code>       These options modify the behavior of the various filters.
+
+       --add-filter=&lt;list&gt;, --rem-filter=&lt;list&gt;
+              Add or remove a filter.
+
+       --add-filter-path=&lt;paths&gt;, --rem-filter-path=&lt;paths&gt;
+              Add or remove paths searched for filters.
+
+       --mode=&lt;string&gt;, -e, -H, -t, -n
+              Sets the filter mode.  Mode is one of none, url, email, html, tex or nroff.  The alternative shortcut options are '-e' for email, '-H' for Html/Sgml, '-t' for Tex or '-n' for Nroff.
+
+       --encoding=&lt;string&gt;
+              encoding the document is expected to be in.  The default depends on the current locale.
+
+       --add-email-quote=&lt;list&gt;, --rem-email-quote=&lt;list&gt;
+              Add or Remove a list of email quote characters.
+
+       --email-margin=&lt;integer&gt;
+              Number of chars that can appear before the quote char.
+
+       --add-html-check=&lt;list&gt;, --rem-html-check=&lt;list&gt;
+              Add or remove a list of HTML attributes to always check.  For example, look inside alt= tags.
+
+       --add-html-skip=&lt;list&gt;, --rem-html-skip=&lt;list&gt;
+              Add or remove a list of HTML attributes to always skip while spell checking.
+
+       --add-sgml-check=&lt;list&gt;, --rem-sgml-check=&lt;list&gt;
+              Add or remove a list of SGML attributes to always check for spelling.
+
+       --add-sgml-skip=&lt;list&gt;, --rem-sgml-skip=&lt;list&gt;
+              Add or remove a list of SGML attributes to always skip while spell checking.
+
+       --sgml-extension=&lt;list&gt;
+              SGML file extensions.
+
+       --tex-check-comments, --dont-tex-check-comments
+              Check TeX comments.
+
+       --add-tex-command=&lt;list&gt;, --rem-tex-command=&lt;list&gt;
+              Add or Remove a list of TeX commands.
+
+RUN-TOGETHER WORD OPTIONS
+       These may be used to control the behavior of run-together words.
+
+       --run-together, --dont-run-together, -C, -B
+              Consider run-together words valid.
+
+       --run-together-limit=&lt;integer&gt;
+              Maximum number of words that can be strung together.
+
+       --run-together-min=&lt;integer&gt;
+              Minimal length of interior words.
+
+</code></pre>
+
+<h3 id="misc-options">misc options</h3>
+<pre><code>       Miscellaneous options that don't fall under any other category.
+
+       --conf=&lt;file name&gt;
+              Main configuration file.  This file overrides Aspell's global defaults.
+
+       --conf-dir=&lt;directory&gt;
+              Location of main configuration file.
+
+       --data-dir=&lt;directory&gt;
+              Location of language data files.
+
+       --keyboard=&lt;keyboard&gt;
+              Use this keyboard layout for suggesting possible words.  These spelling errors happen if a user accidently presses a key next to the intended correct key.
+
+       --local-data-dir=&lt;directory&gt;
+              Alternative location of language data files.  This directory is searched before data-dir.
+
+       --home-dir=&lt;directory&gt;
+              Directory Location for personal wordlist files.
+
+       --per-conf=&lt;file name&gt;
+              Personal configuration file.  This file overrides options found in the global config file.
+
+</code></pre>
+
+<h3 id="aspell-utility-options">aspell utility options</h3>
+<pre><code>       These options are part of the aspell Utility and work independently of the library.
+
+       --backup, --dont-backup, -b, -x
+              The aspell utility creates a backup file by making a copy and appending .bak to file name.  This only applies when the command is check &lt;file&gt; and the backup file is only created if any spelling modifications take place.
+
+       --byte-offsets, --dont-byte-offsets
+              Use byte offsets instead of character offsets.
+
+       --guess, --dont-guess, -m, -P
+              Create missing root/affix combinations not in the dictionary in pipe mode.
+
+       --keymapping=aspell, --keymapping=ispell
+              The keymapping to use, either aspell for the default mapping or ispell to use the same mapping that the Ispell utility uses.
+
+       --reverse, --dont-reverse
+              Reverse the order of the suggestions list in pipe mode.
+
+       --suggest, --dont-suggest
+              Suggest possible replacements in pipe mode. If false, Aspell will simply report the misspelling and make no attempt at suggestions or possible corrections.
+
+       --time, --dont-time
+              Time the load time and suggest a time in pipe mode.
+
+       In addition Aspell will try to make sense out of Ispell's command line options so that it can function as a drop in replacement for Ispell.  If Aspell is run without any command line options it will display a brief help screen and quit.
+
+</code></pre>
+
+<h3 id="configuration">configuration</h3>
+<pre><code>       Aspell can accept options via global or personal configuration files so that you do not need to specify them each time at the command line.  The default global configuration file is /etc/aspell.conf or another file specified by option --conf and is checked first.  The default per user configuration file ~/.aspell.conf located in the $HOME directory (or another file specified by option --per-conf) is checked next and overrides options set in the global config file.  Options specified at either the command line or via an environmental variable override those specified by either configuration file.
+
+       Each line of the configuration file has the format:
+
+              option [value]
+
+       where option is any one of the standard library options above without the leading dashes.  For example the following line will set the default language to Swiss German:
+
+              lang de_CH
+
+       There may be any number of spaces between the option and the value, however it can only be spaces, i.e. there is no '=' between the option name and the value.  Comments may also be included by preceding them with a '#' as anything from a '#' to a newline is ignored.  Blank lines are also allowed.  The /etc/aspell.conf file is a good example of how to set these options and the Aspell Manual has more detailed info.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       aspell-import(1), prezip-bin(1), run-with-aspell(1), word-list-compress(1)
+
+       Aspell is fully documented in its Texinfo manual.  See the `aspell' entry in info for more complete documentation.
+
+</code></pre>
+
+<h3 id="support">support</h3>
+<pre><code>       Support for Aspell can be found on the Aspell mailing lists.  Instructions for joining the various mailing lists (and an archive of them) can be found off the Aspell home page at &lt;http://aspell.net&gt;.  Bug reports should be submitted via the Sourceforge Tracker rather than being posted to the mailing lists.
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       This manual page was written by Brian Nelson &lt;pyro@debian.org&gt; based on the Aspell User's Manual, Copyright © 2002 Kevin Atkinson.  Updated Nov 2006 by Jose Da Silva &lt;digital@joescat.com&gt;, and Dec 2006 by Kevin Atkinson &lt;kevina@gnu.org&gt;.
+
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

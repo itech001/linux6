@@ -1,0 +1,6 @@
+# sleep (wait) for 1 second
+sleep 1
+sleep 1s
+
+# sleep (wait) for 1 minute
+sleep 1m

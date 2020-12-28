@@ -1,0 +1,3 @@
+# show the command that is run if you type a command
+# displays the kind of command the shell will execute, given a particular command name
+type ls

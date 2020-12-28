@@ -1,0 +1,5 @@
+# echo the text "hi" to STDOUT and to file.txt
+echo "hi" | tee -a file.txt
+
+# save your ruby irb session as you go
+irb | tee -a save-todays-ruby-session.hist

@@ -1,0 +1,2 @@
+# Print the contents of the current directory only one screen at a time 
+ls | more

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/make/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>make - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#make">make</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#warning">warning</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#exit-status">exit status</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#bugs">bugs</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#copyright">copyright</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="make">make</h1>
+<h3 id="name">name</h3>
+<pre><code>       make - GNU make utility to maintain groups of programs
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       make [ -f makefile ] [ options ] ... [ targets ] ...
+
+</code></pre>
+
+<h3 id="warning">warning</h3>
+<pre><code>       This man page is an extract of the documentation of GNU make.  It is updated only occasionally, because the GNU project does not use nroff.  For complete, current documentation, refer to the Info file make.info which is made from the Texinfo source file make.texi.
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       The purpose of the make utility is to determine automatically which pieces of a large program need to be recompiled, and issue the commands to recompile them.  The manual describes the GNU implementation of make, which was written by Richard Stallman and Roland McGrath, and is currently maintained by Paul Smith.  Our examples show C programs, since they are most common, but you can use make with any programming language whose compiler can be run with a shell command.  In fact, make is not limited to programs.  You can use it to describe any task where some files must be updated automatically from others whenever the others change.
+
+       To prepare to use make, you must write a file called the makefile that describes the relationships among files in your program, and the states the commands for updating each file.  In a program, typically the executable file is updated from object files, which are in turn made by compiling source files.
+
+       Once a suitable makefile exists, each time you change some source files, this simple shell command:
+
+              make
+
+       suffices to perform all necessary recompilations.  The make program uses the makefile data base and the last-modification times of the files to decide which of the files need to be updated.  For each of those files, it issues the commands recorded in the data base.
+
+       make executes commands in the makefile to update one or more target names, where name is typically a program.  If no -f option is present, make will look for the makefiles GNUmakefile, makefile, and Makefile, in that order.
+
+       Normally you should call your makefile either makefile or Makefile.  (We recommend Makefile because it appears prominently near the beginning of a directory listing, right near other important files such as README.)  The first name checked, GNUmakefile, is not recommended for most makefiles.  You should use this name if you have a makefile that is specific to GNU make, and will not be understood by other versions of make.  If makefile is `-', the standard input is read.
+
+       make updates a target if it depends on prerequisite files that have been modified since the target was last modified, or if the target does not exist.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       -b, -m
+            These options are ignored for compatibility with other versions of make.
+
+       -B, --always-make
+            Unconditionally make all targets.
+
+       -C dir, --directory=dir
+            Change to directory dir before reading the makefiles or doing anything else.  If multiple -C options are specified, each is interpreted relative to the previous one: -C / -C etc is equivalent to -C /etc.  This is typically used with recursive invocations of make.
+
+       -d   Print debugging information in addition to normal processing.  The debugging information says which files are being considered for remaking, which file-times are being compared and with what results, which files actually need to be remade, which implicit rules are considered and which are applied---everything interesting about how make decides what to do.
+
+       --debug[=FLAGS]
+            Print debugging information in addition to normal processing.  If the FLAGS are omitted, then the behavior is the same as if -d was specified.  FLAGS may be a for all debugging output (same as using -d), b for basic debugging, v for more verbose basic debugging, i for showing implicit rules, j for details on invocation of commands, and m for debugging while remaking makefiles.
+
+       -e, --environment-overrides
+            Give variables taken from the environment precedence over variables from makefiles.
+
+       -f file, --file=file, --makefile=FILE
+            Use file as a makefile.
+
+       -i, --ignore-errors
+            Ignore all errors in commands executed to remake files.
+
+       -I dir, --include-dir=dir
+            Specifies a directory dir to search for included makefiles.  If several -I options are used to specify several directories, the directories are searched in the order specified.  Unlike the arguments to other flags of make, directories given with -I flags may come directly after the flag: -Idir is allowed, as well as -I dir.  This syntax is allowed for compatibility with the C preprocessor's -I flag.
+
+       -j [jobs], --jobs[=jobs]
+            Specifies the number of jobs (commands) to run simultaneously.  If there is more than one -j option, the last one is effective.  If the -j option is given without an argument, make will not limit the number of jobs that can run simultaneously.
+
+       -k, --keep-going
+            Continue as much as possible after an error.  While the target that failed, and those that depend on it, cannot be remade, the other dependencies of these targets can be processed all the same.
+
+       -l [load], --load-average[=load]
+            Specifies that no new jobs (commands) should be started if there are others jobs running and the load average is at least load (a floating-point number).  With no argument, removes a previous load limit.
+
+       -L, --check-symlink-times
+            Use the latest mtime between symlinks and target.
+
+       -n, --just-print, --dry-run, --recon
+            Print the commands that would be executed, but do not execute them.
+
+       -o file, --old-file=file, --assume-old=file
+            Do not remake the file file even if it is older than its dependencies, and do not remake anything on account of changes in file.  Essentially the file is treated as very old and its rules are ignored.
+
+       -p, --print-data-base
+            Print the data base (rules and variable values) that results from reading the makefiles; then execute as usual or as otherwise specified.  This also prints the version information given by the -v switch (see below).  To print the data base without trying to remake any files, use make -p -f/dev/null.
+
+       -q, --question
+            ``Question mode''.  Do not run any commands, or print anything; just return an exit status that is zero if the specified targets are already up to date, nonzero otherwise.
+
+       -r, --no-builtin-rules
+            Eliminate use of the built-in implicit rules.  Also clear out the default list of suffixes for suffix rules.
+
+       -R, --no-builtin-variables
+            Don't define any built-in variables.
+
+       -s, --silent, --quiet
+            Silent operation; do not print the commands as they are executed.
+
+       -S, --no-keep-going, --stop
+            Cancel the effect of the -k option.  This is never necessary except in a recursive make where -k might be inherited from the top-level make via MAKEFLAGS or if you set -k in MAKEFLAGS in your environment.
+
+       -t, --touch
+            Touch files (mark them up to date without really changing them) instead of running their commands.  This is used to pretend that the commands were done, in order to fool future invocations of make.
+
+       -v, --version
+            Print the version of the make program plus a copyright, a list of authors and a notice that there is no warranty.
+
+       -w, --print-directory
+            Print a message containing the working directory before and after other processing.  This may be useful for tracking down errors from complicated nests of recursive make commands.
+
+       --no-print-directory
+            Turn off -w, even if it was turned on implicitly.
+
+       -W file, --what-if=file, --new-file=file, --assume-new=file
+            Pretend that the target file has just been modified.  When used with the -n flag, this shows you what would happen if you were to modify that file.  Without -n, it is almost the same as running a touch command on the given file before running make, except that the modification time is changed only in the imagination of make.
+
+       --warn-undefined-variables
+            Warn when an undefined variable is referenced.
+
+</code></pre>
+
+<h3 id="exit-status">exit status</h3>
+<pre><code>       GNU make exits with a status of zero if all makefiles were successfully parsed and no targets that were built failed.  A status of one will be returned if the -q flag was used and make determines that a target needs to be rebuilt.  A status of two will be returned if any errors were encountered.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       The GNU Make Manual
+
+</code></pre>
+
+<h3 id="bugs">bugs</h3>
+<pre><code>       See the chapter `Problems and Bugs' in The GNU Make Manual.
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       This manual page contributed by Dennis Morse of Stanford University.  It has been reworked by Roland McGrath.  Further updates contributed by Mike Frysinger.
+
+</code></pre>
+
+<h3 id="copyright">copyright</h3>
+<pre><code>       Copyright (C) 1992, 1993, 1996, 1999 Free Software Foundation, Inc.  This file is part of GNU make.
+
+       GNU make is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version.
+
+       GNU make is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+       You should have received a copy of the GNU General Public License along with GNU make; see the file COPYING.  If not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/shell/bash_summary/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>Bash_summary - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../bash_example/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../bash_bible/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-12" role="main">
+
+<p>From <a href="http://wiki.bash-hackers.org">bash-hackers.org</a><br>
+<h2 class="sectionedit7" id="bash_syntax_and_operations">Bash syntax and operations</h2></p>
+<div class="wrap_column plugin_wrap" style="width: 40%;">
+<p>
+<em><strong><em class="u">Compound commands</em></strong></em>
+</p>
+<div class="table sectionedit10"><table class="inline">
+    <thead>
+    <tr class="row0">
+        <th class="col0 leftalign" colspan="2"><strong><a href="http://wiki.bash-hackers.org/syntax/ccmd/intro" class="wikilink1" title="syntax:ccmd:intro"> Compound commands overview</a></strong>  </th>
+    </tr>
+    <tr class="row1">
+        <th class="col0 leftalign" colspan="2">Grouping  </th>
+    </tr>
+    </thead>
+    <tbody><tr class="row2">
+        <td class="col0"><code>{ …; }</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/grouping_plain" class="wikilink1" title="syntax:ccmd:grouping_plain"> command grouping</a></td>
+    </tr>
+    <tr class="row3">
+        <td class="col0"><code>( … )</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/grouping_subshell" class="wikilink1" title="syntax:ccmd:grouping_subshell"> command grouping in a subshell</a></td>
+    </tr>
+    <tr class="row4">
+        <th class="col0 leftalign" colspan="2">Conditionals  </th>
+    </tr>
+    <tr class="row5">
+        <td class="col0"><code>[[ ... ]]</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/conditional_expression" class="wikilink1" title="syntax:ccmd:conditional_expression"> conditional expression</a></td>
+    </tr>
+    <tr class="row6">
+        <td class="col0"><code>if …; then …; fi</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/if_clause" class="wikilink1" title="syntax:ccmd:if_clause"> conditional branching</a></td>
+    </tr>
+    <tr class="row7">
+        <td class="col0"><code>case … esac</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/case" class="wikilink1" title="syntax:ccmd:case"> pattern-based branching</a></td>
+    </tr>
+    <tr class="row8">
+        <th class="col0 leftalign" colspan="2">Loops  </th>
+    </tr>
+    <tr class="row9">
+        <td class="col0"><code>for word in …; do …; done</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/classic_for" class="wikilink1" title="syntax:ccmd:classic_for"> classic for-loop</a></td>
+    </tr>
+    <tr class="row10">
+        <td class="col0"><code>for ((x=1; x&lt;=10; x++)); do ...; done</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/c_for" class="wikilink1" title="syntax:ccmd:c_for"> C-style for-loop</a></td>
+    </tr>
+    <tr class="row11">
+        <td class="col0"><code>while …; do …; done</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/while_loop" class="wikilink1" title="syntax:ccmd:while_loop"> while loop</a></td>
+    </tr>
+    <tr class="row12">
+        <td class="col0"><code>until …; do …; done</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/until_loop" class="wikilink1" title="syntax:ccmd:until_loop"> until loop</a></td>
+    </tr>
+    <tr class="row13">
+        <th class="col0 leftalign" colspan="2">Misc  </th>
+    </tr>
+    <tr class="row14">
+        <td class="col0"><code>(( ... ))</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/arithmetic_eval" class="wikilink1" title="syntax:ccmd:arithmetic_eval"> arithmetic evaluation</a></td>
+    </tr>
+    <tr class="row15">
+        <td class="col0"><code>select word in …; do …; done</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/ccmd/user_select" class="wikilink1" title="syntax:ccmd:user_select"> user selections</a></td>
+    </tr>
+</tbody></table></div>
+</div>
+
+<div class="wrap_column plugin_wrap" style="width: 40%;">
+<p>
+<em><strong><em class="u">Expansions and substitutions</em></strong></em>
+</p>
+<div class="table sectionedit13"><table class="inline">
+    <thead>
+    <tr class="row0">
+        <th class="col0 leftalign" colspan="2"><strong><a href="http://wiki.bash-hackers.org/syntax/expansion/intro" class="wikilink1" title="syntax:expansion:intro"> Introduction to expansions and substitutions</a></strong>  </th>
+    </tr>
+    </thead>
+    <tbody><tr class="row1">
+        <td class="col0"><code>{A,B,C}    {A..C}</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/expansion/brace" class="wikilink1" title="syntax:expansion:brace"> Brace expansion</a></td>
+    </tr>
+    <tr class="row2">
+        <td class="col0"><code>~/    ~root/</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/expansion/tilde" class="wikilink1" title="syntax:expansion:tilde"> Tilde expansion</a></td>
+    </tr>
+    <tr class="row3">
+        <td class="col0"><code>$FOO    ${BAR%.mp3}</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/pe" class="wikilink1" title="syntax:pe"> Parameter expansion</a></td>
+    </tr>
+    <tr class="row4">
+        <td class="col0"><code>`command`    $(command)</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/expansion/cmdsubst" class="wikilink1" title="syntax:expansion:cmdsubst"> Command substitution</a></td>
+    </tr>
+    <tr class="row5">
+        <td class="col0"><code>&lt;(command)    &gt;(command)</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/expansion/proc_subst" class="wikilink1" title="syntax:expansion:proc_subst"> Process substitution</a></td>
+    </tr>
+    <tr class="row6">
+        <td class="col0"><code>$((1 + 2 + 3))    $[4 + 5 + 6]</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/expansion/arith" class="wikilink1" title="syntax:expansion:arith"> Arithmetic expansion</a></td>
+    </tr>
+    <tr class="row7">
+        <td class="col0"><code>Hello    &lt;---&gt;    Word!</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/expansion/wordsplit" class="wikilink1" title="syntax:expansion:wordsplit"> Word splitting</a></td>
+    </tr>
+    <tr class="row8">
+        <td class="col0"><code>/data/*-av/*.mp?</code></td><td class="col1"><a href="http://wiki.bash-hackers.org/syntax/expansion/globs" class="wikilink1" title="syntax:expansion:globs"> Pathname expansion</a></td>
+    </tr>
+</tbody></table></div>
+</div>
+
+<h2 class="sectionedit16" id="builtin_commands">Builtin Commands</h2>
+
+<p>
+This is a selection of builtin commands and command-like keywords, loosely arranged by their common uses. These are provided directly by the shell, rather than invoked as standalone external commands.
+</p>
+
+<table class="inline">
+    <thead>
+    <tr class="row0">
+        <th class="col0 centeralign" colspan="2">  Declaration commands<br>
+<span class="wrap_lo ">Commands that set and query attributes/types, and manipulate simple datastructures.</span>  </th><th class="col2 centeralign">  Alt  </th><th class="col3 centeralign">  Type  </th>
+    </tr>
+    </thead>
+    <tbody><tr class="row1">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/declare" class="wikilink1" title="commands:builtin:declare"> declare</a></td><td class="col1">Display or set shell variables or functions along with attributes.</td><td class="col2 centeralign">  <code>typeset</code>  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row2">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/export" class="wikilink1" title="commands:builtin:export"> export</a></td><td class="col1">Display or set shell variables, also giving them the export attribute.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row3">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/eval" class="wikilink1" title="commands:builtin:eval"> eval</a></td><td class="col1">A common misspelling of "evil"</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row4">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/local" class="wikilink1" title="commands:builtin:local"> local</a></td><td class="col1">Declare variables as having function local scope.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row5">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/readonly" class="wikilink1" title="commands:builtin:readonly"> readonly</a></td><td class="col1">Mark variables or functions as read-only.</td><td class="col2 centeralign">  <code>declare -r</code>  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row6">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/unset" class="wikilink1" title="commands:builtin:unset"> unset</a></td><td class="col1">Unset variables and functions.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row7">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/shift" class="wikilink1" title="commands:builtin:shift"> shift</a></td><td class="col1">Shift positional parameters</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row8">
+        <th class="col0 centeralign" colspan="2">  I/O<br>
+<span class="wrap_lo ">Commands for reading/parsing input, or producing/formatting output of standard streams.</span>  </th><th class="col2 centeralign">  Alt  </th><th class="col3 centeralign">  Type  </th>
+    </tr>
+    <tr class="row9">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/syntax/keywords/coproc" class="wikilink1" title="syntax:keywords:coproc"> coproc</a></td><td class="col1">Co-processes: Run a compound command in the background with async I/O.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  keyword  </td>
+    </tr>
+    <tr class="row10">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/echo" class="wikilink1" title="commands:builtin:echo"> echo</a></td><td class="col1">Create output from args.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row11">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/mapfile" class="wikilink1" title="commands:builtin:mapfile"> mapfile</a></td><td class="col1">Create arrays from lines of input</td><td class="col2 centeralign">  <code>readarray</code>  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row12">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/printf" class="wikilink1" title="commands:builtin:printf"> printf</a></td><td class="col1">"advanced <code>echo</code>."</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row13">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/read" class="wikilink1" title="commands:builtin:read"> read</a></td><td class="col1">Build variables or arrays from input streams.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row14">
+        <th class="col0 centeralign" colspan="2">  Configuration and Debugging<br>
+<span class="wrap_lo ">Commands that modify shell behavior, change special options, assist in debugging.</span>  </th><th class="col2 centeralign">  Alt  </th><th class="col3 centeralign">  Type  </th>
+    </tr>
+    <tr class="row15">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/caller" class="wikilink1" title="commands:builtin:caller"> caller</a></td><td class="col1">Identify/print execution frames.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row16">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/set" class="wikilink1" title="commands:builtin:set"> set</a></td><td class="col1">Control positional parameters and shell behaviour.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row17">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/shopt" class="wikilink1" title="commands:builtin:shopt"> shopt</a></td><td class="col1">set/get shell options.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+</tbody></table>
+
+<table class="inline">
+    <thead>
+    <tr class="row0">
+        <th class="col0 centeralign" colspan="2">  Control flow and data processing<br>
+<span class="wrap_center wrap_round wrap_lo wrap_todo wrap_box " style="width: 80%;">Commands that operate on data and/or affect control flow.</span>  </th><th class="col2 centeralign">  Alt  </th><th class="col3 centeralign">  Type  </th>
+    </tr>
+    </thead>
+    <tbody><tr class="row1">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/true" class="wikilink2" title="commands:builtin:true" rel="nofollow"> colon</a></td><td class="col1">"true" null command</td><td class="col2 centeralign">  true  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row2">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/source" class="wikilink2" title="commands:builtin:source" rel="nofollow"> dot</a></td><td class="col1">Source external files</td><td class="col2 centeralign">  source  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row3">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/false" class="wikilink2" title="commands:builtin:false" rel="nofollow"> false</a></td><td class="col1">Fail at doing nothing</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row4">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/continuebreak" class="wikilink2" title="commands:builtin:continuebreak" rel="nofollow"> continue / break</a></td><td class="col1">continue with or break out of loops.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row5">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/let" class="wikilink1" title="commands:builtin:let"> let</a></td><td class="col1">Arithmetic evaluation - an old fashioned way.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row6">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/return" class="wikilink2" title="commands:builtin:return" rel="nofollow"> return</a></td><td class="col1">Break out of a function, returning the specified exit status.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row7">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/classictest" class="wikilink1" title="commands:classictest"> [</a></td><td class="col1">The classic <code>test</code> command.</td><td class="col2 centeralign">  test  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row8">
+        <th class="col0 centeralign" colspan="2">  Process and Job control<br>
+<span class="wrap_center wrap_round wrap_lo wrap_todo wrap_box " style="width: 80%;">Commands related to jobs, signals, process groups, subshells.</span>  </th><th class="col2 centeralign">  Alt  </th><th class="col3 centeralign">  Type  </th>
+    </tr>
+    <tr class="row9">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/exec" class="wikilink1" title="commands:builtin:exec"> exec</a></td><td class="col1">Replace the shell, set redirections.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row10">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/exit" class="wikilink1" title="commands:builtin:exit"> exit</a></td><td class="col1">Exit the shell.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row11">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/trap" class="wikilink1" title="commands:builtin:trap"> trap</a></td><td class="col1">Set traps.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row12">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/times" class="wikilink2" title="commands:builtin:times" rel="nofollow"> times</a></td><td class="col1">Display process times.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  special builtin  </td>
+    </tr>
+    <tr class="row13">
+        <td class="col0"><a href="http://wiki.bash-hackers.org/commands/builtin/wait" class="wikilink1" title="commands:builtin:wait"> wait</a></td><td class="col1">Wait for background jobs and asynchronous lists.</td><td class="col2 centeralign">  -  </td><td class="col3 centeralign">  builtin  </td>
+    </tr>
+    <tr class="row14">
+        <th class="col0 centeralign" colspan="2">  Interactive<br>
+<span class="wrap_center wrap_round wrap_lo wrap_todo wrap_box " style="width: 80%;">History, programmable completion, directory stack.</span>  </th><th class="col2 centeralign">  Alt  </th><th class="col3 centeralign">  Type  </th>
+    </tr>
+</tbody></table>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

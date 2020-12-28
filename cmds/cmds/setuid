@@ -1,0 +1,13 @@
+# setuid/setgid makes a program start with the permissions of the user that owns
+# the file, regardless of the user running the program. This can be abused to 
+# take over a machine, so use this with care. Note that on most systems, you
+# cannot set this on interpreted programs (shell scripts, for example)
+#
+# Marking a program setuid is done with the 'chmod' command, using either the first
+# digit of a 4 bit permission set, or using the 'u' flag when using letters.
+#
+# To set a program as setuid and setgid with letters:
+chmod ug+s /usr/bin/mybinary
+
+# To set a program as setuid and setgid with regular mode digits:
+chmod 6744 /usr/bin/mybinary

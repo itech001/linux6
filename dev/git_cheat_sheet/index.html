@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/dev/git_cheat_sheet/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>git-cheat-sheet - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../git/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../gdb/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#git-cheat-sheets">git cheat sheets</a></li>
+        
+            <li><a href="#setup">Setup</a></li>
+        
+            <li><a href="#configuration">Configuration</a></li>
+        
+            <li><a href="#info">Info</a></li>
+        
+            <li><a href="#adding-deleting">Adding / Deleting</a></li>
+        
+            <li><a href="#ignoring">Ignoring</a></li>
+        
+            <li><a href="#staging">Staging</a></li>
+        
+            <li><a href="#unstaging">Unstaging</a></li>
+        
+            <li><a href="#committing">Committing</a></li>
+        
+            <li><a href="#branching">Branching</a></li>
+        
+            <li><a href="#merging">Merging</a></li>
+        
+            <li><a href="#cherry-picking">Cherry-Picking</a></li>
+        
+            <li><a href="#squashing">Squashing</a></li>
+        
+            <li><a href="#conflicts">Conflicts</a></li>
+        
+            <li><a href="#sharing">Sharing</a></li>
+        
+            <li><a href="#reverting">Reverting</a></li>
+        
+            <li><a href="#fix-mistakes-undo">Fix mistakes / Undo</a></li>
+        
+            <li><a href="#plumbing">Plumbing</a></li>
+        
+            <li><a href="#stashing">Stashing</a></li>
+        
+            <li><a href="#remotes">Remotes</a></li>
+        
+            <li><a href="#submodules">Submodules</a></li>
+        
+            <li><a href="#patches">Patches</a></li>
+        
+            <li><a href="#tags">Tags</a></li>
+        
+            <li><a href="#archive">Archive</a></li>
+        
+            <li><a href="#environment-variables">Environment Variables</a></li>
+        
+            <li><a href="#changing-history">Changing history</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="git-cheat-sheets">git cheat sheets</h1>
+<p>Modified from http://cheat.errtheblog.com/s/git  </p>
+<h3 id="setup">Setup</h3>
+<pre><code>git clone &lt;repo&gt;
+  clone the repository specified by &lt;repo&gt;; this is similar to "checkout" in
+  some other version control systems such as Subversion and CVS
+
+Add colors to your ~/.gitconfig file:
+
+  [color]
+    ui = auto
+  [color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+  [color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+  [color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+Highlight whitespace in diffs
+
+  [color]
+    ui = true
+  [color "diff"]
+    whitespace = red reverse
+  [core]
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+Add aliases to your ~/.gitconfig file:
+
+  [alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
+
+    # Show files ignored by git:
+    ign = ls-files -o -i --exclude-standard
+</code></pre>
+<h3 id="configuration">Configuration</h3>
+<pre><code>git config -e [--global]
+  edit the .git/config [or ~/.gitconfig] file in your $EDITOR
+
+git config --global user.name 'John Doe'
+git config --global user.email johndoe@example.com
+  sets your name and email for commit messages
+
+git config branch.autosetupmerge true
+  tells git-branch and git-checkout to setup new branches so that git-pull(1)
+  will appropriately merge from that remote branch.  Recommended.  Without this,
+  you will have to add --track to your branch command or manually merge remote
+  tracking branches with "fetch" and then "merge".
+
+git config core.autocrlf true
+  This setting tells git to convert the newlines to the system's standard
+  when checking out files, and to LF newlines when committing in
+
+git config --list
+  To view all options
+
+git config apply.whitespace nowarn
+  To ignore whitespace
+
+You can add "--global" after "git config" to any of these commands to make it
+apply to all git repos (writes to ~/.gitconfig).
+</code></pre>
+<h3 id="info">Info</h3>
+<pre><code>git reflog
+  Use this to recover from *major* mess ups! It's basically a log of the
+  last few actions and you might have luck and find old commits that
+  have been lost by doing a complex merge.
+
+git diff
+  show a diff of the changes made since your last commit
+  to diff one file: "git diff -- &lt;filename&gt;"
+  to show a diff between staging area and HEAD: `git diff --cached`
+
+git status
+  show files added to the staging area, files with changes, and untracked files
+
+git log
+  show recent commits, most recent on top. Useful options:
+  --color       with color
+  --graph       with an ASCII-art commit graph on the left
+  --decorate    with branch and tag names on appropriate commits
+  --stat        with stats (files changed, insertions, and deletions)
+  -p            with full diffs
+  --author=foo  only by a certain author
+  --after="MMM DD YYYY" ex. ("Jun 20 2008") only commits after a certain date
+  --before="MMM DD YYYY" only commits that occur before a certain date
+  --merge       only the commits involved in the current merge conflicts
+
+git log &lt;ref&gt;..&lt;ref&gt;
+  show commits between the specified range. Useful for seeing changes from remotes:
+  git log HEAD..origin/master # after git remote update
+
+git show &lt;rev&gt;
+  show the changeset (diff) of a commit specified by &lt;rev&gt;, which can be any
+  SHA1 commit ID, branch name, or tag (shows the last commit (HEAD) by default)
+
+  also to show the contents of a file at a specific revision, use 
+     git show &lt;rev&gt;:&lt;filename&gt;
+  this is similar to cat-file but much simpler syntax.
+
+git show --name-only &lt;rev&gt;
+  show only the names of the files that changed, no diff information.
+
+git blame &lt;file&gt;
+  show who authored each line in &lt;file&gt;
+
+git blame &lt;file&gt; &lt;rev&gt;
+  show who authored each line in &lt;file&gt; as of &lt;rev&gt; (allows blame to go back in
+  time)
+
+git gui blame
+  really nice GUI interface to git blame
+
+git whatchanged &lt;file&gt;
+  show only the commits which affected &lt;file&gt; listing the most recent first
+  E.g. view all changes made to a file on a branch:
+    git whatchanged &lt;branch&gt; &lt;file&gt;  | grep commit | \
+         colrm 1 7 | xargs -I % git show % &lt;file&gt;
+  this could be combined with git remote show &lt;remote&gt; to find all changes on
+  all branches to a particular file.
+
+git diff &lt;commit&gt; head path/to/fubar
+  show the diff between a file on the current branch and potentially another branch
+
+git diff --cached [&lt;file&gt;]
+  shows diff for staged (git-add'ed) files (which includes uncommitted git cherry-pick'ed files)
+
+git ls-files
+  list all files in the index and under version control.
+
+git ls-remote &lt;remote&gt; [HEAD]
+  show the current version on the remote repo. This can be used to check whether
+  a local is required by comparing the local head revision.
+</code></pre>
+<h3 id="adding-deleting">Adding / Deleting</h3>
+<pre><code>git add &lt;file1&gt; &lt;file2&gt; ...
+  add &lt;file1&gt;, &lt;file2&gt;, etc... to the project
+
+git add &lt;dir&gt;
+  add all files under directory &lt;dir&gt; to the project, including subdirectories
+
+git add .
+  add all files under the current directory to the project
+  *WARNING*: including untracked files.
+
+git rm &lt;file1&gt; &lt;file2&gt; ...
+  remove &lt;file1&gt;, &lt;file2&gt;, etc... from the project
+
+git rm $(git ls-files --deleted)
+  remove all deleted files from the project
+
+git rm --cached &lt;file1&gt; &lt;file2&gt; ...
+  commits absence of &lt;file1&gt;, &lt;file2&gt;, etc... from the project
+</code></pre>
+<h3 id="ignoring">Ignoring</h3>
+<pre><code>Option 1:
+
+Edit $GIT_DIR/.git/info/exclude. See Environment Variables below for explanation on $GIT_DIR.
+
+Option 2:
+
+Add a file .gitignore to the root of your project. This file will be checked in.
+
+Either way you need to add patterns to exclude to these files.
+</code></pre>
+<h3 id="staging">Staging</h3>
+<pre><code>git add &lt;file1&gt; &lt;file2&gt; ...
+git stage &lt;file1&gt; &lt;file2&gt; ...
+  add changes in &lt;file1&gt;, &lt;file2&gt; ... to the staging area (to be included in
+  the next commit
+
+git add -p
+git stage --patch
+  interactively walk through the current changes (hunks) in the working
+  tree, and decide which changes to add to the staging area.
+
+git add -i
+git stage --interactive
+  interactively add files/changes to the staging area. For a simpler
+  mode (no menu), try `git add --patch` (above)
+</code></pre>
+<h3 id="unstaging">Unstaging</h3>
+<pre><code>git reset HEAD &lt;file1&gt; &lt;file2&gt; ...
+  remove the specified files from the next commit
+</code></pre>
+<h3 id="committing">Committing</h3>
+<pre><code>git commit &lt;file1&gt; &lt;file2&gt; ... [-m &lt;msg&gt;]
+  commit &lt;file1&gt;, &lt;file2&gt;, etc..., optionally using commit message &lt;msg&gt;,
+  otherwise opening your editor to let you type a commit message
+
+git commit -a
+  commit all files changed since your last commit
+  (does not include new (untracked) files)
+
+git commit -v
+  commit verbosely, i.e. includes the diff of the contents being committed in
+  the commit message screen
+
+git commit --amend
+  edit the commit message of the most recent commit
+
+git commit --amend &lt;file1&gt; &lt;file2&gt; ...
+  redo previous commit, including changes made to &lt;file1&gt;, &lt;file2&gt;, etc...
+</code></pre>
+<h3 id="branching">Branching</h3>
+<pre><code>git branch
+  list all local branches
+
+git branch -r
+  list all remote branches
+
+git branch -a
+  list all local and remote branches
+
+git branch &lt;branch&gt;
+  create a new branch named &lt;branch&gt;, referencing the same point in history as
+  the current branch
+
+git branch &lt;branch&gt; &lt;start-point&gt;
+  create a new branch named &lt;branch&gt;, referencing &lt;start-point&gt;, which may be
+  specified any way you like, including using a branch name or a tag name
+
+git push &lt;repo&gt; &lt;start-point&gt;:refs/heads/&lt;branch&gt;
+  create a new remote branch named &lt;branch&gt;, referencing &lt;start-point&gt; on the
+  remote. Repo is the name of the remote.
+  Example: git push origin origin:refs/heads/branch-1
+  Example: git push origin origin/branch-1:refs/heads/branch-2
+  Example: git push origin branch-1 ## shortcut
+
+git branch --track &lt;branch&gt; &lt;remote-branch&gt;
+  create a tracking branch. Will push/pull changes to/from another repository.
+  Example: git branch --track experimental origin/experimental
+
+git branch --set-upstream &lt;branch&gt; &lt;remote-branch&gt; (As of Git 1.7.0)
+  Make an existing branch track a remote branch
+  Example: git branch --set-upstream foo origin/foo
+
+git branch -d &lt;branch&gt;
+  delete the branch &lt;branch&gt;; if the branch you are deleting points to a
+  commit which is not reachable from the current branch, this command
+  will fail with a warning.
+
+git branch -r -d &lt;remote-branch&gt;
+  delete a remote-tracking branch.
+  Example: git branch -r -d wycats/master
+
+git branch -D &lt;branch&gt;
+  even if the branch points to a commit not reachable from the current branch,
+  you may know that that commit is still reachable from some other branch or
+  tag. In that case it is safe to use this command to force git to delete the
+  branch.
+
+git checkout &lt;branch&gt;
+  make the current branch &lt;branch&gt;, updating the working directory to reflect
+  the version referenced by &lt;branch&gt;
+
+git checkout -b &lt;new&gt; &lt;start-point&gt;
+  create a new branch &lt;new&gt; referencing &lt;start-point&gt;, and check it out.
+
+git push &lt;repository&gt; :&lt;branch&gt;
+  removes a branch from a remote repository.
+  Example: git push origin :old_branch_to_be_deleted
+
+git co &lt;branch&gt; &lt;path to new file&gt;
+  Checkout a file from another branch and add it to this branch. File
+  will still need to be added to the git branch, but it's present.
+  Eg. git co remote_at_origin__tick702_antifraud_blocking ..../...nt_elements_for_iframe_blocked_page.rb
+
+git show &lt;branch&gt; -- &lt;path to file that does not exist&gt;
+  Eg. git show remote_tick702 -- path/to/fubar.txt
+  show the contents of a file that was created on another branch and that
+  does not exist on the current branch.
+
+git show &lt;rev&gt;:&lt;repo path to file&gt;
+  Show the contents of a file at the specific revision. Note: path has to be
+  absolute within the repo.
+</code></pre>
+<h3 id="merging">Merging</h3>
+<pre><code>git merge &lt;branch&gt;
+  merge branch &lt;branch&gt; into the current branch; this command is idempotent
+  and can be run as many times as needed to keep the current branch
+  up-to-date with changes in &lt;branch&gt;
+
+git merge &lt;branch&gt; --no-commit
+  merge branch &lt;branch&gt; into the current branch, but do not autocommit the
+  result; allows you to make further tweaks
+
+git merge &lt;branch&gt; -s ours
+  merge branch &lt;branch&gt; into the current branch, but drops any changes in
+  &lt;branch&gt;, using the current tree as the new tree
+</code></pre>
+<h3 id="cherry-picking">Cherry-Picking</h3>
+<pre><code>git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] &lt;commit&gt;
+  selectively merge a single commit from another local branch
+  Example: git cherry-pick 7300a6130d9447e18a931e898b64eefedea19544
+
+git hash-object &lt;file-path&gt;
+  get the blob of some file whether it is in a repository or not
+
+Find the commit in the repository that contains the file blob:
+
+    obj_blob="$1"
+    git log --pretty=format:'%T %h %s' \
+    | while read tree commit subject ; do
+        if git ls-tree -r $tree | grep -q "$obj_blob" ; then
+            echo $commit "$subject"
+        fi
+    done
+</code></pre>
+<h3 id="squashing">Squashing</h3>
+<pre><code>WARNING: "git rebase" changes history. Be careful. Google it.
+
+git rebase --interactive HEAD~10
+  (then change all but the first "pick" to "squash")
+  squash the last 10 commits into one big commit
+</code></pre>
+<h3 id="conflicts">Conflicts</h3>
+<pre><code>git mergetool
+  work through conflicted files by opening them in your mergetool (opendiff,
+  kdiff3, etc.) and choosing left/right chunks. The merged result is staged for
+  commit.
+
+For binary files or if mergetool won't do, resolve the conflict(s) manually
+and then do:
+
+  git add &lt;file1&gt; [&lt;file2&gt; ...]
+
+Once all conflicts are resolved and staged, commit the pending merge with:
+
+  git commit
+</code></pre>
+<h3 id="sharing">Sharing</h3>
+<pre><code>git fetch &lt;remote&gt;
+  update the remote-tracking branches for &lt;remote&gt; (defaults to "origin").
+  Does not initiate a merge into the current branch (see "git pull" below).
+
+git pull
+  fetch changes from the server, and merge them into the current branch.
+  Note: .git/config must have a [branch "some_name"] section for the current
+  branch, to know which remote-tracking branch to merge into the current
+  branch.  Git 1.5.3 and above adds this automatically.
+
+git push
+  update the server with your commits across all branches that are *COMMON*
+  between your local copy and the server.  Local branches that were never
+  pushed to the server in the first place are not shared.
+
+git push origin &lt;branch&gt;
+  update the server with your commits made to &lt;branch&gt; since your last push.
+  This is always *required* for new branches that you wish to share. After
+  the first explicit push, "git push" by itself is sufficient.
+
+git push origin &lt;branch&gt;:refs/heads/&lt;branch&gt;
+  E.g. git push origin twitter-experiment:refs/heads/twitter-experiment
+  Which, in fact, is the same as git push origin &lt;branch&gt; but a little
+  more obvious what is happening.
+</code></pre>
+<h3 id="reverting">Reverting</h3>
+<pre><code>git revert &lt;rev&gt;
+  reverse commit specified by &lt;rev&gt; and commit the result.  This does *not* do
+  the same thing as similarly named commands in other VCS's such as "svn
+  revert" or "bzr revert", see below
+
+git checkout &lt;file&gt;
+  re-checkout &lt;file&gt;, overwriting any local changes
+
+git checkout .
+  re-checkout all files, overwriting any local changes.  This is most similar
+  to "svn revert" if you're used to Subversion commands
+</code></pre>
+<h3 id="fix-mistakes-undo">Fix mistakes / Undo</h3>
+<pre><code>git reset --hard
+  abandon everything since your last commit; this command can be DANGEROUS.
+  If merging has resulted in conflicts and you'd like to just forget about
+  the merge, this command will do that.
+
+git reset --hard ORIG_HEAD or git reset --hard origin/master 
+  undo your most recent *successful* merge *and* any changes that occurred
+  after.  Useful for forgetting about the merge you just did.  If there are
+  conflicts (the merge was not successful), use "git reset --hard" (above)
+  instead.
+
+git reset --soft HEAD^
+  forgot something in your last commit? That's easy to fix. Undo your last
+  commit, but keep the changes in the staging area for editing.
+
+git commit --amend
+  redo previous commit, including changes you've staged in the meantime.
+  Also used to edit commit message of previous commit.
+</code></pre>
+<h3 id="plumbing">Plumbing</h3>
+<pre><code>test &lt;sha1-A&gt; = $(git merge-base &lt;sha1-A&gt; &lt;sha1-B&gt;)
+  determine if merging sha1-B into sha1-A is achievable as a fast forward;
+  non-zero exit status is false.
+</code></pre>
+<h3 id="stashing">Stashing</h3>
+<pre><code>git stash
+git stash save &lt;optional-name&gt;
+  save your local modifications to a new stash (so you can for example
+  "git svn rebase" or "git pull")
+
+git stash apply
+  restore the changes recorded in the stash on top of the current working tree
+  state
+
+git stash pop
+  restore the changes from the most recent stash, and remove it from the stack
+  of stashed changes
+
+git stash list
+  list all current stashes
+
+git stash show &lt;stash-name&gt; -p
+  show the contents of a stash - accepts all diff args
+
+git stash drop [&lt;stash-name&gt;]
+  delete the stash
+
+git stash clear
+  delete all current stashes
+</code></pre>
+<h3 id="remotes">Remotes</h3>
+<pre><code>git remote add &lt;remote&gt; &lt;remote_URL&gt;
+  adds a remote repository to your git config.  Can be then fetched locally.
+  Example:
+    git remote add coreteam git://github.com/wycats/merb-plugins.git
+    git fetch coreteam
+
+git push &lt;remote&gt; :refs/heads/&lt;branch&gt;
+  delete a branch in a remote repository
+
+git push &lt;remote&gt; &lt;remote&gt;:refs/heads/&lt;remote_branch&gt;
+  create a branch on a remote repository
+  Example: git push origin origin:refs/heads/new_feature_name
+
+git push &lt;repository&gt; +&lt;remote&gt;:&lt;new_remote&gt;
+  replace a &lt;remote&gt; branch with &lt;new_remote&gt;
+  think twice before do this
+  Example: git push origin +master:my_branch
+
+git remote prune &lt;remote&gt;
+  prune deleted remote-tracking branches from "git branch -r" listing
+
+git remote add -t master -m master origin git://example.com/git.git/
+  add a remote and track its master
+
+git remote show &lt;remote&gt;
+  show information about the remote server.
+
+git checkout -b &lt;local branch&gt; &lt;remote&gt;/&lt;remote branch&gt;
+  Eg.:
+    git checkout -b myfeature origin/myfeature
+    git checkout -b myfeature remotes/&lt;remote&gt;/&lt;branch&gt;
+
+  Track a remote branch as a local branch. It seems that
+  somtimes an extra 'remotes/' is required, to see the exact
+  branch name, 'git branch -a'.
+
+git pull &lt;remote&gt; &lt;branch&gt;
+git push
+  For branches that are remotely tracked (via git push) but
+  that complain about non-fast forward commits when doing a
+  git push. The pull synchronizes local and remote, and if
+  all goes well, the result is pushable.
+
+git fetch &lt;remote&gt;
+  Retrieves all branches from the remote repository. After
+  this 'git branch --track ...' can be used to track a branch
+  from the new remote.
+</code></pre>
+<h3 id="submodules">Submodules</h3>
+<pre><code>git submodule add &lt;remote_repository&gt; &lt;path/to/submodule&gt;
+  add the given repository at the given path. The addition will be part of the
+  next commit.
+
+git submodule update [--init]
+  Update the registered submodules (clone missing submodules, and checkout
+  the commit specified by the super-repo). --init is needed the first time.
+
+git submodule foreach &lt;command&gt;
+  Executes the given command within each checked out submodule.
+
+Removing submodules
+
+   1. Delete the relevant line from the .gitmodules file.
+   2. Delete the relevant section from .git/config.
+   3. Run git rm --cached path_to_submodule (no trailing slash).
+   4. Commit and delete the now untracked submodule files.
+
+Updating submodules
+  To update a submodule to a new commit:
+    1. update submodule:
+        cd &lt;path to submodule&gt;
+        git pull
+    2. commit the new version of submodule:
+        cd &lt;path to toplevel&gt;
+        git commit -m "update submodule version"
+    3. check that the submodule has the correct version
+        git submodule status
+  If the update in the submodule is not committed in the
+  main repository, it is lost and doing git submodule
+  update will revert to the previous version.
+</code></pre>
+<h3 id="patches">Patches</h3>
+<pre><code>git format-patch HEAD^
+  Generate the last commit as a patch that can be applied on another
+  clone (or branch) using 'git am'. Format patch can also generate a
+  patch for all commits using 'git format-patch HEAD^ HEAD'
+  All page files will be enumerated with a prefix, e.g. 0001 is the
+  first patch.
+
+git format-patch &lt;Revision&gt;^..&lt;Revision&gt;
+  Generate a patch for a single commit. E.g.
+    git format-patch d8efce43099^..d8efce43099
+  Revision does not need to be fully specified.
+
+git am &lt;patch file&gt;
+  Applies the patch file generated by format-patch.
+
+git diff --no-prefix &gt; patchfile
+  Generates a patch file that can be applied using patch:
+    patch -p0 &lt; patchfile
+  Useful for sharing changes without generating a git commit.
+</code></pre>
+<h3 id="tags">Tags</h3>
+<pre><code>git tag -l
+  Will list all tags defined in the repository.
+
+git co &lt;tag_name&gt;
+  Will checkout the code for a particular tag. After this you'll
+  probably want to do: 'git co -b &lt;some branch name&gt;' to define
+  a branch. Any changes you now make can be committed to that
+  branch and later merged.
+</code></pre>
+<h3 id="archive">Archive</h3>
+<pre><code>git archive master | tar -x -C /somewhere/else
+  Will export expanded tree as tar archive at given path
+
+git archive master | bzip2 &gt; source-tree.tar.bz2
+  Will export archive as bz2
+
+git archive --format zip --output /full/path master
+  Will export as zip
+
+Git Instaweb
+------------
+
+git instaweb --httpd=webrick [--start | --stop | --restart]
+</code></pre>
+<h3 id="environment-variables">Environment Variables</h3>
+<pre><code>GIT_AUTHOR_NAME, GIT_COMMITTER_NAME
+  Your full name to be recorded in any newly created commits.  Overrides
+  user.name in .git/config
+
+GIT_AUTHOR_EMAIL, GIT_COMMITTER_EMAIL
+  Your email address to be recorded in any newly created commits.  Overrides
+  user.email in .git/config
+
+GIT_DIR
+  Location of the repository to use (for out of working directory repositories)
+
+GIT_WORKING_TREE
+  Location of the Working Directory - use with GIT_DIR to specifiy the working directory root
+  or to work without being in the working directory at all.
+</code></pre>
+<h3 id="changing-history">Changing history</h3>
+<pre><code>Change author for all commits with given name
+
+  git filter-branch --commit-filter '
+          if [ "$GIT_COMMITTER_NAME" = "&lt;Old Name&gt;" ];
+          then
+                  GIT_COMMITTER_NAME="&lt;New Name&gt;";
+                  GIT_AUTHOR_NAME="&lt;New Name&gt;";
+                  GIT_COMMITTER_EMAIL="&lt;New Email&gt;";
+                  GIT_AUTHOR_EMAIL="&lt;New Email&gt;";
+                  git commit-tree "$@";
+          else
+                  git commit-tree "$@";
+          fi' HEAD
+</code></pre>
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

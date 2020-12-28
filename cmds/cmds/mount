@@ -1,0 +1,19 @@
+# Mount a shared folder on another computer on your network (requires cifs-utils)
+mount -t cifs //192.168.1.2/path/to/share /my/mount/point
+
+# mounts all filesystems that are in fstab
+mount -a
+
+# Mount an ext4 partition /dev/sda1 to folder /media/omg
+sudo mount -t ext4 -v /dev/sda1 /media/omg
+
+# Then unmount it
+sudo umount /media/omg
+
+# In case you don't remember exactly your partition is 
+# /dev/sda1 or /dev/sda2 or /dev/sda3 or ... 
+# you can use this command to figure it out:
+sudo blkid
+
+# Mount a temporary RAM partition
+mount -t tmpfs tmpfs /mnt -o size=1024m

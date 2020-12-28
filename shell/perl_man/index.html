@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/shell/perl_man/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>perl_man - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#perl_man">perl_man</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#getting-help">getting help</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#availability">availability</a></li>
+        
+            <li><a href="#environment">environment</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#files">files</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#diagnostics">diagnostics</a></li>
+        
+            <li><a href="#bugs">bugs</a></li>
+        
+            <li><a href="#notes">notes</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="perl_man">perl_man</h1>
+<h3 id="name">name</h3>
+<pre><code>       perl - The Perl 5 language interpreter
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       perl [ -sTtuUWX ]      [ -hv ] [ -V[:configvar] ]      [ -cw ] [ -d[t][:debugger] ] [ -D[number/list] ]      [ -pna ] [ -Fpattern ] [ -l[octal] ] [ -0[octal/hexadecimal] ]      [ -Idir ] [ -m[-]module ] [ -M[-]'module...' ] [ -f ]      [ -C [number/list] ]      [ -S ]      [ -x[dir] ]      [ -i[extension] ]      [ [-e|-E] 'command' ] [ -- ] [ programfile ] [ argument ]...
+
+       For more information on these options, you can run &quot;perldoc perlrun&quot;.
+
+</code></pre>
+
+<h3 id="getting-help">getting help</h3>
+<pre><code>       The perldoc program gives you access to all the documentation that comes with Perl.  You can get more documentation, tutorials and community support online at &lt;http://www.perl.org/&gt;.
+
+       If you're new to Perl, you should start by running &quot;perldoc perlintro&quot;, which is a general intro for beginners and provides some background to help you navigate the rest of Perl's extensive documentation.  Run &quot;perldoc perldoc&quot; to learn more things you can do with perldoc.
+
+       For ease of access, the Perl manual has been split up into several sections.
+
+   Overview
+           perl                Perl overview (this section)
+           perlintro           Perl introduction for beginners
+           perlrun             Perl execution and options
+           perltoc             Perl documentation table of contents
+
+   Tutorials
+           perlreftut          Perl references short introduction
+           perldsc             Perl data structures intro
+           perllol             Perl data structures: arrays of arrays
+
+           perlrequick         Perl regular expressions quick start
+           perlretut           Perl regular expressions tutorial
+
+           perlootut           Perl OO tutorial for beginners
+
+           perlperf            Perl Performance and Optimization Techniques
+
+           perlstyle           Perl style guide
+
+           perlcheat           Perl cheat sheet
+           perltrap            Perl traps for the unwary
+           perldebtut          Perl debugging tutorial
+
+           perlfaq             Perl frequently asked questions
+             perlfaq1          General Questions About Perl
+             perlfaq2          Obtaining and Learning about Perl
+             perlfaq3          Programming Tools
+             perlfaq4          Data Manipulation
+             perlfaq5          Files and Formats
+             perlfaq6          Regexes
+             perlfaq7          Perl Language Issues
+             perlfaq8          System Interaction
+             perlfaq9          Networking
+
+   Reference Manual
+           perlsyn             Perl syntax
+           perldata            Perl data structures
+           perlop              Perl operators and precedence
+           perlsub             Perl subroutines
+           perlfunc            Perl built-in functions
+             perlopentut       Perl open() tutorial
+             perlpacktut       Perl pack() and unpack() tutorial
+           perlpod             Perl plain old documentation
+           perlpodspec         Perl plain old documentation format specification
+           perlpodstyle        Perl POD style guide
+           perldiag            Perl diagnostic messages
+           perllexwarn         Perl warnings and their control
+           perldebug           Perl debugging
+           perlvar             Perl predefined variables
+           perlre              Perl regular expressions, the rest of the story
+           perlrebackslash     Perl regular expression backslash sequences
+           perlrecharclass     Perl regular expression character classes
+           perlreref           Perl regular expressions quick reference
+           perlref             Perl references, the rest of the story
+           perlform            Perl formats
+           perlobj             Perl objects
+           perltie             Perl objects hidden behind simple variables
+             perldbmfilter     Perl DBM filters
+
+           perlipc             Perl interprocess communication
+           perlfork            Perl fork() information
+           perlnumber          Perl number semantics
+
+           perlthrtut          Perl threads tutorial
+
+           perlport            Perl portability guide
+           perllocale          Perl locale support
+           perluniintro        Perl Unicode introduction
+           perlunicode         Perl Unicode support
+           perlunifaq          Perl Unicode FAQ
+           perluniprops        Index of Unicode properties in Perl
+           perlunitut          Perl Unicode tutorial
+           perlebcdic          Considerations for running Perl on EBCDIC platforms
+
+           perlsec             Perl security
+
+           perlmod             Perl modules: how they work
+           perlmodlib          Perl modules: how to write and use
+           perlmodstyle        Perl modules: how to write modules with style
+           perlmodinstall      Perl modules: how to install from CPAN
+           perlnewmod          Perl modules: preparing a new module for distribution
+           perlpragma          Perl modules: writing a user pragma
+
+           perlutil            utilities packaged with the Perl distribution
+
+           perlfilter          Perl source filters
+
+           perldtrace          Perl's support for DTrace
+
+           perlglossary        Perl Glossary
+
+   Internals and C Language Interface
+           perlembed           Perl ways to embed perl in your C or C++ application
+           perldebguts         Perl debugging guts and tips
+           perlxstut           Perl XS tutorial
+           perlxs              Perl XS application programming interface
+           perlxstypemap       Perl XS C/Perl type conversion tools
+           perlclib            Internal replacements for standard C library functions
+           perlguts            Perl internal functions for those doing extensions
+           perlcall            Perl calling conventions from C
+           perlmroapi          Perl method resolution plugin interface
+           perlreapi           Perl regular expression plugin interface
+           perlreguts          Perl regular expression engine internals
+
+           perlapi             Perl API listing (autogenerated)
+           perlintern          Perl internal functions (autogenerated)
+           perliol             C API for Perl's implementation of IO in Layers
+           perlapio            Perl internal IO abstraction interface
+
+           perlhack            Perl hackers guide
+           perlsource          Guide to the Perl source tree
+           perlinterp          Overview of the Perl interpreter source and how it works
+           perlhacktut         Walk through the creation of a simple C code patch
+           perlhacktips        Tips for Perl core C code hacking
+           perlpolicy          Perl development policies
+           perlgit             Using git with the Perl repository
+
+   Miscellaneous
+           perlbook            Perl book information
+           perlcommunity       Perl community information
+
+           perldoc             Look up Perl documentation in Pod format
+
+           perlhist            Perl history records
+           perldelta           Perl changes since previous version
+           perl5200delta       Perl changes in version 5.20.0
+           perl5182delta       Perl changes in version 5.18.2
+           perl5181delta       Perl changes in version 5.18.1
+           perl5180delta       Perl changes in version 5.18.0
+           perl5161delta       Perl changes in version 5.16.1
+           perl5162delta       Perl changes in version 5.16.2
+           perl5163delta       Perl changes in version 5.16.3
+           perl5160delta       Perl changes in version 5.16.0
+           perl5144delta       Perl changes in version 5.14.4
+           perl5143delta       Perl changes in version 5.14.3
+           perl5142delta       Perl changes in version 5.14.2
+           perl5141delta       Perl changes in version 5.14.1
+           perl5140delta       Perl changes in version 5.14.0
+           perl5125delta       Perl changes in version 5.12.5
+           perl5124delta       Perl changes in version 5.12.4
+           perl5123delta       Perl changes in version 5.12.3
+           perl5122delta       Perl changes in version 5.12.2
+           perl5121delta       Perl changes in version 5.12.1
+           perl5120delta       Perl changes in version 5.12.0
+           perl5101delta       Perl changes in version 5.10.1
+           perl5100delta       Perl changes in version 5.10.0
+           perl589delta        Perl changes in version 5.8.9
+           perl588delta        Perl changes in version 5.8.8
+           perl587delta        Perl changes in version 5.8.7
+           perl586delta        Perl changes in version 5.8.6
+           perl585delta        Perl changes in version 5.8.5
+           perl584delta        Perl changes in version 5.8.4
+           perl583delta        Perl changes in version 5.8.3
+           perl582delta        Perl changes in version 5.8.2
+           perl581delta        Perl changes in version 5.8.1
+           perl58delta         Perl changes in version 5.8.0
+           perl561delta        Perl changes in version 5.6.1
+           perl56delta         Perl changes in version 5.6
+           perl5005delta       Perl changes in version 5.005
+           perl5004delta       Perl changes in version 5.004
+
+           perlexperiment      A listing of experimental features in Perl
+
+           perlartistic        Perl Artistic License
+           perlgpl             GNU General Public License
+
+   Language-Specific
+           perlcn              Perl for Simplified Chinese (in EUC-CN)
+           perljp              Perl for Japanese (in EUC-JP)
+           perlko              Perl for Korean (in EUC-KR)
+           perltw              Perl for Traditional Chinese (in Big5)
+
+   Platform-Specific
+           perlaix             Perl notes for AIX
+           perlamiga           Perl notes for AmigaOS
+           perlandroid         Perl notes for Android
+           perlbs2000          Perl notes for POSIX-BC BS2000
+           perlce              Perl notes for WinCE
+           perlcygwin          Perl notes for Cygwin
+           perldos             Perl notes for DOS
+           perlfreebsd         Perl notes for FreeBSD
+           perlhaiku           Perl notes for Haiku
+           perlhpux            Perl notes for HP-UX
+           perlhurd            Perl notes for Hurd
+           perlirix            Perl notes for Irix
+           perllinux           Perl notes for Linux
+           perlmacos           Perl notes for Mac OS (Classic)
+           perlmacosx          Perl notes for Mac OS X
+           perlnetware         Perl notes for NetWare
+           perlopenbsd         Perl notes for OpenBSD
+           perlos2             Perl notes for OS/2
+           perlos390           Perl notes for OS/390
+           perlos400           Perl notes for OS/400
+           perlplan9           Perl notes for Plan 9
+           perlqnx             Perl notes for QNX
+           perlriscos          Perl notes for RISC OS
+           perlsolaris         Perl notes for Solaris
+           perlsymbian         Perl notes for Symbian
+           perlsynology        Perl notes for Synology
+           perltru64           Perl notes for Tru64
+           perlvms             Perl notes for VMS
+           perlvos             Perl notes for Stratus VOS
+           perlwin32           Perl notes for Windows
+
+   Stubs for Deleted Documents
+           perlboot
+           perlbot
+           perlrepository
+           perltodo
+           perltooc
+           perltoot
+
+       On Debian systems, you need to install the perl-doc package which contains the majority of the standard Perl documentation and the perldoc program.
+
+       Extensive additional documentation for Perl modules is available, both those distributed with Perl and third-party modules which are packaged or locally installed.
+
+       You should be able to view Perl's documentation with your man(1) program or perldoc(1).
+
+       Some documentation is not available as man pages, so if a cross-reference is not found by man, try it with perldoc.  Perldoc can also take you directly to documentation for functions (with the -f switch). See &quot;perldoc --help&quot; (or &quot;perldoc perldoc&quot; or &quot;man perldoc&quot;) for other helpful options perldoc has to offer.
+
+       In general, if something strange has gone wrong with your program and you're not sure where you should look for help, try making your code comply with use strict and use warnings.  These will often point out exactly where the trouble is.
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       Perl officially stands for Practical Extraction and Report Language, except when it doesn't.
+
+       Perl was originally a language optimized for scanning arbitrary text files, extracting information from those text files, and printing reports based on that information.  It quickly became a good language for many system management tasks. Over the years, Perl has grown into a general-purpose programming language. It's widely used for everything from quick &quot;one-liners&quot; to full-scale application development.
+
+       The language is intended to be practical (easy to use, efficient, complete) rather than beautiful (tiny, elegant, minimal).  It combines (in the author's opinion, anyway) some of the best features of sed, awk, and sh, making it familiar and easy to use for Unix users to whip up quick solutions to annoying problems.  Its general-purpose programming facilities support procedural, functional, and object-oriented programming paradigms, making Perl a comfortable language for the long haul on major projects, whatever your bent.
+
+       Perl's roots in text processing haven't been forgotten over the years.  It still boasts some of the most powerful regular expressions to be found anywhere, and its support for Unicode text is world-class.  It handles all kinds of structured text, too, through an extensive collection of extensions.  Those libraries, collected in the CPAN, provide ready-made solutions to an astounding array of problems.  When they haven't set the standard themselves, they steal from the best -- just like Perl itself.
+
+</code></pre>
+
+<h3 id="availability">availability</h3>
+<pre><code>       Perl is available for most operating systems, including virtually all Unix-like platforms.  See &quot;Supported Platforms&quot; in perlport for a listing.
+
+</code></pre>
+
+<h3 id="environment">environment</h3>
+<pre><code>       See perlrun.
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       Larry Wall &lt;larry@wall.org&gt;, with the help of oodles of other folks.
+
+       If your Perl success stories and testimonials may be of help to others who wish to advocate the use of Perl in their applications, or if you wish to simply express your gratitude to Larry and the Perl developers, please write to perl-thanks@perl.org .
+
+</code></pre>
+
+<h3 id="files">files</h3>
+<pre><code>        &quot;@INC&quot;                 locations of perl libraries
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>        http://www.perl.org/       the Perl homepage
+        http://www.perl.com/       Perl articles (O'Reilly)
+        http://www.cpan.org/       the Comprehensive Perl Archive
+        http://www.pm.org/         the Perl Mongers
+
+</code></pre>
+
+<h3 id="diagnostics">diagnostics</h3>
+<pre><code>       Using the &quot;use strict&quot; pragma ensures that all variables are properly declared and prevents other misuses of legacy Perl features.
+
+       The &quot;use warnings&quot; pragma produces some lovely diagnostics. One can also use the -w flag, but its use is normally discouraged, because it gets applied to all executed Perl code, including that not under your control.
+
+       See perldiag for explanations of all Perl's diagnostics.  The &quot;use diagnostics&quot; pragma automatically turns Perl's normally terse warnings and errors into these longer forms.
+
+       Compilation errors will tell you the line number of the error, with an indication of the next token or token type that was to be examined.  (In a script passed to Perl via -e switches, each -e is counted as one line.)
+
+       Setuid scripts have additional constraints that can produce error messages such as &quot;Insecure dependency&quot;.  See perlsec.
+
+       Did we mention that you should definitely consider using the use warnings pragma?
+
+</code></pre>
+
+<h3 id="bugs">bugs</h3>
+<pre><code>       The behavior implied by the use warnings pragma is not mandatory.
+
+       Perl is at the mercy of your machine's definitions of various operations such as type casting, atof(), and floating-point output with sprintf().
+
+       If your stdio requires a seek or eof between reads and writes on a particular stream, so does Perl.  (This doesn't apply to sysread() and syswrite().)
+
+       While none of the built-in data types have any arbitrary size limits (apart from memory size), there are still a few arbitrary limits:  a given variable name may not be longer than 251 characters.  Line numbers displayed by diagnostics are internally stored as short integers, so they are limited to a maximum of 65535 (higher numbers usually being affected by wraparound).
+
+       You may mail your bug reports (be sure to include full configuration information as output by the myconfig program in the perl source tree, or by &quot;perl -V&quot;) to perlbug@perl.org .  If you've succeeded in compiling perl, the perlbug script in the utils/ subdirectory can be used to help mail in a bug report.
+
+       Perl actually stands for Pathologically Eclectic Rubbish Lister, but don't tell anyone I said that.
+
+</code></pre>
+
+<h3 id="notes">notes</h3>
+<pre><code>       The Perl motto is &quot;There's more than one way to do it.&quot;  Divining how many more is left as an exercise to the reader.
+
+       The three principal virtues of a programmer are Laziness, Impatience, and Hubris.  See the Camel Book for why.
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

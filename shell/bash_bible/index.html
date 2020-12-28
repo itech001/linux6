@@ -1,0 +1,3043 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/shell/bash_bible/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>Bash_bible - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds/cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds/for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../bash_summary/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../csh/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#table-of-contents">Table of Contents</a></li>
+        
+    
+        <li class="main "><a href="#foreword">FOREWORD</a></li>
+        
+    
+        <li class="main "><a href="#strings">STRINGS</a></li>
+        
+            <li><a href="#trim-leading-and-trailing-white-space-from-string">Trim leading and trailing white-space from string</a></li>
+        
+            <li><a href="#trim-all-white-space-from-string-and-truncate-spaces">Trim all white-space from string and truncate spaces</a></li>
+        
+            <li><a href="#use-regex-on-a-string">Use regex on a string</a></li>
+        
+            <li><a href="#split-a-string-on-a-delimiter">Split a string on a delimiter</a></li>
+        
+            <li><a href="#change-a-string-to-lowercase">Change a string to lowercase</a></li>
+        
+            <li><a href="#change-a-string-to-uppercase">Change a string to uppercase</a></li>
+        
+            <li><a href="#reverse-a-string-case">Reverse a string case</a></li>
+        
+            <li><a href="#trim-quotes-from-a-string">Trim quotes from a string</a></li>
+        
+            <li><a href="#strip-all-instances-of-pattern-from-string">Strip all instances of pattern from string</a></li>
+        
+            <li><a href="#strip-first-occurrence-of-pattern-from-string">Strip first occurrence of pattern from string</a></li>
+        
+            <li><a href="#strip-pattern-from-start-of-string">Strip pattern from start of string</a></li>
+        
+            <li><a href="#strip-pattern-from-end-of-string">Strip pattern from end of string</a></li>
+        
+            <li><a href="#percent-encode-a-string">Percent-encode a string</a></li>
+        
+            <li><a href="#decode-a-percent-encoded-string">Decode a percent-encoded string</a></li>
+        
+            <li><a href="#check-if-string-contains-a-sub-string">Check if string contains a sub-string</a></li>
+        
+            <li><a href="#check-if-string-starts-with-sub-string">Check if string starts with sub-string</a></li>
+        
+            <li><a href="#check-if-string-ends-with-sub-string">Check if string ends with sub-string</a></li>
+        
+    
+        <li class="main "><a href="#arrays">ARRAYS</a></li>
+        
+            <li><a href="#reverse-an-array">Reverse an array</a></li>
+        
+            <li><a href="#remove-duplicate-array-elements">Remove duplicate array elements</a></li>
+        
+            <li><a href="#random-array-element">Random array element</a></li>
+        
+            <li><a href="#cycle-through-an-array">Cycle through an array</a></li>
+        
+            <li><a href="#toggle-between-two-values">Toggle between two values</a></li>
+        
+    
+        <li class="main "><a href="#loops">LOOPS</a></li>
+        
+            <li><a href="#loop-over-a-range-of-numbers">Loop over a range of numbers</a></li>
+        
+            <li><a href="#loop-over-a-variable-range-of-numbers">Loop over a variable range of numbers</a></li>
+        
+            <li><a href="#loop-over-an-array">Loop over an array</a></li>
+        
+            <li><a href="#loop-over-an-array-with-an-index">Loop over an array with an index</a></li>
+        
+            <li><a href="#loop-over-the-contents-of-a-file">Loop over the contents of a file</a></li>
+        
+            <li><a href="#loop-over-files-and-directories">Loop over files and directories</a></li>
+        
+    
+        <li class="main "><a href="#file-handling">FILE HANDLING</a></li>
+        
+            <li><a href="#read-a-file-to-a-string">Read a file to a string</a></li>
+        
+            <li><a href="#read-a-file-to-an-array-by-line">Read a file to an array (by line)</a></li>
+        
+            <li><a href="#get-the-first-n-lines-of-a-file">Get the first N lines of a file</a></li>
+        
+            <li><a href="#get-the-last-n-lines-of-a-file">Get the last N lines of a file</a></li>
+        
+            <li><a href="#get-the-number-of-lines-in-a-file">Get the number of lines in a file</a></li>
+        
+            <li><a href="#count-files-or-directories-in-directory">Count files or directories in directory</a></li>
+        
+            <li><a href="#create-an-empty-file">Create an empty file</a></li>
+        
+            <li><a href="#extract-lines-between-two-markers">Extract lines between two markers</a></li>
+        
+    
+        <li class="main "><a href="#file-paths">FILE PATHS</a></li>
+        
+            <li><a href="#get-the-directory-name-of-a-file-path">Get the directory name of a file path</a></li>
+        
+            <li><a href="#get-the-base-name-of-a-file-path">Get the base-name of a file path</a></li>
+        
+    
+        <li class="main "><a href="#variables">VARIABLES</a></li>
+        
+            <li><a href="#assign-and-access-a-variable-using-a-variable">Assign and access a variable using a variable</a></li>
+        
+            <li><a href="#name-a-variable-based-on-another-variable">Name a variable based on another variable</a></li>
+        
+    
+        <li class="main "><a href="#escape-sequences">ESCAPE SEQUENCES</a></li>
+        
+            <li><a href="#text-colors">Text Colors</a></li>
+        
+            <li><a href="#text-attributes">Text Attributes</a></li>
+        
+            <li><a href="#cursor-movement">Cursor Movement</a></li>
+        
+            <li><a href="#erasing-text">Erasing Text</a></li>
+        
+    
+        <li class="main "><a href="#parameter-expansion">PARAMETER EXPANSION</a></li>
+        
+            <li><a href="#indirection">Indirection</a></li>
+        
+            <li><a href="#replacement">Replacement</a></li>
+        
+            <li><a href="#length">Length</a></li>
+        
+            <li><a href="#expansion">Expansion</a></li>
+        
+            <li><a href="#case-modification">Case Modification</a></li>
+        
+            <li><a href="#default-value">Default Value</a></li>
+        
+    
+        <li class="main "><a href="#brace-expansion">BRACE EXPANSION</a></li>
+        
+            <li><a href="#ranges">Ranges</a></li>
+        
+            <li><a href="#string-lists">String Lists</a></li>
+        
+    
+        <li class="main "><a href="#conditional-expressions">CONDITIONAL EXPRESSIONS</a></li>
+        
+            <li><a href="#file-conditionals">File Conditionals</a></li>
+        
+            <li><a href="#file-comparisons">File Comparisons</a></li>
+        
+            <li><a href="#variable-conditionals">Variable Conditionals</a></li>
+        
+            <li><a href="#variable-comparisons">Variable Comparisons</a></li>
+        
+    
+        <li class="main "><a href="#arithmetic-operators">ARITHMETIC OPERATORS</a></li>
+        
+            <li><a href="#assignment">Assignment</a></li>
+        
+            <li><a href="#arithmetic">Arithmetic</a></li>
+        
+            <li><a href="#bitwise">Bitwise</a></li>
+        
+            <li><a href="#logical">Logical</a></li>
+        
+            <li><a href="#miscellaneous">Miscellaneous</a></li>
+        
+    
+        <li class="main "><a href="#arithmetic_1">ARITHMETIC</a></li>
+        
+            <li><a href="#simpler-syntax-to-set-variables">Simpler syntax to set variables</a></li>
+        
+            <li><a href="#ternary-tests">Ternary Tests</a></li>
+        
+    
+        <li class="main "><a href="#traps">TRAPS</a></li>
+        
+            <li><a href="#do-something-on-script-exit">Do something on script exit</a></li>
+        
+            <li><a href="#ignore-terminal-interrupt-ctrlc-sigint">Ignore terminal interrupt (CTRL+C, SIGINT)</a></li>
+        
+            <li><a href="#react-to-window-resize">React to window resize</a></li>
+        
+            <li><a href="#do-something-before-every-command">Do something before every command</a></li>
+        
+            <li><a href="#do-something-when-a-shell-function-or-a-sourced-file-finishes-executing">Do something when a shell function or a sourced file finishes executing</a></li>
+        
+    
+        <li class="main "><a href="#performance">PERFORMANCE</a></li>
+        
+            <li><a href="#disable-unicode">Disable Unicode</a></li>
+        
+    
+        <li class="main "><a href="#obsolete-syntax">OBSOLETE SYNTAX</a></li>
+        
+            <li><a href="#shebang">Shebang</a></li>
+        
+            <li><a href="#command-substitution">Command Substitution</a></li>
+        
+            <li><a href="#function-declaration">Function Declaration</a></li>
+        
+    
+        <li class="main "><a href="#internal-variables">INTERNAL VARIABLES</a></li>
+        
+            <li><a href="#get-the-location-to-the-bash-binary">Get the location to the bash binary</a></li>
+        
+            <li><a href="#get-the-version-of-the-current-running-bash-process">Get the version of the current running bash process</a></li>
+        
+            <li><a href="#open-the-users-preferred-text-editor">Open the user's preferred text editor</a></li>
+        
+            <li><a href="#get-the-name-of-the-current-function">Get the name of the current function</a></li>
+        
+            <li><a href="#get-the-host-name-of-the-system">Get the host-name of the system</a></li>
+        
+            <li><a href="#get-the-architecture-of-the-operating-system">Get the architecture of the Operating System</a></li>
+        
+            <li><a href="#get-the-name-of-the-operating-system-kernel">Get the name of the Operating System / Kernel</a></li>
+        
+            <li><a href="#get-the-current-working-directory">Get the current working directory</a></li>
+        
+            <li><a href="#get-the-number-of-seconds-the-script-has-been-running">Get the number of seconds the script has been running</a></li>
+        
+            <li><a href="#get-a-pseudorandom-integer">Get a pseudorandom integer</a></li>
+        
+    
+        <li class="main "><a href="#information-about-the-terminal">INFORMATION ABOUT THE TERMINAL</a></li>
+        
+            <li><a href="#get-the-terminal-size-in-lines-and-columns-from-a-script">Get the terminal size in lines and columns (from a script)</a></li>
+        
+            <li><a href="#get-the-terminal-size-in-pixels">Get the terminal size in pixels</a></li>
+        
+            <li><a href="#get-the-current-cursor-position">Get the current cursor position</a></li>
+        
+    
+        <li class="main "><a href="#conversion">CONVERSION</a></li>
+        
+            <li><a href="#convert-a-hex-color-to-rgb">Convert a hex color to RGB</a></li>
+        
+            <li><a href="#convert-an-rgb-color-to-hex">Convert an RGB color to hex</a></li>
+        
+    
+        <li class="main "><a href="#code-golf">CODE GOLF</a></li>
+        
+            <li><a href="#shorter-for-loop-syntax">Shorter for loop syntax</a></li>
+        
+            <li><a href="#shorter-infinite-loops">Shorter infinite loops</a></li>
+        
+            <li><a href="#shorter-function-declaration">Shorter function declaration</a></li>
+        
+            <li><a href="#shorter-if-syntax">Shorter if syntax</a></li>
+        
+            <li><a href="#simpler-case-statement-to-set-variable">Simpler case statement to set variable</a></li>
+        
+    
+        <li class="main "><a href="#other">OTHER</a></li>
+        
+            <li><a href="#use-read-as-an-alternative-to-the-sleep-command">Use read as an alternative to the sleep command</a></li>
+        
+            <li><a href="#check-if-a-program-is-in-the-users-path">Check if a program is in the user's PATH</a></li>
+        
+            <li><a href="#get-the-current-date-using-strftime">Get the current date using strftime</a></li>
+        
+            <li><a href="#get-the-username-of-the-current-user">Get the username of the current user</a></li>
+        
+            <li><a href="#generate-a-uuid-v4">Generate a UUID V4</a></li>
+        
+            <li><a href="#progress-bars">Progress bars</a></li>
+        
+            <li><a href="#get-the-list-of-functions-in-a-script">Get the list of functions in a script</a></li>
+        
+            <li><a href="#bypass-shell-aliases">Bypass shell aliases</a></li>
+        
+            <li><a href="#bypass-shell-functions">Bypass shell functions</a></li>
+        
+            <li><a href="#run-a-command-in-the-background">Run a command in the background</a></li>
+        
+            <li><a href="#capture-the-return-value-of-a-function-without-command-substitution">Capture the return value of a function without command substitution</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<p><a href="https://github.com/dylanaraps/pure-sh-bible/blob/master/README.md">copy from pure-sh-bible, check the latest from</a>  </p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<!-- vim-markdown-toc GFM -->
+
+<ul>
+<li><a href="#foreword">FOREWORD</a></li>
+<li><a href="#strings">STRINGS</a><ul>
+<li><a href="#trim-leading-and-trailing-white-space-from-string">Trim leading and trailing white-space from string</a></li>
+<li><a href="#trim-all-white-space-from-string-and-truncate-spaces">Trim all white-space from string and truncate spaces</a></li>
+<li><a href="#use-regex-on-a-string">Use regex on a string</a></li>
+<li><a href="#split-a-string-on-a-delimiter">Split a string on a delimiter</a></li>
+<li><a href="#change-a-string-to-lowercase">Change a string to lowercase</a></li>
+<li><a href="#change-a-string-to-uppercase">Change a string to uppercase</a></li>
+<li><a href="#reverse-a-string-case">Reverse a string case</a></li>
+<li><a href="#trim-quotes-from-a-string">Trim quotes from a string</a></li>
+<li><a href="#strip-all-instances-of-pattern-from-string">Strip all instances of pattern from string</a></li>
+<li><a href="#strip-first-occurrence-of-pattern-from-string">Strip first occurrence of pattern from string</a></li>
+<li><a href="#strip-pattern-from-start-of-string">Strip pattern from start of string</a></li>
+<li><a href="#strip-pattern-from-end-of-string">Strip pattern from end of string</a></li>
+<li><a href="#percent-encode-a-string">Percent-encode a string</a></li>
+<li><a href="#decode-a-percent-encoded-string">Decode a percent-encoded string</a></li>
+<li><a href="#check-if-string-contains-a-sub-string">Check if string contains a sub-string</a></li>
+<li><a href="#check-if-string-starts-with-sub-string">Check if string starts with sub-string</a></li>
+<li><a href="#check-if-string-ends-with-sub-string">Check if string ends with sub-string</a></li>
+</ul>
+</li>
+<li><a href="#arrays">ARRAYS</a><ul>
+<li><a href="#reverse-an-array">Reverse an array</a></li>
+<li><a href="#remove-duplicate-array-elements">Remove duplicate array elements</a></li>
+<li><a href="#random-array-element">Random array element</a></li>
+<li><a href="#cycle-through-an-array">Cycle through an array</a></li>
+<li><a href="#toggle-between-two-values">Toggle between two values</a></li>
+</ul>
+</li>
+<li><a href="#loops">LOOPS</a><ul>
+<li><a href="#loop-over-a-range-of-numbers">Loop over a range of numbers</a></li>
+<li><a href="#loop-over-a-variable-range-of-numbers">Loop over a variable range of numbers</a></li>
+<li><a href="#loop-over-an-array">Loop over an array</a></li>
+<li><a href="#loop-over-an-array-with-an-index">Loop over an array with an index</a></li>
+<li><a href="#loop-over-the-contents-of-a-file">Loop over the contents of a file</a></li>
+<li><a href="#loop-over-files-and-directories">Loop over files and directories</a></li>
+</ul>
+</li>
+<li><a href="#file-handling">FILE HANDLING</a><ul>
+<li><a href="#read-a-file-to-a-string">Read a file to a string</a></li>
+<li><a href="#read-a-file-to-an-array-by-line">Read a file to an array (<em>by line</em>)</a></li>
+<li><a href="#get-the-first-n-lines-of-a-file">Get the first N lines of a file</a></li>
+<li><a href="#get-the-last-n-lines-of-a-file">Get the last N lines of a file</a></li>
+<li><a href="#get-the-number-of-lines-in-a-file">Get the number of lines in a file</a></li>
+<li><a href="#count-files-or-directories-in-directory">Count files or directories in directory</a></li>
+<li><a href="#create-an-empty-file">Create an empty file</a></li>
+<li><a href="#extract-lines-between-two-markers">Extract lines between two markers</a></li>
+</ul>
+</li>
+<li><a href="#file-paths">FILE PATHS</a><ul>
+<li><a href="#get-the-directory-name-of-a-file-path">Get the directory name of a file path</a></li>
+<li><a href="#get-the-base-name-of-a-file-path">Get the base-name of a file path</a></li>
+</ul>
+</li>
+<li><a href="#variables">VARIABLES</a><ul>
+<li><a href="#assign-and-access-a-variable-using-a-variable">Assign and access a variable using a variable</a></li>
+<li><a href="#name-a-variable-based-on-another-variable">Name a variable based on another variable</a></li>
+</ul>
+</li>
+<li><a href="#escape-sequences">ESCAPE SEQUENCES</a><ul>
+<li><a href="#text-colors">Text Colors</a></li>
+<li><a href="#text-attributes">Text Attributes</a></li>
+<li><a href="#cursor-movement">Cursor Movement</a></li>
+<li><a href="#erasing-text">Erasing Text</a></li>
+</ul>
+</li>
+<li><a href="#parameter-expansion">PARAMETER EXPANSION</a><ul>
+<li><a href="#indirection">Indirection</a></li>
+<li><a href="#replacement">Replacement</a></li>
+<li><a href="#length">Length</a></li>
+<li><a href="#expansion">Expansion</a></li>
+<li><a href="#case-modification">Case Modification</a></li>
+<li><a href="#default-value">Default Value</a></li>
+</ul>
+</li>
+<li><a href="#brace-expansion">BRACE EXPANSION</a><ul>
+<li><a href="#ranges">Ranges</a></li>
+<li><a href="#string-lists">String Lists</a></li>
+</ul>
+</li>
+<li><a href="#conditional-expressions">CONDITIONAL EXPRESSIONS</a><ul>
+<li><a href="#file-conditionals">File Conditionals</a></li>
+<li><a href="#file-comparisons">File Comparisons</a></li>
+<li><a href="#variable-conditionals">Variable Conditionals</a></li>
+<li><a href="#variable-comparisons">Variable Comparisons</a></li>
+</ul>
+</li>
+<li><a href="#arithmetic-operators">ARITHMETIC OPERATORS</a><ul>
+<li><a href="#assignment">Assignment</a></li>
+<li><a href="#arithmetic">Arithmetic</a></li>
+<li><a href="#bitwise">Bitwise</a></li>
+<li><a href="#logical">Logical</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#arithmetic-1">ARITHMETIC</a><ul>
+<li><a href="#simpler-syntax-to-set-variables">Simpler syntax to set variables</a></li>
+<li><a href="#ternary-tests">Ternary Tests</a></li>
+</ul>
+</li>
+<li><a href="#traps">TRAPS</a><ul>
+<li><a href="#do-something-on-script-exit">Do something on script exit</a></li>
+<li><a href="#ignore-terminal-interrupt-ctrlc-sigint">Ignore terminal interrupt (CTRL+C, SIGINT)</a></li>
+<li><a href="#react-to-window-resize">React to window resize</a></li>
+<li><a href="#do-something-before-every-command">Do something before every command</a></li>
+<li><a href="#do-something-when-a-shell-function-or-a-sourced-file-finishes-executing">Do something when a shell function or a sourced file finishes executing</a></li>
+</ul>
+</li>
+<li><a href="#performance">PERFORMANCE</a><ul>
+<li><a href="#disable-unicode">Disable Unicode</a></li>
+</ul>
+</li>
+<li><a href="#obsolete-syntax">OBSOLETE SYNTAX</a><ul>
+<li><a href="#shebang">Shebang</a></li>
+<li><a href="#command-substitution">Command Substitution</a></li>
+<li><a href="#function-declaration">Function Declaration</a></li>
+</ul>
+</li>
+<li><a href="#internal-variables">INTERNAL VARIABLES</a><ul>
+<li><a href="#get-the-location-to-the-bash-binary">Get the location to the <code>bash</code> binary</a></li>
+<li><a href="#get-the-version-of-the-current-running-bash-process">Get the version of the current running <code>bash</code> process</a></li>
+<li><a href="#open-the-users-preferred-text-editor">Open the user's preferred text editor</a></li>
+<li><a href="#get-the-name-of-the-current-function">Get the name of the current function</a></li>
+<li><a href="#get-the-host-name-of-the-system">Get the host-name of the system</a></li>
+<li><a href="#get-the-architecture-of-the-operating-system">Get the architecture of the Operating System</a></li>
+<li><a href="#get-the-name-of-the-operating-system--kernel">Get the name of the Operating System / Kernel</a></li>
+<li><a href="#get-the-current-working-directory">Get the current working directory</a></li>
+<li><a href="#get-the-number-of-seconds-the-script-has-been-running">Get the number of seconds the script has been running</a></li>
+<li><a href="#get-a-pseudorandom-integer">Get a pseudorandom integer</a></li>
+</ul>
+</li>
+<li><a href="#information-about-the-terminal">INFORMATION ABOUT THE TERMINAL</a><ul>
+<li><a href="#get-the-terminal-size-in-lines-and-columns-from-a-script">Get the terminal size in lines and columns (<em>from a script</em>)</a></li>
+<li><a href="#get-the-terminal-size-in-pixels">Get the terminal size in pixels</a></li>
+<li><a href="#get-the-current-cursor-position">Get the current cursor position</a></li>
+</ul>
+</li>
+<li><a href="#conversion">CONVERSION</a><ul>
+<li><a href="#convert-a-hex-color-to-rgb">Convert a hex color to RGB</a></li>
+<li><a href="#convert-an-rgb-color-to-hex">Convert an RGB color to hex</a></li>
+</ul>
+</li>
+<li><a href="#code-golf">CODE GOLF</a><ul>
+<li><a href="#shorter-for-loop-syntax">Shorter <code>for</code> loop syntax</a></li>
+<li><a href="#shorter-infinite-loops">Shorter infinite loops</a></li>
+<li><a href="#shorter-function-declaration">Shorter function declaration</a></li>
+<li><a href="#shorter-if-syntax">Shorter <code>if</code> syntax</a></li>
+<li><a href="#simpler-case-statement-to-set-variable">Simpler <code>case</code> statement to set variable</a></li>
+</ul>
+</li>
+<li><a href="#other">OTHER</a><ul>
+<li><a href="#use-read-as-an-alternative-to-the-sleep-command">Use <code>read</code> as an alternative to the <code>sleep</code> command</a></li>
+<li><a href="#check-if-a-program-is-in-the-users-path">Check if a program is in the user's PATH</a></li>
+<li><a href="#get-the-current-date-using-strftime">Get the current date using <code>strftime</code></a></li>
+<li><a href="#get-the-username-of-the-current-user">Get the username of the current user</a></li>
+<li><a href="#generate-a-uuid-v4">Generate a UUID V4</a></li>
+<li><a href="#progress-bars">Progress bars</a></li>
+<li><a href="#get-the-list-of-functions-in-a-script">Get the list of functions in a script</a></li>
+<li><a href="#bypass-shell-aliases">Bypass shell aliases</a></li>
+<li><a href="#bypass-shell-functions">Bypass shell functions</a></li>
+<li><a href="#run-a-command-in-the-background">Run a command in the background</a></li>
+<li><a href="#capture-the-return-value-of-a-function-without-command-substitution">Capture function return without command substitution</a></li>
+</ul>
+</li>
+<li><a href="#afterword">AFTERWORD</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+
+<p><br></p>
+<!-- CHAPTER START -->
+
+<h1 id="foreword">FOREWORD</h1>
+<p>A collection of pure <code>bash</code> alternatives to external processes and programs. The <code>bash</code> scripting language is more powerful than people realise and most tasks can be accomplished without depending on external programs.</p>
+<p>Calling an external process in <code>bash</code> is expensive and excessive use will cause a noticeable slowdown. Scripts and programs written using built-in methods (<em>where applicable</em>) will be faster, require fewer dependencies and afford a better understanding of the language itself.</p>
+<p>The contents of this book provide a reference for solving problems encountered when writing programs and scripts in <code>bash</code>. Examples are in function formats showcasing how to incorporate these solutions into code.</p>
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="strings">STRINGS</h1>
+<h2 id="trim-leading-and-trailing-white-space-from-string">Trim leading and trailing white-space from string</h2>
+<p>This is an alternative to <code>sed</code>, <code>awk</code>, <code>perl</code> and other tools. The
+function below works by finding all leading and trailing white-space and
+removing it from the start and end of the string. The <code>:</code> built-in is used in place of a temporary variable.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">trim_string() {
+    # Usage: trim_string &quot;   example   string    &quot;
+    : &quot;${1#&quot;${1%%[![:space:]]*}&quot;}&quot;
+    : &quot;${_%&quot;${_##*[![:space:]]}&quot;}&quot;
+    printf '%s\n' &quot;$_&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ trim_string &quot;    Hello,  World    &quot;
+Hello,  World
+
+$ name=&quot;   John Black  &quot;
+$ trim_string &quot;$name&quot;
+John Black
+</code></pre>
+
+<h2 id="trim-all-white-space-from-string-and-truncate-spaces">Trim all white-space from string and truncate spaces</h2>
+<p>This is an alternative to <code>sed</code>, <code>awk</code>, <code>perl</code> and other tools. The
+function below works by abusing word splitting to create a new string
+without leading/trailing white-space and with truncated spaces.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh"># shellcheck disable=SC2086,SC2048
+trim_all() {
+    # Usage: trim_all &quot;   example   string    &quot;
+    set -f
+    set -- $*
+    printf '%s\n' &quot;$*&quot;
+    set +f
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ trim_all &quot;    Hello,    World    &quot;
+Hello, World
+
+$ name=&quot;   John   Black  is     my    name.    &quot;
+$ trim_all &quot;$name&quot;
+John Black is my name.
+</code></pre>
+
+<h2 id="use-regex-on-a-string">Use regex on a string</h2>
+<p>The result of <code>bash</code>'s regex matching can be used to replace <code>sed</code> for a
+large number of use-cases.</p>
+<p><strong>CAVEAT</strong>: This is one of the few platform dependent <code>bash</code> features.
+<code>bash</code> will use whatever regex engine is installed on the user's system.
+Stick to POSIX regex features if aiming for compatibility.</p>
+<p><strong>CAVEAT</strong>: This example only prints the first matching group. When using
+multiple capture groups some modification is needed.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">regex() {
+    # Usage: regex &quot;string&quot; &quot;regex&quot;
+    [[ $1 =~ $2 ]] &amp;&amp; printf '%s\n' &quot;${BASH_REMATCH[1]}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ # Trim leading white-space.
+$ regex '    hello' '^\s*(.*)'
+hello
+
+$ # Validate a hex color.
+$ regex &quot;#FFFFFF&quot; '^(#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}))$'
+#FFFFFF
+
+$ # Validate a hex color (invalid).
+$ regex &quot;red&quot; '^(#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}))$'
+# no output (invalid)
+</code></pre>
+
+<p><strong>Example Usage in script:</strong></p>
+<pre><code class="shell">is_hex_color() {
+    if [[ $1 =~ ^(#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}))$ ]]; then
+        printf '%s\n' &quot;${BASH_REMATCH[1]}&quot;
+    else
+        printf '%s\n' &quot;error: $1 is an invalid color.&quot;
+        return 1
+    fi
+}
+
+read -r color
+is_hex_color &quot;$color&quot; || color=&quot;#FFFFFF&quot;
+
+# Do stuff.
+</code></pre>
+
+<h2 id="split-a-string-on-a-delimiter">Split a string on a delimiter</h2>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p>This is an alternative to <code>cut</code>, <code>awk</code> and other tools.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">split() {
+   # Usage: split &quot;string&quot; &quot;delimiter&quot;
+   IFS=$'\n' read -d &quot;&quot; -ra arr &lt;&lt;&lt; &quot;${1//$2/$'\n'}&quot;
+   printf '%s\n' &quot;${arr[@]}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ split &quot;apples,oranges,pears,grapes&quot; &quot;,&quot;
+apples
+oranges
+pears
+grapes
+
+$ split &quot;1, 2, 3, 4, 5&quot; &quot;, &quot;
+1
+2
+3
+4
+5
+
+# Multi char delimiters work too!
+$ split &quot;hello---world---my---name---is---john&quot; &quot;---&quot;
+hello
+world
+my
+name
+is
+john
+</code></pre>
+
+<h2 id="change-a-string-to-lowercase">Change a string to lowercase</h2>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">lower() {
+    # Usage: lower &quot;string&quot;
+    printf '%s\n' &quot;${1,,}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ lower &quot;HELLO&quot;
+hello
+
+$ lower &quot;HeLlO&quot;
+hello
+
+$ lower &quot;hello&quot;
+hello
+</code></pre>
+
+<h2 id="change-a-string-to-uppercase">Change a string to uppercase</h2>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">upper() {
+    # Usage: upper &quot;string&quot;
+    printf '%s\n' &quot;${1^^}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ upper &quot;hello&quot;
+HELLO
+
+$ upper &quot;HeLlO&quot;
+HELLO
+
+$ upper &quot;HELLO&quot;
+HELLO
+</code></pre>
+
+<h2 id="reverse-a-string-case">Reverse a string case</h2>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">reverse_case() {
+    # Usage: reverse_case &quot;string&quot;
+    printf '%s\n' &quot;${1~~}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ reverse_case &quot;hello&quot;
+HELLO
+
+$ reverse_case &quot;HeLlO&quot;
+hElLo
+
+$ reverse_case &quot;HELLO&quot;
+hello
+</code></pre>
+
+<h2 id="trim-quotes-from-a-string">Trim quotes from a string</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">trim_quotes() {
+    # Usage: trim_quotes &quot;string&quot;
+    : &quot;${1//\'}&quot;
+    printf '%s\n' &quot;${_//\&quot;}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ var=&quot;'Hello', \&quot;World\&quot;&quot;
+$ trim_quotes &quot;$var&quot;
+Hello, World
+</code></pre>
+
+<h2 id="strip-all-instances-of-pattern-from-string">Strip all instances of pattern from string</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">strip_all() {
+    # Usage: strip_all &quot;string&quot; &quot;pattern&quot;
+    printf '%s\n' &quot;${1//$2}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ strip_all &quot;The Quick Brown Fox&quot; &quot;[aeiou]&quot;
+Th Qck Brwn Fx
+
+$ strip_all &quot;The Quick Brown Fox&quot; &quot;[[:space:]]&quot;
+TheQuickBrownFox
+
+$ strip_all &quot;The Quick Brown Fox&quot; &quot;Quick &quot;
+The Brown Fox
+</code></pre>
+
+<h2 id="strip-first-occurrence-of-pattern-from-string">Strip first occurrence of pattern from string</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">strip() {
+    # Usage: strip &quot;string&quot; &quot;pattern&quot;
+    printf '%s\n' &quot;${1/$2}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ strip &quot;The Quick Brown Fox&quot; &quot;[aeiou]&quot;
+Th Quick Brown Fox
+
+$ strip &quot;The Quick Brown Fox&quot; &quot;[[:space:]]&quot;
+TheQuick Brown Fox
+</code></pre>
+
+<h2 id="strip-pattern-from-start-of-string">Strip pattern from start of string</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">lstrip() {
+    # Usage: lstrip &quot;string&quot; &quot;pattern&quot;
+    printf '%s\n' &quot;${1##$2}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ lstrip &quot;The Quick Brown Fox&quot; &quot;The &quot;
+Quick Brown Fox
+</code></pre>
+
+<h2 id="strip-pattern-from-end-of-string">Strip pattern from end of string</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">rstrip() {
+    # Usage: rstrip &quot;string&quot; &quot;pattern&quot;
+    printf '%s\n' &quot;${1%%$2}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ rstrip &quot;The Quick Brown Fox&quot; &quot; Fox&quot;
+The Quick Brown
+</code></pre>
+
+<h2 id="percent-encode-a-string">Percent-encode a string</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">urlencode() {
+    # Usage: urlencode &quot;string&quot;
+    local LC_ALL=C
+    for (( i = 0; i &lt; ${#1}; i++ )); do
+        : &quot;${1:i:1}&quot;
+        case &quot;$_&quot; in
+            [a-zA-Z0-9.~_-])
+                printf '%s' &quot;$_&quot;
+            ;;
+
+            *)
+                printf '%%%02X' &quot;'$_&quot;
+            ;;
+        esac
+    done
+    printf '\n'
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ urlencode &quot;https://github.com/dylanaraps/pure-bash-bible&quot;
+https%3A%2F%2Fgithub.com%2Fdylanaraps%2Fpure-bash-bible
+</code></pre>
+
+<h2 id="decode-a-percent-encoded-string">Decode a percent-encoded string</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">urldecode() {
+    # Usage: urldecode &quot;string&quot;
+    : &quot;${1//+/ }&quot;
+    printf '%b\n' &quot;${_//%/\\x}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ urldecode &quot;https%3A%2F%2Fgithub.com%2Fdylanaraps%2Fpure-bash-bible&quot;
+https://github.com/dylanaraps/pure-bash-bible
+</code></pre>
+
+<h2 id="check-if-string-contains-a-sub-string">Check if string contains a sub-string</h2>
+<p><strong>Using a test:</strong></p>
+<pre><code class="shell">if [[ $var == *sub_string* ]]; then
+    printf '%s\n' &quot;sub_string is in var.&quot;
+fi
+
+# Inverse (substring not in string).
+if [[ $var != *sub_string* ]]; then
+    printf '%s\n' &quot;sub_string is not in var.&quot;
+fi
+
+# This works for arrays too!
+if [[ ${arr[*]} == *sub_string* ]]; then
+    printf '%s\n' &quot;sub_string is in array.&quot;
+fi
+</code></pre>
+
+<p><strong>Using a case statement:</strong></p>
+<pre><code class="shell">case &quot;$var&quot; in
+    *sub_string*)
+        # Do stuff
+    ;;
+
+    *sub_string2*)
+        # Do more stuff
+    ;;
+
+    *)
+        # Else
+    ;;
+esac
+</code></pre>
+
+<h2 id="check-if-string-starts-with-sub-string">Check if string starts with sub-string</h2>
+<pre><code class="shell">if [[ $var == sub_string* ]]; then
+    printf '%s\n' &quot;var starts with sub_string.&quot;
+fi
+
+# Inverse (var does not start with sub_string).
+if [[ $var != sub_string* ]]; then
+    printf '%s\n' &quot;var does not start with sub_string.&quot;
+fi
+</code></pre>
+
+<h2 id="check-if-string-ends-with-sub-string">Check if string ends with sub-string</h2>
+<pre><code class="shell">if [[ $var == *sub_string ]]; then
+    printf '%s\n' &quot;var ends with sub_string.&quot;
+fi
+
+# Inverse (var does not end with sub_string).
+if [[ $var != *sub_string ]]; then
+    printf '%s\n' &quot;var does not end with sub_string.&quot;
+fi
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="arrays">ARRAYS</h1>
+<h2 id="reverse-an-array">Reverse an array</h2>
+<p>Enabling <code>extdebug</code> allows access to the <code>BASH_ARGV</code> array which stores
+the current function’s arguments in reverse.</p>
+<p><strong>CAVEAT</strong>: Requires <code>shopt -s compat44</code> in <code>bash</code> 5.0+.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">reverse_array() {
+    # Usage: reverse_array &quot;array&quot;
+    shopt -s extdebug
+    f()(printf '%s\n' &quot;${BASH_ARGV[@]}&quot;); f &quot;$@&quot;
+    shopt -u extdebug
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ reverse_array 1 2 3 4 5
+5
+4
+3
+2
+1
+
+$ arr=(red blue green)
+$ reverse_array &quot;${arr[@]}&quot;
+green
+blue
+red
+</code></pre>
+
+<h2 id="remove-duplicate-array-elements">Remove duplicate array elements</h2>
+<p>Create a temporary associative array. When setting associative array
+values and a duplicate assignment occurs, bash overwrites the key. This
+allows us to effectively remove array duplicates.</p>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>CAVEAT:</strong> List order may not stay the same.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">remove_array_dups() {
+    # Usage: remove_array_dups &quot;array&quot;
+    declare -A tmp_array
+
+    for i in &quot;$@&quot;; do
+        [[ $i ]] &amp;&amp; IFS=&quot; &quot; tmp_array[&quot;${i:- }&quot;]=1
+    done
+
+    printf '%s\n' &quot;${!tmp_array[@]}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ remove_array_dups 1 1 2 2 3 3 3 3 3 4 4 4 4 4 5 5 5 5 5 5
+1
+2
+3
+4
+5
+
+$ arr=(red red green blue blue)
+$ remove_array_dups &quot;${arr[@]}&quot;
+red
+green
+blue
+</code></pre>
+
+<h2 id="random-array-element">Random array element</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">random_array_element() {
+    # Usage: random_array_element &quot;array&quot;
+    local arr=(&quot;$@&quot;)
+    printf '%s\n' &quot;${arr[RANDOM % $#]}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ array=(red green blue yellow brown)
+$ random_array_element &quot;${array[@]}&quot;
+yellow
+
+# Multiple arguments can also be passed.
+$ random_array_element 1 2 3 4 5 6 7
+3
+</code></pre>
+
+<h2 id="cycle-through-an-array">Cycle through an array</h2>
+<p>Each time the <code>printf</code> is called, the next array element is printed. When
+the print hits the last array element it starts from the first element
+again.</p>
+<pre><code class="sh">arr=(a b c d)
+
+cycle() {
+    printf '%s ' &quot;${arr[${i:=0}]}&quot;
+    ((i=i&gt;=${#arr[@]}-1?0:++i))
+}
+</code></pre>
+
+<h2 id="toggle-between-two-values">Toggle between two values</h2>
+<p>This works the same as above, this is just a different use case.</p>
+<pre><code class="sh">arr=(true false)
+
+cycle() {
+    printf '%s ' &quot;${arr[${i:=0}]}&quot;
+    ((i=i&gt;=${#arr[@]}-1?0:++i))
+}
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="loops">LOOPS</h1>
+<h2 id="loop-over-a-range-of-numbers">Loop over a range of numbers</h2>
+<p>Alternative to <code>seq</code>.</p>
+<pre><code class="shell"># Loop from 0-100 (no variable support).
+for i in {0..100}; do
+    printf '%s\n' &quot;$i&quot;
+done
+</code></pre>
+
+<h2 id="loop-over-a-variable-range-of-numbers">Loop over a variable range of numbers</h2>
+<p>Alternative to <code>seq</code>.</p>
+<pre><code class="shell"># Loop from 0-VAR.
+VAR=50
+for ((i=0;i&lt;=VAR;i++)); do
+    printf '%s\n' &quot;$i&quot;
+done
+</code></pre>
+
+<h2 id="loop-over-an-array">Loop over an array</h2>
+<pre><code class="shell">arr=(apples oranges tomatoes)
+
+# Just elements.
+for element in &quot;${arr[@]}&quot;; do
+    printf '%s\n' &quot;$element&quot;
+done
+</code></pre>
+
+<h2 id="loop-over-an-array-with-an-index">Loop over an array with an index</h2>
+<pre><code class="shell">arr=(apples oranges tomatoes)
+
+# Elements and index.
+for i in &quot;${!arr[@]}&quot;; do
+    printf '%s\n' &quot;${arr[i]}&quot;
+done
+
+# Alternative method.
+for ((i=0;i&lt;${#arr[@]};i++)); do
+    printf '%s\n' &quot;${arr[i]}&quot;
+done
+</code></pre>
+
+<h2 id="loop-over-the-contents-of-a-file">Loop over the contents of a file</h2>
+<pre><code class="shell">while read -r line; do
+    printf '%s\n' &quot;$line&quot;
+done &lt; &quot;file&quot;
+</code></pre>
+
+<h2 id="loop-over-files-and-directories">Loop over files and directories</h2>
+<p>Don’t use <code>ls</code>.</p>
+<pre><code class="shell"># Greedy example.
+for file in *; do
+    printf '%s\n' &quot;$file&quot;
+done
+
+# PNG files in dir.
+for file in ~/Pictures/*.png; do
+    printf '%s\n' &quot;$file&quot;
+done
+
+# Iterate over directories.
+for dir in ~/Downloads/*/; do
+    printf '%s\n' &quot;$dir&quot;
+done
+
+# Brace Expansion.
+for file in /path/to/parentdir/{file1,file2,subdir/file3}; do
+    printf '%s\n' &quot;$file&quot;
+done
+
+# Iterate recursively.
+shopt -s globstar
+for file in ~/Pictures/**/*; do
+    printf '%s\n' &quot;$file&quot;
+done
+shopt -u globstar
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="file-handling">FILE HANDLING</h1>
+<p><strong>CAVEAT:</strong> <code>bash</code> does not handle binary data properly in versions <code>&lt; 4.4</code>.</p>
+<h2 id="read-a-file-to-a-string">Read a file to a string</h2>
+<p>Alternative to the <code>cat</code> command.</p>
+<pre><code class="shell">file_data=&quot;$(&lt;&quot;file&quot;)&quot;
+</code></pre>
+
+<h2 id="read-a-file-to-an-array-by-line">Read a file to an array (<em>by line</em>)</h2>
+<p>Alternative to the <code>cat</code> command.</p>
+<pre><code class="shell"># Bash &lt;4 (discarding empty lines).
+IFS=$'\n' read -d &quot;&quot; -ra file_data &lt; &quot;file&quot;
+
+# Bash &lt;4 (preserving empty lines).
+while read -r line; do
+    file_data+=(&quot;$line&quot;)
+done &lt; &quot;file&quot;
+
+# Bash 4+
+mapfile -t file_data &lt; &quot;file&quot;
+</code></pre>
+
+<h2 id="get-the-first-n-lines-of-a-file">Get the first N lines of a file</h2>
+<p>Alternative to the <code>head</code> command.</p>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">head() {
+    # Usage: head &quot;n&quot; &quot;file&quot;
+    mapfile -tn &quot;$1&quot; line &lt; &quot;$2&quot;
+    printf '%s\n' &quot;${line[@]}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ head 2 ~/.bashrc
+# Prompt
+PS1='➜ '
+
+$ head 1 ~/.bashrc
+# Prompt
+</code></pre>
+
+<h2 id="get-the-last-n-lines-of-a-file">Get the last N lines of a file</h2>
+<p>Alternative to the <code>tail</code> command.</p>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">tail() {
+    # Usage: tail &quot;n&quot; &quot;file&quot;
+    mapfile -tn 0 line &lt; &quot;$2&quot;
+    printf '%s\n' &quot;${line[@]: -$1}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ tail 2 ~/.bashrc
+# Enable tmux.
+# [[ -z &quot;$TMUX&quot;  ]] &amp;&amp; exec tmux
+
+$ tail 1 ~/.bashrc
+# [[ -z &quot;$TMUX&quot;  ]] &amp;&amp; exec tmux
+</code></pre>
+
+<h2 id="get-the-number-of-lines-in-a-file">Get the number of lines in a file</h2>
+<p>Alternative to <code>wc -l</code>.</p>
+<p><strong>Example Function (bash 4):</strong></p>
+<pre><code class="sh">lines() {
+    # Usage: lines &quot;file&quot;
+    mapfile -tn 0 lines &lt; &quot;$1&quot;
+    printf '%s\n' &quot;${#lines[@]}&quot;
+}
+</code></pre>
+
+<p><strong>Example Function (bash 3):</strong></p>
+<p>This method uses less memory than the <code>mapfile</code> method and works in <code>bash</code> 3 but it is slower for bigger files.</p>
+<pre><code class="sh">lines_loop() {
+    # Usage: lines_loop &quot;file&quot;
+    count=0
+    while IFS= read -r _; do
+        ((count++))
+    done &lt; &quot;$1&quot;
+    printf '%s\n' &quot;$count&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ lines ~/.bashrc
+48
+
+$ lines_loop ~/.bashrc
+48
+</code></pre>
+
+<h2 id="count-files-or-directories-in-directory">Count files or directories in directory</h2>
+<p>This works by passing the output of the glob to the function and then counting the number of arguments.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">count() {
+    # Usage: count /path/to/dir/*
+    #        count /path/to/dir/*/
+    printf '%s\n' &quot;$#&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell"># Count all files in dir.
+$ count ~/Downloads/*
+232
+
+# Count all dirs in dir.
+$ count ~/Downloads/*/
+45
+
+# Count all jpg files in dir.
+$ count ~/Pictures/*.jpg
+64
+</code></pre>
+
+<h2 id="create-an-empty-file">Create an empty file</h2>
+<p>Alternative to <code>touch</code>.</p>
+<pre><code class="shell"># Shortest.
+&gt;file
+
+# Longer alternatives:
+:&gt;file
+echo -n &gt;file
+printf '' &gt;file
+</code></pre>
+
+<h2 id="extract-lines-between-two-markers">Extract lines between two markers</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">extract() {
+    # Usage: extract file &quot;opening marker&quot; &quot;closing marker&quot;
+    while IFS=$'\n' read -r line; do
+        [[ $extract &amp;&amp; $line != &quot;$3&quot; ]] &amp;&amp;
+            printf '%s\n' &quot;$line&quot;
+
+        [[ $line == &quot;$2&quot; ]] &amp;&amp; extract=1
+        [[ $line == &quot;$3&quot; ]] &amp;&amp; extract=
+    done &lt; &quot;$1&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell"># Extract code blocks from MarkDown file.
+$ extract ~/projects/pure-bash/README.md '```sh' '```'
+# Output here...
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="file-paths">FILE PATHS</h1>
+<h2 id="get-the-directory-name-of-a-file-path">Get the directory name of a file path</h2>
+<p>Alternative to the <code>dirname</code> command.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">dirname() {
+    # Usage: dirname &quot;path&quot;
+    local tmp=${1:-.}
+
+    [[ $tmp != *[!/]* ]] &amp;&amp; {
+        printf '/\n'
+        return
+    }
+
+    tmp=${tmp%%&quot;${tmp##*[!/]}&quot;}
+
+    [[ $tmp != */* ]] &amp;&amp; {
+        printf '.\n'
+        return
+    }
+
+    tmp=${tmp%/*}
+    tmp=${tmp%%&quot;${tmp##*[!/]}&quot;}
+
+    printf '%s\n' &quot;${tmp:-/}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ dirname ~/Pictures/Wallpapers/1.jpg
+/home/black/Pictures/Wallpapers
+
+$ dirname ~/Pictures/Downloads/
+/home/black/Pictures
+</code></pre>
+
+<h2 id="get-the-base-name-of-a-file-path">Get the base-name of a file path</h2>
+<p>Alternative to the <code>basename</code> command.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">basename() {
+    # Usage: basename &quot;path&quot; [&quot;suffix&quot;]
+    local tmp
+
+    tmp=${1%&quot;${1##*[!/]}&quot;}
+    tmp=${tmp##*/}
+    tmp=${tmp%&quot;${2/&quot;$tmp&quot;}&quot;}
+
+    printf '%s\n' &quot;${tmp:-/}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ basename ~/Pictures/Wallpapers/1.jpg
+1.jpg
+
+$ basename ~/Pictures/Wallpapers/1.jpg .jpg
+1
+
+$ basename ~/Pictures/Downloads/
+Downloads
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="variables">VARIABLES</h1>
+<h2 id="assign-and-access-a-variable-using-a-variable">Assign and access a variable using a variable</h2>
+<pre><code class="shell">$ hello_world=&quot;value&quot;
+
+# Create the variable name.
+$ var=&quot;world&quot;
+$ ref=&quot;hello_$var&quot;
+
+# Print the value of the variable name stored in 'hello_$var'.
+$ printf '%s\n' &quot;${!ref}&quot;
+value
+</code></pre>
+
+<p>Alternatively, on <code>bash</code> 4.3+:</p>
+<pre><code class="shell">$ hello_world=&quot;value&quot;
+$ var=&quot;world&quot;
+
+# Declare a nameref.
+$ declare -n ref=hello_$var
+
+$ printf '%s\n' &quot;$ref&quot;
+value
+</code></pre>
+
+<h2 id="name-a-variable-based-on-another-variable">Name a variable based on another variable</h2>
+<pre><code class="shell">$ var=&quot;world&quot;
+$ declare &quot;hello_$var=value&quot;
+$ printf '%s\n' &quot;$hello_world&quot;
+value
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="escape-sequences">ESCAPE SEQUENCES</h1>
+<p>Contrary to popular belief, there is no issue in utilizing raw escape sequences. Using <code>tput</code> abstracts the same ANSI sequences as if printed manually. Worse still, <code>tput</code> is not actually portable. There are a number of <code>tput</code> variants each with different commands and syntaxes (<em>try <code>tput setaf 3</code> on a FreeBSD system</em>). Raw sequences are fine.</p>
+<h2 id="text-colors">Text Colors</h2>
+<p><strong>NOTE:</strong> Sequences requiring RGB values only work in True-Color Terminal Emulators.</p>
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>What does it do?</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\e[38;5;&lt;NUM&gt;m</code></td>
+<td>Set text foreground color.</td>
+<td><code>0-255</code></td>
+</tr>
+<tr>
+<td><code>\e[48;5;&lt;NUM&gt;m</code></td>
+<td>Set text background color.</td>
+<td><code>0-255</code></td>
+</tr>
+<tr>
+<td><code>\e[38;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m</code></td>
+<td>Set text foreground color to RGB color.</td>
+<td><code>R</code>, <code>G</code>, <code>B</code></td>
+</tr>
+<tr>
+<td><code>\e[48;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m</code></td>
+<td>Set text background color to RGB color.</td>
+<td><code>R</code>, <code>G</code>, <code>B</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="text-attributes">Text Attributes</h2>
+<p><strong>NOTE:</strong> Prepend 2 to any code below to turn it's effect off
+(examples: 21=bold text off, 22=faint text off, 23=italic text off).</p>
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\e[m</code></td>
+<td>Reset text formatting and colors.</td>
+</tr>
+<tr>
+<td><code>\e[1m</code></td>
+<td>Bold text.</td>
+</tr>
+<tr>
+<td><code>\e[2m</code></td>
+<td>Faint text.</td>
+</tr>
+<tr>
+<td><code>\e[3m</code></td>
+<td>Italic text.</td>
+</tr>
+<tr>
+<td><code>\e[4m</code></td>
+<td>Underline text.</td>
+</tr>
+<tr>
+<td><code>\e[5m</code></td>
+<td>Blinking text.</td>
+</tr>
+<tr>
+<td><code>\e[7m</code></td>
+<td>Highlighted text.</td>
+</tr>
+<tr>
+<td><code>\e[8m</code></td>
+<td>Hidden text.</td>
+</tr>
+<tr>
+<td><code>\e[9m</code></td>
+<td>Strike-through text.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cursor-movement">Cursor Movement</h2>
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>What does it do?</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\e[&lt;LINE&gt;;&lt;COLUMN&gt;H</code></td>
+<td>Move cursor to absolute position.</td>
+<td><code>line</code>, <code>column</code></td>
+</tr>
+<tr>
+<td><code>\e[H</code></td>
+<td>Move cursor to home position (<code>0,0</code>).</td>
+<td></td>
+</tr>
+<tr>
+<td><code>\e[&lt;NUM&gt;A</code></td>
+<td>Move cursor up N lines.</td>
+<td><code>num</code></td>
+</tr>
+<tr>
+<td><code>\e[&lt;NUM&gt;B</code></td>
+<td>Move cursor down N lines.</td>
+<td><code>num</code></td>
+</tr>
+<tr>
+<td><code>\e[&lt;NUM&gt;C</code></td>
+<td>Move cursor right N columns.</td>
+<td><code>num</code></td>
+</tr>
+<tr>
+<td><code>\e[&lt;NUM&gt;D</code></td>
+<td>Move cursor left N columns.</td>
+<td><code>num</code></td>
+</tr>
+<tr>
+<td><code>\e[s</code></td>
+<td>Save cursor position.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>\e[u</code></td>
+<td>Restore cursor position.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="erasing-text">Erasing Text</h2>
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\e[K</code></td>
+<td>Erase from cursor position to end of line.</td>
+</tr>
+<tr>
+<td><code>\e[1K</code></td>
+<td>Erase from cursor position to start of line.</td>
+</tr>
+<tr>
+<td><code>\e[2K</code></td>
+<td>Erase the entire current line.</td>
+</tr>
+<tr>
+<td><code>\e[J</code></td>
+<td>Erase from the current line to the bottom of the screen.</td>
+</tr>
+<tr>
+<td><code>\e[1J</code></td>
+<td>Erase from the current line to the top of the screen.</td>
+</tr>
+<tr>
+<td><code>\e[2J</code></td>
+<td>Clear the screen.</td>
+</tr>
+<tr>
+<td><code>\e[2J\e[H</code></td>
+<td>Clear the screen and move cursor to <code>0,0</code>.</td>
+</tr>
+</tbody>
+</table>
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="parameter-expansion">PARAMETER EXPANSION</h1>
+<h2 id="indirection">Indirection</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>${!VAR}</code></td>
+<td>Access a variable based on the value of <code>VAR</code>.</td>
+</tr>
+<tr>
+<td><code>${!VAR*}</code></td>
+<td>Expand to <code>IFS</code> separated list of variable names starting with <code>VAR</code>.</td>
+</tr>
+<tr>
+<td><code>${!VAR@}</code></td>
+<td>Expand to <code>IFS</code> separated list of variable names starting with <code>VAR</code>. If double-quoted, each variable name expands to a separate word.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="replacement">Replacement</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>${VAR#PATTERN}</code></td>
+<td>Remove shortest match of pattern from start of string.</td>
+</tr>
+<tr>
+<td><code>${VAR##PATTERN}</code></td>
+<td>Remove longest match of pattern from start of string.</td>
+</tr>
+<tr>
+<td><code>${VAR%PATTERN}</code></td>
+<td>Remove shortest match of pattern from end of string.</td>
+</tr>
+<tr>
+<td><code>${VAR%%PATTERN}</code></td>
+<td>Remove longest match of pattern from end of string.</td>
+</tr>
+<tr>
+<td><code>${VAR/PATTERN/REPLACE}</code></td>
+<td>Replace first match with string.</td>
+</tr>
+<tr>
+<td><code>${VAR//PATTERN/REPLACE}</code></td>
+<td>Replace all matches with string.</td>
+</tr>
+<tr>
+<td><code>${VAR/PATTERN}</code></td>
+<td>Remove first match.</td>
+</tr>
+<tr>
+<td><code>${VAR//PATTERN}</code></td>
+<td>Remove all matches.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="length">Length</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>${#VAR}</code></td>
+<td>Length of var in characters.</td>
+</tr>
+<tr>
+<td><code>${#ARR[@]}</code></td>
+<td>Length of array in elements.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="expansion">Expansion</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>${VAR:OFFSET}</code></td>
+<td>Remove first <code>N</code> chars from variable.</td>
+</tr>
+<tr>
+<td><code>${VAR:OFFSET:LENGTH}</code></td>
+<td>Get substring from <code>N</code> character to <code>N</code> character. <br> (<code>${VAR:10:10}</code>: Get sub-string from char <code>10</code> to char <code>20</code>)</td>
+</tr>
+<tr>
+<td><code>${VAR:: OFFSET}</code></td>
+<td>Get first <code>N</code> chars from variable.</td>
+</tr>
+<tr>
+<td><code>${VAR:: -OFFSET}</code></td>
+<td>Remove last <code>N</code> chars from variable.</td>
+</tr>
+<tr>
+<td><code>${VAR: -OFFSET}</code></td>
+<td>Get last <code>N</code> chars from variable.</td>
+</tr>
+<tr>
+<td><code>${VAR:OFFSET:-OFFSET}</code></td>
+<td>Cut first <code>N</code> chars and last <code>N</code> chars.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="case-modification">Case Modification</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>What does it do?</th>
+<th>CAVEAT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>${VAR^}</code></td>
+<td>Uppercase first character.</td>
+<td><code>bash 4+</code></td>
+</tr>
+<tr>
+<td><code>${VAR^^}</code></td>
+<td>Uppercase all characters.</td>
+<td><code>bash 4+</code></td>
+</tr>
+<tr>
+<td><code>${VAR,}</code></td>
+<td>Lowercase first character.</td>
+<td><code>bash 4+</code></td>
+</tr>
+<tr>
+<td><code>${VAR,,}</code></td>
+<td>Lowercase all characters.</td>
+<td><code>bash 4+</code></td>
+</tr>
+<tr>
+<td><code>${VAR~}</code></td>
+<td>Reverse case of first character.</td>
+<td><code>bash 4+</code></td>
+</tr>
+<tr>
+<td><code>${VAR~~}</code></td>
+<td>Reverse case of all characters.</td>
+<td><code>bash 4+</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="default-value">Default Value</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>${VAR:-STRING}</code></td>
+<td>If <code>VAR</code> is empty or unset, use <code>STRING</code> as its value.</td>
+</tr>
+<tr>
+<td><code>${VAR-STRING}</code></td>
+<td>If <code>VAR</code> is unset, use <code>STRING</code> as its value.</td>
+</tr>
+<tr>
+<td><code>${VAR:=STRING}</code></td>
+<td>If <code>VAR</code> is empty or unset, set the value of <code>VAR</code> to <code>STRING</code>.</td>
+</tr>
+<tr>
+<td><code>${VAR=STRING}</code></td>
+<td>If <code>VAR</code> is unset, set the value of <code>VAR</code> to <code>STRING</code>.</td>
+</tr>
+<tr>
+<td><code>${VAR:+STRING}</code></td>
+<td>If <code>VAR</code> is not empty, use <code>STRING</code> as its value.</td>
+</tr>
+<tr>
+<td><code>${VAR+STRING}</code></td>
+<td>If <code>VAR</code> is set, use <code>STRING</code> as its value.</td>
+</tr>
+<tr>
+<td><code>${VAR:?STRING}</code></td>
+<td>Display an error if empty or unset.</td>
+</tr>
+<tr>
+<td><code>${VAR?STRING}</code></td>
+<td>Display an error if unset.</td>
+</tr>
+</tbody>
+</table>
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="brace-expansion">BRACE EXPANSION</h1>
+<h2 id="ranges">Ranges</h2>
+<pre><code class="shell"># Syntax: {&lt;START&gt;..&lt;END&gt;}
+
+# Print numbers 1-100.
+echo {1..100}
+
+# Print range of floats.
+echo 1.{1..9}
+
+# Print chars a-z.
+echo {a..z}
+echo {A..Z}
+
+# Nesting.
+echo {A..Z}{0..9}
+
+# Print zero-padded numbers.
+# CAVEAT: bash 4+
+echo {01..100}
+
+# Change increment amount.
+# Syntax: {&lt;START&gt;..&lt;END&gt;..&lt;INCREMENT&gt;}
+# CAVEAT: bash 4+
+echo {1..10..2} # Increment by 2.
+</code></pre>
+
+<h2 id="string-lists">String Lists</h2>
+<pre><code class="shell">echo {apples,oranges,pears,grapes}
+
+# Example Usage:
+# Remove dirs Movies, Music and ISOS from ~/Downloads/.
+rm -rf ~/Downloads/{Movies,Music,ISOS}
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="conditional-expressions">CONDITIONAL EXPRESSIONS</h1>
+<h2 id="file-conditionals">File Conditionals</h2>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Value</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-a</code></td>
+<td><code>file</code></td>
+<td>If file exists.</td>
+</tr>
+<tr>
+<td><code>-b</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a block special file.</td>
+</tr>
+<tr>
+<td><code>-c</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a character special file.</td>
+</tr>
+<tr>
+<td><code>-d</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a directory.</td>
+</tr>
+<tr>
+<td><code>-e</code></td>
+<td><code>file</code></td>
+<td>If file exists.</td>
+</tr>
+<tr>
+<td><code>-f</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a regular file.</td>
+</tr>
+<tr>
+<td><code>-g</code></td>
+<td><code>file</code></td>
+<td>If file exists and its set-group-id bit is set.</td>
+</tr>
+<tr>
+<td><code>-h</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a symbolic link.</td>
+</tr>
+<tr>
+<td><code>-k</code></td>
+<td><code>file</code></td>
+<td>If file exists and its sticky-bit is set</td>
+</tr>
+<tr>
+<td><code>-p</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a named pipe (<em>FIFO</em>).</td>
+</tr>
+<tr>
+<td><code>-r</code></td>
+<td><code>file</code></td>
+<td>If file exists and is readable.</td>
+</tr>
+<tr>
+<td><code>-s</code></td>
+<td><code>file</code></td>
+<td>If file exists and its size is greater than zero.</td>
+</tr>
+<tr>
+<td><code>-t</code></td>
+<td><code>fd</code></td>
+<td>If file descriptor is open and refers to a terminal.</td>
+</tr>
+<tr>
+<td><code>-u</code></td>
+<td><code>file</code></td>
+<td>If file exists and its set-user-id bit is set.</td>
+</tr>
+<tr>
+<td><code>-w</code></td>
+<td><code>file</code></td>
+<td>If file exists and is writable.</td>
+</tr>
+<tr>
+<td><code>-x</code></td>
+<td><code>file</code></td>
+<td>If file exists and is executable.</td>
+</tr>
+<tr>
+<td><code>-G</code></td>
+<td><code>file</code></td>
+<td>If file exists and is owned by the effective group ID.</td>
+</tr>
+<tr>
+<td><code>-L</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a symbolic link.</td>
+</tr>
+<tr>
+<td><code>-N</code></td>
+<td><code>file</code></td>
+<td>If file exists and has been modified since last read.</td>
+</tr>
+<tr>
+<td><code>-O</code></td>
+<td><code>file</code></td>
+<td>If file exists and is owned by the effective user ID.</td>
+</tr>
+<tr>
+<td><code>-S</code></td>
+<td><code>file</code></td>
+<td>If file exists and is a socket.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="file-comparisons">File Comparisons</h2>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>file -ef file2</code></td>
+<td>If both files refer to the same inode and device numbers.</td>
+</tr>
+<tr>
+<td><code>file -nt file2</code></td>
+<td>If <code>file</code> is newer than <code>file2</code> (<em>uses modification time</em>) or <code>file</code> exists and <code>file2</code> does not.</td>
+</tr>
+<tr>
+<td><code>file -ot file2</code></td>
+<td>If <code>file</code> is older than <code>file2</code> (<em>uses modification time</em>) or <code>file2</code> exists and <code>file</code> does not.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="variable-conditionals">Variable Conditionals</h2>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Value</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-o</code></td>
+<td><code>opt</code></td>
+<td>If shell option is enabled.</td>
+</tr>
+<tr>
+<td><code>-v</code></td>
+<td><code>var</code></td>
+<td>If variable has a value assigned.</td>
+</tr>
+<tr>
+<td><code>-R</code></td>
+<td><code>var</code></td>
+<td>If variable is a name reference.</td>
+</tr>
+<tr>
+<td><code>-z</code></td>
+<td><code>var</code></td>
+<td>If the length of string is zero.</td>
+</tr>
+<tr>
+<td><code>-n</code></td>
+<td><code>var</code></td>
+<td>If the length of string is non-zero.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="variable-comparisons">Variable Comparisons</h2>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>var = var2</code></td>
+<td>Equal to.</td>
+</tr>
+<tr>
+<td><code>var == var2</code></td>
+<td>Equal to (<em>synonym for <code>=</code></em>).</td>
+</tr>
+<tr>
+<td><code>var != var2</code></td>
+<td>Not equal to.</td>
+</tr>
+<tr>
+<td><code>var &lt; var2</code></td>
+<td>Less than (<em>in ASCII alphabetical order.</em>)</td>
+</tr>
+<tr>
+<td><code>var &gt; var2</code></td>
+<td>Greater than (<em>in ASCII alphabetical order.</em>)</td>
+</tr>
+</tbody>
+</table>
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="arithmetic-operators">ARITHMETIC OPERATORS</h1>
+<h2 id="assignment">Assignment</h2>
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>=</code></td>
+<td>Initialize or change the value of a variable.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="arithmetic">Arithmetic</h2>
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Addition</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Division</td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>Exponentiation</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Modulo</td>
+</tr>
+<tr>
+<td><code>+=</code></td>
+<td>Plus-Equal (<em>Increment a variable.</em>)</td>
+</tr>
+<tr>
+<td><code>-=</code></td>
+<td>Minus-Equal (<em>Decrement a variable.</em>)</td>
+</tr>
+<tr>
+<td><code>*=</code></td>
+<td>Times-Equal (<em>Multiply a variable.</em>)</td>
+</tr>
+<tr>
+<td><code>/=</code></td>
+<td>Slash-Equal (<em>Divide a variable.</em>)</td>
+</tr>
+<tr>
+<td><code>%=</code></td>
+<td>Mod-Equal (<em>Remainder of dividing a variable.</em>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bitwise">Bitwise</h2>
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;&lt;</code></td>
+<td>Bitwise Left Shift</td>
+</tr>
+<tr>
+<td><code>&lt;&lt;=</code></td>
+<td>Left-Shift-Equal</td>
+</tr>
+<tr>
+<td><code>&gt;&gt;</code></td>
+<td>Bitwise Right Shift</td>
+</tr>
+<tr>
+<td><code>&gt;&gt;=</code></td>
+<td>Right-Shift-Equal</td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>Bitwise AND</td>
+</tr>
+<tr>
+<td><code>&amp;=</code></td>
+<td>Bitwise AND-Equal</td>
+</tr>
+<tr>
+<td><code>\|</code></td>
+<td>Bitwise OR</td>
+</tr>
+<tr>
+<td><code>\|=</code></td>
+<td>Bitwise OR-Equal</td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td>Bitwise NOT</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>Bitwise XOR</td>
+</tr>
+<tr>
+<td><code>^=</code></td>
+<td>Bitwise XOR-Equal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logical">Logical</h2>
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>What does it do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>!</code></td>
+<td>NOT</td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>AND</td>
+</tr>
+<tr>
+<td><code>\|\|</code></td>
+<td>OR</td>
+</tr>
+</tbody>
+</table>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>What does it do?</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>,</code></td>
+<td>Comma Separator</td>
+<td><code>((a=1,b=2,c=3))</code></td>
+</tr>
+</tbody>
+</table>
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="arithmetic_1">ARITHMETIC</h1>
+<h2 id="simpler-syntax-to-set-variables">Simpler syntax to set variables</h2>
+<pre><code class="shell"># Simple math
+((var=1+2))
+
+# Decrement/Increment variable
+((var++))
+((var--))
+((var+=1))
+((var-=1))
+
+# Using variables
+((var=var2*arr[2]))
+</code></pre>
+
+<h2 id="ternary-tests">Ternary Tests</h2>
+<pre><code class="shell"># Set the value of var to var2 if var2 is greater than var.
+# var: variable to set.
+# var2&gt;var: Condition to test.
+# ?var2: If the test succeeds.
+# :var: If the test fails.
+((var=var2&gt;var?var2:var))
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="traps">TRAPS</h1>
+<p>Traps allow a script to execute code on various signals. In <a href="https://github.com/dylanaraps/pxltrm">pxltrm</a> (<em>a pixel art editor written in bash</em>)  traps are used to redraw the user interface on window resize. Another use case is cleaning up temporary files on script exit.</p>
+<p>Traps should be added near the start of scripts so any early errors are also caught.</p>
+<p><strong>NOTE:</strong> For a full list of signals, see <code>trap -l</code>.</p>
+<h2 id="do-something-on-script-exit">Do something on script exit</h2>
+<pre><code class="shell"># Clear screen on script exit.
+trap 'printf \\e[2J\\e[H\\e[m' EXIT
+</code></pre>
+
+<h2 id="ignore-terminal-interrupt-ctrlc-sigint">Ignore terminal interrupt (CTRL+C, SIGINT)</h2>
+<pre><code class="shell">trap '' INT
+</code></pre>
+
+<h2 id="react-to-window-resize">React to window resize</h2>
+<pre><code class="shell"># Call a function on window resize.
+trap 'code_here' SIGWINCH
+</code></pre>
+
+<h2 id="do-something-before-every-command">Do something before every command</h2>
+<pre><code class="shell">trap 'code_here' DEBUG
+</code></pre>
+
+<h2 id="do-something-when-a-shell-function-or-a-sourced-file-finishes-executing">Do something when a shell function or a sourced file finishes executing</h2>
+<pre><code class="shell">trap 'code_here' RETURN
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="performance">PERFORMANCE</h1>
+<h2 id="disable-unicode">Disable Unicode</h2>
+<p>If unicode is not required, it can be disabled for a performance increase. Results may vary however there have been noticeable improvements in <a href="https://github.com/dylanaraps/neofetch">neofetch</a> and other programs.</p>
+<pre><code class="shell"># Disable unicode.
+LC_ALL=C
+LANG=C
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="obsolete-syntax">OBSOLETE SYNTAX</h1>
+<h2 id="shebang">Shebang</h2>
+<p>Use <code>#!/usr/bin/env bash</code> instead of <code>#!/bin/bash</code>.</p>
+<ul>
+<li>The former searches the user's <code>PATH</code> to find the <code>bash</code> binary.</li>
+<li>The latter assumes it is always installed to <code>/bin/</code> which can cause issues.</li>
+</ul>
+<p><strong>NOTE</strong>: There are times when one may have a good reason for using <code>#!/bin/bash</code> or another direct path to the binary.</p>
+<pre><code class="shell"># Right:
+
+    #!/usr/bin/env bash
+
+# Less right:
+
+    #!/bin/bash
+</code></pre>
+
+<h2 id="command-substitution">Command Substitution</h2>
+<p>Use <code>$()</code> instead of <code>` `</code>.</p>
+<pre><code class="shell"># Right.
+var=&quot;$(command)&quot;
+
+# Wrong.
+var=`command`
+
+# $() can easily be nested whereas `` cannot.
+var=&quot;$(command &quot;$(command)&quot;)&quot;
+</code></pre>
+
+<h2 id="function-declaration">Function Declaration</h2>
+<p>Do not use the <code>function</code> keyword, it reduces compatibility with older versions of <code>bash</code>.</p>
+<pre><code class="shell"># Right.
+do_something() {
+    # ...
+}
+
+# Wrong.
+function do_something() {
+    # ...
+}
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="internal-variables">INTERNAL VARIABLES</h1>
+<h2 id="get-the-location-to-the-bash-binary">Get the location to the <code>bash</code> binary</h2>
+<pre><code class="shell">&quot;$BASH&quot;
+</code></pre>
+
+<h2 id="get-the-version-of-the-current-running-bash-process">Get the version of the current running <code>bash</code> process</h2>
+<pre><code class="shell"># As a string.
+&quot;$BASH_VERSION&quot;
+
+# As an array.
+&quot;${BASH_VERSINFO[@]}&quot;
+</code></pre>
+
+<h2 id="open-the-users-preferred-text-editor">Open the user's preferred text editor</h2>
+<pre><code class="shell">&quot;$EDITOR&quot; &quot;$file&quot;
+
+# NOTE: This variable may be empty, set a fallback value.
+&quot;${EDITOR:-vi}&quot; &quot;$file&quot;
+</code></pre>
+
+<h2 id="get-the-name-of-the-current-function">Get the name of the current function</h2>
+<pre><code class="shell"># Current function.
+&quot;${FUNCNAME[0]}&quot;
+
+# Parent function.
+&quot;${FUNCNAME[1]}&quot;
+
+# So on and so forth.
+&quot;${FUNCNAME[2]}&quot;
+&quot;${FUNCNAME[3]}&quot;
+
+# All functions including parents.
+&quot;${FUNCNAME[@]}&quot;
+</code></pre>
+
+<h2 id="get-the-host-name-of-the-system">Get the host-name of the system</h2>
+<pre><code class="shell">&quot;$HOSTNAME&quot;
+
+# NOTE: This variable may be empty.
+# Optionally set a fallback to the hostname command.
+&quot;${HOSTNAME:-$(hostname)}&quot;
+</code></pre>
+
+<h2 id="get-the-architecture-of-the-operating-system">Get the architecture of the Operating System</h2>
+<pre><code class="shell">&quot;$HOSTTYPE&quot;
+</code></pre>
+
+<h2 id="get-the-name-of-the-operating-system-kernel">Get the name of the Operating System / Kernel</h2>
+<p>This can be used to add conditional support for different Operating
+Systems without needing to call <code>uname</code>.</p>
+<pre><code class="shell">&quot;$OSTYPE&quot;
+</code></pre>
+
+<h2 id="get-the-current-working-directory">Get the current working directory</h2>
+<p>This is an alternative to the <code>pwd</code> built-in.</p>
+<pre><code class="shell">&quot;$PWD&quot;
+</code></pre>
+
+<h2 id="get-the-number-of-seconds-the-script-has-been-running">Get the number of seconds the script has been running</h2>
+<pre><code class="shell">&quot;$SECONDS&quot;
+</code></pre>
+
+<h2 id="get-a-pseudorandom-integer">Get a pseudorandom integer</h2>
+<p>Each time <code>$RANDOM</code> is used, a different integer between <code>0</code> and <code>32767</code> is returned. This variable should not be used for anything related to security (<em>this includes encryption keys etc</em>).</p>
+<pre><code class="shell">&quot;$RANDOM&quot;
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="information-about-the-terminal">INFORMATION ABOUT THE TERMINAL</h1>
+<h2 id="get-the-terminal-size-in-lines-and-columns-from-a-script">Get the terminal size in lines and columns (<em>from a script</em>)</h2>
+<p>This is handy when writing scripts in pure bash and <code>stty</code>/<code>tput</code> can’t be
+called.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">get_term_size() {
+    # Usage: get_term_size
+
+    # (:;:) is a micro sleep to ensure the variables are
+    # exported immediately.
+    shopt -s checkwinsize; (:;:)
+    printf '%s\n' &quot;$LINES $COLUMNS&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell"># Output: LINES COLUMNS
+$ get_term_size
+15 55
+</code></pre>
+
+<h2 id="get-the-terminal-size-in-pixels">Get the terminal size in pixels</h2>
+<p><strong>CAVEAT</strong>: This does not work in some terminal emulators.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">get_window_size() {
+    # Usage: get_window_size
+    printf '%b' &quot;${TMUX:+\\ePtmux;\\e}\\e[14t${TMUX:+\\e\\\\}&quot;
+    IFS=';t' read -d t -t 0.05 -sra term_size
+    printf '%s\n' &quot;${term_size[1]}x${term_size[2]}&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell"># Output: WIDTHxHEIGHT
+$ get_window_size
+1200x800
+
+# Output (fail):
+$ get_window_size
+x
+</code></pre>
+
+<h2 id="get-the-current-cursor-position">Get the current cursor position</h2>
+<p>This is useful when creating a TUI in pure bash.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">get_cursor_pos() {
+    # Usage: get_cursor_pos
+    IFS='[;' read -p $'\e[6n' -d R -rs _ y x _
+    printf '%s\n' &quot;$x $y&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell"># Output: X Y
+$ get_cursor_pos
+1 8
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="conversion">CONVERSION</h1>
+<h2 id="convert-a-hex-color-to-rgb">Convert a hex color to RGB</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">hex_to_rgb() {
+    # Usage: hex_to_rgb &quot;#FFFFFF&quot;
+    #        hex_to_rgb &quot;000000&quot;
+    : &quot;${1/\#}&quot;
+    ((r=16#${_:0:2},g=16#${_:2:2},b=16#${_:4:2}))
+    printf '%s\n' &quot;$r $g $b&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ hex_to_rgb &quot;#FFFFFF&quot;
+255 255 255
+</code></pre>
+
+<h2 id="convert-an-rgb-color-to-hex">Convert an RGB color to hex</h2>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">rgb_to_hex() {
+    # Usage: rgb_to_hex &quot;r&quot; &quot;g&quot; &quot;b&quot;
+    printf '#%02x%02x%02x\n' &quot;$1&quot; &quot;$2&quot; &quot;$3&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ rgb_to_hex &quot;255&quot; &quot;255&quot; &quot;255&quot;
+#FFFFFF
+</code></pre>
+
+<h1 id="code-golf">CODE GOLF</h1>
+<h2 id="shorter-for-loop-syntax">Shorter <code>for</code> loop syntax</h2>
+<pre><code class="shell"># Tiny C Style.
+for((;i++&lt;10;)){ echo &quot;$i&quot;;}
+
+# Undocumented method.
+for i in {1..10};{ echo &quot;$i&quot;;}
+
+# Expansion.
+for i in {1..10}; do echo &quot;$i&quot;; done
+
+# C Style.
+for((i=0;i&lt;=10;i++)); do echo &quot;$i&quot;; done
+</code></pre>
+
+<h2 id="shorter-infinite-loops">Shorter infinite loops</h2>
+<pre><code class="shell"># Normal method
+while :; do echo hi; done
+
+# Shorter
+for((;;)){ echo hi;}
+</code></pre>
+
+<h2 id="shorter-function-declaration">Shorter function declaration</h2>
+<pre><code class="shell"># Normal method
+f(){ echo hi;}
+
+# Using a subshell
+f()(echo hi)
+
+# Using arithmetic
+# This can be used to assign integer values.
+# Example: f a=1
+#          f a++
+f()(($1))
+
+# Using tests, loops etc.
+# NOTE: ‘while’, ‘until’, ‘case’, ‘(())’, ‘[[]]’ can also be used.
+f()if true; then echo &quot;$1&quot;; fi
+f()for i in &quot;$@&quot;; do echo &quot;$i&quot;; done
+</code></pre>
+
+<h2 id="shorter-if-syntax">Shorter <code>if</code> syntax</h2>
+<pre><code class="shell"># One line
+# Note: The 3rd statement may run when the 1st is true
+[[ $var == hello ]] &amp;&amp; echo hi || echo bye
+[[ $var == hello ]] &amp;&amp; { echo hi; echo there; } || echo bye
+
+# Multi line (no else, single statement)
+# Note: The exit status may not be the same as with an if statement
+[[ $var == hello ]] &amp;&amp;
+    echo hi
+
+# Multi line (no else)
+[[ $var == hello ]] &amp;&amp; {
+    echo hi
+    # ...
+}
+</code></pre>
+
+<h2 id="simpler-case-statement-to-set-variable">Simpler <code>case</code> statement to set variable</h2>
+<p>The <code>:</code> built-in can be used to avoid repeating <code>variable=</code> in a case statement. The <code>$_</code> variable stores the last argument of the last command. <code>:</code> always succeeds so it can be used to store the variable value.</p>
+<pre><code class="shell"># Modified snippet from Neofetch.
+case &quot;$OSTYPE&quot; in
+    &quot;darwin&quot;*)
+        : &quot;MacOS&quot;
+    ;;
+
+    &quot;linux&quot;*)
+        : &quot;Linux&quot;
+    ;;
+
+    *&quot;bsd&quot;* | &quot;dragonfly&quot; | &quot;bitrig&quot;)
+        : &quot;BSD&quot;
+    ;;
+
+    &quot;cygwin&quot; | &quot;msys&quot; | &quot;win32&quot;)
+        : &quot;Windows&quot;
+    ;;
+
+    *)
+        printf '%s\n' &quot;Unknown OS detected, aborting...&quot; &gt;&amp;2
+        exit 1
+    ;;
+esac
+
+# Finally, set the variable.
+os=&quot;$_&quot;
+</code></pre>
+
+<!-- CHAPTER END -->
+
+<!-- CHAPTER START -->
+
+<h1 id="other">OTHER</h1>
+<h2 id="use-read-as-an-alternative-to-the-sleep-command">Use <code>read</code> as an alternative to the <code>sleep</code> command</h2>
+<p>Surprisingly, <code>sleep</code> is an external command and not a <code>bash</code> built-in.</p>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">read_sleep() {
+    # Usage: read_sleep 1
+    #        read_sleep 0.2
+    read -rt &quot;$1&quot; &lt;&gt; &lt;(:) || :
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">read_sleep 1
+read_sleep 0.1
+read_sleep 30
+</code></pre>
+
+<p>For performance-critical situations, where it is not economic to open and close an excessive number of file descriptors, the allocation of a file descriptor may be done only once for all invocations of <code>read</code>:</p>
+<p>(See the generic original implementation at https://blog.dhampir.no/content/sleeping-without-a-subprocess-in-bash-and-how-to-sleep-forever)</p>
+<pre><code class="shell">exec {sleep_fd}&lt;&gt; &lt;(:)
+while some_quick_test; do
+    # equivalent of sleep 0.001
+    read -t 0.001 -u $sleep_fd
+done
+</code></pre>
+
+<h2 id="check-if-a-program-is-in-the-users-path">Check if a program is in the user's PATH</h2>
+<pre><code class="shell"># There are 3 ways to do this and either one can be used.
+type -p executable_name &amp;&gt;/dev/null
+hash executable_name &amp;&gt;/dev/null
+command -v executable_name &amp;&gt;/dev/null
+
+# As a test.
+if type -p executable_name &amp;&gt;/dev/null; then
+    # Program is in PATH.
+fi
+
+# Inverse.
+if ! type -p executable_name &amp;&gt;/dev/null; then
+    # Program is not in PATH.
+fi
+
+# Example (Exit early if program is not installed).
+if ! type -p convert &amp;&gt;/dev/null; then
+    printf '%s\n' &quot;error: convert is not installed, exiting...&quot;
+    exit 1
+fi
+</code></pre>
+
+<h2 id="get-the-current-date-using-strftime">Get the current date using <code>strftime</code></h2>
+<p>Bash’s <code>printf</code> has a built-in method of getting the date which can be used in place of the <code>date</code> command.</p>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">date() {
+    # Usage: date &quot;format&quot;
+    # See: 'man strftime' for format.
+    printf &quot;%($1)T\\n&quot; &quot;-1&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell"># Using above function.
+$ date &quot;%a %d %b  - %l:%M %p&quot;
+Fri 15 Jun  - 10:00 AM
+
+# Using printf directly.
+$ printf '%(%a %d %b  - %l:%M %p)T\n' &quot;-1&quot;
+Fri 15 Jun  - 10:00 AM
+
+# Assigning a variable using printf.
+$ printf -v date '%(%a %d %b  - %l:%M %p)T\n' '-1'
+$ printf '%s\n' &quot;$date&quot;
+Fri 15 Jun  - 10:00 AM
+</code></pre>
+
+<h2 id="get-the-username-of-the-current-user">Get the username of the current user</h2>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4.4+</p>
+<pre><code class="shell">$ : \\u
+# Expand the parameter as if it were a prompt string.
+$ printf '%s\n' &quot;${_@P}&quot;
+black
+</code></pre>
+
+<h2 id="generate-a-uuid-v4">Generate a UUID V4</h2>
+<p><strong>CAVEAT</strong>: The generated value is not cryptographically secure.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">uuid() {
+    # Usage: uuid
+    C=&quot;89ab&quot;
+
+    for ((N=0;N&lt;16;++N)); do
+        B=&quot;$((RANDOM%256))&quot;
+
+        case &quot;$N&quot; in
+            6)  printf '4%x' &quot;$((B%16))&quot; ;;
+            8)  printf '%c%x' &quot;${C:$RANDOM%${#C}:1}&quot; &quot;$((B%16))&quot; ;;
+
+            3|5|7|9)
+                printf '%02x-' &quot;$B&quot;
+            ;;
+
+            *)
+                printf '%02x' &quot;$B&quot;
+            ;;
+        esac
+    done
+
+    printf '\n'
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">$ uuid
+d5b6c731-1310-4c24-9fe3-55d556d44374
+</code></pre>
+
+<h2 id="progress-bars">Progress bars</h2>
+<p>This is a simple way of drawing progress bars without needing a for loop
+in the function itself.</p>
+<p><strong>Example Function:</strong></p>
+<pre><code class="sh">bar() {
+    # Usage: bar 1 10
+    #            ^----- Elapsed Percentage (0-100).
+    #               ^-- Total length in chars.
+    ((elapsed=$1*$2/100))
+
+    # Create the bar with spaces.
+    printf -v prog  &quot;%${elapsed}s&quot;
+    printf -v total &quot;%$(($2-elapsed))s&quot;
+
+    printf '%s\r' &quot;[${prog// /-}${total}]&quot;
+}
+</code></pre>
+
+<p><strong>Example Usage:</strong></p>
+<pre><code class="shell">for ((i=0;i&lt;=100;i++)); do
+    # Pure bash micro sleeps (for the example).
+    (:;:) &amp;&amp; (:;:) &amp;&amp; (:;:) &amp;&amp; (:;:) &amp;&amp; (:;:)
+
+    # Print the bar.
+    bar &quot;$i&quot; &quot;10&quot;
+done
+
+printf '\n'
+</code></pre>
+
+<h2 id="get-the-list-of-functions-in-a-script">Get the list of functions in a script</h2>
+<pre><code class="sh">get_functions() {
+    # Usage: get_functions
+    IFS=$'\n' read -d &quot;&quot; -ra functions &lt; &lt;(declare -F)
+    printf '%s\n' &quot;${functions[@]//declare -f }&quot;
+}
+</code></pre>
+
+<h2 id="bypass-shell-aliases">Bypass shell aliases</h2>
+<pre><code class="shell"># alias
+ls
+
+# command
+# shellcheck disable=SC1001
+\ls
+</code></pre>
+
+<h2 id="bypass-shell-functions">Bypass shell functions</h2>
+<pre><code class="shell"># function
+ls
+
+# command
+command ls
+</code></pre>
+
+<h2 id="run-a-command-in-the-background">Run a command in the background</h2>
+<p>This will run the given command and keep it running, even after the terminal or SSH connection is terminated. All output is ignored.</p>
+<pre><code class="sh">bkr() {
+    (nohup &quot;$@&quot; &amp;&gt;/dev/null &amp;)
+}
+
+bkr ./some_script.sh # some_script.sh is now running in the background
+</code></pre>
+
+<h2 id="capture-the-return-value-of-a-function-without-command-substitution">Capture the return value of a function without command substitution</h2>
+<p><strong>CAVEAT:</strong> Requires <code>bash</code> 4+</p>
+<p>This uses local namerefs to avoid using <code>var=$(some_func)</code> style command substitution for function output capture.</p>
+<pre><code class="sh">to_upper() {
+  local -n ptr=${1}
+
+  ptr=${ptr^^}
+}
+
+foo=&quot;bar&quot;
+to_upper foo
+printf &quot;%s\n&quot; &quot;${foo}&quot; # BAR
+</code></pre>
+
+<!-- CHAPTER END -->
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/Xorg/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>Xorg - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#xorg">Xorg</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#platforms">platforms</a></li>
+        
+            <li><a href="#network-connections">network connections</a></li>
+        
+            <li><a href="#environment-variables">environment variables</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#keyboard">keyboard</a></li>
+        
+            <li><a href="#configuration">configuration</a></li>
+        
+            <li><a href="#files">files</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#authors">authors</a></li>
+        
+            <li><a href="#legal">legal</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="xorg">Xorg</h1>
+<h3 id="name">name</h3>
+<pre><code>       Xorg - X11R7 X server
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       Xorg [:display] [option ...]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       Xorg is a full featured X server that was originally designed for UNIX and UNIX-like operating systems running on Intel x86 hardware.  It now runs on a wider range of hardware and OS platforms.
+
+       This work was derived by the X.Org Foundation from the XFree86 Project's XFree86 4.4rc2 release.  The XFree86 release was originally derived from X386 1.2 by Thomas Roell which was contributed to X11R5 by Snitily Graphics Consulting Service.
+
+</code></pre>
+
+<h3 id="platforms">platforms</h3>
+<pre><code>       Xorg operates under a wide range of operating systems and hardware platforms.  The Intel x86 (IA32) architecture is the most widely supported hardware platform.  Other hardware platforms include Compaq Alpha, Intel IA64, AMD64, SPARC and PowerPC.  The most widely supported operating systems are the free/OpenSource UNIX-like systems such as Linux, FreeBSD, NetBSD, OpenBSD, and Solaris.  Commercial UNIX operating systems such as UnixWare are also supported.  Other supported operating systems include GNU Hurd.  Mac OS X is supported with the Xquartz(1) X server.  Win32/Cygwin is supported with the XWin(1) X server.
+
+</code></pre>
+
+<h3 id="network-connections">network connections</h3>
+<pre><code>       Xorg supports connections made using the following reliable byte-streams:
+
+       Local
+           On most platforms, the &quot;Local&quot; connection type is a UNIX-domain socket.  On some System V platforms, the &quot;local&quot; connection types also include STREAMS pipes, named pipes, and some other mechanisms.
+
+       TCPIP
+           Xorg listens on port 6000+n, where n is the display number.  This connection type can be disabled with the -nolisten option (see the Xserver(1) man page for details).
+
+</code></pre>
+
+<h3 id="environment-variables">environment variables</h3>
+<pre><code>       For operating systems that support local connections other than Unix Domain sockets (SVR3 and SVR4), there is a compiled-in list specifying the order in which local connections should be attempted.  This list can be overridden by the XLOCAL environment variable described below.  If the display name indicates a best-choice connection should be made (e.g.  :0.0), each connection mechanism is tried until a connection succeeds or no more mechanisms are available.  Note: for these OSs, the Unix Domain socket connection is treated differently from the other local connection types.  To use it the connection must be made to unix:0.0.
+
+       The XLOCAL environment variable should contain a list of one more more of the following:
+
+               NAMED
+               PTS
+               SCO
+               ISC
+
+       which represent SVR4 Named Streams pipe, Old-style USL Streams pipe, SCO XSight Streams pipe, and ISC Streams pipe, respectively.  You can select a single mechanism (e.g.  XLOCAL=NAMED), or an ordered list (e.g. XLOCAL=&quot;NAMED:PTS:SCO&quot;).  his variable overrides the compiled-in defaults.  For SVR4 it is recommended that NAMED be the first preference connection.  The default setting is PTS:NAMED:ISC:SCO.
+
+       To globally override the compiled-in defaults, you should define (and export if using sh or ksh) XLOCAL globally.  If you use startx(1) or xinit(1), the definition should be at the top of your .xinitrc file.  If you use xdm(1), the definitions should be early on in the /usr/lib/X11/xdm/Xsession script.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       Xorg supports several mechanisms for supplying/obtaining configuration and run-time parameters: command line options, environment variables, the xorg.conf(5) configuration files, auto-detection, and fallback defaults.  When the same information is supplied in more than one way, the highest precedence mechanism is used.  The list of mechanisms is ordered from highest precedence to lowest.  Note that not all parameters can be supplied via all methods.  The available command line options and environment variables (and some defaults) are described here and in the Xserver(1) manual page.  Most configuration file parameters, with their defaults, are described in the xorg.conf(5) manual page.  Driver and module specific configuration parameters are described in the relevant driver or module manual page.
+
+       In addition to the normal server options described in the Xserver(1) manual page, Xorg accepts the following command line switches:
+
+       vtXX    XX specifies the Virtual Terminal device number which Xorg will use.  Without this option, Xorg will pick the first available Virtual Terminal that it can locate.  This option applies only to platforms that have virtual terminal support, such as Linux, BSD, OpenSolaris, SVR3, and SVR4.
+
+       -allowMouseOpenFail
+               Allow the server to start up even if the mouse device can't be opened or initialised.  This is equivalent to the AllowMouseOpenFail xorg.conf(5) file option.
+
+       -allowNonLocalXvidtune
+               Make the VidMode extension available to remote clients.  This allows the xvidtune client to connect from another host.  This is equivalent to the AllowNonLocalXvidtune xorg.conf(5) file option.  By default non-local connections are not allowed.
+
+       -bgamma value
+               Set the blue gamma correction.  value must be between 0.1 and 10.  The default is 1.0.  Not all drivers support this.  See also the -gamma, -rgamma, and -ggamma options.
+
+       -bpp n  No longer supported.  Use -depth to set the color depth, and use -fbbpp if you really need to force a non-default framebuffer (hardware) pixel format.
+
+       -config file
+               Read the server configuration from file.  This option will work for any file when the server is run as root (i.e, with real-uid 0), or for files relative to a directory in the config search path for all other users.
+
+       -configdir directory
+               Read the server configuration files from directory.  This option will work for any directory when the server is run as root (i.e, with real-uid 0), or for directories relative to a directory in the config directory search path for all other users.
+
+       -configure
+               When this option is specified, the Xorg server loads all video driver modules, probes for available hardware, and writes out an initial xorg.conf(5) file based on what was detected.  This option currently has some problems on some platforms, but in most cases it is a good way to bootstrap the configuration process.  This option is only available when the server is run as root (i.e, with real-uid 0).
+
+       -crt /dev/ttyXX
+               SCO only.  This is the same as the vt option, and is provided for compatibility with the native SCO X server.
+
+       -depth n
+               Sets the default color depth.  Legal values are 1, 4, 8, 15, 16, and 24.  Not all drivers support all values.
+
+       -disableVidMode
+               Disable the parts of the VidMode extension (used by the xvidtune client) that can be used to change the video modes.  This is equivalent to the DisableVidModeExtension xorg.conf(5) file option.
+
+       -fbbpp n
+               Sets the number of framebuffer bits per pixel.  You should only set this if you're sure it's necessary; normally the server can deduce the correct value from -depth above.  Useful if you want to run a depth 24 configuration with a 24 bpp framebuffer rather than the (possibly default) 32 bpp framebuffer (or vice versa).  Legal values are 1, 8, 16, 24, 32.  Not all drivers support all values.
+
+       -flipPixels
+               Swap the default values for the black and white pixels.
+
+       -gamma value
+               Set the gamma correction.  value must be between 0.1 and 10.  The default is 1.0.  This value is applied equally to the R, G and B values.  Those values can be set independently with the -rgamma, -bgamma, and -ggamma options.  Not all drivers support this.
+
+       -ggamma value
+               Set the green gamma correction.  value must be between 0.1 and 10.  The default is 1.0.  Not all drivers support this.  See also the -gamma, -rgamma, and -bgamma options.
+
+       -ignoreABI
+               The Xorg server checks the ABI revision levels of each module that it loads.  It will normally refuse to load modules with ABI revisions that are newer than the server's.  This is because such modules might use interfaces that the server does not have.  When this option is specified, mismatches like this are downgraded from fatal errors to warnings.  This option should be used with care.
+
+       -isolateDevice bus-id
+               Restrict device resets to the device at bus-id.  The bus-id string has the form bustype:bus:device:function (e.g., ‘PCI:1:0:0’).  At present, only isolation of PCI devices is supported; i.e., this option is ignored if bustype is anything other than ‘PCI’.
+
+       -keeptty
+               Prevent the server from detaching its initial controlling terminal.  This option is only useful when debugging the server.  Not all platforms support (or can use) this option.
+
+       -keyboard keyboard-name
+               Use the xorg.conf(5) file InputDevice section called keyboard-name as the core keyboard.  This option is ignored when the Layout section specifies a core keyboard.  In the absence of both a Layout section and this option, the first relevant InputDevice section is used for the core keyboard.
+
+       -layout layout-name
+               Use the xorg.conf(5) file Layout section called layout-name.  By default the first Layout section is used.
+
+       -logfile filename
+               Use the file called filename as the Xorg server log file.  The default log file is /var/log/Xorg.n.log on most platforms, where n is the display number of the Xorg server.  The default may be in a different directory on some platforms.  This option is only available when the server is run as root (i.e, with real-uid 0).
+
+       -logverbose [n]
+               Sets the verbosity level for information printed to the Xorg server log file.  If the n value isn't supplied, each occurrence of this option increments the log file verbosity level.  When the n value is supplied, the log file verbosity level is set to that value.  The default log file verbosity level is 3.
+
+       -modulepath searchpath
+               Set the module search path to searchpath.  searchpath is a comma separated list of directories to search for Xorg server modules.  This option is only available when the server is run as root (i.e, with real-uid 0).
+
+       -nosilk Disable Silken Mouse support.
+
+       -novtswitch
+               Disable the automatic switching on X server reset and shutdown to the VT that was active when the server started, if supported by the OS.
+
+       -pixmap24
+               Set the internal pixmap format for depth 24 pixmaps to 24 bits per pixel.  The default is usually 32 bits per pixel.  There is normally little reason to use this option.  Some client applications don't like this pixmap format, even though it is a perfectly legal format.  This is equivalent to the Pixmap xorg.conf(5) file option.
+
+       -pixmap32
+               Set the internal pixmap format for depth 24 pixmaps to 32 bits per pixel.  This is usually the default.  This is equivalent to the Pixmap xorg.conf(5) file option.
+
+       -pointer pointer-name
+               Use the xorg.conf(5) file InputDevice section called pointer-name as the core pointer.  This option is ignored when the Layout section specifies a core pointer.  In the absence of both a Layout section and this option, the first relevant InputDevice section is used for the core pointer.
+
+       -quiet  Suppress most informational messages at startup.  The verbosity level is set to zero.
+
+       -rgamma value
+               Set the red gamma correction.  value must be between 0.1 and 10.  The default is 1.0.  Not all drivers support this.  See also the -gamma, -bgamma, and -ggamma options.
+
+       -sharevts
+               Share virtual terminals with another X server, if supported by the OS.
+
+       -screen screen-name
+               Use the xorg.conf(5) file Screen section called screen-name.  By default the screens referenced by the default Layout section are used, or the first Screen section when there are no Layout sections.
+
+       -showconfig
+               This is the same as the -version option, and is included for compatibility reasons.  It may be removed in a future release, so the -version option should be used instead.
+
+       -showDefaultModulePath
+               Print out the default module path the server was compiled with.
+
+       -showDefaultLibPath
+               Print out the path libraries should be installed to.
+
+       -showopts
+               For each driver module installed, print out the list of options and their argument types.
+
+       -weight nnn
+               Set RGB weighting at 16 bpp.  The default is 565.  This applies only to those drivers which support 16 bpp.
+
+       -verbose [n]
+               Sets the verbosity level for information printed on stderr.  If the n value isn't supplied, each occurrence of this option increments the verbosity level.  When the n value is supplied, the verbosity level is set to that value.  The default verbosity level is 0.
+
+       -version
+               Print out the server version, patchlevel, release date, the operating system/platform it was built on, and whether it includes module loader support.
+
+</code></pre>
+
+<h3 id="keyboard">keyboard</h3>
+<pre><code>       The Xorg server is normally configured to recognize various special combinations of key presses that instruct the server to perform some action, rather than just sending the key press event to a client application. These actions depend on the XKB keymap loaded by a particular keyboard device and may or may not be available on a given configuration.
+
+       The following key combinations are commonly part of the default XKEYBOARD keymap.
+
+       Ctrl+Alt+Backspace
+               Immediately kills the server -- no questions asked. It can be disabled by setting the DontZap xorg.conf(5) file option to a TRUE value.
+
+               It should be noted that zapping is triggered by the Terminate_Server action in the keyboard map. This action is not part of the default keymaps but can be enabled with the XKB option &quot;terminate:ctrl_alt_bksp&quot;.
+
+       Ctrl+Alt+Keypad-Plus
+               Change video mode to next one specified in the configuration file.  This can be disabled with the DontZoom xorg.conf(5) file option.
+
+       Ctrl+Alt+Keypad-Minus
+               Change video mode to previous one specified in the configuration file.  This can be disabled with the DontZoom xorg.conf(5) file option.
+
+       Ctrl+Alt+F1...F12
+               For systems with virtual terminal support, these keystroke combinations are used to switch to virtual terminals 1 through 12, respectively.  This can be disabled with the DontVTSwitch xorg.conf(5) file option.
+
+</code></pre>
+
+<h3 id="configuration">configuration</h3>
+<pre><code>       Xorg typically uses a configuration file called xorg.conf and configuration files with the suffix .conf in a directory called xorg.conf.d for its initial setup.  Refer to the xorg.conf(5) manual page for information about the format of this file.
+
+       Xorg has a mechanism for automatically generating a built-in configuration at run-time when no xorg.conf file or xorg.conf.d files are present.  The current version of this automatic configuration mechanism works in two ways.
+
+       The first is via enhancements that have made many components of the xorg.conf file optional.  This means that information that can be probed or reasonably deduced doesn't need to be specified explicitly, greatly reducing the amount of built-in configuration information that needs to be generated at run-time.
+
+       The second is to have &quot;safe&quot; fallbacks for most configuration information.  This maximises the likelihood that the Xorg server will start up in some usable configuration even when information about the specific hardware is not available.
+
+       The automatic configuration support for Xorg is work in progress.  It is currently aimed at the most popular hardware and software platforms supported by Xorg.  Enhancements are planned for future releases.
+
+</code></pre>
+
+<h3 id="files">files</h3>
+<pre><code>       The Xorg server config files can be found in a range of locations.  These are documented fully in the xorg.conf(5) manual page.  The most commonly used locations are shown here.
+
+       /etc/X11/xorg.conf            Server configuration file.
+
+       /etc/X11/xorg.conf-4          Server configuration file.
+
+       /etc/xorg.conf                Server configuration file.
+
+       /usr/etc/xorg.conf            Server configuration file.
+
+       /usr/lib/X11/xorg.conf        Server configuration file.
+
+       /etc/X11/xorg.conf.d          Server configuration directory.
+
+       /etc/X11/xorg.conf.d-4        Server configuration directory.
+
+       /etc/xorg.conf.d              Server configuration directory.
+
+       /usr/etc/xorg.conf.d          Server configuration directory.
+
+       /usr/lib/X11/xorg.conf.d      Server configuration directory.
+
+       /var/log/Xorg.n.log           Server log file for display n.
+
+       /usr/bin/∗                    Client binaries.
+
+       /usr/include/∗                Header files.
+
+       /usr/lib/∗                    Libraries.
+
+       /usr/share/fonts/X11/∗        Fonts.
+
+       /usr/share/X11/XErrorDB       Client error message database.
+
+       /usr/lib/X11/app-defaults/∗   Client resource specifications.
+
+       /usr/share/man/man?/∗         Manual pages.
+
+       /etc/Xn.hosts                 Initial access control list for display n.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       X(7), Xserver(1), xdm(1), xinit(1), xorg.conf(5), xvidtune(1), xkeyboard-config (7), apm(4), ati(4), chips(4), cirrus(4), cyrix(4), fbdev(4), glide(4), glint(4), i128(4), i740(4), imstt(4), intel(4), mga(4), neomagic(4), nsc(4), nv(4), openchrome (4), r128(4), rendition(4), s3virge(4), siliconmotion(4), sis(4), sunbw2(4), suncg14(4), suncg3(4), suncg6(4), sunffb(4), sunleo(4), suntcx(4), tdfx(4), tga(4), trident(4), tseng(4), v4l(4), vesa(4), vmware(4),
+       Web site &lt;http://www.x.org&gt;.
+
+
+</code></pre>
+
+<h3 id="authors">authors</h3>
+<pre><code>       Xorg has many contributors world wide.  The names of most of them can be found in the documentation, ChangeLog files in the source tree, and in the actual source code.
+
+       Xorg was originally based on XFree86 4.4rc2.  That was originally based on X386 1.2 by Thomas Roell, which was contributed to the then X Consortium's X11R5 distribution by SGCS.
+
+       Xorg is released by the X.Org Foundation.
+
+       The project that became XFree86 was originally founded in 1992 by David Dawes, Glenn Lai, Jim Tsillas and David Wexelblat.
+
+       XFree86 was later integrated in the then X Consortium's X11R6 release by a group of dedicated XFree86 developers, including the following:
+
+           Stuart Anderson    anderson@metrolink.com
+           Doug Anson         danson@lgc.com
+           Gertjan Akkerman   akkerman@dutiba.twi.tudelft.nl
+           Mike Bernson       mike@mbsun.mlb.org
+           Robin Cutshaw      robin@XFree86.org
+           David Dawes        dawes@XFree86.org
+           Marc Evans         marc@XFree86.org
+           Pascal Haible      haible@izfm.uni-stuttgart.de
+           Matthieu Herrb     Matthieu.Herrb@laas.fr
+           Dirk Hohndel       hohndel@XFree86.org
+           David Holland      davidh@use.com
+           Alan Hourihane     alanh@fairlite.demon.co.uk
+           Jeffrey Hsu        hsu@soda.berkeley.edu
+           Glenn Lai          glenn@cs.utexas.edu
+           Ted Lemon          mellon@ncd.com
+           Rich Murphey       rich@XFree86.org
+           Hans Nasten        nasten@everyware.se
+           Mark Snitily       mark@sgcs.com
+           Randy Terbush      randyt@cse.unl.edu
+           Jon Tombs          tombs@XFree86.org
+           Kees Verstoep      versto@cs.vu.nl
+           Paul Vixie         paul@vix.com
+           Mark Weaver        Mark_Weaver@brown.edu
+           David Wexelblat    dwex@XFree86.org
+           Philip Wheatley    Philip.Wheatley@ColumbiaSC.NCR.COM
+           Thomas Wolfram     wolf@prz.tu-berlin.de
+           Orest Zborowski    orestz@eskimo.com
+
+       Xorg source is available from the FTP server &lt;ftp://ftp.x.org/&gt;, and from the X.Org server &lt;http://gitweb.freedesktop.org/&gt;.  Documentation and other information can be found from the X.Org web site &lt;http://www.x.org/&gt;.
+
+
+</code></pre>
+
+<h3 id="legal">legal</h3>
+<pre><code>       Xorg is copyright software, provided under licenses that permit modification and redistribution in source and binary form without fee.  Xorg is copyright by numerous authors and contributors from around the world.  Licensing information can be found at &lt;http://www.x.org&gt;.  Refer to the source code for specific copyright notices.
+
+       XFree86(TM) is a trademark of The XFree86 Project, Inc.
+
+       X11(TM) and X Window System(TM) are trademarks of The Open Group.
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

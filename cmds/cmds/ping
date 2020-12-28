@@ -1,0 +1,11 @@
+# Beep when a machine starts responding to ping again
+ping -i 60 -a IP_address
+
+# Pings a domain.
+ping www.google.com
+
+# Limit the number of times an address is pinged (4, in this case).
+ping -c4 www.example.com
+
+# ping google.com and beep at every response. Useful for troubleshooting cables, when you aren't in front of your screen.
+ping google.com -a

@@ -1,0 +1,5 @@
+# restart machine in 30 minutes
+shutdown -r +30
+
+# shutdown machine immediately
+shutdown -h now

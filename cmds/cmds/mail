@@ -1,0 +1,2 @@
+# Sends email to multiple addresses with custom from address
+echo -e "Hello!\nThis is email body" | mail -s "Place for subject" -r "from@domain.com" "to.first@domain.com,to.second@domain.com"

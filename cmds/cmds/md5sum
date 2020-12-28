@@ -1,0 +1,5 @@
+#Get the md5sum for a file
+md5sum file.txt
+
+#Get the md5sum for a text string
+echo "mystring" | md5sum

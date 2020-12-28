@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/find/index.html">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+        <title>find - Linux6</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li >
+                    <a rel="next" href="../cmds_overview/index.html">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../xargs/index.html">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-12" role="main">
+
+<h1 id="the-examples-for-find">The examples for find</h1>
+<pre><code>The examples for find
+
+# Executes a command on the files and folders matching a given pattern, in this case, output the last lines of each .foo file in the current folder and subfolders. 
+find . -name &quot;*.foo&quot; -exec tail {} \;
+
+# Outputs all the file names/paths that start with the name &quot;Casey&quot;.  Searches recursively starting from my current directory (.)
+# Throws out any error output by sending it to /dev/null 
+find . -name &quot;Casey*&quot; 2&gt;/dev/null
+
+# Finds all files in and under the current directory that contain 'foo' in their name, ignore case
+find . -iname '*foo*'
+
+# directory -&gt; chmod 700
+# file executable -&gt; chmod 700
+# file -&gt; chmod 600
+# You can apply this to directory that needs more secure permission
+# recursively. Like `~/.ssh`. `+` means run at once, not one by one. Like `xargs`.
+find .private -type d -execdir chmod 700 '{}' + \
+-or -type f -executable -execdir chmod 777 '{}' + \
+-or -type f -execdir chmod 600 '{}' +
+
+# Find all files in home directory that does not match my user/group.
+# Then change owner:group to my user/group.
+find ~/ \( -not -group $(id -g) -or -not -user $USER \) -execdir chown $USER: '{}' +
+
+# Especially useful for finding and removing temporary files.
+# e.g. To remove compiled python files:
+find . -name '*.pyc' -exec rm -rf {} \;
+
+# Find and remove empty directories
+find . -type d -empty -delete
+
+# Find and remove empty files
+find . -type f -empty -delete
+
+# Searches through my user's &quot;home&quot; directory recursively for the file &quot;hashClass.java&quot;, throwing out error output along the way.  
+# Passes the output to grep for case insensitive search.
+find ~/ 2&gt;/dev/null | grep -i &quot;hashclass.java&quot;
+
+# Find all subdirectories that have been created in the last 5 days.
+find . -type d -ctime -5
+
+# find last modified file in current directory recursively except directory
+find ./ -not -type d -printf &quot;%T+ %p\n&quot; | sort | tail -1
+
+# Find broken symlinks
+find -L . -type l
+
+# Find files that were modified less than 4 days ago and more than two days. Notice that `find -ctime +3 -ctime -4` would give no results.
+find -ctime +2 -ctime -4
+
+# Find files modified within a specific date range.
+touch --date &quot;2007-01-01&quot; /tmp/start
+touch --date &quot;2008-01-01&quot; /tmp/end
+find /data/images -type f -newer /tmp/start -not -newer /tmp/end
+
+
+#basic 'find file' commands
+--------------------------
+find / -name foo.txt -type f -print             # full command
+find / -name foo.txt -type f                    # -print isn't necessary
+find / -name foo.txt                            # don't have to specify &quot;type==file&quot;
+find . -name foo.txt                            # search under the current dir
+find . -name &quot;foo.*&quot;                            # wildcard
+find . -name &quot;*.txt&quot;                            # wildcard
+find /users/al -name Cookbook -type d           # search '/users/al'
+
+#search multiple dirs
+--------------------
+find /opt /usr /var -name foo.scala -type f     # search multiple dirs
+
+#case-insensitive searching
+--------------------------
+find . -iname foo                               # find foo, Foo, FOo, FOO, etc.
+find . -iname foo -type d                       # same thing, but only dirs
+find . -iname foo -type f                       # same thing, but only files
+
+#find files with different extensions
+------------------------------------
+find . -type f \( -name &quot;*.c&quot; -o -name &quot;*.sh&quot; \)                       # *.c and *.sh files
+find . -type f \( -name &quot;*cache&quot; -o -name &quot;*xml&quot; -o -name &quot;*html&quot; \)   # three patterns
+
+#find files that don't match a pattern (-not)
+--------------------------------------------
+find . -type f -not -name &quot;*.html&quot;                                # find all files not ending in &quot;.html&quot;
+
+#find files by text in the file (find + grep)
+--------------------------------------------
+find . -type f -name &quot;*.java&quot; -exec grep -l StringBuffer {} \;    # find StringBuffer in all *.java files
+find . -type f -name &quot;*.java&quot; -exec grep -il string {} \;         # ignore case with -i option
+find . -type f -name &quot;*.gz&quot; -exec zgrep 'GET /foo' {} \;          # search for a string in gzip'd files
+
+#5 lines before, 10 lines after grep matches
+-------------------------------------------
+find . -type f -name &quot;*.scala&quot; -exec grep -B5 -A10 'null' {} \;
+     (see http://alvinalexander.com/linux-unix/find-grep-print-lines-before-after-...)
+
+#find files and act on them (find + exec)
+----------------------------------------
+find /usr/local -name &quot;*.html&quot; -type f -exec chmod 644 {} \;      # change html files to mode 644
+find htdocs cgi-bin -name &quot;*.cgi&quot; -type f -exec chmod 755 {} \;   # change cgi files to mode 755
+find . -name &quot;*.pl&quot; -exec ls -ld {} \;                            # run ls command on files found
+
+#find and copy
+-------------
+find . -type f -name &quot;*.mp3&quot; -exec cp {} /tmp/MusicFiles \;       # cp *.mp3 files to /tmp/MusicFiles
+
+#copy one file to many dirs
+--------------------------
+find dir1 dir2 dir3 dir4 -type d -exec cp header.shtml {} \;      # copy the file header.shtml to those dirs
+
+#find and delete
+---------------
+find . -type f -name &quot;Foo*&quot; -exec rm {} \;                        # remove all &quot;Foo*&quot; files under current dir
+find . -type d -name CVS -exec rm -r {} \;                        # remove all subdirectories named &quot;CVS&quot; under current dir
+
+#find files by modification time
+-------------------------------
+find . -mtime 1               # 24 hours
+find . -mtime -7              # last 7 days
+find . -mtime -7 -type f      # just files
+find . -mtime -7 -type d      # just dirs
+
+#find files by modification time using a temp file
+-------------------------------------------------
+touch 09301330 poop           # 1) create a temp file with a specific timestamp
+find . -mnewer poop           # 2) returns a list of new files
+rm poop                       # 3) rm the temp file
+
+#find with time: this works on mac os x
+--------------------------------------
+find / -newerct '1 minute ago' -print
+
+#find and tar
+------------
+find . -type f -name &quot;*.java&quot; | xargs tar cvf myfile.tar
+find . -type f -name &quot;*.java&quot; | xargs tar rvf myfile.tar
+     (see http://alvinalexander.com/blog/post/linux-unix/using-find-xargs-tar-crea...
+     for more information)
+
+#find, tar, and xargs
+--------------------
+find . -name -type f '*.mp3' -mtime -180 -print0 | xargs -0 tar rvf music.tar
+     (-print0 helps handle spaces in filenames)
+     (see http://alvinalexander.com/mac-os-x/mac-backup-filename-directories-space...)
+
+#find and pax (instead of xargs and tar)
+---------------------------------------
+find . -type f -name &quot;*html&quot; | xargs tar cvf jw-htmlfiles.tar -
+find . -type f -name &quot;*html&quot; | pax -w -f jw-htmlfiles.tar
+     (see http://alvinalexander.com/blog/post/linux-unix/using-pax-instead-of-tar)
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

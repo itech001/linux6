@@ -1,0 +1,388 @@
+command : Description
+a2p : Create a Perl script from an AWK script.
+ac : Print statistics about user connection time.
+access : The system function which checks a user's permissions to access a file.
+addgroup : Add a group to the system.
+adduser : Add a user to the system.
+agrep : Version of the grep utility which also matches approximate patterns.
+alias : Create an alternate name for a command.
+apropos : Search the manual pages for a keyword or regular expression.
+apt-cache : Search for information about software packages available through APT.
+apt-get : Command line tool for managing APT software packages.
+aptitude : Text-based front end for the APT package management system.
+ar : Create, modify, and extract files from archives.
+arch : Display the architecture of the system.
+arp : Manipulate the system ARP cache.
+as : An assembler.
+aspell : An interactive spell checker.
+at : Schedule a command to be run at a certain time.
+awk : Interpreter for the AWK text processing programming language.
+basename : Strip directory information and suffixes from filenames.
+bash : The Bourne Again shell command interpreter.
+bc : A calculator.
+bdiff : Identify the differences between two very big files.
+bfs : An editor which can load very large files.
+bg : Resume a suspended program without bringing it to the foreground.
+biff : Receive detailed mail notifications at the command line.
+break : Break out of a while, for, foreach, or until loop.
+bs : A Linux version of the popular game "Battleship."
+bye : On some systems, an alias for the exit command.
+cal : Display a conveniently-formatted calendar from the command line.
+calendar : Display appointments and reminders.
+cancel : Cancel a print job under the System V operating system.
+cat : Output the contents of a file.
+cc : Compiler of the C programming language.
+cd : Change the working directory.
+cfdisk : A more user-friendly version of the fdisk disk partitioning utility.
+chdir : The system function for changing the working directory.
+checkeq : Language processor which assists in describing equations.
+checknr : Check nroff and troff files for errors.
+chfn : Change a user's finger information.
+chgrp : Change the group ownership of files and directories.
+chkey : Change the secure RPC key pair on SunOS.
+chmod : Change the permissions of files and directories.
+chown : Change the ownership of files and directories.
+chroot : Run a command or shell from another directory, and treat that directory as root.
+chsh : Change login shell.
+cksum : Calculate and display a CRC for files.
+clear : Clears the screen.
+cmp : Compare two files byte by byte.
+col : Filter reverse linefeeds.
+comm : Compare two sorted files line by line.
+compress : Compress a file or files.
+continue : Break out of a while, for, foreach, or until loop.
+cp : Copy files and directories.
+cpio : Copy files to or from archives.
+crontab : View and edit a list of jobs for the system to run at regular intervals.
+crypt : System function used to encrypt passwords.
+csh : The C shell command interpreter.
+csplit : Split files based on a defined context.
+ctags : Create tag files for source code.
+cu : Calls up another system, acting as a dial-in terminal.
+curl : Transfer data to or from a server.
+cut : Remove or "cut out" sections of each line of a file or files.
+date : Output the current date and time.
+dc : An arbitrary-precision arithmetic package.
+dd : Copy and convert the encoding of files.
+delgroup : Remove a group from the system.
+deluser : Remove a user from the system.
+depmod : Generate a list of kernel module dependences and associated map files.
+deroff : Remove nroff/troff, tbl, and eqn constructs from files.
+df : Report the amount of available disk space on file systems.
+dhclient : Communicate with a DHCP server to obtain a dynamic IP address.
+diff : Identify the differences between two files.
+dig : DNS lookup utility.
+dircmp : Compare the contents of two directories, listing unique files.
+dirname : Strip the filename from a pathname, leaving only the directory component.
+dmesg : Print or control the kernel ring buffer.
+dos2unix : Convert text files between DOS and Unix formats.
+dpkg : Query, install, remove, and maintain Debian software packages and their dependencies.
+dpost : Translate files created by troff into PostScript under Solaris.
+du : Report the amount of disk space used by a file or files.
+echo : Output text.
+ed : A simple text editor.
+edit : A text editor.
+egrep : Filter text which matches an extended regular expression.
+eject : Eject removable media.
+elm : A mail client.
+emacs : A highly extensible text editor.
+enable : Enable and disable LP printers.
+env : Report the value of environment variables.
+eqn : Language processor for describing equations.
+ex : Line-editor mode of the vi text editor.
+exit : Exit the command shell.
+expand : Expand tab characters to a series of spaces.
+expr : Evaluate arguments as an expression.
+fc : List, edit, or re-execute commands from the command history.
+fdisk : A disk partioning utility.
+fg : Resumes a suspended job and brings it to the foreground.
+fgrep : Filter text which matches a fixed-character string.
+file : Determine a file's type.
+find : Find files within a directory hierarchy.
+findsmb : List information about machines networked with the Samba protocol.
+finger : List information about a user.
+fmt : A formatter for simplifying and optimizing text files.
+fold : Wrap lines of text to a specified line width.
+for : Execute a set of commands in a repeating loop.
+foreach : Execute a set of commands once for each of a given set of input items.
+free : Display the amount of free and used memory.
+fsck : Check and repair a Linux file system.
+ftp : Conduct an interactive FTP session over a secure network connection.
+fuser : Identify processes using files or sockets.
+gawk : GNU's version of the AWK programming language.
+getfacl : Display file access control lists.
+gethostname : System call to get the hostname of the current processor.
+gpasswd : Administer /etc/group and /etc/gshadow.
+gprof : Display call graph profile data.
+grep : Filter text which matches a regular expression.
+groupadd : Add a group to the system.
+groupdel : Remove a group from the system.
+groupmod : Modify a group definition.
+gunzip : Expand compressed files.
+gview : An alias for vim.
+gvim : An alias for vim.
+gzip : Create, modify, list the contents of, and extract files from GNU zip archives.
+halt : Stop the computer.
+hash : Access internal hash tables under Solaris.
+hashstat : Evaluate the effectiveness of internal hash tables under Solaris.
+head : Display the first lines of a file.
+help : Display help for built-in shell commands.
+history : Display the command history.
+host : Convert a host name to an IP address and vice versa.
+hostid : Print the numeric identifier for the current host.
+hostname : Set or print the hostname of system.
+id : Display real and effective user and group IDs.
+ifconfig : View or modify the configuration of network interfaces.
+ifdown : Disable a network interface.
+ifquery : Parse information about a network interface.
+ifup : Enable a network interface.
+info : Read Info documents.
+init : The parent of all processes on the system.
+iostat : Report CPU and I/O statistics for devices and partitions.
+ip : Display and manipulate information about routing, devices, policy routing and tunnels.
+isalist : Display the native instruction sets available on a Solaris system.
+iwconfig : Configure a wireless network interface.
+jobs : List the status of all running jobs.
+join : Join the lines of two files which share a common field of data.
+keylogin : Decrypt a user's secret key on SunOS.
+kill : Send a signal to a process, affecting its behavior or killing it.
+killall : Kill processes by name.
+ksh : The Korn shell command interpreter.
+last : Display a listing of the most recently logged-in users.
+ld : Link editor for object files.
+ldd : List dynamic dependencies of executable files or shared objects.
+less : Scrolling text viewer.
+lex : Generate programs for performing lexical tasks.
+link : Create a hard link to a regular file.
+ln : Create a link, or a symbolic link, to a file or directory.
+lo : Exit the command shell.
+locate : Search a local database to find files by name.
+login : Begin a session on a system.
+logname : Return a user's login name.
+logout : Exit the command shell.
+losetup : Set up and control loop devices.
+lp : Print a file on the System V operating system.
+lpadmin : Configure LP print services.
+lpc : Control line printers.
+lpq : List the status of available printers.
+lpr : Submit print requests.
+lprm : Remove requests from the print queue.
+lpstat : List the status of the LP print services.
+ls : List the contents of a directory or directories.
+lsof : List open files.
+lzcat : View compressed .lzma files.
+lzma : Compress files to .lzma file.
+mach : Display the processor of the current system.
+mail : Read, compose, and manage mail.
+mailcompat : Provide SunOS 4.x compatibility for the Solaris mailbox format.
+mailx : Process mail messages.
+make : Automatically build executable programs and libraries from source code.
+man : Display the manual page of a given command.
+merge : Performs a merge of the contents of three files.
+mesg : Control if (non-root) users can send messages to your terminal.
+mii-tool : View and manipulate the status of a media-independent interface.
+mkdir : Create a directory.
+mkfs : Build a Linux file system, usually a hard disk partition.
+mkswap : Set up a Linux swap area.
+modprobe : Add and remove modules from the Linux kernel.
+more : Display text one screen at a time.
+mount : Mount a file system so that its data may be accessed.
+mt : Control magnetic tapes.
+mv : Move files and directories from one location to another, and optionally rename them.
+myisamchk : Check, repair, optimize, or fetch information about a MySQL database.
+mysql : An open-source relational database management system.
+mysqldump : A tool for backing up or transferring MySQL databases.
+nc : TCP/IP swiss army knife.
+neqn : Language processor for describing equations.
+netstat : Print information about network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+newalias : Install new elm aliases.
+newform : Change the format of a text file under Solaris.
+newgrp : Log into a new group.
+nice : Invoke a command with an altered scheduling priority.
+niscat : Display NIS+ tables and objects.
+nischmod : Change access rights on a NIS+ object.
+nischown : Change the owner of a NIS+ object on a system running Solaris.
+nischttl : Change the time to live value of a NIS+ object.
+nisdefaults : Display NIS+ default values.
+nisgrep : Utilities for searching NIS+ tables.
+nismatch : Utilities for searching NIS+ tables.
+nispasswd : Change NIS+ password information.
+nistbladm : Administer NIS+ tables.
+nl : Number the lines in a file.
+nmap : Network exploration tool and security port scanner.
+nohup : Instruct a command to continue running even if the session is disconnected or the user logs out.
+nroff : Format documents for terminal display or line-printer.
+nslookup : Query a name server for information about a remote host.
+od : Dump files in octal and other formats.
+on : Execute a command on a remote system, but with the local environment.
+onintr : Built-in shell function which responds to hardware interrupts.
+optisa : Determine which instruction set is optimal to use on a Solaris system.
+pack : Compress files using a Huffman algorithm.
+pagesize : Display the size of a page of memory in bytes.
+parted : A disk partition manipulation program.
+partprobe : Inform the operating system about changes to the partition table.
+passwd : Change a user's password.
+paste : Merge corresponding lines of files.
+pax : Read and write file archives, and copy directory hierarchies.
+pcat : Print the uncompressed contents of a compressed file.
+perl : Interpreter for the Perl programming language.
+pg : Browse page by page through text files.
+pgrep : Look up processes based on the name or other attributes.
+pico : A simple text editor.
+pine : A client for using mail and newsgroups.
+ping : Send ICMP ECHO_REQUEST packets to network hosts.
+pkill : Send a signal to any process whose attributes match a regular expression.
+poweroff : Stop the computer.
+pr : Format a text file for printing.
+printenv : Print all or part of the environment.
+printf : Write formatted output.
+priocntl : Display or set scheduling parameters of a processes under Solaris.
+ps : Report the status of a process or processes.
+pstree : Display processes in a tree format.
+pvs : Display the internal version information of dynamic objects within an ELF file.
+pwd : Print the name of the working directory.
+quit : Exit the command shell.
+rcp : Copy files to or from a remote system.
+readlink : Print the value of a symbolic link or canonical file name.
+reboot : Stop the computer.
+red : Run ed in "restricted" (less powerful, more secure) mode.
+rehash : Recompute internal hash tables under Solaris.
+rename : Rename multiple files according to a regular expression.
+renice : Alter the priority of running processes.
+repeat : Execute a set of commands in a repeating loop.
+replace : A string-replacement utility.
+rgview : An alias for vim.
+rgvim : An alias for vim.
+rlogin : Begin a session on a remote system.
+rm : Delete files.
+rmdir : Remove a directory.
+rn : A newsgroup reader.
+route : Display and manipulate the IP routing table.
+rpcinfo : Report information about Remote Procedure Calls.
+rsh : Execute a command on a remote shell.
+rsync : A fast and versatile file copying tool capable of synchronizing files across remote systems.
+rview : An alias for vim.
+rvim : An alias for vim.
+s2p : Convert a sed script into a Perl script.
+sag : Under Solaris, Graphically displays system activity data generated by sar.
+sar : Display CPU activity under Solaris.
+scp : Copy files securely over a network connection.
+screen : Screen manager with VT100/ANSI terminal emulation.
+script : Record everything printed on your screen.
+sdiff : Compare two files, side-by-side.
+sed : A utility for filtering and transforming text.
+sendmail : Send mail.
+service : Run a System V init script.
+set : Set the value of an environment variable.
+setenv : Set the value of an environment variable.
+setfacl : Modify the access control list of a file or files.
+sethostname : System calls or set the hostname of the current processor.
+sfdisk : A low-level disk partitioning program.
+sftp : Conduct an interactive FTP session over a secure network connection.
+sh : The Bourne shell command interpreter.
+shred : Overwrite a file's contents, irrevocably destroying them.
+shutdown : Schedule a time for the system to be powered down.
+sleep : Wait a given number of seconds.
+slogin : Login to a remote system securely.
+smbclient : An ftp-like client for accessing SMB/CIFS resources on servers.
+sort : Sort the lines in a text file.
+spell : A spell checker.
+split : Split a file into pieces.
+startx : Start an X Window System session.
+stat : Display the status of a file or filesystem.
+stop : Stop a running job.
+strftime : Format strings that represent the system date and time.
+strip : Discard symbols from object files.
+stty : Set options for your terminal display.
+su : Become the superuser or another user.
+sudo : Execute a command as the superuser.
+swapoff : Disable a Linux swap area.
+swapon : Enable a Linux swap area.
+sysinfo : Get and set system information strings.
+sysklogd : Linux system logging utilities.
+tabs : Set tab stops on a terminal.
+tac : Output the contents of files in reverse order.
+tail : Print the last lines of a text file.
+talk : Talk with other logged in users.
+tar : Create, modify, list the contents of, and extract files from tar archives.
+tbl : Preprocessor which formats tables for nroff or troff.
+tcopy : Copy a magnetic tape.
+tcpdump : Capture raw network traffic.
+tcsh : A command-line shell similar to csh, with some additional features.
+tee : Route a file's contents to multiple outputs.
+telinit : Process control initialization.
+telnet : Connect to a remote system using the telnet protocol.
+test : Check file types and compare values.
+time : Report how long it takes for a command to execute.
+timex : Report process data and system activity for a specified command.
+todos : Convert text files between DOS and Unix formats.
+top : Display a sortable, continually-updated list of processes.
+touch : Update the timestamp of a file or directory.
+tput : Initialize a terminal or query the terminfo database.
+tr : Translate one set of characters to another.
+traceroute : Trace the route that packets take to a remote host.
+trap : A function which "traps" signals and interrupts, and reacts to them.
+tree : List the contents of a file hierarchy visually in a tree format.
+troff : Typeset or format documents for terminal display or line-printer.
+tty : Print the file name of the terminal connected to standard input.
+ul : Translate underscores to underlining.
+umask : Get or set the file mode creation mask.
+umount : Unmount a file system, making its data inaccessible.
+unalias : Remove an alias.
+uname : Print information about the current system.
+uncompress : Extract files from compressed archives.
+unhash : Remove internal hash table under Solaris.
+uniq : Identify, and optionally filter out, repeated lines in a file.
+unlink : Remove a file.
+unlzma : Decompress .lzma files.
+unpack : Expand a compressed file.
+until : Execute a set of commands until a certain condition is true.
+unxz : Decompress .xz files.
+unzip : List, test and extract compressed files in a zip archive.
+uptime : Display information about how long the system has been running.
+useradd : Add a user to the system.
+userdel : Remove a user from the system.
+usermod : Modify a user's account.
+vacation : Reply to mail automatically.
+vgrind : "Grind" nice program listings.
+vi : Text editor based on the visual mode of ex.
+view : Run vim in read-only mode.
+vim : An advanced version of vi.
+vipw : Safely edit the password file.
+visudo : Safely edit the sudoers file.
+vmstat : Report statistics about virtual memory usage.
+w : Show who is logged on and what they are doing.
+wait : Await process completion.
+wall : Send a message to all logged-in users.
+wc : Display a count of lines, words, and characters in a file.
+wget : Download files via HTTP or FTP.
+whatis : Display short manual page descriptions.
+whereis : Locate the binary, source, and manual page files for a command.
+which : Locate the binary executable of a command.
+while : Execute a set of actions while a certain condition is true.
+who : Report which users are logged in to the system.
+whoami : Print your effective userid.
+whois : An internet user name directory service.
+write : Send a message to another user.
+X : Executable of the X Window System.
+Xorg : The executable of the X Window System server.
+xargs : Build and execute complex commands, and execute them on multiple files.
+xfd : Display all the characters in an X font.
+xhost : Server access control program for X.
+xinit : The initializer of the X Window System.
+xlsfonts : Display X font lists.
+xrdb : An X server resource database utility.
+xset : A user preference utility for X.
+xterm : A terminal emulator for X.
+xz : Compress files to .xz files.
+xzcat : View compressed .xz files.
+yacc : "Yet another compiler-compiler."
+yes : Repeatedly output a given string, or the letter "y".
+yppasswd : Change a network password in an NIS database.
+yum : An interactive rpm-based package manager.
+zcat : Print the uncompressed contents of compressed files.
+zip : A compression and archiving utility.
+zipcloak : Encrypt files within an existing zip archive.
+zipinfo : Display technical information about a zip file.
+zipnote : View, add, or modify a zip file's comments.
+zipsplit : Split a single zip archive into a set of smaller zip files.

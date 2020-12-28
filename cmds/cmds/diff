@@ -1,0 +1,5 @@
+# Show the difference between two files without creating temporary files
+diff <(sort file1) <(sort file2)
+
+# show the difference between two directories
+diff -r DIRECTORY1 DIRECTORY2

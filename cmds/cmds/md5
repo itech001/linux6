@@ -1,0 +1,5 @@
+# print the md5 sum of a given file
+md5 -q filename
+
+# print the md5 sum of a given string
+md5 -qs 'string'

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/pgrep/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>pgrep - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#pgrep">pgrep</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#operands">operands</a></li>
+        
+            <li><a href="#examples">examples</a></li>
+        
+            <li><a href="#exit-status">exit status</a></li>
+        
+            <li><a href="#notes">notes</a></li>
+        
+            <li><a href="#bugs">bugs</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#standards">standards</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+            <li><a href="#reporting-bugs">reporting bugs</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="pgrep">pgrep</h1>
+<h3 id="name">name</h3>
+<pre><code>       pgrep, pkill - look up or signal processes based on name and other attributes
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       pgrep [options] pattern
+       pkill [options] pattern
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       pgrep looks through the currently running processes and lists the process IDs which match the selection criteria to stdout.  All the criteria have to match.  For example,
+
+              $ pgrep -u root sshd
+
+       will only list the processes called sshd AND owned by root.  On the other hand,
+
+              $ pgrep -u root,daemon
+
+       will list the processes owned by root OR daemon.
+
+       pkill will send the specified signal (by default SIGTERM) to each process instead of listing them on stdout.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       -signal
+       --signal signal
+              Defines the signal to send to each matched process.  Either the numeric or the symbolic signal name can be used.  (pkill only.)
+
+       -c, --count
+              Suppress normal output; instead print a count of matching processes.  When count does not match anything, e.g. returns zero, the command will return non-zero value.
+
+       -d, --delimiter delimiter
+              Sets the string used to delimit each process ID in the output (by default a newline).  (pgrep only.)
+
+       -f, --full
+              The pattern is normally only matched against the process name.  When -f is set, the full command line is used.
+
+       -g, --pgroup pgrp,...
+              Only match processes in the process group IDs listed.  Process group 0 is translated into pgrep's or pkill's own process group.
+
+       -G, --group gid,...
+              Only match processes whose real group ID is listed.  Either the numerical or symbolical value may be used.
+
+       -l, --list-name
+              List the process name as well as the process ID.  (pgrep only.)
+
+       -a, --list-full
+              List the full command line as well as the process ID.  (pgrep only.)
+
+       -n, --newest
+              Select only the newest (most recently started) of the matching processes.
+
+       -o, --oldest
+              Select only the oldest (least recently started) of the matching processes.
+
+       -P, --parent ppid,...
+              Only match processes whose parent process ID is listed.
+
+       -s, --session sid,...
+              Only match processes whose process session ID is listed.  Session ID 0 is translated into pgrep's or pkill's own session ID.
+
+       -t, --terminal term,...
+              Only match processes whose controlling terminal is listed.  The terminal name should be specified without the &quot;/dev/&quot; prefix.
+
+       -u, --euid euid,...
+              Only match processes whose effective user ID is listed.  Either the numerical or symbolical value may be used.
+
+       -U, --uid uid,...
+              Only match processes whose real user ID is listed.  Either the numerical or symbolical value may be used.
+
+       -v, --inverse
+              Negates the matching.  This option is usually used in pgrep's context.  In pkill's context the short option is disabled to avoid accidental usage of the option.
+
+       -w, --lightweight
+              Shows all thread ids instead of pids in pgrep's context.  In pkill's context this option is disabled.
+
+       -x, --exact
+              Only match processes whose names (or command line if -f is specified) exactly match the pattern.
+
+       -F, --pidfile file
+              Read PID's from file.  This option is perhaps more useful for pkill than pgrep.
+
+       -L, --logpidfile
+              Fail if pidfile (see -F) not locked.
+
+       --ns pid
+              Match processes that belong to the same namespaces. Required to run as root to match processes from other users. See --nslist for how to limit which namespaces to match.
+
+       --nslist name,...
+              Match only the provided namespaces. Available namespaces: ipc, mnt, net, pid, user,uts.
+
+       -V, --version
+              Display version information and exit.
+
+       -h, --help
+              Display help and exit.
+
+</code></pre>
+
+<h3 id="operands">operands</h3>
+<pre><code>       pattern
+              Specifies an Extended Regular Expression for matching against the process names or command lines.
+
+</code></pre>
+
+<h3 id="examples">examples</h3>
+<pre><code>       Example 1: Find the process ID of the named daemon:
+
+              $ pgrep -u root named
+
+       Example 2: Make syslog reread its configuration file:
+
+              $ pkill -HUP syslogd
+
+       Example 3: Give detailed information on all xterm processes:
+
+              $ ps -fp $(pgrep -d, -x xterm)
+
+       Example 4: Make all netscape processes run nicer:
+
+              $ renice +4 $(pgrep netscape)
+
+</code></pre>
+
+<h3 id="exit-status">exit status</h3>
+<pre><code>       0      One or more processes matched the criteria.
+       1      No processes matched.
+       2      Syntax error in the command line.
+       3      Fatal error: out of memory etc.
+
+</code></pre>
+
+<h3 id="notes">notes</h3>
+<pre><code>       The process name used for matching is limited to the 15 characters present in the output of /proc/pid/stat.  Use the -f option to match against the complete command line, /proc/pid/cmdline.
+
+       The running pgrep or pkill process will never report itself as a match.
+
+</code></pre>
+
+<h3 id="bugs">bugs</h3>
+<pre><code>       The options -n and -o and -v can not be combined.  Let me know if you need to do this.
+
+       Defunct processes are reported.
+
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       ps(1), regex(7), signal(7), killall(1), skill(1), kill(1), kill(2)
+
+</code></pre>
+
+<h3 id="standards">standards</h3>
+<pre><code>       pkill and pgrep were introduced in Sun's Solaris 7.  This implementation is fully compatible.
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       Kjetil Torgrim Homme ⟨kjetilho@ifi.uio.no⟩
+
+</code></pre>
+
+<h3 id="reporting-bugs">reporting bugs</h3>
+<pre><code>       Please send bug reports to ⟨procps@freelists.org⟩
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>

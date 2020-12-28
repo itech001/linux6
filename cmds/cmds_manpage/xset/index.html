@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="itech001">
+        <link rel="canonical" href="www.linux6.com/cmds/cmds_manpage/xset/index.html">
+        <link rel="shortcut icon" href="../../../favicon.ico">
+        
+
+        <title>xset - Linux6</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../../index.html">Linux6</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Env <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../env/virtualbox/index.html">Virtualbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_setting/index.html">VIM_setting</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vi/index.html">VIM_intro</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/vim_cheatsheet/index.html">VIM_cheatsheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/dotfiles/index.html">Dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/alias/index.html">Alias</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/shortcut/index.html">Shortcut</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../env/tmux/index.html">Tmux</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cmds <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../cmds_common/index.html">cmds_common</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_example/index.html">cmds_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../cmds_overview/index.html">cmds_man</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../find/index.html">find</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../xargs/index.html">xargs</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../grep/index.html">grep</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../sed/index.html">sed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../awk/index.html">awk</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../for/index.html">for</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Script <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../shell/bash/index.html">Bash</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_example/index.html">Bash_example</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_summary/index.html">Bash_summary</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/bash_bible/index.html">Bash_bible</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/csh/index.html">Csh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/zsh/index.html">Zsh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/shell_compare/index.html">Shell_compare</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/perl/index.html">Perl</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../shell/python/index.html">Python</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../dev/git/index.html">git-tutorial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/git_cheat_sheet/index.html">git-cheat-sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../dev/gdb/index.html">gdb</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adv <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../adv/article/index.html">Article</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../adv/os/index.html">OS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../faq/common/index.html">Common</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ref <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../ref/awesome-linux-resources/README/index.html">awesome_linux</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-shell/README/index.html">awesome_shell</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-dotfiles/README/index.html">awesome_dotfiles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-devenv/README/index.html">awesome_devenv</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-sysadmin/README/index.html">awesome_sysadmin</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome-python/README/index.html">awesome_python</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/free-programming-books/README/index.html">free_programming_book</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/Git-Cheat-Sheet/README/index.html">git_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/github-cheat-sheet/README/index.html">github_cheat_sheet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../ref/awesome/readme/index.html">awesome</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rss <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../rss/linux_rss2/index.html">Linux RSS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../rss/github_rss2/index.html">Github RSS</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../../about/about/index.html">About</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../about/contact_form/index.html">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                 <li>
+                   <a href="#" data-toggle="modal" data-target="#search_modal"><i class="fa fa-search"></i> Search</a>
+                 </li>                       
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container" id="main">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#xset">xset</a></li>
+        
+            <li><a href="#name">name</a></li>
+        
+            <li><a href="#synopsis">synopsis</a></li>
+        
+            <li><a href="#description">description</a></li>
+        
+            <li><a href="#options">options</a></li>
+        
+            <li><a href="#see-also">see also</a></li>
+        
+            <li><a href="#author">author</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="xset">xset</h1>
+<h3 id="name">name</h3>
+<pre><code>       xset - user preference utility for X
+
+</code></pre>
+
+<h3 id="synopsis">synopsis</h3>
+<pre><code>       xset [-display display]
+       [-b] [b {on|off}] [b [volume [pitch [duration]]]]
+       [-bc] [bc]
+       [-c] [c {on|off}] [c [volume]]
+       [+dpms] [-dpms]
+            [dpms standby [ suspend [ off]]]      [dpms force {standby|suspend|off|on}]
+       [fp=pathlist] [-fp=pathlist] [+fp=pathlist] [fp-pathlist] [fp+pathlist]
+       [fp default] [fp rehash]
+       [-led [integer|named indicator]] [led [integer|named indicator]]
+       [led {on|off}]
+       [mouse [accel_mult[/accel_div] [threshold]]] [mouse default]
+       [p pixel color]
+       [-r [keycode]]  [r [keycode]] [r {on|off}] [r rate delay [rate]]
+       [s [length [period]]] [s {blank|noblank}] [s {expose|noexpose}] [s {on|off}] [s default] [s activate] [s reset]
+       [q]
+       [-version]
+
+</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code>       This program is used to set various user preference options of the display.
+
+</code></pre>
+
+<h3 id="options">options</h3>
+<pre><code>       -display display
+               This option specifies the server to use; see X(7).
+
+       b       The b option controls bell volume, pitch and duration.  This option accepts up to three numerical parameters, a preceding dash(-), or a 'on/off' flag.  If no parameters are given, or the 'on' flag is used, the system defaults will be used.  If the dash or 'off' are given, the bell will be turned off.  If only one numerical parameter is given, the bell volume will be set to that value, as a percentage of its maximum.  Likewise, the second numerical parameter specifies the bell pitch, in hertz, and the third numerical parameter specifies the duration in milliseconds.  Note that not all hardware can vary the bell characteristics.  The X server will set the characteristics of the bell as closely as it can to the user's specifications.
+
+       bc      The bc option controls bug compatibility mode in the server, if possible; a preceding dash(-) disables the mode, otherwise the mode is enabled.  Various pre-R4 clients pass illegal values in some protocol requests, and pre-R4 servers did not correctly generate errors in these cases.  Such clients, when run against an R4 server, will terminate abnormally or otherwise fail to operate correctly.  Bug compatibility mode explicitly reintroduces certain bugs into the X server, so that many such clients can still be run.  This mode should be used with care; new application development should be done with this mode disabled.  The server must support the MIT-SUNDRY-NONSTANDARD protocol extension in order for this option to work.
+
+       c       The c option controls key click.  This option can take an optional value, a preceding dash(-), or an 'on/off' flag.  If no parameter or the 'on' flag is given, the system defaults will be used. If the dash or 'off' flag is used, keyclick will be disabled.  If a value from 0 to 100 is given, it is used to indicate volume, as a percentage of the maximum.  The X server will set the volume to the nearest value that the hardware can support.
+
+       -dpms   The -dpms option disables DPMS (Energy Star) features.
+
+       +dpms   The +dpms option enables DPMS (Energy Star) features.
+
+       dpms flags...
+               The dpms option allows the DPMS (Energy Star) parameters to be set.  The option can take up to three numerical values, or the `force' flag followed by a DPMS state.  The `force' flags forces the server to immediately switch to the DPMS state specified.  The DPMS state can be one of `standby', `suspend', `off', or `on'.  When numerical values are given, they set the inactivity period (in units of seconds) before the three modes are activated.  The first value given is for the `standby' mode, the second is for the `suspend' mode, and the third is for the `off' mode.  Setting these values implicitly enables the DPMS features.  A value of zero disables a particular mode.
+
+       fp= path,...
+               The fp= sets the font path to the entries given in the path argument.  The entries are interpreted by the server, not by the client.  Typically they are directory names or font server names, but the interpretation is server-dependent.
+
+       fp default
+               The default argument causes the font path to be reset to the server's default.
+
+       fp rehash
+               The rehash argument resets the font path to its current value, causing the server to reread the font databases in the current font path.  This is generally only used when adding new fonts to a font directory (after running mkfontdir to recreate the font database).
+
+       -fp or fp-
+               The -fp and fp- options remove elements from the current font path.  They must be followed by a comma-separated list of entries.
+
+       +fp or fp+
+               This +fp and fp+ options prepend and append elements to the current font path, respectively.  They must be followed by a comma-separated list of entries.
+
+       led     The led option controls the keyboard LEDs.  This controls the turning on or off of one or all of the LEDs.  It accepts an optional integer, a preceding dash(-) or an 'on/off' flag.  If no parameter or the 'on' flag is given, all LEDs are turned on.  If a preceding dash or the flag 'off' is given, all LEDs are turned off.  If a value between 1 and 32 is given, that LED will be turned on or off depending on the existence of a preceding dash.  ``xset led 3'' would turn led #3 on.  ``xset -led 3'' would turn it off.  The particular LED values may refer to different LEDs on different hardware.  If the X server supports the XKEYBOARD (XKB) extension, leds may be referenced by the XKB indicator name by specifying the `named' keyword and the indicator name.   For example, to turn on the Scroll Lock LED:
+
+               xset led named &quot;Scroll Lock&quot;
+
+       mouse   The m option controls the mouse parameters; it may be abbreviated to 'm'. Of course, it applies to most pointing devices, not just mice. The parameters for the pointing device are `acceleration' and `threshold'. The acceleration can be specified as an integer, or as a simple fraction. Threshold is just an integer. The setting is applied to all connected pointing devices. xinput(1) should be used if you need device-specific settings.
+
+       By default the pointer (the on-screen representation of the pointing device) will go `acceleration' times as fast when the device travels more than `threshold' mickeys (i.e. would-be pixels) in 10 ms, including a small transition range. This way, the pointing device can be used for precise alignment when it is moved slowly, yet it can be set to travel across the screen in a flick of the wrist when desired.  One or both parameters for the m option can be omitted, but if only one is given, it will be interpreted as the acceleration.  If no parameters or the flag 'default' is used, the system defaults will be set.
+
+       If the `threshold' parameter is provided and 0, the `acceleration' parameter will be used in the exponent of a more natural and continuous formula, giving precise control for slow motion but big reach for fast motion, and a progressive transition for motions in between.  Recommended `acceleration' value in this case is 3/2 to 3, but not limited to that range.
+
+       In the X.org X Server 1.6 and above, the behaviour described so far is linked to the default profile. There are other profiles (i.e. functions determining pointer acceleration from device velocity) and additional settings, so the above description may not apply to non-default cases. In the X.org Server 1.7, these are available as input device properties (see xinput).
+
+
+       p       The p option controls pixel color values.  The parameters are the color map entry number in decimal, and a color specification.  The root background colors may be changed on some servers by altering the entries for BlackPixel and WhitePixel.  Although these are often 0 and 1, they need not be.  Also, a server may choose to allocate those colors privately, in which case an error will be generated.  The map entry must not be a read-only color, or an error will result.
+
+       r       The r option controls the autorepeat.  Invoking with &quot;-r&quot;, or &quot;r off&quot;, will disable autorepeat, whereas &quot;r&quot;, or &quot;r on&quot; will enable autorepeat.  Following the &quot;-r&quot; or &quot;r&quot; option with an integer keycode between 0 and 255 will disable or enable autorepeat on that key respectively, but only if it makes sense for the particular keycode.  Keycodes below 8 are not typically valid for this command.  Example: &quot;xset -r 10&quot; will disable autorepeat for the &quot;1&quot; key on the top row of an IBM PC keyboard.
+
+               If the server supports the XFree86-Misc extension, or the XKB extension, then a parameter of 'rate' is accepted and should be followed by zero, one or two numeric values. The first specifies the delay before autorepeat starts and the second specifies the repeat rate.  In the case that the server supports the XKB extension, the delay is the number of milliseconds before autorepeat starts, and the rate is the number of repeats per second.  If the rate or delay is not given, it will be set to the default value.
+
+       s       The s option lets you set the screen saver parameters.  This option accepts up to two numerical parameters, a 'blank/noblank' flag, an 'expose/noexpose' flag, an 'on/off' flag, an 'activate/reset' flag, or the 'default' flag.  If no parameters or the 'default' flag is used, the system will be set to its default screen saver characteristics.  The 'on/off' flags simply turn the screen saver functions on or off.  The 'activate' flag forces activation of screen saver even if the screen saver had been turned off.  The 'reset' flag forces deactivation of screen saver if it is active.  The 'blank' flag sets the preference to blank the video (if the hardware can do so) rather than display a background pattern, while 'noblank' sets the preference to display a pattern rather than blank the video.  The 'expose' flag sets the preference to allow window exposures (the server can freely discard window contents), while 'noexpose' sets the preference to disable screen saver unless the server can regenerate the screens without causing exposure events.  The length and period parameters for the screen saver function determines how long the server must be inactive for screen saving to activate, and the period to change the background pattern to avoid burn in.  The arguments are specified in seconds.  If only one numerical parameter is given, it will be used for the length.
+
+       q       The q option gives you information on the current settings.
+
+       -version
+               The -version option prints the program version and exits without doing anything else.
+
+       These settings will be reset to default values when you log out.
+
+       Note that not all X implementations are guaranteed to honor all of these options.
+
+</code></pre>
+
+<h3 id="see-also">see also</h3>
+<pre><code>       X(7), Xserver(1), xmodmap(1), xrdb(1), xsetroot(1), xinput(1)
+
+</code></pre>
+
+<h3 id="author">author</h3>
+<pre><code>       Bob Scheifler, MIT Laboratory for Computer Science
+       David Krikorian, MIT Project Athena (X11 version)
+       XFree86-Misc support added by David Dawes and Joe Moss
+       Manpage updates added by Mike A. Harris &lt;mharris@redhat.com&gt;
+
+
+
+</code></pre>
+
+</div>
+        </div>
+
+        <div><hr>
+        <div class="container" id="footer">
+        <div class="col-md-12">
+            
+                <p><div align="center">联系作者:<a href=mailto:itech001@126.com>itech001@126.com</a>, 提交代码 <a href=https://github.com/itech001/linux6>github</a>, <font size="4" color=red>微信公众号cicdops</font><br> <img src=https://github.com/itech001/linux6/blob/master/gzh8.jpg?raw=true height="200" width="200"></div>.</p>
+            
+        </div>
+        </div>
+        </div>
+
+        <script src="../../../js/prettify-1.0.min.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/tipuesearch/tipuesearch_content.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch.js"></script>
+        <script src="../../../js/tipuesearch/tipuesearch_set.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../"></script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5497b1a160364736" async="async"></script>
+
+
+    <div class="modal" id="search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search words into the box below and click
+                            "search".
+                        </p>
+                        <form role="form">
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="q" id="tipue_search_input">
+                                <button type="submit" class="btn">Search</button>
+                         </div>
+                    </form>
+                        <div id="tipue_search_content"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+    </div>
+
+    </body>
+</html>
